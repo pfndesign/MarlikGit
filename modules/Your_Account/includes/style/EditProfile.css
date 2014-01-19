@@ -1,0 +1,129 @@
+.container {
+	width:90%;
+	margin:10px auto;
+	direction:rtl;
+	border-top:0px;
+}
+ul.tabs {
+	margin:0;
+	padding:0;
+	list-style:none;
+	height:32px;
+	border-bottom:1px solid #999;
+	border-right:1px solid #999;
+	width:100%
+}
+ul.tabs li {
+	margin:0;
+	padding:0;
+	height:31px;
+	line-height:31px;
+	border:1px solid #A09EA9;
+	border-right:none;
+	margin-bottom:-1px;
+	background:#E0E0E0;
+	overflow:hidden;
+	position:relative
+}
+ul.tabs li a {
+	text-decoration:none;
+	color:#000;
+	display:block;
+	font-size:11px;
+	padding:0 10px;
+	border:1px solid #FEFCFD;
+	border-bottom:0px;
+	outline:none
+}
+ul.tabs li a:hover {
+	background:#F4E149;
+	color:#000
+}
+html ul.tabs li.active,html ul.tabs li.active a:hover {
+	background:#ECECEC;
+	border-bottom:1px solid #ECECEC;
+	color:#000
+}
+.tab_container {
+	padding-bottom:20px;
+	border:1px solid #ccc;
+	border-top:0px;
+	clear:both;
+	float:right;
+	width:100%;
+	background:#ECECEC;
+	-moz-border-radius-bottomright:5px;
+	-khtml-border-radius-bottomright:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	-khtml-border-radius-bottomleft:5px;
+	-webkit-border-bottom-left-radius:5px
+}
+.tab_content {
+	padding:20px;
+	font-size:1.2em;
+	border-top:0px;
+}
+fieldset {
+	position:relative;
+	border:none;
+	display:block;
+	text-align:right
+}
+legend {
+	font-size:18px;
+	margin:0;
+	padding:10px 0;
+	color:#b0232a;
+	font-weight:bold
+}
+label {
+	font-size:12px;
+	display:block;
+	margin:15px 0 5px
+}
+.tab_container input[type=text],input[type=password] {
+	width:300px;
+	padding:5px;
+	border:solid 1px #000;
+	font-family:Tahoma
+}
+h2 {
+	font-size:15px;
+	text-align:right
+}
+div.frame {
+	background:#fff;
+	padding:0.8em;
+	border: solid 2px #ddd;
+}
+/* * imgAreaSelect animated border style */
+.imgareaselect-border1 {
+	background:url(images/border-anim-v.gif) repeat-y left top;
+}
+.imgareaselect-border2 {
+	background:url(images/border-anim-h.gif) repeat-x left top;
+}
+.imgareaselect-border3 {
+	background:url(images/border-anim-v.gif) repeat-y right top;
+}
+.imgareaselect-border4 {
+	background:url(images/border-anim-h.gif) repeat-x left bottom;
+}
+.imgareaselect-border1,.imgareaselect-border2,.imgareaselect-border3,.imgareaselect-border4 {
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+.imgareaselect-handle {
+	background-color:#fff;
+	border:solid 1px #000;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+.imgareaselect-outer {
+	background-color:#000;
+	filter:alpha(opacity=50);
+	opacity: 0.5;
+}
+.imgareaselect-selection {
+}

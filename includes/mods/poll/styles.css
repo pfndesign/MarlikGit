@@ -1,0 +1,12 @@
+/**
+ *
+ * @package Jquery Survey system													
+ * @version 1.0 Final $Aneeshtan  4:18 PM 2/10/2010	
+ * @copyright (c)Nukelearn Group  http://www.nukelearn.com	Copyright (c) 2009 Anant Garg (anantgarg.com | inscripts.com)										
+ * @license http://opensource.org/licenses/gpl-license.php GNU Public License
+ *
+ */
+#pollcontainer {margin:5px;padding:5px;line-height:14px;}
+#poll_loader {display:none;text-align:center}
+.poll_bar {height:10px;background:#007CC9;-khtml-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.poll_yourvote {height:12px;background:#C53512;-khtml-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}

@@ -1,0 +1,20 @@
+html,body {
+	background:#fff;
+	font-family:Tahoma,Arial,Sans-Serif;
+	font-size:12px;
+	margin:0;
+	padding-top:50px;
+	direction:rtl;
+}
+	a:visited{color:#1A5450; TEXT-DECORATION:none}
+	a:active,a:link{color:#2B6620; TEXT-DECORATION:none}
+	a:hover{text-decoration:none; color:#B44D00}
+ 	.header-td{
+ 	background:#3D74AC;color:white;padding:5px;text-align:center;
+ 	}
+ 	.bg-tr{
+ 	background:#DAE1E7;color:#676767	;padding:5px;text-align:center;
+ 	}
+ 	h1 {
+	font:25px Arial;text-align:Center;
+ 	}

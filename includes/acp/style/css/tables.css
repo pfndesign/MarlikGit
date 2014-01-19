@@ -1,0 +1,46 @@
+#box-table-a {font-family:"Tahoma","Lucida Grande",Sans-Serif;font-size:12px;margin:45px;width:90%;text-align:center;border-collapse:collapse}
+#box-table-a th {font-size:13px;font-weight:normal;padding:8px;background:#b9c9fe;border-top:4px solid #aabcfe;border-bottom:1px solid #fff;color:#039}
+#box-table-a td {padding:8px;background:#e8edff;border-bottom:1px solid #fff;color:#669;border-top:1px solid transparent}
+#box-table-a tr:hover td {background:#d0dafd;color:#339}
+#box-table-b {font-family:"Tahoma","Lucida Grande",Sans-Serif;font-size:12px;margin:45px;width:90%;text-align:center;border-collapse:collapse;border-top:7px solid #9baff1;border-bottom:7px solid #9baff1}
+#box-table-b th {font-size:13px;font-weight:normal;padding:8px;background:#e8edff;border-right:1px solid #9baff1;border-left:1px solid #9baff1;color:#039}
+#box-table-b td {padding:8px;background:#e8edff;border-right:1px solid #aabcfe;border-left:1px solid #aabcfe;color:#669}
+#hor-zebra {font-family:"tahoma","Lucida Grande",Sans-Serif;font-size:11px;margin:45px;width:90%;border-collapse:collapse}
+#hor-zebra th {font-size:14px;font-weight:normal;padding:10px 8px;color:#039}
+#hor-zebra td {padding:8px;color:#669}
+#hor-zebra .odd {background:#e8edff}
+#ver-zebra {font-family:"Tahoma","Lucida Grande",Sans-Serif;font-size:12px;margin:45px;width:90%;border-collapse:collapse;}
+#ver-zebra th {font-size:14px;font-weight:normal;padding:12px 15px;border-right:1px solid #fff;border-left:1px solid #fff;color:#039;direction:rtl;}
+#ver-zebra td {padding:8px 15px;border-right:1px solid #fff;border-left:1px solid #fff;color:#669;}
+.vzebra-odd {background:#eff2ff}
+.vzebra-even {background:#e8edff}
+#ver-zebra #vzebra-adventure,#ver-zebra #vzebra-children {background:#d0dafd;border-bottom:1px solid #c8d4fd}
+#ver-zebra #vzebra-comedy,#ver-zebra #vzebra-action {background:#dce4ff;border-bottom:1px solid #d6dfff}
+#newspaper-a {font-family:"Tahoma","Lucida Grande",Sans-Serif;font-size:12px;margin:45px;width:90%;text-align:left;border-collapse:collapse;border:1px solid #69c}
+#newspaper-a th {padding:12px 17px;font-weight:normal;font-size:14px;color:#039;border-bottom:1px dashed #69c}
+#newspaper-a td {padding:7px 17px;color:#669}
+#newspaper-a tbody tr:hover td {color:#339;background:#d0dafd}
+#gradient-style {font-family:"Tahoma","Lucida Grande",Sans-Serif;font-size:12px;margin:45px;width:90%;text-align:left;border-collapse:collapse}
+#gradient-style th {font-size:13px;font-weight:normal;padding:8px;background:#b9c9fe url('images/gradhead.png') repeat-x;border-top:2px solid #d3ddff;border-bottom:1px solid #fff;color:#039;text-align:center}
+#gradient-style td {padding:8px;border-bottom:1px solid #fff;color:#669;border-top:1px solid #fff;background:#e8edff url('images/gradback.png') repeat-x}
+#gradient-style tfoot tr td {background:#e8edff;font-size:12px;color:#99c}
+#gradient-style tbody tr:hover td {background:#d0dafd url('images/gradhover.png') repeat-x;color:#339}
+.widefat {border-color:#dfdfdf;background-color:#fff}
+.widefat td,.widefat th {border-color:#dfdfdf}
+.widefat th {text-shadow:rgba(255,255,255,0.8) 0 1px}
+.widefat thead tr th,.widefat tfoot tr th {color:#333;background:#dfdfdf url(../images/gray-grad.png) repeat-x scroll left top}
+.widefat {border-width:1px;border-style:solid;border-spacing:0;width:100%;clear:both;margin:0;-moz-border-radius:4px;-khtml-border-radius:4px;-webkit-border-radius:4px;border-radius:4px}
+.widefat * {word-wrap:break-word}
+.widefat a {text-decoration:none}
+.widefat td,.widefat th {border-bottom-width:1px;border-bottom-style:solid;font-size:11px;vertical-align:text-top;}
+.widefat td {padding:3px 7px;vertical-align:top}
+.widefat a:link {color:#21759B}
+.widefat a:visited {color:#16506B}
+.widefat a:hover {color:#BC0B0B}
+.widefat td p,.widefat td ol,.widefat td ul {font-size:11px}
+.widefat th {padding:7px 7px 8px;line-height:1.3em}
+.widefat th input {margin:0 0 0 8px;padding:0;vertical-align:text-top}
+.widefat .check-column {width:2.2em;padding:0}
+.widefat tbody th.check-column {padding:7px 0 22px}
+.widefat .num,.column-comments,.column-links,.column-posts,.column-parent {text-align:center}
+.widefat th#comments {vertical-align:middle}

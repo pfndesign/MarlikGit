@@ -1,0 +1,751 @@
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+/* <!--%DateStamp%-->25/03/2013<!---->
+<!--%TimeStamp%-->25/03/2013 11:35 ب.ظ<!---->
+
+Designer by : Peyman farhmand kia
+for : Nukelarn.com
+website : Porcen.ir
+
+*/
+
+/* شناسنامه قالب */
+
+/*
+
+66/55% رنگ سفيد
+
+29/07% سياه و رنگ هاي نزديک
+
+2/53% رنگ سرومه اي
+
+1/51% رنگ سبز
+
+0/22% رنگ ابي
+
+0/10%  رنگ قهوه اي
+
+0/1% رنگ هاي ديگر
+
+*/
+
+/* حدود 30 درصد از رنگ هاي قالب گرم مي باشد و بقيه رنگ ها جز رنگ هاي سرد مي باشند */
+
+/* tarikh sakht : 5 farvardin 5:24 daghighe sobh */
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section, details, summary {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;}
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* main */
+
+
+@font-face {
+ font-family: SteelWolf-Medium;
+ src: url("../font/STEEWM__.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: SteelWolf-Medium;
+ src: url("../font/STEEWM__.ttf") /* TTF file for CSS3 browsers */
+}
+body{
+  direction: rtl;
+  text-align: right;
+  font-family: Tahoma;
+  font-size: 12px;
+}
+
+body:before
+{
+   content: "";
+   position: fixed;
+   top: -10px;
+   left: 0;
+   width: 100%;
+   height: 10px;
+   z-index: 100;
+   -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+   -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+   box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+   }
+a {
+  text-decoration: none;
+  color:#000000;
+  font-weight: bold;
+}
+
+/* header */
+
+  .header{
+    width: 100%;
+    height:60px;
+    background-color:#292929;
+    position: relative;
+    color: #FFFFFF;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+  }
+  .centerheader{
+   width:1010px;
+   height:60px;
+   margin:auto;
+  }
+  .centerheader p {
+   display: inline;
+   vertical-align: top;
+  }
+  ul.topmenu{
+    width: 700px;
+    float: right;
+  }
+
+  ul.topmenu li{
+    display: inline-table;
+    vertical-align: top;
+    padding: 20px 10px 20px 10px;
+    border-bottom: 5px solid #8FCD44;
+    color: #ACACAC;
+  }
+  .topmenu li:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  #logo{
+    width: 50px;
+    height: 44px;
+    background-color: #D6D6D8;
+    float: left;
+    margin-top: -6px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+  #logo:after{
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: #D6D6D8;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -o-border-radius: 100%;
+    margin-right: 20px;
+    margin-top: 11px;
+  }
+  #logo:before{
+    content: '';
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    background-color: #6B7485;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -o-border-radius: 100%;
+    margin-right: 10px;
+  }
+
+  #logo span{
+    background-color: #D6D6D8;
+    width: 9px;
+    height:29px;
+    position: absolute;
+    margin-right:20px;
+    margin-top: 15px;
+    }
+  #logo span:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: #6B7485;
+    margin-top: 15px;
+    margin-right: -10px;
+    margin-top: -1px;
+  }
+    #logo span:after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: #6B7485;
+    margin-top: -1px;
+    margin-right: 9px;
+  }
+  #nukelearn{
+    font-family: 'SteelWolf-Medium';
+    font-size: 21px;
+    position: absolute;
+    top: 10px;
+    margin-right: 110px;
+  }
+  #makegood{
+    font-family: 'SteelWolf-Medium';
+    font-size: 12px;
+    position: absolute;
+    color:#ACACAC;
+    top: 35px;
+    margin-right: -12px;
+  }
+
+  .main{
+    width: 100%;
+     height: 100%;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+  }
+
+  .centermain{
+   width:1010px;
+   height: 100%;
+   margin:auto;
+  }
+
+/* boxes */
+
+  .centerfreebox1{
+    display: inline-block;
+    position: relative;
+    width: 977px;
+    padding: 10px;
+    border: 1px solid #6B7685;
+    margin-top: 10px;
+  }
+  .centerfreebox2{
+    display: inline-block;
+    position: relative;
+    width: 977px;
+    padding: 10px;
+    border: 1px solid #9CCA47;
+    margin-top: 10px;
+  }
+    .centerfreebox3{
+    display: inline-block;
+    position: relative;
+    width: 977px;
+    padding: 10px;
+    border: 1px solid #BF3239;
+    margin-top: 10px;
+  }
+
+  .centerfreebox4{
+    display: inline-block;
+    position: relative;
+    width: 977px;
+    padding: 10px;
+    border: 1px solid #E27D84;
+    margin-top: 10px;
+  }
+  .centerfreebox5{
+    display: inline-block;
+    position: relative;
+    width: 977px;
+    padding: 10px;
+    border: 1px solid #6B9440;
+    margin-top: 10px;
+  }
+/* in all*/
+input[type="text"]{
+border-radius: 3px;
+border:1px solid #D6D6D8;
+padding: 5px;
+}
+input[type="submit"],input[type="reset"],button{
+      padding: 5px;
+      border: 1px solid #BCBCBC;
+      display: inline-block;
+      border-radius: 3px;
+      -o-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      color: #000000;
+      background: #FFFFFF;
+      text-align: center;
+      margin-right: 3px;
+}
+/* search */
+
+.search{
+  margin-top: 10px;
+}
+.search input[type="text"]{
+  border: 3px solid #000000;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 10px;
+  width: 845px;
+  margin-left: 10px;
+}
+
+.search input[type="submit"]{
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 10px;
+  width: 120px;
+  background-color: #8FCD44;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+/*blocks*/
+
+.block{
+  width: 270px;
+  margin-top: 10px;
+}
+
+.blockbox1{
+  width: 260px;
+  margin: 5px;
+  border: 1px solid #788390;
+  border-top:10px solid #788390;
+  padding: 5px;
+}
+
+.blockbox1 h1{
+  margin-bottom: 5px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 5px;
+}
+
+.blockboxf1{
+  width: 310px;
+  margin: 5px;
+  border: 1px solid #788390;
+  border-top:10px solid #788390;
+  padding: 5px;
+}
+
+.blockboxf1 h1{
+  margin-bottom: 5px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 5px;
+}
+
+.blockbox2{
+  width: 260px;
+  margin: 5px;
+  border: 1px solid #CCBFBF;
+  border-top:10px solid #CCBFBF;
+  padding: 5px;
+}
+
+.blockbox2 h1{
+  margin-bottom: 5px;
+  border-bottom: 1px solid #BFBFBF;
+  padding-bottom: 5px;
+}
+
+.blockbox3{
+  width: 260px;
+  margin: 5px;
+  border: 1px solid #BF3239;
+  border-top:10px solid #BF3239;
+  padding: 5px;
+}
+
+.blockbox3 h1{
+  margin-bottom: 5px;
+  border-bottom: 1px solid #BF3239;
+  padding-bottom: 5px;
+}
+
+.blockbox4{
+  width: 260px;
+  margin: 5px;
+  border: 1px solid #6B9440;
+  border-top:10px solid #6B9440;
+  padding: 5px;
+}
+
+.blockbox4 h1{
+  margin-bottom: 5px;
+  border-bottom: 1px solid #6B9440;
+  padding-bottom: 5px;
+}
+
+.blockbox5{
+  width: 260px;
+  margin: 5px;
+  border: 1px solid #EC9053;
+  border-top:10px solid #EC9053;
+  padding: 5px;
+}
+
+.blockbox5 h1{
+  margin-bottom: 5px;
+  border-bottom: 1px solid #F7DDB7;
+  padding-bottom: 5px;
+}
+
+.blockbox6{
+  width: 260px;
+  margin: 5px;
+  border: 1px solid #292929;
+  border-top:10px solid #292929;
+  padding: 5px;
+}
+
+.blockbox6 h1{
+  margin-bottom: 5px;
+  border-bottom: 1px solid #292929;
+  padding-bottom: 5px;
+}
+
+.blockbox-l2-s1{
+  width: 260px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+.blockbox-l2-s1 h1{
+  border: 1px solid #949494;
+  margin: -6px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+
+}
+
+.blockbox-l2-s2{
+  width: 260px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+.blockbox-l2-s2 h1{
+  border: 1px solid #949494;
+  margin: -6px;
+  margin-bottom: 5px;
+  padding: 5px;
+  color: #FFFFFF;
+  background: rgb(169,3,41); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(169,3,41,1)), color-stop(44%,rgba(143,2,34,1)), color-stop(100%,rgba(109,0,25,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+}
+
+.blockbox-l3-s1{
+  width: 260px;
+  margin: 5px;
+  background-color: #FFFFFF;
+  padding: 5px;
+  border: 1px solid rgb(110,116,128);
+}
+
+.blockbox-l3-s1 h1{
+  margin: -6px;
+  margin-bottom: 5px;
+  padding: 10px;
+  color: #FFFFFF;
+  background: rgb(110,116,128); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(110,116,128,1) 0%, rgba(72,80,91,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(110,116,128,1)), color-stop(100%,rgba(72,80,91,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(110,116,128,1) 0%,rgba(72,80,91,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(110,116,128,1) 0%,rgba(72,80,91,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(110,116,128,1) 0%,rgba(72,80,91,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(110,116,128,1) 0%,rgba(72,80,91,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e7480', endColorstr='#48505b',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
+/*posts */
+
+.inline{
+  display: inline-table;
+  vertical-align: top;
+}
+
+.posts{
+  margin-top: 15px;
+  min-width: 700px;
+  max-width: 1010px;
+}
+.postbox1{
+  width: 700px;
+  border: 1px solid #000000;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.postbox1 h1{
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 10px 10px 10px 0;
+  margin: -6px;
+  color: #FFFFFF;
+  margin-bottom: 7px;
+  background: rgb(52,52,52); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(52,52,52,1) 0%, rgba(46,46,46,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,52,52,1)), color-stop(100%,rgba(46,46,46,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(52,52,52,1) 0%,rgba(46,46,46,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(52,52,52,1) 0%,rgba(46,46,46,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(52,52,52,1) 0%,rgba(46,46,46,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(52,52,52,1) 0%,rgba(46,46,46,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343434', endColorstr='#2e2e2e',GradientType=0 ); /* IE6-9 */
+
+}
+
+.postbox1 h1 a{
+    color: #FFFFFF;
+}
+
+.postbox1 p{
+  margin-bottom: 7px;
+  }
+.infopost{
+      width: 550px;
+      display: inline-block;
+      padding: 6px;
+      border: 1px solid #E8E6E7;
+      margin-left: 10px;
+      background-color: #F8F6F7;
+}
+
+.infopost p{
+ margin-right: 10px;
+  }
+
+.postbox1 .moreinfo a{
+      width: 85px;
+      padding: 10px;
+      border: 1px solid #BCBCBC;
+      margin-left: 10px;
+      display: inline-block;
+      border-radius: 3px;
+      -o-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      color: #000000;
+      background: rgb(255,255,255); /* Old browsers */
+      text-align: center;
+      cursor: pointer;
+}
+.postbox1 .moreinfo a:hover{
+  background: rgb(255,255,255); /* Old browsers */
+  color: #000000;
+}
+.linkinfo{
+  margin-left: 10px;
+  color: #000000;
+  display: inline-table;
+  vertical-align: top;
+}
+
+.centerbox{
+  width: 98%;
+  border: 1px solid #788390;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background-color: #FFFFFF;
+}
+
+.centerbox h1{
+  margin-bottom: 5px;
+  }
+.centerbox p{
+  margin: 5px;
+  }
+
+  .mainon{
+    width: 99%;
+    margin-top: 15px;
+    display: inline-block;
+  }
+
+/* footer*/
+.footer{
+  background-color: #292929;
+  width: 100%;
+  height: 60px;
+  margin-top: 15px;
+  /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align: center;
+}
+  .centerfooter{
+   width:1010px;
+   margin:auto;
+  }
+  .footerlogo{
+    float: left;
+  }
+  .copyright{
+    color: #FFFFFF;
+    margin-top: 15px;
+  }
+  /* fix system */
+
+  .rowBG{
+    text-align: center;
+    padding: 5px 0 5px 0;
+  }

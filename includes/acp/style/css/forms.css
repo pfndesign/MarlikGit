@@ -1,0 +1,73 @@
+fieldset {border:1px solid #c8c8c8;margin:10px 0;padding:0 10px 10px}
+legend {border-bottom:1px solid #c8c8c8;font-family:Arial}
+form {margin:0 0;padding:0;width:auto}
+input[type=submit],input[type=button],input[type=reset],button,.button {-khtml-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;background:#fff url(../images/white-grad.png) repeat-x scroll left top;color:#000;border:1px solid #BBB;cursor:pointer;padding:4px 11px;width:auto;font-size:13px;}
+input[type=submit],input[type=checkbox],input[type=button],input[type=reset],button,.button {font-size:13px;color:#000;font-weight:700}
+input[type=submit]:hover,input[type=button]:hover,input[type=reset]:hover,button:hover,.button:hover {background:#96D4E3 url(../images/button-grad.png) repeat-x scroll left top;border-color:#0E7CAF;color:#000}
+input[type=submit]:active,input[type=button]:active,input[type=reset]:active {top:1px}
+input[type=text],input[type=password],select {-moz-border-radius:4px!important;border:1px solid #ccc!important;color:#004080;font:13 tahoma;font-weight:700}
+textarea {-moz-border-radius:4px!important;background-color:#FFF;border:1px solid #DFDFDF!important;color:#000;font-family:Tahoma,Verdana,serif;font-size:8pt;font-weight:400;overflow:auto}
+select {-moz-border-radius:4px!important;border-color:#dfdfdf;background-color:#AFEEFF;color:#000}
+.copyright {color:#444;font-size:8pt;font-weight:400;letter-spacing:-1px}
+.error {color:red}
+hr {background-color:#fff;border:1px solid #ddd;border-width:0;color:#D1D7DC;height:2px}
+dt {display:block;font-weight:700}
+ul,ol,li {list-style:none}
+small {font-size:.85em}
+big {font-size:1.15em}
+input.input-text,select,textarea {border:1px solid #ccc;font:12px tahoma}
+select option {padding-right:10px}
+option,optgroup {font:12px tahoma}
+input.input-text,textarea {padding:2px}
+.v-fix .validation-advice {display:block;margin-right:-12em;position:relative;width:12em}
+.qty {width:2.5em}
+.button-set {border-top:1px solid #e4e4e4;clear:both;margin-top:4em;padding-top:8px;}
+.button-top-set {border-top:0;margin-top:0;padding-bottom:8px;padding-top:0}
+.title {background:none;font-family:Tahoma,Verdana,Helvetica;font-size:10pt;font-weight:700;text-decoration:none}
+.content,.block-title,.storytitle,.storycat,.boxtitle,.boxcontent,.option,.tiny,.small {background:none;font-family:Tahoma,Verdana,Helvetica;font-size:8pt;font-weight:400;text-decoration:none}
+#nav img,a img,img {border:0}
+.head_2 li,.v-fix {float:left}
+.head_right a,.specific-box p,.specific-box h2 {color:#FFF}
+a,a:link,a:hover,a.hover {color:#054468;font-family:Tahoma,Arial,Helvetica,Sans-Serif;text-decoration:none}
+label,optgroup,.group-select label,.form-list label,.payment-methods label {font-weight:700}
+input.radio,input.checkbox {margin-right:3px}
+.break{display:inline;padding:5px;width:16px;height:16px;}
+.info,.success,.warning,.error,.validation{margin:0px auto;border:1px solid #D1D1D1;background-repeat:no-repeat;background-position:10px center;padding:15px 10px 15px 50px}
+.info{color:#00529B;background-color:#BDE5F8;background-image:url(../images/info.png)}
+.success{color:#4F8A10;background-color:#DFF2BF;background-image:url(../images/success.png)}
+.warning{color:#9F6000;background-color:#FEEFB3;background-image:url(../images/warning.png)}
+.error{color:#D8000C;background-color:#FFBABA;background-image:url(../images/error.png)}
+.oddrow{color:#4A4539;background-color:#F6E9B4;height:20px;vertical-align:middle;padding:5px}
+.evenrow{color:#394A5A;background-color:#CEE9F4;height:20px;vertical-align:middle;padding:5px}
+body, input, textarea {font-family: tahoma, Helvetica, sans-serif;}
+
+.inputbox {
+	border:1px solid #ccc;
+	padding:4px;
+	background:#fff;
+	color:#333;
+	font-weight:bold;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	padding-left:10px;
+	padding-right:10px;
+	width: 200px;
+}
+
+.inputboxlong {
+	width: 550px;
+}
+.inputboxsmall {
+	border:1px solid #ccc;
+	padding:2px;
+	background:#fff;
+	color:#333;
+	font-weight:bold;
+	font-size:10px;
+	font-family:arial;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	padding-left:5px;
+	padding-right:5px;
+	width: 150px;
+}

@@ -1,0 +1,18 @@
+
+User-agent: *
+
+Disallow: /themes/
+Disallow: /admin/
+Disallow: /images/
+Disallow: /abuse/
+Disallow: /modules/
+Allow: /
+Disallow: /blocks/
+Disallow: /cache/
+Disallow: /language/
+Disallow: /includes/
+Disallow: /INSTALLATION/
+Disallow: /db/
+Disallow: /admin.php
+Disallow: /google/
+

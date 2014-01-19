@@ -1,0 +1,129 @@
+html,body {min-width:950px}
+div.widget-liquid-left {float:left;clear:left;width:100%;margin-right:-325px}
+div#widgets-left {margin-left:5px;margin-right:325px}
+div#widgets-right {width:285px;margin:0 auto}
+div.widget-liquid-right {float:right;clear:right;width:300px}
+.widget-liquid-right .widget,#wp_inactive_widgets .widget,.widget-liquid-right .sidebar-description {width:250px;margin:0 auto 20px;overflow:hidden}
+.widget-liquid-right .sidebar-description {margin-bottom:10px}
+#wp_inactive_widgets .widget {margin:0 10px 20px;float:left}
+div.sidebar-name h3 {margin:0;padding:5px 12px;font-size:13px;font-family:Tahoma;height:19px;overflow:hidden;white-space:nowrap;}
+.widget-liquid-right .widgets-sortables,#widgets-left .widget-holder {border-width:0 1px 1px;border-style:none solid solid;-moz-border-radius-bottomleft:8px;-moz-border-radius-bottomright:8px;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;-khtml-border-bottom-right-radius:8px;-khtml-border-bottom-left-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px}
+.js .closed .widgets-sortables,.js .closed .widget-holder {display:none}
+.widget-liquid-right .widgets-sortables {padding:15px 0 0}
+#available-widgets .widget-holder {padding:7px 5px 0}
+#wp_inactive_widgets {padding:5px 5px 0}
+#widget-list .widget {width:250px;margin:0 10px 15px;border:0 none;float:left}
+#widget-list .widget-description {padding:5px 8px}
+#widget-list .widget-top {border-width:1px;border-style:solid;-moz-border-radius:6px;-khtml-border-radius:6px;-webkit-border-radius:6px;border-radius:6px}
+.widget-placeholder {border-width:1px;border-style:dashed;margin:0 auto 20px;height:26px;width:250px}
+#wp_inactive_widgets .widget-placeholder {margin:0 10px 20px;float:left}
+div.widgets-holder-wrap {padding:0;margin:10px 0 20px}
+#widgets-left #available-widgets {background-color:transparent;border:0 none}
+ul#widget-list {list-style:none;margin:0;padding:0;min-height:100px}
+.widget .widget-top {font-size:12px;font-weight:bold;height:26px;overflow:hidden}
+.widget-top .widget-title {padding:5px 9px}
+.widget-top .widget-title-action {float:right}
+a.widget-action {display:block;width:24px;height:26px}
+#available-widgets a.widget-action {display:none}
+.widget-title h4 {margin:0;line-height:1.3;overflow:hidden;white-space:nowrap}
+.widgets-sortables {min-height:90px}
+.widget-control-actions {margin-top:8px}
+.widget-control-actions a {text-decoration:none}
+.widget-control-actions a:hover {text-decoration:underline}
+.widget-control-actions .ajax-feedback {padding-bottom:3px}
+.widget-control-actions div.alignleft {margin-top:6px}
+div#sidebar-info {padding:0 1em;margin-bottom:1em;font-size:11px}
+.widget-title a,.widget-title a:hover {text-decoration:none;border-bottom:none}
+.widget-control-edit {display:block;font-size:11px;font-weight:normal;line-height:26px;padding:0 8px 0 0}
+a.widget-control-edit {text-decoration:none}
+.widget-control-edit .add,.widget-control-edit .edit {display:none}
+#available-widgets .widget-control-edit .add,#widgets-right .widget-control-edit .edit,#wp_inactive_widgets .widget-control-edit .edit {display:inline}
+.editwidget {margin:0 auto 15px}
+.editwidget .widget-inside {display:block;border-width:1px;border-style:solid;padding:10px;-moz-border-radius:6px;-khtml-border-radius:6px;-webkit-border-radius:6px;border-radius:6px}
+.inactive p.description {margin:5px 15px 8px}
+#available-widgets p.description {margin:0 12px 12px}
+.widget-position {margin-top:8px}
+.inactive {padding-top:2px}
+.sidebar-name-arrow {float:right;height:29px;width:26px}
+#widgets-right h3 {color:#fff}
+.widget-title .in-widget-title {font-size:11px;white-space:nowrap}
+#removing-widget {display:none;font-weight:normal;padding-left:15px;font-size:12px}
+.widget-control-noform,#access-off,.widgets_access .widget-action,.widgets_access .sidebar-name-arrow,.widgets_access #access-on,.widgets_access .widget-holder .description {display:none}
+.widgets_access .widget-holder,.widgets_access #widget-list {padding-top:10px}
+.widgets_access #access-off {display:inline}
+.widgets_access #wpbody-content .widget-title-action,.widgets_access #wpbody-content .widget-control-edit,.widgets_access .closed .widgets-sortables,.widgets_access .closed .widget-holder {display:block}
+.widgets_access .closed .sidebar-name {-moz-border-radius-bottomleft:0;-moz-border-radius-bottomright:0;-webkit-border-bottom-right-radius:0;-webkit-border-bottom-left-radius:0;-khtml-border-bottom-right-radius:0;-khtml-border-bottom-left-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0}
+.widgets_access .sidebar-name,.widgets_access .widget .widget-top {cursor:default}
+#wpwrap {height:auto;min-height:100%;width:100%}
+#wpcontent {height:100%;padding-bottom:50px}
+#wpbody {clear:both;margin-left:175px}
+.folded #wpbody {margin-left:60px}
+#wpbody-content {float:left;width:100%}
+#adminmenu {float:left;clear:left;width:145px;position:relative;padding:0;list-style:none;margin:15px 5px 15px -160px}
+.folded #adminmenu {margin-left:-45px}
+.folded #adminmenu,.folded #adminmenu li.menu-top {width:28px}
+#footer {clear:both;position:relative;width:100%}
+.inner-sidebar {float:right;clear:right;display:none;width:281px;position:relative}
+.inner-sidebar #side-sortables {width:280px;min-height:300px}
+.has-right-sidebar .inner-sidebar {display:block}
+.has-right-sidebar #post-body {float:left;clear:left;width:100%;margin-right:-340px}
+.has-right-sidebar #post-body-content {margin-right:300px}
+#col-container {overflow:hidden;padding:0;margin:0}
+#col-left {padding:0;margin:0;overflow:hidden;width:39%}
+#col-right {float:right;clear:right;overflow:hidden;padding:0;margin:0;width:59%}
+.clear {clear:both}
+.wrap .updated,.wrap .error {margin:5px 0 15px}
+.wrap h2 {margin:0;padding:14px 15px 3px 0;line-height:35px;text-shadow:rgba(255,255,255,1) 0 1px}
+.wrap h2.long-header {padding-right:0}
+#side-sortables .submitbox .submit input,#side-sortables .submitbox .submit .preview,#side-sortables .submitbox .submit a.preview:hover {border:0 none}
+#side-sortables .inside-submitbox .insidebox,.stuffbox .insidebox {margin:11px 0}
+#side-sortables .comments-box,#normal-sortables .comments-box {border:0 none}
+#side-sortables .comments-box thead th,#normal-sortables .comments-box thead th {background:transparent;padding:0 7px 4px;font-style:italic}
+.widget .widget-top,.postbox h3 {cursor:move;-webkit-user-select:none;-moz-user-select:none;-khtml-user-select:none;user-select:none}
+.widget,.postbox,.stuffbox {margin-bottom:20px;border-width:1px;border-style:solid;line-height:1;-moz-border-radius:6px;-khtml-border-radius:6px;-webkit-border-radius:6px;border-radius:6px}
+.widget .widget-top,.postbox h3,.postbox h3,.stuffbox h3 {-moz-border-radius:6px 6px 0 0;-webkit-border-top-right-radius:6px;-webkit-border-top-left-radius:6px;-khtml-border-top-right-radius:6px;-khtml-border-top-left-radius:6px;border-top-right-radius:6px;border-top-left-radius:6px}
+#side-sortables #category-adder {margin:0}
+#post-body #category-add input,#category-add select {width:30%}
+#side-sortables #category-add input {width:94%}
+#side-sortables #category-add select {width:100%}
+#category-add input#category-add-sumbit {width:auto}
+#side-sortables #category-tabs li {display:inline;padding-right:8px}
+#side-sortables #category-tabs a {text-decoration:none}
+#side-sortables #category-tabs {margin-bottom:3px}
+p.search-box {float:right;margin:-5px 0 0}
+.screen-per-page {width:3em}
+.view-switch {float:right;margin:6px 8px 0}
+.view-switch a {text-decoration:none}
+.filter {float:left;margin:-5px 0 0 10px}
+.filter .subsubsub {margin-left:-10px;margin-top:13px}
+html {background-color:#f9f9f9}
+* html input,* html .widget {border-color:#dfdfdf}
+#wpbody-content #media-items .describe {border-top-color:#dfdfdf}
+a:hover,a:active,a:focus {color:#d54e21}
+#wphead #viewsite a:hover,#adminmenu a:hover,#adminmenu ul.wp-submenu a:hover,#the-comment-list .comment a:hover,#rightnow a:hover,#media-upload a.del-link:hover,div.dashboard-widget-submit input:hover,.subsubsub a:hover,.subsubsub a.current:hover,.ui-tabs-nav a:hover,.plugins .inactive a:hover,#all-plugins-table .plugins .inactive a:hover,#search-plugins-table .plugins .inactive a:hover {color:#d54e21}
+#the-comment-list .comment-item,#dashboard-widgets #dashboard_quick_press form p.submit {border-color:#dfdfdf}
+#side-sortables #category-tabs .tabs a {color:#333}
+.widget .widget-top,.postbox h3,.stuffbox h3 {background:#dfdfdf url("images/gray-grad.png") repeat-x left top;text-shadow:#fff 0 1px}
+.widget,#widget-list .widget-top,.postbox,#titlediv,#poststuff .postarea,.stuffbox {border-color:#dfdfdf}
+.widget,.postbox {background-color:#fff}
+.ui-sortable .postbox h3 {color:#464646}
+.widget .widget-top,.ui-sortable .postbox h3:hover {color:#000}
+#sidemenu a {background-color:#f9f9f9;border-color:#f9f9f9;border-bottom-color:#dfdfdf}
+#sidemenu a.current {background-color:#fff;border-color:#dfdfdf #dfdfdf #fff;color:#D54E21}
+#wphead #site-visit-button {background-color:#585858;background-image:url(../images/visit-site-button-grad.gif);color:#aaa;text-shadow:#3F3F3F 0 -1px}
+#wphead a:hover #site-visit-button {color:#fff}
+#wphead a:focus #site-visit-button,#wphead a:active #site-visit-button {background-position:0 -27px}
+div.widgets-sortables,#widgets-left .inactive {background-color:#f1f1f1;border-color:#ddd}
+#available-widgets .widget-holder {background-color:#fff;border-color:#ddd}
+#widgets-left .sidebar-name {background-color:#aaa;background-image:url(images/ed-bg.gif);text-shadow:#FFF 0 1px;border-color:#dfdfdf}
+#widgets-right .sidebar-name {background-image:url(images/fav.png);text-shadow:#3f3f3f 0 -1px;background-color:#636363;border-color:#636363;color:#fff}
+.sidebar-name:hover,#removing-widget {color:#d54e21}
+#removing-widget span {color:black}
+#widgets-left .sidebar-name-arrow {background:transparent url(images/menu-bits.gif) no-repeat scroll left -109px}
+#widgets-right .sidebar-name-arrow {background:transparent url(images/fav-arrow.gif) no-repeat scroll 0 -1px}
+.in-widget-title {color:#606060}
+.column {margin-right:.5%;min-height:50px}
+.column .dragbox {margin:5px 2px  20px;background:#fff;position:relative;border:1px solid #ddd;-moz-border-radius:5px;-webkit-border-radius:5px}
+.column .dragbox h4 {margin:0;font-size:12px;padding:5px;background:#f0f0f0;color:#000;border-bottom:1px solid #eee;font-family:Tahoma;cursor:move}
+.dragbox-content {background:#fff;min-height:100px;margin:5px;font-family:'Tahoma',Verdana;font-size:0.8em;line-height:1.5em}
+.column  .placeholder {background:#f0f0f0;border:1px dashed #ddd}

@@ -1,0 +1,12 @@
+.container {width:90%;margin:10px auto;color:black}
+ul.tabs {margin:0;padding:0;list-style:none;height:32px;border-bottom:1px solid #999;border-right:1px solid #999;width:100%}
+ul.tabs li {margin:0;padding:0;height:31px;line-height:31px;border:1px solid #A09EA9;border-right:none;margin-bottom:-1px;background:#E0E0E0;overflow:hidden;position:relative}
+ul.tabs li a {text-decoration:none;color:#000;display:block;font-size:12px;padding:0 10px;border:1px solid #FEFCFD;outline:none}
+ul.tabs li a:hover {background:#F4E149;color:#000;}
+html ul.tabs li.active,html ul.tabs li.active a:hover {background:#ECECEC;border-bottom:1px solid #ECECEC;color:#000}
+.tab_container {color:black;border:1px solid #ccc;border-top:none;clear:both;width:100%;background:#ECECEC;-moz-border-radius-bottomright:5px;-khtml-border-radius-bottomright:5px;-webkit-border-bottom-right-radius:5px;-moz-border-radius-bottomleft:5px;-khtml-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px}
+.tab_content {padding:20px;font-size:11px}
+fieldset {position:relative;border:none;display:block;color:black}
+legend {font-size:16px;margin:0;padding:10px 0;color:#b0232a;font-weight:bold;}
+label {font-size:11px;display:block;margin:15px 0 5px;color:black;}
+input[type=text],input[type=password] {width:300px;padding:5px;border:solid 1px #000;font-family:Tahoma;color:black}

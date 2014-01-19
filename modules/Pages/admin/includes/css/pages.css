@@ -1,0 +1,9 @@
+.box {
+	padding:10px 20px;
+	color:black;
+	background:#fff;
+	text-align:left;
+	border-top:1px solid #CCC;
+}
+.record			{ padding:10px 20px; background:#eee; border-top:1px solid #ccc; width:300px; }
+.delete			{ color:#f00; display:block; width:40px; float:right; }

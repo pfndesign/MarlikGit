@@ -1,0 +1,15 @@
+.jcal .calendar-head {text-align:center;background:#035AA8 url(images/hbg.gif);color:#fff}
+.jcal td.calendar-head:hover {background:#547CB5}
+.jcal .calendar-body {text-align:center;background:#FFFFFF;border:1px solid #DDDDDD;margin:8px;}
+.jcal td.calendar-body:hover {background:#DADCD6;}
+.jcal .calendar-today {text-align:center;background:#F7DF4C;font-weight:bold;color:red}
+.jcal .calendar-today a {color:red}
+.jcal td.calendar-today:hover {background:#F3DDB6;}
+.jcal .event {color:#3396ff}
+.jcal .tcpadding {padding:10px}
+.jcal .holiday {color:red}
+.jcal .holiday a{color:red}
+.month{width:180px;border:1px solid #ccc;border-collapse:collapse;}
+.month th {padding:5px;background:#035AA8 url(images/hbg.gif);background-repeat: repeat-x;color:#FFFFFF;}
+.month td {border:1px solid #ddd;color:#555;padding:3px;}
+.days{background-color:#f1f1f1;border:1px solid #DDDDDD;margin:8px;}

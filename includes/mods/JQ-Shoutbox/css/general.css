@@ -1,0 +1,17 @@
+@charset UTF-8;
+abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset{border:0 none;vertical-align:baseline;margin:0;padding:0;}
+.clear{clear:both;height:0;visibility:hidden;display:block;}
+a{text-decoration:none;}
+#logo{margin-top:1em;display:block;}
+#shoutbox-form{width:90%;margin:0px auto;text-align:center;background:#fff;font-size:8pt;-khtml-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;margin-top:10px;padding:10px;}
+input#message{color:#000;background:#D5D3D3;width:95%;margin:0px auto;text-align:center;height:46px;-khtml-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+#shoutbox-container{width:90%;margin:0px auto;}
+#shoutbox-container ul{list-style:none;list-style-position:outside;}
+#shoutbox-container ul.menu li{margin-right:2px;margin-bottom:-1px;font-weight:700;display:block;background:#fff;border:1px solid #d0ccc9;position:relative;color:#5f95ef;cursor:pointer;border-width:1px 1px 0;padding:5px 10px;}
+#shoutbox-content{width:95%;margin:0px auto;background:#FFFFFF;border:1px solid #d0ccc9;padding:5px;font-size:8pt;-khtml-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;margin:0 auto;}
+#shoutbox-content h1{line-height:1em;vertical-align:middle;height:48px;font-size:8pt;background:transparent url(images/bubble.jpg) no-repeat scroll right top;padding:0 55px 10px 52px;}
+.date{font-weight:normal;font-size:9px;color:#aeaeae;}
+#shoutbox-loading{text-align:center;}
+.shoutbox-evenrow{background:#DFEBF7;}
+.shoutbox-oddrow{background:#FFFFFF;}
+div #smiley_div {display:none;width:150px;margin:0px auto;text-align:center;line-height:20px;}

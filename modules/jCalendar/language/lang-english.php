@@ -1,0 +1,33 @@
+<?php
+define("_EVENTS_OF","Events of calendar");
+define("_MOUSE_OVER_TOOLTIP","To view the event title just hover your mouse over the day.");
+define("_EVENTS_LIST","events list");
+define("_NOT_IS_EVENTS","Sorry, No event has been set on this very month.");
+define("_OFFER_EVENT_BY_YOU","Suggest an event day to us.");
+define("_SHOW_ALL_EVENT","View all available events.");
+define("_LIST_ALL_EVENT_IN","Events list");
+define("_EVENT_TITLE","title");
+define("_START_DATE","start from");
+define("_END_DATE","ended on");
+define("_IS_HOLIDAY","Is this a vacation day ?");
+define("_REPEATE_TYPE","repeatition type");
+define("_DAILY","daily");
+define("_MONTHLY","monthly");
+define("_YEARLY","yearly");
+define("_RELATED_LINK","link of description page");
+define("_DONE_OFFER_EVENT","<span style='color:green;font-weight:bold'>Your event has been sucessfully sent to us. We will proceed to investigate on it.</span>");
+define("_FAIL","<span style='color:red;font-weight:bold'>Sorry, There must be an error. Please check the listed warning.</span>");
+define("_NO_EVENTS","There is no available event.");
+define("_RADIF","row");
+define("_ENAME","title");
+define("_DATE_FROM","from");
+define("_DATE_TO","till");
+define("_APPROVE_STATUS","status");
+define("_APPROVED_EVENT","approved");
+define("_NOT_APPROVED_EVENT","waiting");
+define("_IS_APPROVED","Do you approve this event?");
+define("_EDIT_EVENT","Edit");
+define("_EVENTS_ADMIN","management");
+define("_ADD_EVENT","Add a new event");
+define("_jCalendar","Calander");
+?>

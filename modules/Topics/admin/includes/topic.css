@@ -1,0 +1,6 @@
+
+div#pagination-digg {width:100%;margin:0 auto;padding: 5px;text-align:center;}
+div#pagination-digg a {padding:2px 5px;margin:2px;border:1px solid #9aafe5;text-decoration:none;color:#009;text-align:center}
+div#pagination-digg a:hover,div#pagination-digg a:active {border:1px solid #009;text-align:center;background-color:#FFD633;color:#000}
+div#pagination-digg a.active {padding:2px 5px;margin:2px;border:1px solid #9aafe5;text-align:center;font-weight:bold;background-color:#2e6ab1;color:#FFF}
+div#pagination-digg a.off {border:solid 1px #DEDEDE;color:#888;font-weight:bold;margin-right:2px;padding:3px 4px;text-align:center;background:none}

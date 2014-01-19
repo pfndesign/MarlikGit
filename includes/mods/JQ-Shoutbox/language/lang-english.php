@@ -1,0 +1,2 @@
+<?phpdefine("_NL_SHOUTBOX_SEND","send");define("_NL_SHOUTBOX_MESSAGE","message");define("_NL_SHOUTBOX_LOADING","loading");define("_NL_SHOUTBOX_LASTMESSAGES","latest messages");define("_NL_SHOUTBOX_SHOUTBOX","shoutbox");define("_NL_SHOUTBOX_ADMIN","administration");define("_SHOUTBOX_ONLY_FOR_USERS","Only users can send message.");
+?>

@@ -1,0 +1,82 @@
+<?php
+
+define("_ALLTOPICS","All Topics");
+define("_NOCOMMENTS","No Comments");
+define("_UCOMMENT","Comment");
+define("_REVIEWS","Reviews");
+define("_SEARCHUSERS","Search in User's Database");
+define("_SEARCHSECTIONS","Search in Special Sections");
+define("_SEARCHREVIEWS","Search in Reviews");
+define("_SEARCHIN","Search in");
+define("_ARTICLES","Articles");
+define("_ALLAUTHORS","All Authors");
+define("_ALL","All");
+define("_WEEK","week");
+define("_WEEKS","weeks");
+define("_MONTH","month");
+define("_MONTHS","months");
+define("_SEARCHON","Search on:");
+define("_SSTORIES","Stories");
+define("_SSECTIONS","Sections");
+define("_SUSERS","Users");
+define("_NOMATCHES","No matches found to your query");
+define("_PREVMATCHES","previous matches");
+define("_NEXTMATCHES","next matches");
+define("_INSECTION","Article in the Section");
+define("_NONAME","No name entered");
+define("_SCOMMENTS","Comments");
+define("_SEARCHRESULTS","Search Results");
+define("_CONTRIBUTEDBY","Contributed by");
+define("_UCOMMENTS","Comments");
+define("_MATCHTITLE","Match on Title");
+define("_MATCHTEXT","Match on Article's text");
+define("_MATCHBOTH","Match on Title and Article's text");
+define("_SREPLY","Reply");
+define("_SREPLIES","Replies");
+define("_ATTACHART","Attached to Article");
+define("_PAGES","Pages");
+define("_REVIEWSCORE","Score for this Review");
+define("_PAGE","Page");
+define("_DOWNLOADS","Downloads");
+define("_WEBLINKS","Web Links");
+define("_FINDMORE","... more");
+define("_DIDNOTFIND","Didn't find what you're looking for?");
+define("_ENCYCLOPEDIA","Encyclopedia");
+define("_SEARCHINSTORY","Search All Comments in Story:");
+
+//--- MSearch  - -- - - -- 
+
+
+define("_MSSEARCH","Search:");
+define("_MSRESULTS","Search Results");
+define("_MSGO","Search");
+define("_MSFOR","For");
+define("_RSS","RSS");
+define("_MSSRF","Search For :");
+define("_MSNEWRES","Latest results have been found are :");
+define("_MSYEAR","year");
+define("_MSMONTH","month");
+define("_MSWEEK","All");
+define("_MSDAY","Day");
+define("_MSHOUR","Hour");
+define("_MSMINUTE","Minutes");
+define("_MSSECOND","Seconds");
+define("_MSPLURAL","");
+define("_MSAGO","More");
+define("_MSCOMMONWORDS",'');
+define("_MSELIPSES","...");
+define("_MSBY","By");
+define("_MSWITHINLAST","In Last");
+define("_MSANYDATE","On anytime");
+define("_MSTHREEDAYS","3 days old");
+define("_MSONEWEEK","a weak");
+define("_MSONEMONTH","a month");
+define("_MSSIXMONTHS","6 moths");
+define("_MSONEYEAR","year");
+define("_MSALL","All");
+define("_MSMOREOPTIONS","More options");
+define("_MSMOREOPTIONSHIDE","More options ^");
+define("_MSSEARCHRSS","Search Feeds");
+define("_MSFORCOLON","Advanced search in ");
+define("_MSRESULTSLCASE","Results have been found:");
+?>
