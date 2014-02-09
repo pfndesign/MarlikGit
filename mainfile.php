@@ -66,7 +66,9 @@ if($phpver >= '4.1.0') {
 	//Import Request Variables: 
 	extract($_REQUEST, EXTR_PREFIX_SAME|EXTR_REFS, 'nkln_');
 
-	
+	if (!ini_get('register_globals')) {
+	@import_request_variables("GPC", "");
+	}
 }
 
 // After doing those superglobals we can now use one
