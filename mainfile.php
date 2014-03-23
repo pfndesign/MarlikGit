@@ -67,7 +67,7 @@ if($phpver >= '4.1.0') {
 	extract($_REQUEST, EXTR_PREFIX_SAME|EXTR_REFS, 'nkln_');
 
 	if (!ini_get('register_globals')) {
-	@import_request_variables("GPC", "");
+	//@import_request_variables("GPC", ""); There is no need of this in new version of PHP 5.2+ 
 	}
 }
 
