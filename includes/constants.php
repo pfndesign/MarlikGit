@@ -23,7 +23,7 @@ if (stristr(htmlentities($_SERVER['PHP_SELF']), "constants.php")) {
    
 define('VALIDATED',			'<img src="images/powered/vl.png">');
 define('UNVALIDATED',		'<img src="images/powered/uvl.png">');
-define('USV_VERSION', 'Tigris 1.1.6 2/25/2013');
+define('USV_VERSION', 'Tigris 1.1.6 3/24/2014');
 
 
 /************************************************************************/
