@@ -66,10 +66,10 @@ if (function_exists("custom_head")) {
 }else{
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><?php echo "\n";?>
 <!-- 
-@Nukelearn Portal 
-@version : 1.1.5 BE
-Copyright (C) 2009-2011 by Nukelearn Group
-http://www.nukelearn.com
+@Marlik Portal 
+@version : 1.1.6 BE
+Copyright (C) 2009-2014 by MarlikCMS Group
+http://www.marlikcms.ir
 -->
 <?php
 echo "<html xmlns='http://www.w3.org/1999/xhtml'>\n";
@@ -79,15 +79,15 @@ echo "<base href=\"http://". $_SERVER['HTTP_HOST'].$baseUrl."\" />\n";
 //===========================================
 //TITLE STRINGS
 //===========================================
-if($name == "phpBB3") {
+/*if($name == "phpBB3") {
 	$smart_title= "";
 }
 /*elseif (preg_match("/News/",$_SERVER['REQUEST_URI']) AND preg_match("/article/",$_SERVER['REQUEST_URI'])) {
 $smart_title= "<title>$pagetitle &nbsp;</title>\n" ;
 }
-*/else {
+else {*/
 $smart_title= "<title>$pagetitle @ $sitename</title>\n" ;
-}
+//}
 echo $smart_title;
 //===========================================
 //META STRINGS
