@@ -4,7 +4,7 @@
 *
 * @package CHANGE THEME FILE													
 * @version @1:57 PM 6/10/2010 $Aneeshtan 						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

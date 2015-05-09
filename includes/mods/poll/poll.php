@@ -3,7 +3,7 @@
  *
  * @package Jquery Survey system													
  * @version 1.0 Final $Aneeshtan  4:18 PM 2/10/2010	
- * @copyright (c)Nukelearn Group  http://www.nukelearn.com	Copyright (c) 2009 Anant Garg (anantgarg.com | inscripts.com)										
+ * @copyright (c)Marlik Group  http://www.nukelearn.com	Copyright (c) 2009 Anant Garg (anantgarg.com | inscripts.com)										
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
  */

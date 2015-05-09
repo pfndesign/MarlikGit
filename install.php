@@ -3,7 +3,7 @@
  *
  * @package INSTALLATION
  * @version $Id: install.php 0999 2009-12-13 Aneeshtan $
- * @copyright (c) Nukelearn Group  http://www.nukelearn.com
+ * @copyright (c) Marlik Group  http://www.nukelearn.com
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
  */
@@ -573,7 +573,7 @@ function install_6()
 *
 * @package config file														
 * @version $Id: RC-7 FINAL $ 2:12 AM 12/25/2009						
-* @copyright (c)Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c)Marlik Group  http://www.nukelearn.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

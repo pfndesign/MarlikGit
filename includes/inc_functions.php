@@ -3,7 +3,7 @@
 *
 * @package inc_functions														
 * @version $Id: inc_functions.php 1.1.4 						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

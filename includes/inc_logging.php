@@ -3,7 +3,7 @@
 *
 * @package logging system Class														
 * @version $Id: beta 0.6 11:02 AM 12/25/2009 Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

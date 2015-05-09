@@ -5,7 +5,7 @@
 	|	* @package USV NUKELEARN PORTAL																|
 	|	* @version : 1.0.0.599																		|
 	|																								|
-	|	* @copyright (c) Nukelearn Group															|
+	|	* @copyright (c) Marlik Group															|
 	|	* http://www.nukelearn.com																	|
 	|																								|
 	|	* @Portions of this software are based on PHP-Nuke											|

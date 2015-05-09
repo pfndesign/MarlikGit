@@ -3,7 +3,7 @@
 *
 * @package News Class													
 * @version $Id: 12:36 PM 6/9/2010 Created BY Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

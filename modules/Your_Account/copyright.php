@@ -34,7 +34,7 @@ $module_name		= basename(dirname(__FILE__));
 $mod_name		= "Account Module Revised Version For Nukelearn Portal";
 $author_email	= "";
 $author_homepage	= "http://www.nukelearn.com";
-$author_name		= "<a href=\"$author_homepage\">Nukelearn Group</a>";
+$author_name		= "<a href=\"$author_homepage\">Marlik Group</a>";
 $download_location	= "";
 $module_version	= "1.1.4";
 $release_date	= "-- Jul 2011";

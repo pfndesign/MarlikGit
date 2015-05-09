@@ -4,7 +4,7 @@
 *
 * @package News Multi Tasks 														
 * @version $Id: multi_tasks.php beta0.5   12/24/2009  5:51 PM  Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

@@ -4,7 +4,7 @@
 *
 * @package language system for Nukelearn CMS														
 * @version $Id: languages.php 11:32 AM 9/19/2011  Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -156,7 +156,7 @@ function editlanguageprocess() {
 *
 * @package Language file : '.$_POST['id'].'												
 * @version $Id: lang-'.$_POST['lang'].'.php 11:12 AM 5/10/2011 $ Nukelearn			
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com							
+* @copyright (c) Marlik Group  http://www.nukelearn.com							
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */'."\r\n\r\n";

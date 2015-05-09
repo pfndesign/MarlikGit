@@ -3,7 +3,7 @@
 *
 * @package FireWall												
 * @version $Id: Media.php 12:42 PM 2/10/2012 Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

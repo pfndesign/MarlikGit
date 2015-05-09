@@ -3,7 +3,7 @@
 *
 * @package InfoBox Block 												
 * @version $Id:  1:00 PM 5/29/2010 Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 *
 */
 

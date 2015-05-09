@@ -3,7 +3,7 @@
  *
  * @package Persian PDF Generator														
  * @version  pdf.php $Id: $Aneeshtan 3:53 PM 1/20/2010						
- * @copyright (c)Nukelearn Group  http://www.nukelearn.com											
+ * @copyright (c)Marlik Group  http://www.nukelearn.com											
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
  */

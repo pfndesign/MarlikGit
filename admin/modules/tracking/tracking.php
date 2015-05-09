@@ -5,7 +5,7 @@
 * @package IP Tracking SYSTEM														
 * @version $Id: 1:25 PM 3/2/2010 Aneeshtan $						
 * @version  http://www.ierealtor.com - phpnuke id: scottr $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 *
 */
 

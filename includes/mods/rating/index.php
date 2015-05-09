@@ -3,7 +3,7 @@
 	+-----------------------------------------------------------------------------------------------+
 	|																								|
 	|	* @package Star Rating																		|
-	|	* @version v 1.0.0																			|																		|	* @copyright (c) NukeLearn Group														|
+	|	* @version v 1.0.0																			|																		|	* @copyright (c) Marlik Group														|
 	|	* http://www.nukelearn.com																	|
 	|	* Ported By: Exoid - www.nuke-evolution.ir		                    						|
 	|	* @Portions of this software are based on PHP-Nuke											|

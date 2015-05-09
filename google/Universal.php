@@ -3,7 +3,7 @@
 *
 * @package UNIVERSAL URL SWITCHER FOR NUKELEARN														
 * @version $Id: universal.php 11:18 PM 3/19/2011 Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

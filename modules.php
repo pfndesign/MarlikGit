@@ -4,7 +4,7 @@
 *
 * @package	NUKELEARN Tigris														
 * @version $Id:  modules.php RC-7 4:09 PM 1/16/2010 $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com		
+* @copyright (c) Marlik Group  http://www.nukelearn.com		
 * @copyright (c) http://phpnuke.org - 2002, (c) Francisco Burzi									
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *

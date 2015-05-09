@@ -2,7 +2,7 @@
 /**
 *
 * @package Update
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com $Aneeshtan
+* @copyright (c) Marlik Group  http://www.nukelearn.com $Aneeshtan
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

@@ -3,7 +3,7 @@
  *
  * @package statistics														
  * @version $Id: statistics.php 6:45 PM 1/9/2010 Aneeshtan $						
- * @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+ * @copyright (c) Marlik Group  http://www.nukelearn.com											
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
  */

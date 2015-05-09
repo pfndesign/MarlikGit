@@ -3,7 +3,7 @@
 *
 * @package AvatarManagement System														
 * @version $Id: 12:10 AM 7/21/2010 Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 *
 * 
 */

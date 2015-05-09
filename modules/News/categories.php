@@ -5,7 +5,7 @@
 *
 * @package Categories														
 * @version $Id: News System  RC-7 4:09 PM 1/16/2010 $Aneeshtan						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

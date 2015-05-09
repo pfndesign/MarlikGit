@@ -3,7 +3,7 @@
 *
 * @package SITE MAP														
 * @version $Id: XML 12:43 PM 3/5/2010 Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

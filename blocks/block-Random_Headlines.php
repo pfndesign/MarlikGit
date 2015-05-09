@@ -3,7 +3,7 @@
  *
  * @package Block                                                        
  * @version $Id: Random Headlines 4:09 PM 1/16/2010 $Aneeshtan                        
- * @copyright (c) Nukelearn Group  http://www.nukelearn.com                                            
+ * @copyright (c) Marlik Group  http://www.nukelearn.com                                            
  * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
  *
  */

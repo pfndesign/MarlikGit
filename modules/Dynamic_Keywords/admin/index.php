@@ -3,7 +3,7 @@
  *
  * @package Dynamic Keyword														
  * @version $Id:9:50 AM 7/29/2010 Aneeshtan$						
- * @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+ * @copyright (c) Marlik Group  http://www.nukelearn.com											
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
  */

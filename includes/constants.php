@@ -3,7 +3,7 @@
 *
 * @package constants														
 * @version $Id: constants.php RC-7 11:49 AM 1/2/2010 Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -268,7 +268,7 @@ if($site_switch == 1 AND !stristr($_SERVER['PHP_SELF'], "".$admin_file.".php") A
 
 @version : 1.1.5 BE
 
-Copyright (C) 2009-2011 by Nukelearn Group
+Copyright (C) 2009-2011 by Marlik Group
 
 http://www.nukelearn.com
 

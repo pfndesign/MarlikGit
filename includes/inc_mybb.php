@@ -3,7 +3,7 @@
 *
 * @package MYBB BRIDGE		= > Nukelearn Bridge											
 * @version $Id: MYBB BRIDGE  11:49 AM 2/10/2012  Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

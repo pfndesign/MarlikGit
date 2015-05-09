@@ -3,7 +3,7 @@
 *
 * @package TOP USERS Block														
 * @version $Id: 2009-12-12 15:35:19Z Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.nukelearn.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

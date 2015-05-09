@@ -3,7 +3,7 @@
 *
 * @package session CLASS														
 * @version $Id: inc_session.php  2:38 AM 12/18/2010  Aneeshtan $						
-* @copyright (c) Nukelearn Group  http://www.nukelearn.com	& Inspired By PHPBB3 Session Class										
+* @copyright (c) Marlik Group  http://www.nukelearn.com	& Inspired By PHPBB3 Session Class										
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
