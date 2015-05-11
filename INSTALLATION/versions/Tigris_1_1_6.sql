@@ -195,7 +195,7 @@ INSERT INTO `nuke_cnbya_config` (`config_name`, `config_value`) VALUES
 ('usegfxcheck', '3'),
 ('version', '4.4.1'),
 ('use_question', '1'),
-('headlines', 'http://www.tabnak.ir/fa/rss/allnews\r\nhttp://www.itna.ir/index.xml\r\nhttp://www.cmsnews.ir/feed/rss/\r\nhttp://www.nukelearn.com/feed/News\r\n');
+('headlines', 'http://www.tabnak.ir/fa/rss/allnews\r\nhttp://www.itna.ir/index.xml\r\nhttp://www.cmsnews.ir/feed/rss/\r\nhttp://www.MarlikCMS.com/feed/News\r\n');
 
 
 CREATE TABLE IF NOT EXISTS `nuke_cnbya_field` (
@@ -325,7 +325,7 @@ CREATE TABLE IF NOT EXISTS `nuke_config` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 INSERT INTO `nuke_config` (`sitename`, `nukeurl`, `site_logo`, `slogan`, `startdate`, `adminmail`, `anonpost`, `Default_Theme`, `foot1`, `foot2`, `foot3`, `commentlimit`, `anonymous`, `minpass`, `pollcomm`, `articlecomm`, `broadcast_msg`, `my_headlines`, `top`, `storyhome`, `user_news`, `oldnum`, `ultramode`, `loading`, `nextg`, `banners`, `backend_title`, `backend_language`, `language`, `locale`, `multilingual`, `useflags`, `notify`, `notify_email`, `notify_subject`, `notify_message`, `notify_from`, `moderate`, `admingraphic`, `httpref`, `httprefmax`, `CensorMode`, `CensorReplace`, `copyright`, `USV_Version`, `support`, `gfx_chk`, `use_question`, `codesize`, `cache_system`, `cache_lifetime`, `nuke_editor`, `tracking`, `sec_pass`) VALUES
-('Nukelearn Tigris', '', 'logo.png', '', '', '', 0, 'FarshadGhazanfari', '', '', '', 10, 'کاربر مهمان', 5, 0, 1, 1, 1, 330, 10, 1, 30, 0, 0, 0, 0, 'Nukelearn Tigris Powered Site', 'persian', 'persian', 'en_US', 1, 1, 1, 'info@nukelearn.com', 'اطلاعیه سایت', 'از سوی سایت اطلاعیه دارید ', 'مدیریت', 0, 1, 1, 1000, 3, '*****', 0x4e756b656c6561726e205469677269732026636f70793b20323030392d32303130203c6120687265663d22687474703a2f2f7777772e6e756b656c6561726e2e636f6d22207461726765743d225f626c616e6b223e4e756b656c6561726e3c2f613e, 'Tigris 1.1.6', 'info@nukelearn.com', 1, 0, 4, 0, 120, 1, 1, '');
+('MarlikCMS Tigris', '', 'logo.png', '', '', '', 0, 'FarshadGhazanfari', '', '', '', 10, 'کاربر مهمان', 5, 0, 1, 1, 1, 330, 10, 1, 30, 0, 0, 0, 0, 'MarlikCMS Tigris Powered Site', 'persian', 'persian', 'en_US', 1, 1, 1, 'info@MarlikCMS.com', 'اطلاعیه سایت', 'از سوی سایت اطلاعیه دارید ', 'مدیریت', 0, 1, 1, 1000, 3, '*****', 0x4e756b656c6561726e205469677269732026636f70793b20323030392d32303130203c6120687265663d22687474703a2f2f7777772e6e756b656c6561726e2e636f6d22207461726765743d225f626c616e6b223e4e756b656c6561726e3c2f613e, 'Tigris 1.1.6', 'info@MarlikCMS.com', 1, 0, 4, 0, 120, 1, 1, '');
 
 CREATE TABLE IF NOT EXISTS `nuke_confirm` (
   `confirm_id` char(32) COLLATE utf8_bin NOT NULL,
@@ -561,7 +561,7 @@ CREATE TABLE IF NOT EXISTS `nuke_linktous` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 INSERT INTO `nuke_linktous` (`l_id`, `l_zipurl`, `l_image`, `l_mouseover`, `l_status`, `l_size_width`, `l_size_height`, `l_hits`, `l_linktype`) VALUES
-(1, '', 'images/links/nukelearn tigris1.png', 'Nukelearn Tigris ', 0, '120', '240', 1, 0);
+(1, '', 'images/links/MarlikCMS tigris1.png', 'MarlikCMS Tigris ', 0, '120', '240', 1, 0);
 
 CREATE TABLE IF NOT EXISTS `nuke_linktous_config` (
   `config_name` varchar(255) COLLATE utf8_bin NOT NULL,
@@ -607,7 +607,7 @@ CREATE TABLE IF NOT EXISTS `nuke_linktous_resources` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2 ;
 
 INSERT INTO `nuke_linktous_resources` (`r_id`, `r_name`, `r_url`, `r_image`, `r_status`, `r_size_width`, `r_size_height`, `r_hits`) VALUES
-(1, 'Nukelearn Portal', 'http://nukelearn.com/', 'images/links/res/nukelearn_portal.png', 0, '88', '31', 2);
+(1, 'MarlikCMS Portal', 'http://MarlikCMS.com/', 'images/links/res/MarlikCMS_portal.png', 0, '88', '31', 2);
 
 
 CREATE TABLE IF NOT EXISTS `nuke_main` (
@@ -987,7 +987,7 @@ CREATE TABLE IF NOT EXISTS `nuke_poll_desc` (
 
 INSERT INTO `nuke_poll_desc` (`pollID`, `pollTitle`, `timeStamp`, `voters`, `planguage`, `artid`, `comments`, `active`) VALUES
 (1, 'پرتال نیوک لرن را چگونه ارزیابی می کنید ؟', 1310192663, 0, 'persian', 0, 0, 1),
-(2, 'How do u evaluate Nukelearn CMS ?', 1310192663, 0, 'english', 0, 0, 1);
+(2, 'How do u evaluate MarlikCMS CMS ?', 1310192663, 0, 'english', 0, 0, 1);
 
 CREATE TABLE IF NOT EXISTS `nuke_public_messages` (
   `mid` int(10) NOT NULL AUTO_INCREMENT,
@@ -1154,7 +1154,7 @@ CREATE TABLE IF NOT EXISTS `nuke_stories` (
 
 INSERT INTO `nuke_stories` (`sid`, `catid`, `aid`, `title`, `time`, `hometext`, `bodytext`, `newsref`, `newsreflink`, `comments`, `counter`, `topic`, `informant`, `notes`, `ihome`, `alanguage`, `acomm`, `hotnews`, `haspoll`, `pollID`, `associated`, `tags`, `approved`, `section`, `rate`, `rates_count`) VALUES
 (1, 0, 'admin', 'پرتال نیوک لرن نسخه 1.1.6 با موفقیت نصب شد .', '2010-07-19 10:51:37', 0x3c703ed8aed8b4d986d988d8afdb8cd98520daa9d98720d8b4d985d8a720d8a7d8b220d986d8b1d98520d8a7d981d8b2d8a7d8b120d8b3d8a7db8cd8aa20d8b3d8a7d8b220d986db8cd988daa920d984d8b1d98620d8a7d8b3d8aad981d8a7d8afd98720d985db8c20daa9d986db8cd8af202e20d8a7db8cd98620d986d8b1d98520d8a7d981d8b2d8a7d8b120d8afd8b120d986d8b3d8aed98720312e312e3620d8a7d985daa9d8a7d986d8a7d8aa20d981d8b1d8a7d988d8a7d986db8c20d8b1d8a720d8acd8a7db8c20d8afd8a7d8afd98720d8a7d8b3d8aa202e3c2f703e0d0a0d0a3c70207374796c653d22746578742d616c69676e3a2063656e7465723b223e3c696d67207372633d22696e636c756465732f656c66696e6465722f2e2e2f75706c6f61642f4e756b656c6561726e2f4e756b656c6561726e5553562e706e6722207374796c653d2233333770783b206865696768743a2033323370783b22202f3e3c2f703e0d0a0d0a3c703ed8afd8b120d986d8b3d8aed98720312e312e3620d9bed8b1d8aad8a7d98420d986db8cd988daa920d984d8b1d98620d8a7d985daa9d8a7d986d8a7d8aadb8c20d986d8b8db8cd8b1203a3c2f703e0d0a0d0a3c703e266e6273703b3c2f703e0d0a0d0a3c6469763e2d20d8b3db8cd8b3d8aad98520d986d8b5d8a820d982d8a7d984d8a820d8a8d98720d8b5d988d8b1d8aa20d8afd8a7d986d984d988d8af20d8a7d8a8d8b1db8c20d8a8d8b120d8b1d988db8c20d8b3d8a7db8cd8aa3c2f6469763e0d0a0d0a3c6469763e2d20d8a8d987db8cd986d98720d8b3d8a7d8b2db8c20d987d8b3d8aad98720d8b3db8cd8b3d8aad98520d98820d8a8d98720d8b1d988d8b220d8b1d8b3d8a7d986db8c20daa9d8afd987d8a720d8a8d8b1d8a7db8c20d8b3d8a7d8b2daafd8a7d8b1db8c20d8a8db8cd8b4d8aad8b13c2f6469763e0d0a0d0a3c6469763e2d20d8add8b0d98120d986daafd987d8a8d8a7d98620d8b3d8a7db8cd8aa20d98820d8acd8a7db8cdaafd8b2db8cd986db8c20d8afdb8cd988d8a7d8b1d98720d8a2d8aad8b4266e6273703b3c2f6469763e0d0a0d0a3c6469763e2d20d8a8d987db8cd986d98720d8b3d8a7d8b2db8c20d8b3d8a6d98820d98820db8cdaa9d9bed8a7d8b1da86d98720d8b3d8a7d8b2db8c20d8aad8badb8cdb8cd8b120d985d8b3db8cd8b1d987d8a73c2f6469763e0d0a0d0a3c6469763e2d20d8b8d8a7d987d8b120d8acd8afdb8cd8af20d985d8afdb8cd8b1db8cd8aa20d8b3d8a7db8cd8aa20d98820daa9d8a7d8b1d8a8d8b1db8c3c2f6469763e0d0a0d0a3c6469763e2d20d986d8b3d8aed987203420d988db8cd8b1d8a7db8cd8b4daafd8b120436b656469746f723c2f6469763e0d0a0d0a3c6469763e2d20d986d8b3d8aed98720312e3220d985d8afdb8cd8b1db8cd8aa20d981d8a7db8cd98420d987d8a73c2f6469763e0d0a0d0a3c703e3c6120687265663d22687474703a2f2f6172656135312e6e756b656c6561726e2e636f6d2f223ed8b4d985d8a720d986db8cd8b220d985db8c20d8aad988d8a7d986db8cd8af20d8a7d985daa9d8a7d986d8a7d8aa20d985d988d8b1d8af20d986d8b8d8b120d8aed988d8af20d8b1d8a720d9bedb8cd8b4d986d987d8a7d8af20d8afd987db8cd8af3c2f613e3c2f703e0d0a0d0a3c703ed8afd8b1203c6120687265663d22687474703a2f2f627567732e6e756b656c6561726e2e636f6d2f223e3c7374726f6e673ed8a7db8cd98620d984db8cd8b3d8aa3c2f7374726f6e673e3c2f613e20d8b3d8b9db8c20d8b4d8afd98720d8a7d8b3d8aa20d8a8db8cd8b4d8aad8b120d8a7d8b4daa9d8a7d984d8a7d8aa20daafd8b2d8a7d8b1d8b420d8b4d8afd98720d8a8d8b1d8b7d8b1d98120d8b4d988d8af202e3c2f703e0d0a0d0a3c703ed8a8d8a720d8a7d985db8cd8af20d8a8d98720d8a7d981d8aad8aed8a7d8b120d8a2d981d8b1db8cd986db8c20d8a8d8b1d8a7db8c20d8a7db8cd8b1d8a7d986db8c20d987d8a73c2f703e0d0a0d0a3c703edaafd8b1d988d98720d986db8cd988daa920d984d8b1d9863c2f703e0d0a0d0a3c703ed981d8b1d8b4d8a7d8af20d8bad8b6d986d981d8b1db8c3c2f703e0d0a, '', '', '', 1, 370, 0, '', '', 0, 'persian', 0, 1, 0, 0, 0x312d322d, ' ', 1, 'news', 4, 1),
-(2, 0, 'admin', 'Nukelearn CMS version Tigris 1.1.6  is installed succefuly', '2011-01-26 13:18:01', 0x3c703e0d0a09266e6273703b3c2f703e0d0a3c646976207374796c653d22746578742d616c69676e3a206c6566743b20223e0d0a09436f6e67726174756c6174696f6e732120596f75206861766520696e7374616c6c6564204e756b656c6561726e20434d532056657273696f6e20312e312e36202e204e756b656c6561726e2674726164653b20636f6d6573207769746820746865206d6f737420757020746f206461746520666561747572657320617661696c61626c6520666f7220686176696e67206120636f6d70726568656e736976652077656273697465202c20696e636c7564696e6720647261672026616d703b2064726f7020626c6f636b73202c206e65772074656d706c61746520656e67696e6520746f20736d6f6f74682064657369676e696e672068616269747320616e64206c6f7473206f662070726f66657373696f6e616c20666561747572657320616c6c20666f722066726565202e3c2f6469763e0d0a3c646976207374796c653d22746578742d616c69676e3a206c6566743b20223e0d0a09266e6273703b3c2f6469763e0d0a3c646976207374796c653d22746578742d616c69676e3a2063656e7465723b20223e0d0a093c696d6720616c743d2222207372633d22696e636c756465732f656c66696e6465722f2e2e2f75706c6f61642f4e756b656c6561726e2f4e756b656c6561726e5553562e706e6722207374796c653d2233333770783b206865696768743a2033323370783b2022202f3e3c2f6469763e0d0a3c646976207374796c653d22746578742d616c69676e3a206c6566743b20223e0d0a09266e6273703b3c2f6469763e0d0a3c646976207374796c653d22746578742d616c69676e3a206c6566743b20223e0d0a09636865636b206f7574206f7572207765627369746520616e64206b65657020657965206f6e20746865206c6174657374206e65777320666f72204e756b656c6561726e20434d533c2f6469763e0d0a, '', '', '', 0, 1, 0, 'admin', '', 0, 'english', 0, 0, 0, 0, 0x322d, ' 2 ', 1, 'news', 0, 0);
+(2, 0, 'admin', 'MarlikCMS CMS version Tigris 1.1.6  is installed succefuly', '2011-01-26 13:18:01', 0x3c703e0d0a09266e6273703b3c2f703e0d0a3c646976207374796c653d22746578742d616c69676e3a206c6566743b20223e0d0a09436f6e67726174756c6174696f6e732120596f75206861766520696e7374616c6c6564204e756b656c6561726e20434d532056657273696f6e20312e312e36202e204e756b656c6561726e2674726164653b20636f6d6573207769746820746865206d6f737420757020746f206461746520666561747572657320617661696c61626c6520666f7220686176696e67206120636f6d70726568656e736976652077656273697465202c20696e636c7564696e6720647261672026616d703b2064726f7020626c6f636b73202c206e65772074656d706c61746520656e67696e6520746f20736d6f6f74682064657369676e696e672068616269747320616e64206c6f7473206f662070726f66657373696f6e616c20666561747572657320616c6c20666f722066726565202e3c2f6469763e0d0a3c646976207374796c653d22746578742d616c69676e3a206c6566743b20223e0d0a09266e6273703b3c2f6469763e0d0a3c646976207374796c653d22746578742d616c69676e3a2063656e7465723b20223e0d0a093c696d6720616c743d2222207372633d22696e636c756465732f656c66696e6465722f2e2e2f75706c6f61642f4e756b656c6561726e2f4e756b656c6561726e5553562e706e6722207374796c653d2233333770783b206865696768743a2033323370783b2022202f3e3c2f6469763e0d0a3c646976207374796c653d22746578742d616c69676e3a206c6566743b20223e0d0a09266e6273703b3c2f6469763e0d0a3c646976207374796c653d22746578742d616c69676e3a206c6566743b20223e0d0a09636865636b206f7574206f7572207765627369746520616e64206b65657020657965206f6e20746865206c6174657374206e65777320666f72204e756b656c6561726e20434d533c2f6469763e0d0a, '', '', '', 0, 1, 0, 'admin', '', 0, 'english', 0, 0, 0, 0, 0x322d, ' 2 ', 1, 'news', 0, 0);
 
 
 DROP TABLE IF EXISTS `nuke_shoutbox`;
@@ -1180,7 +1180,7 @@ CREATE TABLE IF NOT EXISTS `nuke_tags` (
 
 
 INSERT INTO `nuke_tags` (`tid`, `tag`, `slug`, `count`) VALUES
-(1, 'nukelearn', 'nukelearn', 1);
+(1, 'MarlikCMS', 'MarlikCMS', 1);
 
 
 
@@ -1197,7 +1197,7 @@ CREATE TABLE IF NOT EXISTS `nuke_topics` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=4 ;
 
 INSERT INTO `nuke_topics` (`topicid`, `topicname`, `slug`, `topicimage`, `topictext`, `parent`, `counter`) VALUES
-(1, 'نیوک لرن', 'nukelearn', 'Groups.png', 'نیوک لرن نرم افزار ایرانی', 0, 0),
+(1, 'نیوک لرن', 'MarlikCMS', 'Groups.png', 'نیوک لرن نرم افزار ایرانی', 0, 0),
 (2, 'اخبار', 'news', 'Groups.png', 'اخبار مرتبط با سایت ', 1, 0),
 (3, 'متفرقه', 'others', 'Groups.png', 'موضوعات متفرقه', 0, 0);
 

@@ -12,7 +12,7 @@
  */
 if (elFinder && elFinder.prototype && typeof(elFinder.prototype.i18) == 'object') {
 	elFinder.prototype.i18.fa = {
-		translator : 'Farshad Ghazanfari &lt;info@nukelearn.com&gt;',
+		translator : 'Farshad Ghazanfari &lt;info@MarlikCMS.com&gt;',
 		language   : 'Persian',
 		direction  : 'rtl',
 		dateFormat : 'Y.m.d H:i',

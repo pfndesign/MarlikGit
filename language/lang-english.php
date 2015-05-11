@@ -3,7 +3,7 @@
 *
 * @package Language file : Core														
 * @version $Id: lang-persian.php 11:12 AM 5/10/2011 $Aneeshtan						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -426,7 +426,7 @@ define("_ERROR_DANGERS","<b>warnings</b> : <H5>Admins can only view these errors
 define("_ERROR_REGISTERGLOBALS","Please be aware that you may need to turn off Register Global feature on your host configuration.");
 define("_ERROR_UPGRADE","You may need to delete all installation files.");
 define("_ERROR_CONFIG","Please try to change config.php permission to 644 or 444 for the sake of your website's safety.");
-define("_ERROR_INSTALL","Now that you have installed Nukelearn CMS package, you may need to remove the folder and it files so quickly to prevent abusing behaviours.");
+define("_ERROR_INSTALL","Now that you have installed MarlikCMS CMS package, you may need to remove the folder and it files so quickly to prevent abusing behaviours.");
 
 
 // - USV -- Kralpc - Extra Page -- 10/03/09-----
@@ -537,7 +537,7 @@ define("_LASTREFERERS_NOREFERERS"," there is no referer to show");
 
 define("_MENU_MAINMENU","main menu");
 
-// - phpBB3_Forum_Center_NukeLearn -----
+// - phpBB3_Forum_Center_MarlikCMS -----
 
 define("_PHPBB3BLOCK_LASTPOSTFROM","last post by");
 define("_PHPBB3BLOCK_CREATEDIN","posted in");
@@ -687,7 +687,7 @@ define("_BLOCK_INFO","information");
 define("_BLOCK_RSS","feed list");
 define("_BLOCK_BOOKMARK","bookmark list");
 define("_BLOCK_GSEARCH","ajax google search");
-define("_BLOCK_SUPPORT_NKLN","support Nukelearn");
+define("_BLOCK_SUPPORT_NKLN","support MarlikCMS");
 define("_BLOCK_QUICKADMIN","quick administration");
 define("_BLOCK_WHATSLEFT","what has been left?");
 define("_BLOCK_SHOUTBOX","shoutbox");
@@ -757,8 +757,8 @@ define("_DUPLICATED","duplicated");
 define("_BLOCK_KEYWORDS","Keywords");
 define('_MSFORCOLON', 'Search for');
 define('_MSALL', 'All sections');
-define("_WELCOMEYOU","Nukelearn team : Congratulations! Welcome to your new Web Site!");
-define("_POWERBY","Powered by Nukelearn CMS");
+define("_WELCOMEYOU","MarlikCMS team : Congratulations! Welcome to your new Web Site!");
+define("_POWERBY","Powered by MarlikCMS CMS");
 define("_ROBOTS","Robots");
 define("_REFERERS","Latest referers");
 define("_YESTERDAY","Yesterday");

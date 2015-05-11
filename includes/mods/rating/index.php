@@ -4,7 +4,7 @@
 	|																								|
 	|	* @package Star Rating																		|
 	|	* @version v 1.0.0																			|																		|	* @copyright (c) Marlik Group														|
-	|	* http://www.nukelearn.com																	|
+	|	* http://www.MarlikCMS.com																	|
 	|	* Ported By: Exoid - www.nuke-evolution.ir		                    						|
 	|	* @Portions of this software are based on PHP-Nuke											|
 	|	* http://phpnuke.org - 2002, (c) Francisco Burzi											|
@@ -16,7 +16,7 @@
 	|																								|
 	+-----------------------------------------------------------------------------------------------+
 */
-// Modified for Nukelearn USV by James [Hamed]
+// Modified for MarlikCMS USV by James [Hamed]
 //define("RATING_IN",true);
 header("Cache-Control: no-cache");
 header("Pragma: nocache");

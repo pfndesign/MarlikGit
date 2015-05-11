@@ -2,9 +2,9 @@
 
 /**
 *
-* @package template system for Nukelearn CMS														
+* @package template system for MarlikCMS CMS														
 * @version $Id: templates.php 11:32 AM 9/19/2011  Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -107,7 +107,7 @@ class template_editorial {
 		
 		$url = 'adminfile='. urlencode(ADMIN_PHP) .'&url='. urlencode(base64_encode($_SERVER['SERVER_NAME']));
 		
-		if (!$content = get_remote_contents('http://www.nukelearn.com/remote.php?op=onlineThemes&'. $url, 'curl_get_contents')) {
+		if (!$content = get_remote_contents('http://www.MarlikCMS.com/remote.php?op=onlineThemes&'. $url, 'curl_get_contents')) {
 				_e("متاسفانه ارتباط با سرور نیوک لرن برقرار نشد <br>
 				$url	
 				");
@@ -428,7 +428,7 @@ function toggleFullscreenEditing()
 	function themes_view_online($t){
 		global $db;
 	
-		echo "<iframe  style='width:650px;height:400px;' src='http://www.nukelearn.com/remote.php?op=theme_page&lid=$t&adminfile=".USV_DOMAIN."/".ADMIN_PHP."'></iframe>";
+		echo "<iframe  style='width:650px;height:400px;' src='http://www.MarlikCMS.com/remote.php?op=theme_page&lid=$t&adminfile=".USV_DOMAIN."/".ADMIN_PHP."'></iframe>";
 	}
 	
 	

@@ -4,7 +4,7 @@
  *
  * @package YA admin Functions												
  * @version $Id: Aneeshtan $4:43 PM 8/10/2010
- * @copyright (c) Marlik Group  http://www.nukelearn.com											
+ * @copyright (c) Marlik Group  http://www.MarlikCMS.com											
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
  */

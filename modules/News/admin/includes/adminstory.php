@@ -3,7 +3,7 @@
  *
  * @package news'adminstory  														
  * @version $Id: adminstory.php 9:50 AM 7/29/2010 Aneeshtan & JAMES $						
- * @copyright (c) Marlik Group  http://www.nukelearn.com											
+ * @copyright (c) Marlik Group  http://www.MarlikCMS.com											
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
  */

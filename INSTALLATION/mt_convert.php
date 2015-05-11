@@ -2,7 +2,7 @@
 /**
 *
 * @package MT_CONVERT
-* @copyright (c) Marlik Group  http://www.nukelearn.com $Aneeshtan
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com $Aneeshtan
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -3257,7 +3257,7 @@ ALTER TABLE nuke_users_temp
 "
 UPDATE `nuke_config` SET `USV_Version`='1.1.5';
 "," 
-UPDATE `nuke_config` SET `copyright`='Nukelearn USV &copy; 2009-2011 <a href=\"http://www.nukelearn.com\" target=\"_blank\">Nukelearn</a>';
+UPDATE `nuke_config` SET `copyright`='MarlikCMS USV &copy; 2009-2011 <a href=\"http://www.MarlikCMS.com\" target=\"_blank\">MarlikCMS</a>';
 ");
 		echo "<hr />\n";
 		for ($i=0; $i < count($sql_queue); $i++) {

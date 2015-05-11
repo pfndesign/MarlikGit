@@ -3,8 +3,8 @@
  *
  * @package shoutbox
  * @version $Id: BASIC VERSION : Aneeshtan $
- * @copyright (c) INSPIRED BY : yensdesign.com AND Revised By Marlik Group  http://www.nukelearn.com
- * @license ONLY FOR NUKELEARN'S USERS
+ * @copyright (c) INSPIRED BY : yensdesign.com AND Revised By Marlik Group  http://www.MarlikCMS.com
+ * @license ONLY FOR MarlikCMS'S USERS
  *
  */
 /************************

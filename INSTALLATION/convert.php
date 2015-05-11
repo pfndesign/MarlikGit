@@ -2,7 +2,7 @@
 /**
 *
 * @package Convert
-* @copyright (c) Marlik Group  http://www.nukelearn.com $Aneeshtan
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com $Aneeshtan
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -59,5 +59,5 @@ if (is_superadmin($admin)) {
 	</b>\n";
 }
 ?>
-	<p class="footmsg_l"><a href='http://www.nukelearn.com'>Powered By Nukelearn</a><br></p>
+	<p class="footmsg_l"><a href='http://www.MarlikCMS.com'>Powered By MarlikCMS</a><br></p>
 	</div>

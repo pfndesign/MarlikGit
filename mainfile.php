@@ -3,7 +3,7 @@
 *
 * @package mainfile														
 * @version $Id: mainfile.php 11:12 AM 5/10/2011 $Aneeshtan						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

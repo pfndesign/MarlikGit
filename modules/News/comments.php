@@ -5,7 +5,7 @@
 * @package COMMENTS	
 * Inspired by weblogina.com comment system appearance													
 * @version $Id: comments.php $Aneeshtan 5:24 PM 10/5/2011				
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

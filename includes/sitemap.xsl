@@ -58,7 +58,7 @@
 				<div id="intro">
 					<p>
 						This is a XML Sitemap which is supposed to be processed by search engines like <a href="http://www.google.com/">Google</a>, <a href="http://search.msn.com/">MSN Search</a> and <a href="http://www.yahoo.com/">YAHOO</a>.<br/>
-						It was generated using Nukelearn Software <a href="http://nukelearn.com/">Nukelearn</a> <br/>
+						It was generated using MarlikCMS Software <a href="http://MarlikCMS.com/">MarlikCMS</a> <br/>
 						You can find more information about XML sitemaps on <a href="http://sitemaps.org/">sitemaps.org</a>.
 					</p>
 				</div>
@@ -99,7 +99,7 @@
 					</table>
 				</div>
 				<div id="footer">
-					Generated with <a href="http://www.nukelearn.com/" title="Sitemap Generator">Nukelearn Sitemap Generator</a> by <a href="http://www.nukelearn.com/">Farshad Ghazanfari</a>. This XSLT template is released under GPL.
+					Generated with <a href="http://www.MarlikCMS.com/" title="Sitemap Generator">MarlikCMS Sitemap Generator</a> by <a href="http://www.MarlikCMS.com/">Farshad Ghazanfari</a>. This XSLT template is released under GPL.
 				</div>
 			</body>
 		</html>

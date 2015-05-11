@@ -3,7 +3,7 @@
  *
  * @package userinfo														
  * @version $Id: 02009-12-12 15:35:19Z Aneeshtan $						
- * @copyright (c) Marlik Group  http://www.nukelearn.com	
+ * @copyright (c) Marlik Group  http://www.MarlikCMS.com	
  *  Iran Nuke Portal                        (info@irannuke.net) 										
  * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike	
  *

@@ -8,8 +8,8 @@
 */
 define('INSIDE_MOD',true);
 require_once('./../../mainfile.php');
-if (!defined("USV_VERSION")) {die("This only works on Nukelearn Portal ,
-<br>So why don't You join us<br><a href='http://www.nukelearn.com'>nukelearn.com</a>");}
+if (!defined("USV_VERSION")) {die("This only works on MarlikCMS Portal ,
+<br>So why don't You join us<br><a href='http://www.MarlikCMS.com'>MarlikCMS.com</a>");}
 
 global $admin,$currentlang;
 if (is_admin($admin)){

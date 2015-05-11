@@ -3,7 +3,7 @@
 *
 * @package ERRORS														
 * @version $Id: 8:00 PM 3/10/2010  Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 *
 * 
 */

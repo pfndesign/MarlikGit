@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package MYBB BRIDGE		= > Nukelearn Bridge											
+* @package MYBB BRIDGE		= > MarlikCMS Bridge											
 * @version $Id: MYBB BRIDGE  11:49 AM 2/10/2012  Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -18,8 +18,8 @@ global $db,$userinfo;
 $mybb_prefix = 'mybb';
 $nkln_prefix = 'nuke';
 define("INSIDE_NKLN", true);
-define('MYBBC_TO_NUKELEARN',0);
-if(MYBBC_TO_NUKELEARN==1){
+define('MYBBC_TO_MarlikCMS',0);
+if(MYBBC_TO_MarlikCMS==1){
 		
 //=================================================================
 // LETS REDIRECT ACTIONS
@@ -67,7 +67,7 @@ $mybb_login = false;
 $user_exists = false;
 
 if ($_COOKIE['mybbuser']){
-//check user from Nukelearn 
+//check user from MarlikCMS 
 $NLB_user = $_COOKIE['mybbuser'];
 $NLB_user = explode("_", $NLB_user);
 $NLB_user_id = (int)$NLB_user[0];
@@ -104,7 +104,7 @@ if(!empty($nklnSwitch[0]) AND !empty($nklnSwitch[1]) AND !empty($nklnSwitch[2]))
 	// Now we know he is online !  lets make him legit by generating new user cookie :P
 	$infouser = base64_encode("$nklnSwitch[0]:$nklnSwitch[1]:$nklnSwitch[3]::::::::" );
 	setcookie('user', $infouser, time () + 36000 * 24 , '/');
-	//hey man update Nukelearn user table
+	//hey man update MarlikCMS user table
 	/*
 	$db->query("UPDATE `".$prefix."_users` SET `user_sig`='".$RUrow['signature']."',`user_avatar`='".$RUrow['avatar']."',`user_avatar_type`='3' WHERE username='".$RUrow['username']."'");
 	*/
@@ -112,7 +112,7 @@ if(!empty($nklnSwitch[0]) AND !empty($nklnSwitch[1]) AND !empty($nklnSwitch[2]))
 	//die("Dr.Feri->$nklnSwitch[0] $nklnSwitch[1] $nklnSwitch[3] ");
 		
 }else{
-// now we have a user in mybb but not in Nukelearn , then no wait ! lets create it =->
+// now we have a user in mybb but not in MarlikCMS , then no wait ! lets create it =->
 	$lv = time();
 	$result = $db->sql_query("INSERT INTO ".$prefix."_users (`name`, `username`, `user_email`, `user_avatar`, `user_regdate`, `user_viewemail`, `user_password`, `user_lang`, `user_lastvisit`) 
 	VALUES ('".sql_quote($NLB_user_nname)."', '".sql_quote($NLB_user_nname)."', '".sql_quote($NLB_user_email)."', 'gallery/blank.gif', '".sql_quote($NLB_regdate)."', '0', '".sql_quote($NLB_user_pwd)."', '".sql_quote($NLB_language)."', '".sql_quote($lv)."')") or die("<div class='error'>اشکالی در پل ارتباطی نیوک لرن - مای بی بی وجود دارد<br>".mysql_error()."</div>");

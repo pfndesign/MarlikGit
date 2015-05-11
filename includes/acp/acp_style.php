@@ -3,7 +3,7 @@
 *
 * @package acp														
 * @version $Id: acp_dashboard.php 0999 2009-12-12 15:35:19Z Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -68,7 +68,7 @@ global $admin;
         <div class="container">
             <div class="footer-wrapper clearfix">
                 <div class="footer-col1">
-                    <a href="http://www.nukelearn.com"><img src="images/powered/footer-logo.png" alt="Nukelearn Portal" style="float:left;padding-left:50px;"></a>
+                    <a href="http://www.MarlikCMS.com"><img src="images/powered/footer-logo.png" alt="MarlikCMS Portal" style="float:left;padding-left:50px;"></a>
                     <img src="images/powered/footer-slogan.png" alt="Software that changes your webmastering experience." class="slogan">
                         </div>
                 <div class="footer-col2" style="text-align:<?php echo langstyle(align)?>">
@@ -104,7 +104,7 @@ global $admin;
             </div>
         </div>
         ');?>
-<div class='nukelearn-slogan'>
+<div class='MarlikCMS-slogan'>
 <?php
 
 global $useflags, $currentlang;
@@ -157,7 +157,7 @@ if ($useflags == 1) {
 
 echo('
 <hr>
-                <a href="'.ADMIN_OP.'about_us" class="colorbox"><img src="images/icon/cursor.png">'._ABOUTNUKELEARN.'</a>
+                <a href="'.ADMIN_OP.'about_us" class="colorbox"><img src="images/icon/cursor.png">'._ABOUTMarlikCMS.'</a>
                 <a href="'.ADMIN_OP.'Logs"><img src="images/icon/lightbulb.png">'._SYSREP.'</a>
                 <a  href="'.ADMIN_OP.'phpinfoDIV" class="colorbox"><img src="images/icon/lightbulb.png">'._SERVERINFO.'</a>
                ');

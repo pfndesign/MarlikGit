@@ -4,7 +4,7 @@
 *
 * @package News Module	 - Functions													
 * @version $Id:  6:23 PM 1/8/2010  REVISION Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

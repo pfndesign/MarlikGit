@@ -3,7 +3,7 @@
  *
  * @package Google tab source														
  * @version  inc_nextGenTap.php $Id: beta6 $ 2:12 AM 12/25/2009						
- * @copyright (c)Marlik Group  http://www.nukelearn.com											
+ * @copyright (c)Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
  *
  */

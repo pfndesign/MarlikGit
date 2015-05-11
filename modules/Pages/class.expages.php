@@ -3,12 +3,12 @@
 *
 * @package Class For Extra Page														
 * @version $Id: class.expages.php 12:43 PM 3/5/2010 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
 require_once("mainfile.php");
-if (!defined("USV_VERSION")) {die("This only works on Nukelearn Portal , So why don't You join us<br>http://www.nukelearn.com");}
+if (!defined("USV_VERSION")) {die("This only works on MarlikCMS Portal , So why don't You join us<br>http://www.MarlikCMS.com");}
 define("XPAGE_TABLE","".$prefix."_extpages");
 
 class expage {
@@ -99,7 +99,7 @@ class expage {
 	}
 	$pagetitle = $this->data['title'];
 	
-	if (!defined("USV_VERSION")) {die("This only works on Nukelearn Portal , So why don't You join us<br>http://www.nukelearn.com");}
+	if (!defined("USV_VERSION")) {die("This only works on MarlikCMS Portal , So why don't You join us<br>http://www.MarlikCMS.com");}
 	
 
 	if ($myepk == 1 && !is_user($user)) {

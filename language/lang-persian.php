@@ -3,7 +3,7 @@
 *
 * @package Language file : Core														
 * @version $Id: lang-persian.php 11:12 AM 5/10/2011 $Aneeshtan						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -156,15 +156,15 @@ define("_CHATGUESTS","مهمان");
 define("_TERMSA","پذیرش شرایط");
 define("_TERMSAC","با تمامی شرایط ذکر شده در بالا موافقت می نمایم.");
 define("_TERMSCONT","<p align=center style=\"height: 38px\"><strong>شرایط استفاده از سیستم مدیریت 
-محتوای نیوک لرن <br>USV Nukelearn Portal</strong></p><p><b>1.</b> این یک CMS رایگان است که تحت مجوز  <a href=\"http://www.gnu.org/licenses/gpl.html\">GNU-GPL</a> توضیع می شود. شما ابتدا باید موارد مرتبط با این قوانین را مطالعه کنید.</p><p><b>2.</b> طبق موافقتنامه GNU-GPL با مولف این برنامه در طی شماره 213080، شما نمی توانید کپی رایت سازنده و طراح اصلی (<a href=\"http://www.phpnuke.org\">PHP-Nuke</a>) را از پایین سایت خود (قسمت فوتر سایت) حذف کنید و یا کپی رایت آمده در فایلها را پاک کنید. اگر مایل به برداشت آن هستید می توانید به <a href=\"http://phpnuke.org/modules.php?name=Commercial_License\">این لینک</a> بروید و شرایط برداشت کپی رایت را مطالعه نمایید.</p><p><b>3.</b> شما نمی توانید کپی رایت فارسی ساز و توسعه دهنده (<a href=\"http://www.nukelearn.com\">USV-Nuke</a>)&nbsp; 
-و&nbsp; (<a href=\"http://www.nukelearn.com\">Nukelearn</a>)&nbsp; را که در فایلها و توضیحات آمده است را پاک کنید. اگر مایل به افزودن قابلیتها و توسعه 
-آن هستید فقط می توانید نام سایت خود با شرح کارهایی که برروی آن انجام داده اید را ذکر کرده و کپی رایت خود را به فایلها و به کپی رایت اصلی&nbsp; که در قسمت فوتر سایت آمده است اضافه کنید.</p><p><b>4.</b> اگر مایل هستید شکل کنونی کپی رایت&nbsp; را تغییر دهید می توانید به <a href=\"http://www.nukelearn.com/projects/usv/copyrights.html\">این بخش</a> مراجعه کرده و یکی از این کپی رایت ها را به جای کپی رایت قبلی قرار دهید.</p><p><b>5.</b> 
+محتوای نیوک لرن <br>USV MarlikCMS Portal</strong></p><p><b>1.</b> این یک CMS رایگان است که تحت مجوز  <a href=\"http://www.gnu.org/licenses/gpl.html\">GNU-GPL</a> توضیع می شود. شما ابتدا باید موارد مرتبط با این قوانین را مطالعه کنید.</p><p><b>2.</b> طبق موافقتنامه GNU-GPL با مولف این برنامه در طی شماره 213080، شما نمی توانید کپی رایت سازنده و طراح اصلی (<a href=\"http://www.phpnuke.org\">PHP-Nuke</a>) را از پایین سایت خود (قسمت فوتر سایت) حذف کنید و یا کپی رایت آمده در فایلها را پاک کنید. اگر مایل به برداشت آن هستید می توانید به <a href=\"http://phpnuke.org/modules.php?name=Commercial_License\">این لینک</a> بروید و شرایط برداشت کپی رایت را مطالعه نمایید.</p><p><b>3.</b> شما نمی توانید کپی رایت فارسی ساز و توسعه دهنده (<a href=\"http://www.MarlikCMS.com\">USV-Nuke</a>)&nbsp; 
+و&nbsp; (<a href=\"http://www.MarlikCMS.com\">MarlikCMS</a>)&nbsp; را که در فایلها و توضیحات آمده است را پاک کنید. اگر مایل به افزودن قابلیتها و توسعه 
+آن هستید فقط می توانید نام سایت خود با شرح کارهایی که برروی آن انجام داده اید را ذکر کرده و کپی رایت خود را به فایلها و به کپی رایت اصلی&nbsp; که در قسمت فوتر سایت آمده است اضافه کنید.</p><p><b>4.</b> اگر مایل هستید شکل کنونی کپی رایت&nbsp; را تغییر دهید می توانید به <a href=\"http://www.MarlikCMS.com/projects/usv/copyrights.html\">این بخش</a> مراجعه کرده و یکی از این کپی رایت ها را به جای کپی رایت قبلی قرار دهید.</p><p><b>5.</b> 
 قرار دادن کپی رایت مربوطه بدون رعایت یکی از موارد ذکر شده و با برداشت آن طبق سند 
 3 موجب نقص شرایط استفاده&nbsp; می شود و نام سایت مربوطه به لیست نقص کنندگان شرایط استفاده از 
 این پرتال افزوده خواهد شد.</p><p><b>6.</b> همانطور که گفته شد،&nbsp; 
 این پرتال&nbsp; رایگان و در دسترس عموم قرار دارد. بنابراین هیچگونه تضمین امنیتی و پشتیبانی از این برنامه وجود ندارد.</li><li> 
 گروه توسعه نیوک لرن , با سعی و تلاش&nbsp; مداوم&nbsp;&nbsp; می کوشد تا پرتالی&nbsp; 
-شایسته را تقدیم شما هموطنان عزیز&nbsp; کند </p><p><li> جهت مشاهده لیست اعضای گروه، امکانات افزوده شده، اصلاحات در هر نسخه و یا اطلاعات و آشنایی بیشتر به سایت رسمی <a href=\"http://www.nukelearn.com\">Nukelearn</a> مراجعه کنید</li></p><p align=center><strong>موفقیت و سربلندی ایران و ایرانی آرزوی ما است<br><br>
+شایسته را تقدیم شما هموطنان عزیز&nbsp; کند </p><p><li> جهت مشاهده لیست اعضای گروه، امکانات افزوده شده، اصلاحات در هر نسخه و یا اطلاعات و آشنایی بیشتر به سایت رسمی <a href=\"http://www.MarlikCMS.com\">MarlikCMS</a> مراجعه کنید</li></p><p align=center><strong>موفقیت و سربلندی ایران و ایرانی آرزوی ما است<br><br>
 گروه توسعه&nbsp; نیوک لرن </strong></p>"
 );
 define("_USERSTALKINGNOW","در حال گفتمان هستند");
@@ -209,7 +209,7 @@ define("_FORUMS","تالار گفتمان");
 define("_GGuestbook","دفترچه یادگاری");
 define("_ERRORINVEMAIL","خطا: آدرس ایمیل معتبر نمیباشد");
 // Support PHP-Nuke INP
-define("_INP_SUPPORT","مشکلات خود را در ارتباط با <a href='http://www.nukelearn.com'>USV-Nuke</a> در بخش های زیر مطرح کنید");
+define("_INP_SUPPORT","مشکلات خود را در ارتباط با <a href='http://www.MarlikCMS.com'>USV-Nuke</a> در بخش های زیر مطرح کنید");
 define("_INP_SUPPORT2","این بلوک فقط برای مدیران نمایش داده می شود");
 define("_INP_SUPPORTI","USV-Nuke");
 define("_INP_SUPPORTU","نصب و ارتقا");
@@ -578,7 +578,7 @@ define("_LASTREFERERS_NOREFERERS","ارجاع دهنده ای ثبت نشده ا
 
 define("_BLOCK_MAINMENU","منوی اصلی");
 
-// - phpBB3_Forum_Center_NukeLearn -----
+// - phpBB3_Forum_Center_MarlikCMS -----
 
 define("_PHPBB3BLOCK_LASTPOSTFROM","آخرین ارسال توسط");
 define("_PHPBB3BLOCK_CREATEDIN","ایجاد شده در");

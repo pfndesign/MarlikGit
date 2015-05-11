@@ -24,7 +24,7 @@ O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:8:"nontitle";i:1;s:12:"current_item";a:0:
 			</table>
 			
 			<p>وقتی روی لینک &quot;ادامه - آرشیو...&quot; هر کردوم از 3سایتی که لینکشون داده شده کلیک میشه فقط یه صفحه سفید میاد حتی خوراک سایت نیوک لرن</p>
-		";s:7:"summary";s:232:"وقتی روی لینک &quot;ادامه - آرشیو...&quot; هر کردوم از 3سایتی که لینکشون داده شده کلیک میشه فقط یه صفحه سفید میاد حتی خوراک سایت نیوک لرن";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=197";}i:1;a:8:{s:2:"id";s:16:"bug://report/196";s:5:"title";s:34:"مشکل در ورود کاربر ";s:7:"updated";s:20:"2013-04-08T13:38:58Z";s:6:"author";s:7:"
+		";s:7:"summary";s:232:"وقتی روی لینک &quot;ادامه - آرشیو...&quot; هر کردوم از 3سایتی که لینکشون داده شده کلیک میشه فقط یه صفحه سفید میاد حتی خوراک سایت نیوک لرن";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=197";}i:1;a:8:{s:2:"id";s:16:"bug://report/196";s:5:"title";s:34:"مشکل در ورود کاربر ";s:7:"updated";s:20:"2013-04-08T13:38:58Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1157:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -52,7 +52,7 @@ O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:8:"nontitle";i:1;s:12:"current_item";a:0:
 			<p>بعد از عضویت و کلیک بر روی گزینه پایان مینویسه بعد از چندثانیه وارد سایت میشوید اما صفحه ورود کاربر میاد <br />
 اگه برای اولین بار مشخصات کاربرو وارد کنی وارد سایت میشه اما بعد از خروج نه به مشخصات این کاربر و نه کاربر جدید وارد سایت نمیشه عکس رو مشاهده کنید با فایر فاکس تست کردم حتی هیستوری و کش رو هم پاک کردم اما 3تا کاربر الان آنلاین میزنه</p>
 		";s:7:"summary";s:610:"بعد از عضویت و کلیک بر روی گزینه پایان مینویسه بعد از چندثانیه وارد سایت میشوید اما صفحه ورود کاربر میاد <br />
-اگه برای اولین بار مشخصات کاربرو وارد کنی وارد سایت میشه اما بعد از خروج نه به مشخصات این کاربر و نه کاربر جدید وارد سایت نمیشه عکس رو مشاهده کنید با فایر فاکس تست کردم حتی هیستوری و کش رو هم پاک کردم اما 3تا کاربر الان آنلاین میزنه";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=196";}i:2;a:8:{s:2:"id";s:16:"bug://report/195";s:5:"title";s:75:"نمایش تگها در آخرین نظرات سایت پایین صفحه";s:7:"updated";s:20:"2013-04-08T13:10:45Z";s:6:"author";s:7:"
+اگه برای اولین بار مشخصات کاربرو وارد کنی وارد سایت میشه اما بعد از خروج نه به مشخصات این کاربر و نه کاربر جدید وارد سایت نمیشه عکس رو مشاهده کنید با فایر فاکس تست کردم حتی هیستوری و کش رو هم پاک کردم اما 3تا کاربر الان آنلاین میزنه";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=196";}i:2;a:8:{s:2:"id";s:16:"bug://report/195";s:5:"title";s:75:"نمایش تگها در آخرین نظرات سایت پایین صفحه";s:7:"updated";s:20:"2013-04-08T13:10:45Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:667:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -78,7 +78,7 @@ O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:8:"nontitle";i:1;s:12:"current_item";a:0:
 			</table>
 			
 			<p>تگها به همرا نظرت ثبت شده نمایش داده می شوند</p>
-		";s:7:"summary";s:79:"تگها به همرا نظرت ثبت شده نمایش داده می شوند";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=195";}i:3;a:8:{s:2:"id";s:16:"bug://report/179";s:5:"title";s:50:"مشکل در ثبت تنظیمات فایروال";s:7:"updated";s:20:"2013-04-08T12:53:15Z";s:6:"author";s:7:"
+		";s:7:"summary";s:79:"تگها به همرا نظرت ثبت شده نمایش داده می شوند";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=195";}i:3;a:8:{s:2:"id";s:16:"bug://report/179";s:5:"title";s:50:"مشکل در ثبت تنظیمات فایروال";s:7:"updated";s:20:"2013-04-08T12:53:15Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:10:"amirhosein";s:12:"atom_content";s:735:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -104,7 +104,7 @@ O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:8:"nontitle";i:1;s:12:"current_item";a:0:
 			</table>
 			
 			<p>برای تغییر تنظیمات فایروال هیچ دکمه ثبت یا ذخیره ای وجود نداره و بالتبع نمیشه تنظیمات رو تغییر داد.</p>
-		";s:7:"summary";s:179:"برای تغییر تنظیمات فایروال هیچ دکمه ثبت یا ذخیره ای وجود نداره و بالتبع نمیشه تنظیمات رو تغییر داد.";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=179";}i:4;a:8:{s:2:"id";s:16:"bug://report/190";s:5:"title";s:57:"تغییر مکان عنوان فیلد "نام منبع"";s:7:"updated";s:20:"2013-04-08T12:52:10Z";s:6:"author";s:7:"
+		";s:7:"summary";s:179:"برای تغییر تنظیمات فایروال هیچ دکمه ثبت یا ذخیره ای وجود نداره و بالتبع نمیشه تنظیمات رو تغییر داد.";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=179";}i:4;a:8:{s:2:"id";s:16:"bug://report/190";s:5:"title";s:57:"تغییر مکان عنوان فیلد "نام منبع"";s:7:"updated";s:20:"2013-04-08T12:52:10Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:727:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -130,7 +130,7 @@ O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:8:"nontitle";i:1;s:12:"current_item";a:0:
 			</table>
 			
 			<p>با افزودن تگ متن برای خبر ارسالی فیلد پایینیش &quot;نام منبع&quot; به سمت چپ حرکت میکنه</p>
-		";s:7:"summary";s:147:"با افزودن تگ متن برای خبر ارسالی فیلد پایینیش &quot;نام منبع&quot; به سمت چپ حرکت میکنه";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=190";}i:5;a:8:{s:2:"id";s:16:"bug://report/194";s:5:"title";s:45:"اشکال در نمایش ماژول Avantgo";s:7:"updated";s:20:"2013-04-08T12:51:08Z";s:6:"author";s:7:"
+		";s:7:"summary";s:147:"با افزودن تگ متن برای خبر ارسالی فیلد پایینیش &quot;نام منبع&quot; به سمت چپ حرکت میکنه";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=190";}i:5;a:8:{s:2:"id";s:16:"bug://report/194";s:5:"title";s:45:"اشکال در نمایش ماژول Avantgo";s:7:"updated";s:20:"2013-04-08T12:51:08Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:585:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -156,7 +156,7 @@ O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:8:"nontitle";i:1;s:12:"current_item";a:0:
 			</table>
 			
 			<p>در عکس مشخص هست</p>
-		";s:7:"summary";s:27:"در عکس مشخص هست";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=194";}i:6;a:8:{s:2:"id";s:16:"bug://report/180";s:5:"title";s:48:"مشکل در مخزن آنلاین قالبها";s:7:"updated";s:20:"2013-04-08T12:49:01Z";s:6:"author";s:7:"
+		";s:7:"summary";s:27:"در عکس مشخص هست";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=194";}i:6;a:8:{s:2:"id";s:16:"bug://report/180";s:5:"title";s:48:"مشکل در مخزن آنلاین قالبها";s:7:"updated";s:20:"2013-04-08T12:49:01Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:10:"amirhosein";s:12:"atom_content";s:924:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -188,7 +188,7 @@ O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:8:"nontitle";i:1;s:12:"current_item";a:0:
 		";s:7:"summary";s:370:"توی بخش مربوط به مدیریت قالبها:<br />
 1- تصویر ناخنی از قالب پیشفرض صحیح نیست<br />
 2- وقتی بر روی مخزن آنلاین قالب کلیک می کنیم این اخطار میاد:<br />
- Fatal error: Call to undefined function curl_init() in E:\xampp\htdocs\USV6-2-22\includes\inc_adminfunc.php on line 74";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=180";}i:7;a:8:{s:2:"id";s:16:"bug://report/188";s:5:"title";s:46:"اشکال در مدیریت منوی اصلی";s:7:"updated";s:20:"2013-04-08T12:38:41Z";s:6:"author";s:7:"
+ Fatal error: Call to undefined function curl_init() in E:\xampp\htdocs\USV6-2-22\includes\inc_adminfunc.php on line 74";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=180";}i:7;a:8:{s:2:"id";s:16:"bug://report/188";s:5:"title";s:46:"اشکال در مدیریت منوی اصلی";s:7:"updated";s:20:"2013-04-08T12:38:41Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:746:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -218,7 +218,7 @@ O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:8:"nontitle";i:1;s:12:"current_item";a:0:
  Warning: sort() expects parameter 1 to be array, string given in C:\wamp\www\u116\admin\modules\main_menu.php on line 164</p>
 		";s:7:"summary";s:187:"هنگام انتخاب گزینه اختیارات<br />
 <br />
- Warning: sort() expects parameter 1 to be array, string given in C:\wamp\www\u116\admin\modules\main_menu.php on line 164";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=188";}i:8;a:8:{s:2:"id";s:16:"bug://report/191";s:5:"title";s:54:"اشکال در مدیریت بانک اطلاعاتی";s:7:"updated";s:20:"2013-04-08T12:29:17Z";s:6:"author";s:7:"
+ Warning: sort() expects parameter 1 to be array, string given in C:\wamp\www\u116\admin\modules\main_menu.php on line 164";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=188";}i:8;a:8:{s:2:"id";s:16:"bug://report/191";s:5:"title";s:54:"اشکال در مدیریت بانک اطلاعاتی";s:7:"updated";s:20:"2013-04-08T12:29:17Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:683:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -244,7 +244,7 @@ O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:8:"nontitle";i:1;s:12:"current_item";a:0:
 			</table>
 			
 			<p> Deprecated: Function mysql_list_tables() is deprecated in C:\wamp\www\u116\admin\modules\backup.php on line 263</p>
-		";s:7:"summary";s:112:" Deprecated: Function mysql_list_tables() is deprecated in C:\wamp\www\u116\admin\modules\backup.php on line 263";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=191";}i:9;a:8:{s:2:"id";s:16:"bug://report/185";s:5:"title";s:27:"مشکل در ثبت نام";s:7:"updated";s:20:"2013-04-08T07:31:26Z";s:6:"author";s:7:"
+		";s:7:"summary";s:112:" Deprecated: Function mysql_list_tables() is deprecated in C:\wamp\www\u116\admin\modules\backup.php on line 263";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=191";}i:9;a:8:{s:2:"id";s:16:"bug://report/185";s:5:"title";s:27:"مشکل در ثبت نام";s:7:"updated";s:20:"2013-04-08T07:31:26Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"Aliyousefian";s:12:"atom_content";s:1050:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -271,12 +271,12 @@ O:9:"MagpieRSS":23:{s:6:"parser";i:0;s:8:"nontitle";i:1;s:12:"current_item";a:0:
 			
 			<p>بعد از پر کردن فیلد های ثبت نام و کلیک کردن روی دکمه پایان ارور زیر مشاهده میشود : <br />
 <br />
-Warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\nukelearn\includes\template.class.php:71) in C:\xampp\htdocs\nukelearn\modules\Your_Account\includes\functions.php on line 164<br />
+Warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\MarlikCMS\includes\template.class.php:71) in C:\xampp\htdocs\MarlikCMS\modules\Your_Account\includes\functions.php on line 164<br />
 یوزر ثبت نام میشه ولی در لاگین شدن به یوزر مشکلی وجود داره و لاگین نمیشه</p>
 		";s:7:"summary";s:525:"بعد از پر کردن فیلد های ثبت نام و کلیک کردن روی دکمه پایان ارور زیر مشاهده میشود : <br />
 <br />
-Warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\nukelearn\includes\template.class.php:71) in C:\xampp\htdocs\nukelearn\modules\Your_Account\includes\functions.php on line 164<br />
-یوزر ثبت نام میشه ولی در لاگین شدن به یوزر مشکلی وجود داره و لاگین نمیشه";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=185";}i:10;a:8:{s:2:"id";s:16:"bug://report/187";s:5:"title";s:64:"اشکال در تقویم سایت به زبان انگلیسی";s:7:"updated";s:20:"2013-04-08T07:29:50Z";s:6:"author";s:7:"
+Warning: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\MarlikCMS\includes\template.class.php:71) in C:\xampp\htdocs\MarlikCMS\modules\Your_Account\includes\functions.php on line 164<br />
+یوزر ثبت نام میشه ولی در لاگین شدن به یوزر مشکلی وجود داره و لاگین نمیشه";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=185";}i:10;a:8:{s:2:"id";s:16:"bug://report/187";s:5:"title";s:64:"اشکال در تقویم سایت به زبان انگلیسی";s:7:"updated";s:20:"2013-04-08T07:29:50Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:666:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -302,7 +302,7 @@ Warning: Cannot modify header information - headers already sent by (output star
 			</table>
 			
 			<p> Fatal error: Class 'ECalendar' not found in C:\wamp\www\u116\blocks\block-Calender.php on line 154</p>
-		";s:7:"summary";s:99:" Fatal error: Class 'ECalendar' not found in C:\wamp\www\u116\blocks\block-Calender.php on line 154";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=187";}i:11;a:8:{s:2:"id";s:16:"bug://report/175";s:5:"title";s:39:"اشکال در اطلاعیه سایت";s:7:"updated";s:20:"2013-04-07T18:02:47Z";s:6:"author";s:7:"
+		";s:7:"summary";s:99:" Fatal error: Class 'ECalendar' not found in C:\wamp\www\u116\blocks\block-Calender.php on line 154";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=187";}i:11;a:8:{s:2:"id";s:16:"bug://report/175";s:5:"title";s:39:"اشکال در اطلاعیه سایت";s:7:"updated";s:20:"2013-04-07T18:02:47Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1506:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -346,7 +346,7 @@ Warning: Cannot modify header information - headers already sent by (output star
 <br />
 ======================================================== ggrZeZcwqpXyZxDID A4n7ht lonieuoxybvn, [url=http://rfmuomgmeuca.com/]rfmuomgmeuca[/url], [link=http://cixurxwftdnn.com/]cixurxwftdnn[/link], http://urpsglfydcah.com/ A4n7ht lonieuoxybvn, [url=http://rfmuomgmeuca.com/]rfmuomgmeuca[/url], [link=http://cixurxwftdnn.com/]cixurxwftdnn[/link], http://urpsglfydcah.com/<br />
 <br />
-";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=175";}i:12;a:8:{s:2:"id";s:16:"bug://report/193";s:5:"title";s:58:"عدم نمایش ادامه خبر در صفحه اصلی";s:7:"updated";s:20:"2013-04-07T11:52:19Z";s:6:"author";s:7:"
+";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=175";}i:12;a:8:{s:2:"id";s:16:"bug://report/193";s:5:"title";s:58:"عدم نمایش ادامه خبر در صفحه اصلی";s:7:"updated";s:20:"2013-04-07T11:52:19Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:639:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -372,7 +372,7 @@ Warning: Cannot modify header information - headers already sent by (output star
 			</table>
 			
 			<p>در صفحه اول لینک ادامه خبر نمایش داده نمیشه</p>
-		";s:7:"summary";s:78:"در صفحه اول لینک ادامه خبر نمایش داده نمیشه";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=193";}i:13;a:8:{s:2:"id";s:16:"bug://report/189";s:5:"title";s:24:"مشکلات ترجمه ";s:7:"updated";s:20:"2013-04-07T11:47:07Z";s:6:"author";s:7:"
+		";s:7:"summary";s:78:"در صفحه اول لینک ادامه خبر نمایش داده نمیشه";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=193";}i:13;a:8:{s:2:"id";s:16:"bug://report/189";s:5:"title";s:24:"مشکلات ترجمه ";s:7:"updated";s:20:"2013-04-07T11:47:07Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:592:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -398,7 +398,7 @@ Warning: Cannot modify header information - headers already sent by (output star
 			</table>
 			
 			<p>ترجمه فارسی نمایش داده نمی شود</p>
-		";s:7:"summary";s:55:"ترجمه فارسی نمایش داده نمی شود";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=189";}i:14;a:8:{s:2:"id";s:16:"bug://report/192";s:5:"title";s:39:"اشکال در تایپ انگلیسی";s:7:"updated";s:20:"2013-04-07T11:37:37Z";s:6:"author";s:7:"
+		";s:7:"summary";s:55:"ترجمه فارسی نمایش داده نمی شود";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=189";}i:14;a:8:{s:2:"id";s:16:"bug://report/192";s:5:"title";s:39:"اشکال در تایپ انگلیسی";s:7:"updated";s:20:"2013-04-07T11:37:37Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:719:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -426,7 +426,7 @@ Warning: Cannot modify header information - headers already sent by (output star
 			<p>در زبان انگلیسی برای اشتراک گذاری وبلاگ عبارت زیر نمایش داده میشه <br />
 Ùhare this post with social networks.</p>
 		";s:7:"summary";s:167:"در زبان انگلیسی برای اشتراک گذاری وبلاگ عبارت زیر نمایش داده میشه <br />
-Ùhare this post with social networks.";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=192";}i:15;a:8:{s:2:"id";s:16:"bug://report/186";s:5:"title";s:26:"مشکل کد امنیتی";s:7:"updated";s:20:"2013-03-10T08:52:54Z";s:6:"author";s:7:"
+Ùhare this post with social networks.";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=192";}i:15;a:8:{s:2:"id";s:16:"bug://report/186";s:5:"title";s:26:"مشکل کد امنیتی";s:7:"updated";s:20:"2013-03-10T08:52:54Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"Aliyousefian";s:12:"atom_content";s:768:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -454,7 +454,7 @@ Warning: Cannot modify header information - headers already sent by (output star
 			<p>در بخش ورود به مدیریت سایت وقتی کد امنیتی خالی گذاشته بشه بدون خطا دادن وارد مدیریت میشه<br />
 (ولی اگر پر بشه ولی اشتباه باشه خطا میده )</p>
 		";s:7:"summary";s:239:"در بخش ورود به مدیریت سایت وقتی کد امنیتی خالی گذاشته بشه بدون خطا دادن وارد مدیریت میشه<br />
-(ولی اگر پر بشه ولی اشتباه باشه خطا میده )";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=186";}i:16;a:8:{s:2:"id";s:16:"bug://report/184";s:5:"title";s:26:"برخی مشکلات mybb";s:7:"updated";s:20:"2013-02-26T12:00:53Z";s:6:"author";s:7:"
+(ولی اگر پر بشه ولی اشتباه باشه خطا میده )";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=186";}i:16;a:8:{s:2:"id";s:16:"bug://report/184";s:5:"title";s:26:"برخی مشکلات mybb";s:7:"updated";s:20:"2013-02-26T12:00:53Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"Aliyousefian";s:12:"atom_content";s:1166:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -484,7 +484,7 @@ Warning: Cannot modify header information - headers already sent by (output star
 و اینکه وقتی در پرتال به صورت یوزر معمولی لاگین هستیم , وارد انجمن که میشیم در انجمن به صورت لاگین نشده هستیم . مدیریت رو هم تشخیص نمیده یعنی برای کنترل پنل مدیریت دوباره باید لاگین شد در صورتی که در مدیریت پرتال لاگین هستیم</p>
 		";s:7:"summary";s:632:"دیتابیس mybb باید بهینه سازی بشه و کش ها پاک بشوند . <br />
 همچنین موقع لاگین شدن درانجمن ,  به سایت http://www.irangeotechnic.com ریداریکت میشه.<br />
-و اینکه وقتی در پرتال به صورت یوزر معمولی لاگین هستیم , وارد انجمن که میشیم در انجمن به صورت لاگین نشده هستیم . مدیریت رو هم تشخیص نمیده یعنی برای کنترل پنل مدیریت دوباره باید لاگین شد در صورتی که در مدیریت پرتال لاگین هستیم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=184";}i:17;a:8:{s:2:"id";s:16:"bug://report/183";s:5:"title";s:46:"مشکل تغییر زبان در مدیریت";s:7:"updated";s:20:"2013-02-26T11:41:12Z";s:6:"author";s:7:"
+و اینکه وقتی در پرتال به صورت یوزر معمولی لاگین هستیم , وارد انجمن که میشیم در انجمن به صورت لاگین نشده هستیم . مدیریت رو هم تشخیص نمیده یعنی برای کنترل پنل مدیریت دوباره باید لاگین شد در صورتی که در مدیریت پرتال لاگین هستیم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=184";}i:17;a:8:{s:2:"id";s:16:"bug://report/183";s:5:"title";s:46:"مشکل تغییر زبان در مدیریت";s:7:"updated";s:20:"2013-02-26T11:41:12Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"Aliyousefian";s:12:"atom_content";s:795:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -512,7 +512,7 @@ Warning: Cannot modify header information - headers already sent by (output star
 			<p>توی مدیریت روی پرچم برای تغییر زبان کلیک میکنم به یه صفحه ی عجیب ریداریکت میشه و Not Found میزنه <br />
 ولی بعد از دستی رفرش کردن زبان تغییر کرده ...</p>
 		";s:7:"summary";s:251:"توی مدیریت روی پرچم برای تغییر زبان کلیک میکنم به یه صفحه ی عجیب ریداریکت میشه و Not Found میزنه <br />
-ولی بعد از دستی رفرش کردن زبان تغییر کرده ...";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=183";}i:18;a:8:{s:2:"id";s:16:"bug://report/177";s:5:"title";s:64:"مشکل در navigation بخش نظرات ماژول اخبار";s:7:"updated";s:20:"2013-02-26T10:14:58Z";s:6:"author";s:7:"
+ولی بعد از دستی رفرش کردن زبان تغییر کرده ...";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=183";}i:18;a:8:{s:2:"id";s:16:"bug://report/177";s:5:"title";s:64:"مشکل در navigation بخش نظرات ماژول اخبار";s:7:"updated";s:20:"2013-02-26T10:14:58Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:10:"amirhosein";s:12:"atom_content";s:926:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -538,7 +538,7 @@ Warning: Cannot modify header information - headers already sent by (output star
 			</table>
 			
 			<p>وقتی نظرات یک خبر بیش از یک صفحه بشوند لینکهای قسمت navigation نظرات آدرس دهی درستی انجام نمی دهند. به تعبیر بهتر متغیر sid درست مقداردهی نمی شود و این باعث بروز خطا می شود. اصلاح این مشکل خیلی راحت است!</p>
-		";s:7:"summary";s:350:"وقتی نظرات یک خبر بیش از یک صفحه بشوند لینکهای قسمت navigation نظرات آدرس دهی درستی انجام نمی دهند. به تعبیر بهتر متغیر sid درست مقداردهی نمی شود و این باعث بروز خطا می شود. اصلاح این مشکل خیلی راحت است!";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=177";}i:19;a:8:{s:2:"id";s:16:"bug://report/178";s:5:"title";s:64:"اشکال در نصب مرحله تنظيم فايل config.php";s:7:"updated";s:20:"2013-02-26T08:31:07Z";s:6:"author";s:7:"
+		";s:7:"summary";s:350:"وقتی نظرات یک خبر بیش از یک صفحه بشوند لینکهای قسمت navigation نظرات آدرس دهی درستی انجام نمی دهند. به تعبیر بهتر متغیر sid درست مقداردهی نمی شود و این باعث بروز خطا می شود. اصلاح این مشکل خیلی راحت است!";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=177";}i:19;a:8:{s:2:"id";s:16:"bug://report/178";s:5:"title";s:64:"اشکال در نصب مرحله تنظيم فايل config.php";s:7:"updated";s:20:"2013-02-26T08:31:07Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:2233:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -590,7 +590,7 @@ CREATE TABLE IF NOT EXISTS `nuke_stories` ( `sid` int(11) NOT NULL AUTO_INCREMEN
 <br />
 MySQL said: <br />
 <br />
-#1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=4' at line 31 ";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=178";}i:20;a:8:{s:2:"id";s:16:"bug://report/182";s:5:"title";s:28:"مشکل در جدول users";s:7:"updated";s:20:"2013-02-26T08:29:44Z";s:6:"author";s:7:"
+#1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=4' at line 31 ";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=178";}i:20;a:8:{s:2:"id";s:16:"bug://report/182";s:5:"title";s:28:"مشکل در جدول users";s:7:"updated";s:20:"2013-02-26T08:29:44Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"Aliyousefian";s:12:"atom_content";s:1051:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -622,7 +622,7 @@ MySQL said: <br />
 		";s:7:"summary";s:525:"سلام . توی نصب نسخه ی USV6-2-25-update2 <br />
 جدول Nuke_Users ایمپورت نمیشه و این جدول بعد از نصب توی بانک اطلاعاتی وجود ندارد . پس ثبت نام و لاگین شدن به مشکل بر میخورد . <br />
 شاید مشکل از من باشه . دوستان دیگر تست کنند .<br />
-توی فایل Tigris_1_1_6.sql جدول users وجود داشت ولی چرا اینستالر جدول رو ایمپورت نمیکنه رو نمیدونم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=182";}i:21;a:8:{s:2:"id";s:16:"bug://report/181";s:5:"title";s:24:"عدم ارسال خبر";s:7:"updated";s:20:"2013-02-25T20:55:11Z";s:6:"author";s:7:"
+توی فایل Tigris_1_1_6.sql جدول users وجود داشت ولی چرا اینستالر جدول رو ایمپورت نمیکنه رو نمیدونم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=182";}i:21;a:8:{s:2:"id";s:16:"bug://report/181";s:5:"title";s:24:"عدم ارسال خبر";s:7:"updated";s:20:"2013-02-25T20:55:11Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:10:"amirhosein";s:12:"atom_content";s:617:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -648,7 +648,7 @@ MySQL said: <br />
 			</table>
 			
 			<p>وقتی خبر جدید ارسال می کنیم یه صفحه سفید رنگ ظاهر میشه</p>
-		";s:7:"summary";s:97:"وقتی خبر جدید ارسال می کنیم یه صفحه سفید رنگ ظاهر میشه";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=181";}i:22;a:8:{s:2:"id";s:15:"bug://report/94";s:5:"title";s:29:"مشکل در نظر سنجی";s:7:"updated";s:20:"2012-02-15T18:52:22Z";s:6:"author";s:7:"
+		";s:7:"summary";s:97:"وقتی خبر جدید ارسال می کنیم یه صفحه سفید رنگ ظاهر میشه";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=181";}i:22;a:8:{s:2:"id";s:15:"bug://report/94";s:5:"title";s:29:"مشکل در نظر سنجی";s:7:"updated";s:20:"2012-02-15T18:52:22Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:1195:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -684,7 +684,7 @@ Warning: Missing argument 3 for themesidebox(), called in C:\xampp\htdocs\module
 <br />
 Warning: Missing argument 4 for themesidebox(), called in C:\xampp\htdocs\modules\Surveys\index.php on line 150 and defined in C:\xampp\htdocs\includes\inc_template.php on line 153<br />
 <br />
-Warning: Missing argument 5 for themesidebox(), called in C:\xampp\htdocs\modules\Surveys\index.php on line 150 and defined in C:\xampp\htdocs\includes\inc_template.php on line 153";s:4:"link";s:53:"http://www.nukelearn.com/bugs/showreport.php?bugid=94";}i:23;a:8:{s:2:"id";s:16:"bug://report/174";s:5:"title";s:38:"اشکال در google webmaster tools";s:7:"updated";s:20:"2012-02-14T21:30:29Z";s:6:"author";s:7:"
+Warning: Missing argument 5 for themesidebox(), called in C:\xampp\htdocs\modules\Surveys\index.php on line 150 and defined in C:\xampp\htdocs\includes\inc_template.php on line 153";s:4:"link";s:53:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=94";}i:23;a:8:{s:2:"id";s:16:"bug://report/174";s:5:"title";s:38:"اشکال در google webmaster tools";s:7:"updated";s:20:"2012-02-14T21:30:29Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1088:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -728,7 +728,7 @@ Empty redirect	Feb 8, 2012<br />
 <br />
 http://www.mysite.ir/forums/search.php?action=results&sid=1b9f1b75d28a14d8f814c41b13dae4a7&sortby=views&order=desc<br />
 <br />
-درمورد sitemap هم که قبلا به صورت جداگانه گزارش دادم ";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=174";}i:24;a:8:{s:2:"id";s:16:"bug://report/173";s:5:"title";s:50:"مشکل آدرس تگ ها در نسخه جدید";s:7:"updated";s:20:"2012-02-14T21:27:59Z";s:6:"author";s:7:"
+درمورد sitemap هم که قبلا به صورت جداگانه گزارش دادم ";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=174";}i:24;a:8:{s:2:"id";s:16:"bug://report/173";s:5:"title";s:50:"مشکل آدرس تگ ها در نسخه جدید";s:7:"updated";s:20:"2012-02-14T21:27:59Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:10:"Kralpc.com";s:12:"atom_content";s:1143:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -754,7 +754,7 @@ http://www.mysite.ir/forums/search.php?action=results&sid=1b9f1b75d28a14d8f814c4
 			</table>
 			
 			<p>در نسخه جدید تگ هایی که بصورت دو کلمه ای هستند در هنگام ثبت در دیتابیس بین دو کلمه یک &quot; - &quot; اضافه میشه که وقتی در بلوک تگ ها یا سایر جاها بر روی این تگ ها کلیک میشه پیغام &quot; شناسه کلیدواژه مورد نظر شما معتبر نیست &quot; را می دهد در حالیکه در نسخه های پیشین کلمه ها با یک &quot; +&quot; از هم جدا می شدند و مشکل معتبر نبودن تگ ها وجود نداشت.</p>
-		";s:7:"summary";s:593:"در نسخه جدید تگ هایی که بصورت دو کلمه ای هستند در هنگام ثبت در دیتابیس بین دو کلمه یک &quot; - &quot; اضافه میشه که وقتی در بلوک تگ ها یا سایر جاها بر روی این تگ ها کلیک میشه پیغام &quot; شناسه کلیدواژه مورد نظر شما معتبر نیست &quot; را می دهد در حالیکه در نسخه های پیشین کلمه ها با یک &quot; +&quot; از هم جدا می شدند و مشکل معتبر نبودن تگ ها وجود نداشت.";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=173";}i:25;a:8:{s:2:"id";s:16:"bug://report/170";s:5:"title";s:79:"نمایش صفحه غیرفعال شده در ماژول صفحات اضافی";s:7:"updated";s:20:"2011-11-07T17:13:44Z";s:6:"author";s:7:"
+		";s:7:"summary";s:593:"در نسخه جدید تگ هایی که بصورت دو کلمه ای هستند در هنگام ثبت در دیتابیس بین دو کلمه یک &quot; - &quot; اضافه میشه که وقتی در بلوک تگ ها یا سایر جاها بر روی این تگ ها کلیک میشه پیغام &quot; شناسه کلیدواژه مورد نظر شما معتبر نیست &quot; را می دهد در حالیکه در نسخه های پیشین کلمه ها با یک &quot; +&quot; از هم جدا می شدند و مشکل معتبر نبودن تگ ها وجود نداشت.";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=173";}i:25;a:8:{s:2:"id";s:16:"bug://report/170";s:5:"title";s:79:"نمایش صفحه غیرفعال شده در ماژول صفحات اضافی";s:7:"updated";s:20:"2011-11-07T17:13:44Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:10:"amirhosein";s:12:"atom_content";s:857:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -782,7 +782,7 @@ http://www.mysite.ir/forums/search.php?action=results&sid=1b9f1b75d28a14d8f814c4
 			<p>در ماژول صفحات اضافی وقتی یه صفحه از بخش مدیریت غیرفعال میشه نباید توی بخش کاربری نمایش داده بشه که فعلاً اینطور نیست.<br />
 مشکل رو برطرف و پیوست می کنم</p>
 		";s:7:"summary";s:270:"در ماژول صفحات اضافی وقتی یه صفحه از بخش مدیریت غیرفعال میشه نباید توی بخش کاربری نمایش داده بشه که فعلاً اینطور نیست.<br />
-مشکل رو برطرف و پیوست می کنم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=170";}i:26;a:8:{s:2:"id";s:16:"bug://report/169";s:5:"title";s:73:"فعال نبودن صفحه اضافی جدید بصورت پیش فرض";s:7:"updated";s:20:"2011-11-07T14:48:07Z";s:6:"author";s:7:"
+مشکل رو برطرف و پیوست می کنم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=170";}i:26;a:8:{s:2:"id";s:16:"bug://report/169";s:5:"title";s:73:"فعال نبودن صفحه اضافی جدید بصورت پیش فرض";s:7:"updated";s:20:"2011-11-07T14:48:07Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:10:"amirhosein";s:12:"atom_content";s:925:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -808,7 +808,7 @@ http://www.mysite.ir/forums/search.php?action=results&sid=1b9f1b75d28a14d8f814c4
 			</table>
 			
 			<p>وقتی توی ماژول صفحات اضافی یک صفحه جدید ایجاد کنیم بصورت پیشفرض بصورت غیرفعال در دیتابیس ثبت میشه. علت هم اینه که فیلد مربوطه یعنی active بصورت پیشفرض روی صفر تنظیم شده که باید روی یک قرار بگیره</p>
-		";s:7:"summary";s:344:"وقتی توی ماژول صفحات اضافی یک صفحه جدید ایجاد کنیم بصورت پیشفرض بصورت غیرفعال در دیتابیس ثبت میشه. علت هم اینه که فیلد مربوطه یعنی active بصورت پیشفرض روی صفر تنظیم شده که باید روی یک قرار بگیره";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=169";}i:27;a:8:{s:2:"id";s:16:"bug://report/168";s:5:"title";s:55:"اشکالات نگارشی در ماژول Your Acount";s:7:"updated";s:20:"2011-11-04T13:13:52Z";s:6:"author";s:7:"
+		";s:7:"summary";s:344:"وقتی توی ماژول صفحات اضافی یک صفحه جدید ایجاد کنیم بصورت پیشفرض بصورت غیرفعال در دیتابیس ثبت میشه. علت هم اینه که فیلد مربوطه یعنی active بصورت پیشفرض روی صفر تنظیم شده که باید روی یک قرار بگیره";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=169";}i:27;a:8:{s:2:"id";s:16:"bug://report/168";s:5:"title";s:55:"اشکالات نگارشی در ماژول Your Acount";s:7:"updated";s:20:"2011-11-04T13:13:52Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1076:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -844,7 +844,7 @@ http://www.mysite.ir/forums/search.php?action=results&sid=1b9f1b75d28a14d8f814c4
 رمز عبور را فراموش کرده اید؟ مشکلی نیست. خواهشمندیم نام کاربری یا ایمیل خود را نوشته و روی دکمه فرستادن بزنید .<br />
 <br />
 در قسمت عضویت نوشته شده پست الکترونیک را وارد کنید و در سطر بعد نوشته شده ایمیل را مجددا وارد کنید که هر دو باید یکسان باشه<br />
-";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=168";}i:28;a:8:{s:2:"id";s:16:"bug://report/122";s:5:"title";s:24:"مشکل در انجمن";s:7:"updated";s:20:"2011-07-09T11:30:47Z";s:6:"author";s:7:"
+";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=168";}i:28;a:8:{s:2:"id";s:16:"bug://report/122";s:5:"title";s:24:"مشکل در انجمن";s:7:"updated";s:20:"2011-07-09T11:30:47Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:1198:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -874,7 +874,7 @@ http://www.mysite.ir/forums/search.php?action=results&sid=1b9f1b75d28a14d8f814c4
 دوم این که لینک های انجمن غلط اند و همش به صوریت USV3/forums در میاد و یه usv3 قبل از هر لینکی میاد و این باعث میشه که قالب انجمن مشکل داشته باشه و عکس ها و استایل های آن بالا نیاد</p>
 		";s:7:"summary";s:660:"توی مدیریت تالار با رمز مدیریت وارد میشویم,,,,,,تا این جا درست<br />
 وقتی توی مدیریت روی یک قسمت کلیک می کنیم دوباره بر می گرده به صفحه ی ورود دوباره باید رمز مدیریت را بزنیم تا بره جایی که کلیک کردیم<br />
-دوم این که لینک های انجمن غلط اند و همش به صوریت USV3/forums در میاد و یه usv3 قبل از هر لینکی میاد و این باعث میشه که قالب انجمن مشکل داشته باشه و عکس ها و استایل های آن بالا نیاد";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=122";}i:29;a:8:{s:2:"id";s:16:"bug://report/115";s:5:"title";s:26:"جستجو در اخبار";s:7:"updated";s:20:"2011-07-09T06:29:21Z";s:6:"author";s:7:"
+دوم این که لینک های انجمن غلط اند و همش به صوریت USV3/forums در میاد و یه usv3 قبل از هر لینکی میاد و این باعث میشه که قالب انجمن مشکل داشته باشه و عکس ها و استایل های آن بالا نیاد";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=122";}i:29;a:8:{s:2:"id";s:16:"bug://report/115";s:5:"title";s:26:"جستجو در اخبار";s:7:"updated";s:20:"2011-07-09T06:29:21Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1059:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -908,7 +908,7 @@ http://www.mysite.ir/forums/search.php?action=results&sid=1b9f1b75d28a14d8f814c4
 <br />
 وقتی هم که کلمه &quot;نیوک&quot; رو جستجو کردم چیزی پیدا نکرد <br />
 <br />
-البته در جستجوی پیشرفته که در پایین همین صفحه است 2 مورد پیدا کرد";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=115";}i:30;a:8:{s:2:"id";s:16:"bug://report/158";s:5:"title";s:38:"اشکال در صفحه مدیریت ";s:7:"updated";s:20:"2011-07-09T06:21:37Z";s:6:"author";s:7:"
+البته در جستجوی پیشرفته که در پایین همین صفحه است 2 مورد پیدا کرد";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=115";}i:30;a:8:{s:2:"id";s:16:"bug://report/158";s:5:"title";s:38:"اشکال در صفحه مدیریت ";s:7:"updated";s:20:"2011-07-09T06:21:37Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1006:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -944,7 +944,7 @@ http://www.mysite.ir/forums/search.php?action=results&sid=1b9f1b75d28a14d8f814c4
 2- وقتی یه مدیر با امکانات محدود تعریف میکنم هیچ گزینه ای برای خروج از صفحه مدیریت وجود نداره ولی برای مدیر اصلی از منوی اختیارات میشه خارج شد<br />
 <br />
 3- نسخه پرتال هنوز  1104 هست <br />
-";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=158";}i:31;a:8:{s:2:"id";s:16:"bug://report/167";s:5:"title";s:35:"تنظیمات ته برگ سایت";s:7:"updated";s:20:"2011-07-09T06:19:55Z";s:6:"author";s:7:"
+";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=158";}i:31;a:8:{s:2:"id";s:16:"bug://report/167";s:5:"title";s:35:"تنظیمات ته برگ سایت";s:7:"updated";s:20:"2011-07-09T06:19:55Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:803:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -970,7 +970,7 @@ http://www.mysite.ir/forums/search.php?action=results&sid=1b9f1b75d28a14d8f814c4
 			</table>
 			
 			<p>با وارد کردن اطلاعات  ته برگ در سطر دوم و سوم , این اطلاعات در قسمت آبی رنگ قالب قرار میگیرند (در فوتر) ولی اطلاعات سطر اول به درستی نمایش داده میشود</p>
-		";s:7:"summary";s:263:"با وارد کردن اطلاعات  ته برگ در سطر دوم و سوم , این اطلاعات در قسمت آبی رنگ قالب قرار میگیرند (در فوتر) ولی اطلاعات سطر اول به درستی نمایش داده میشود";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=167";}i:32;a:8:{s:2:"id";s:16:"bug://report/163";s:5:"title";s:44:"مشكل در فهرست نمايي سرور";s:7:"updated";s:20:"2011-07-09T06:18:49Z";s:6:"author";s:7:"
+		";s:7:"summary";s:263:"با وارد کردن اطلاعات  ته برگ در سطر دوم و سوم , این اطلاعات در قسمت آبی رنگ قالب قرار میگیرند (در فوتر) ولی اطلاعات سطر اول به درستی نمایش داده میشود";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=167";}i:32;a:8:{s:2:"id";s:16:"bug://report/163";s:5:"title";s:44:"مشكل در فهرست نمايي سرور";s:7:"updated";s:20:"2011-07-09T06:18:49Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"m3hdi";s:12:"atom_content";s:618:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -996,7 +996,7 @@ http://www.mysite.ir/forums/search.php?action=results&sid=1b9f1b75d28a14d8f814c4
 			</table>
 			
 			<p>در فهرست نمايي سرور با اين مشكل مواجه ميشم</p>
-		";s:7:"summary";s:76:"در فهرست نمايي سرور با اين مشكل مواجه ميشم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=163";}i:33;a:8:{s:2:"id";s:15:"bug://report/61";s:5:"title";s:27:"مشکل در رمز دوم";s:7:"updated";s:20:"2011-07-07T19:35:09Z";s:6:"author";s:7:"
+		";s:7:"summary";s:76:"در فهرست نمايي سرور با اين مشكل مواجه ميشم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=163";}i:33;a:8:{s:2:"id";s:15:"bug://report/61";s:5:"title";s:27:"مشکل در رمز دوم";s:7:"updated";s:20:"2011-07-07T19:35:09Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:4:"amin";s:12:"atom_content";s:1186:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1028,7 +1028,7 @@ http://www.mysite.ir/forums/search.php?action=results&sid=1b9f1b75d28a14d8f814c4
 		";s:7:"summary";s:646:"سلام<br />
 1- رمز دوم به خوبی کار نمیکنه و اگه کنسل بزنیم باز میتوانم تمام کارهایی که می خواهیم را انجام دهیمو این کادر فقط یک مزاحم بیش نخواهد بود<br />
 2- اگر کسی با دانستن رمز اول و نداستن رمز دوم بتواند مستقیم به آدرس admin.php?op=Configure برود می تواند به راحتی از شر این پنجره مزاحم (البته برای او) راحت شود.<br />
-3-اگی رمز دوم را فارسی انتخاب کنیم همیشه آن را غلط محسوب میکند";s:4:"link";s:53:"http://www.nukelearn.com/bugs/showreport.php?bugid=61";}i:34;a:8:{s:2:"id";s:15:"bug://report/96";s:5:"title";s:42:"عدم نمایش لیست خوراک ها";s:7:"updated";s:20:"2011-07-07T18:59:06Z";s:6:"author";s:7:"
+3-اگی رمز دوم را فارسی انتخاب کنیم همیشه آن را غلط محسوب میکند";s:4:"link";s:53:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=61";}i:34;a:8:{s:2:"id";s:15:"bug://report/96";s:5:"title";s:42:"عدم نمایش لیست خوراک ها";s:7:"updated";s:20:"2011-07-07T18:59:06Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:858:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1066,7 +1066,7 @@ Not Found<br />
 <br />
 The requested URL /nuke5/rss.php was not found on this server.<br />
 <br />
-Additionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.";s:4:"link";s:53:"http://www.nukelearn.com/bugs/showreport.php?bugid=96";}i:35;a:8:{s:2:"id";s:16:"bug://report/159";s:5:"title";s:37:"عملکرد مدیریت رسانه ";s:7:"updated";s:20:"2011-07-07T18:49:08Z";s:6:"author";s:7:"
+Additionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.";s:4:"link";s:53:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=96";}i:35;a:8:{s:2:"id";s:16:"bug://report/159";s:5:"title";s:37:"عملکرد مدیریت رسانه ";s:7:"updated";s:20:"2011-07-07T18:49:08Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1048:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1096,7 +1096,7 @@ Additionally, a 404 Not Found error was encountered while trying to use an Error
 اگه میشه یه توضیح در مورد عملکردش بدید که باید عکس رو نشون بده یا همون درسته </p>
 		";s:7:"summary";s:503:"من دقیقا نمیدونم که این گزینه چیکار میکنه ولی یه شاخه سختم توی شا خه هم چند تا عکس وارد کردم روی عکس که راست کلیک میکنم و گزینه نمایش رو میزنم میشه مثل تصویری که آماده کردم و فقط مشخصات عکس رو میده <br />
 <br />
-اگه میشه یه توضیح در مورد عملکردش بدید که باید عکس رو نشون بده یا همون درسته ";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=159";}i:36;a:8:{s:2:"id";s:16:"bug://report/154";s:5:"title";s:37:"اشکال در ماژول Statistics";s:7:"updated";s:20:"2011-07-07T18:40:15Z";s:6:"author";s:7:"
+اگه میشه یه توضیح در مورد عملکردش بدید که باید عکس رو نشون بده یا همون درسته ";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=159";}i:36;a:8:{s:2:"id";s:16:"bug://report/154";s:5:"title";s:37:"اشکال در ماژول Statistics";s:7:"updated";s:20:"2011-07-07T18:40:15Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:970:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1126,7 +1126,7 @@ Additionally, a 404 Not Found error was encountered while trying to use an Error
 توی فایر فاکس هم به هم میریزه ولی یه مدل دیگه (صفحه چندبار تکرار میشه با یه اسکرول طولانی )</p>
 		";s:7:"summary";s:421:"وقتی ماژول رو باز میکنی بدون مشکل آمار رو میده ولی وقتی رو لینک &quot; لیست کامل ورودی کاربران&quot;  کلیک میکنم مثل عکس به هم میریزه (توی کروم)<br />
 <br />
-توی فایر فاکس هم به هم میریزه ولی یه مدل دیگه (صفحه چندبار تکرار میشه با یه اسکرول طولانی )";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=154";}i:37;a:8:{s:2:"id";s:15:"bug://report/54";s:5:"title";s:81:"مشکل در سطح دسترسی برای  مدیریت برخی ماژول ها";s:7:"updated";s:20:"2011-07-07T15:40:15Z";s:6:"author";s:7:"
+توی فایر فاکس هم به هم میریزه ولی یه مدل دیگه (صفحه چندبار تکرار میشه با یه اسکرول طولانی )";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=154";}i:37;a:8:{s:2:"id";s:15:"bug://report/54";s:5:"title";s:81:"مشکل در سطح دسترسی برای  مدیریت برخی ماژول ها";s:7:"updated";s:20:"2011-07-07T15:40:15Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:10:"amirhosein";s:12:"atom_content";s:935:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1152,7 +1152,7 @@ Additionally, a 404 Not Found error was encountered while trying to use an Error
 			</table>
 			
 			<p>وقتی به یک مدیر دسترسی به ماژول کلمات کلیدی داده شود نمی تواند به آن دسترسی داده شود. شاید این مشکل برای برخی ماژولهای دیگر (مخصوصاً آنها که جدید نوشته شده اند و برای نیوک لرن هستند) هم وجود داشته باشد</p>
-		";s:7:"summary";s:359:"وقتی به یک مدیر دسترسی به ماژول کلمات کلیدی داده شود نمی تواند به آن دسترسی داده شود. شاید این مشکل برای برخی ماژولهای دیگر (مخصوصاً آنها که جدید نوشته شده اند و برای نیوک لرن هستند) هم وجود داشته باشد";s:4:"link";s:53:"http://www.nukelearn.com/bugs/showreport.php?bugid=54";}i:38;a:8:{s:2:"id";s:16:"bug://report/140";s:5:"title";s:58:"مشكل در ايجاد تغيير در منوي اصلي";s:7:"updated";s:20:"2011-07-07T15:04:16Z";s:6:"author";s:7:"
+		";s:7:"summary";s:359:"وقتی به یک مدیر دسترسی به ماژول کلمات کلیدی داده شود نمی تواند به آن دسترسی داده شود. شاید این مشکل برای برخی ماژولهای دیگر (مخصوصاً آنها که جدید نوشته شده اند و برای نیوک لرن هستند) هم وجود داشته باشد";s:4:"link";s:53:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=54";}i:38;a:8:{s:2:"id";s:16:"bug://report/140";s:5:"title";s:58:"مشكل در ايجاد تغيير در منوي اصلي";s:7:"updated";s:20:"2011-07-07T15:04:16Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"m3hdi";s:12:"atom_content";s:948:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1182,7 +1182,7 @@ Additionally, a 404 Not Found error was encountered while trying to use an Error
 در ضمن وقتي يه ايتم يا شاخه ايجاد ميكنم با زدن دكمه enter هنوز كرسر فعاله و واكنشي نشون نميده در حالي كه آيتم يا شاخه ساخته شده</p>
 		";s:7:"summary";s:392:"در بخش منوي اصلي اولا در زير شاخه ها اين ارور وجود داره<br />
 \includes\acp\mods\treemenu\includes\config.php on line 41<br />
-در ضمن وقتي يه ايتم يا شاخه ايجاد ميكنم با زدن دكمه enter هنوز كرسر فعاله و واكنشي نشون نميده در حالي كه آيتم يا شاخه ساخته شده";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=140";}i:39;a:8:{s:2:"id";s:16:"bug://report/142";s:5:"title";s:122:"امكان ويرايش نام كاربري و رمز عبور مديران توسط مدير اصلي وجود ندارد";s:7:"updated";s:20:"2011-07-07T14:42:57Z";s:6:"author";s:7:"
+در ضمن وقتي يه ايتم يا شاخه ايجاد ميكنم با زدن دكمه enter هنوز كرسر فعاله و واكنشي نشون نميده در حالي كه آيتم يا شاخه ساخته شده";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=140";}i:39;a:8:{s:2:"id";s:16:"bug://report/142";s:5:"title";s:122:"امكان ويرايش نام كاربري و رمز عبور مديران توسط مدير اصلي وجود ندارد";s:7:"updated";s:20:"2011-07-07T14:42:57Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"m3hdi";s:12:"atom_content";s:879:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1210,7 +1210,7 @@ Additionally, a 404 Not Found error was encountered while trying to use an Error
 			<p>وقتي مدير اصلي يه اكانت مدير ايجاد ميكنه ديگه نميتونه نام كاربري و رمز عبور اون رو ويرايش بكنه ( تغييراتش ذخيره نميشه)<br />
 اما خود اون مدير ميتونه</p>
 		";s:7:"summary";s:261:"وقتي مدير اصلي يه اكانت مدير ايجاد ميكنه ديگه نميتونه نام كاربري و رمز عبور اون رو ويرايش بكنه ( تغييراتش ذخيره نميشه)<br />
-اما خود اون مدير ميتونه";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=142";}i:40;a:8:{s:2:"id";s:16:"bug://report/166";s:5:"title";s:68:"مشكل در بخش "سایت خود را غیرفعال کنید "";s:7:"updated";s:20:"2011-07-07T09:38:23Z";s:6:"author";s:7:"
+اما خود اون مدير ميتونه";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=142";}i:40;a:8:{s:2:"id";s:16:"bug://report/166";s:5:"title";s:68:"مشكل در بخش "سایت خود را غیرفعال کنید "";s:7:"updated";s:20:"2011-07-07T09:38:23Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"m3hdi";s:12:"atom_content";s:1029:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1242,7 +1242,7 @@ It appears that NukeSentinel(tm) has not been configured correctly. The most com
 		";s:7:"summary";s:443:"<br />
 NukeSentinel(tm): Error Loading Functions<br />
 <br />
-It appears that NukeSentinel(tm) has not been configured correctly. The most common cause is that you either have an error in the syntax that is including includes/nukesentinel.php from your mainfile.php, or you have not added the NukeSentinel(tm) code to your mainfile.php. Details for including this code are included in the download package in the Edits_For_Core_Files directory";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=166";}i:41;a:8:{s:2:"id";s:16:"bug://report/165";s:5:"title";s:90:"مشكل در بخش "آی پی خاصی را از بازدید سایت منع کنید "";s:7:"updated";s:20:"2011-07-07T08:46:11Z";s:6:"author";s:7:"
+It appears that NukeSentinel(tm) has not been configured correctly. The most common cause is that you either have an error in the syntax that is including includes/nukesentinel.php from your mainfile.php, or you have not added the NukeSentinel(tm) code to your mainfile.php. Details for including this code are included in the download package in the Edits_For_Core_Files directory";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=166";}i:41;a:8:{s:2:"id";s:16:"bug://report/165";s:5:"title";s:90:"مشكل در بخش "آی پی خاصی را از بازدید سایت منع کنید "";s:7:"updated";s:20:"2011-07-07T08:46:11Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"m3hdi";s:12:"atom_content";s:641:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1270,7 +1270,7 @@ It appears that NukeSentinel(tm) has not been configured correctly. The most com
 			<p><br />
 صفحه لود نميشه</p>
 		";s:7:"summary";s:33:"<br />
-صفحه لود نميشه";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=165";}i:42;a:8:{s:2:"id";s:16:"bug://report/164";s:5:"title";s:29:"مشكل در Your Account ©";s:7:"updated";s:20:"2011-07-07T08:33:49Z";s:6:"author";s:7:"
+صفحه لود نميشه";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=165";}i:42;a:8:{s:2:"id";s:16:"bug://report/164";s:5:"title";s:29:"مشكل در Your Account ©";s:7:"updated";s:20:"2011-07-07T08:33:49Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"m3hdi";s:12:"atom_content";s:969:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1310,7 +1310,7 @@ modules\Your_Account\includes\constants.php on line 29<br />
 modules\Your_Account\includes\constants.php on line 30<br />
 modules\Your_Account\includes\constants.php on line 31<br />
 modules\Your_Account\includes\constants.php on line 33<br />
-modules\Your_Account\includes\constants.php on line 34";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=164";}i:43;a:8:{s:2:"id";s:16:"bug://report/162";s:5:"title";s:112:"وقتي در تقويم مشاهده تمام رويداد هارو ميزنم اين اررور رو ميده ";s:7:"updated";s:20:"2011-07-07T06:04:36Z";s:6:"author";s:7:"
+modules\Your_Account\includes\constants.php on line 34";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=164";}i:43;a:8:{s:2:"id";s:16:"bug://report/162";s:5:"title";s:112:"وقتي در تقويم مشاهده تمام رويداد هارو ميزنم اين اررور رو ميده ";s:7:"updated";s:20:"2011-07-07T06:04:36Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"m3hdi";s:12:"atom_content";s:737:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1336,7 +1336,7 @@ modules\Your_Account\includes\constants.php on line 34";s:4:"link";s:54:"http://
 			</table>
 			
 			<p>وقتي در تقويم مشاهده تمام رويداد هارو ميزنم اين اررور رو ميده </p>
-		";s:7:"summary";s:112:"وقتي در تقويم مشاهده تمام رويداد هارو ميزنم اين اررور رو ميده ";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=162";}i:44;a:8:{s:2:"id";s:16:"bug://report/147";s:5:"title";s:67:"مشكل در طرز چينش جملات در صفحات اضافه";s:7:"updated";s:20:"2011-07-07T06:00:49Z";s:6:"author";s:7:"
+		";s:7:"summary";s:112:"وقتي در تقويم مشاهده تمام رويداد هارو ميزنم اين اررور رو ميده ";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=162";}i:44;a:8:{s:2:"id";s:16:"bug://report/147";s:5:"title";s:67:"مشكل در طرز چينش جملات در صفحات اضافه";s:7:"updated";s:20:"2011-07-07T06:00:49Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"m3hdi";s:12:"atom_content";s:998:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1366,7 +1366,7 @@ modules\Your_Account\includes\constants.php on line 34";s:4:"link";s:54:"http://
 و به نظرم بهتره موقع نمايش صفحات اضافه ستون هاي سمت راست نيز نمايش داده بشه</p>
 		";s:7:"summary";s:428:"تمامي متني كه در يك صفحه اضافه مينويسيم يا چپ چينه يا راست چين يا وسط چين<br />
 فرضاً من ميخوام  به نام خدا وسط چين باشه و باقي متن راست چين كه اين امكان فراهم نيست<br />
-و به نظرم بهتره موقع نمايش صفحات اضافه ستون هاي سمت راست نيز نمايش داده بشه";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=147";}i:45;a:8:{s:2:"id";s:15:"bug://report/95";s:5:"title";s:73:"عدم نمایش کاربر آنلاین در بلوک آمار سایت";s:7:"updated";s:20:"2011-07-07T05:21:32Z";s:6:"author";s:7:"
+و به نظرم بهتره موقع نمايش صفحات اضافه ستون هاي سمت راست نيز نمايش داده بشه";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=147";}i:45;a:8:{s:2:"id";s:15:"bug://report/95";s:5:"title";s:73:"عدم نمایش کاربر آنلاین در بلوک آمار سایت";s:7:"updated";s:20:"2011-07-07T05:21:32Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1101:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1396,7 +1396,7 @@ modules\Your_Account\includes\constants.php on line 34";s:4:"link";s:54:"http://
 </p>
 		";s:7:"summary";s:531:"وقتی با حساب کاربری وارد میشم توی آمار سایت به عنوان مهمان نشون داده میشم و زمانی روی نام کاربریم در قسمت آخرین اعضا رو مشاهده پروفایل کلیک میکنم مینویسه آفلاین در حالی که در قسمت بالای سایت نوشته خوش آمدید saeid<br />
 مشکل دوم هم مربوط به رنگ متن اسم بلوک آمار سایت هست که چون سفید هست دیده نمیشه<br />
-";s:4:"link";s:53:"http://www.nukelearn.com/bugs/showreport.php?bugid=95";}i:46;a:8:{s:2:"id";s:16:"bug://report/155";s:5:"title";s:32:"اشکال در ماژول Pages";s:7:"updated";s:20:"2011-07-07T05:15:56Z";s:6:"author";s:7:"
+";s:4:"link";s:53:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=95";}i:46;a:8:{s:2:"id";s:16:"bug://report/155";s:5:"title";s:32:"اشکال در ماژول Pages";s:7:"updated";s:20:"2011-07-07T05:15:56Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:767:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1432,7 +1432,7 @@ modules\Your_Account\includes\constants.php on line 34";s:4:"link";s:54:"http://
 <br />
 خطا در صفحه »<br />
 <br />
-صفحه مورد نظر شما در دیتابیس ما موجود نیست";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=155";}i:47;a:8:{s:2:"id";s:16:"bug://report/156";s:5:"title";s:91:"اشکال پس از فعال سازی امکان بستن اشتراک توسط کاربر";s:7:"updated";s:20:"2011-07-07T04:45:25Z";s:6:"author";s:7:"
+صفحه مورد نظر شما در دیتابیس ما موجود نیست";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=155";}i:47;a:8:{s:2:"id";s:16:"bug://report/156";s:5:"title";s:91:"اشکال پس از فعال سازی امکان بستن اشتراک توسط کاربر";s:7:"updated";s:20:"2011-07-07T04:45:25Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1053:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1462,7 +1462,7 @@ modules\Your_Account\includes\constants.php on line 34";s:4:"link";s:54:"http://
 وقتی امکان بستن اشتراک توسط کاربر رو فعال میکنی این گزینه در صفحه شخصی اضافه میشه و عکسش لود نمیشه. زمانی هم که کاربر اشتراک رو غیر فعال میکنه به آدرس root/localhost ارجاع داده میشه </p>
 		";s:7:"summary";s:450:"البته شاید هیچکس این امکان رو فعال نکنه ولی خوب این اشکال وجود داره <br />
 <br />
-وقتی امکان بستن اشتراک توسط کاربر رو فعال میکنی این گزینه در صفحه شخصی اضافه میشه و عکسش لود نمیشه. زمانی هم که کاربر اشتراک رو غیر فعال میکنه به آدرس root/localhost ارجاع داده میشه ";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=156";}i:48;a:8:{s:2:"id";s:16:"bug://report/161";s:5:"title";s:56:"تغییر  شیوه   اپراتور نویسی  <?= ?>";s:7:"updated";s:20:"2011-07-07T04:38:03Z";s:6:"author";s:7:"
+وقتی امکان بستن اشتراک توسط کاربر رو فعال میکنی این گزینه در صفحه شخصی اضافه میشه و عکسش لود نمیشه. زمانی هم که کاربر اشتراک رو غیر فعال میکنه به آدرس root/localhost ارجاع داده میشه ";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=156";}i:48;a:8:{s:2:"id";s:16:"bug://report/161";s:5:"title";s:56:"تغییر  شیوه   اپراتور نویسی  <?= ?>";s:7:"updated";s:20:"2011-07-07T04:38:03Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:18:"Farshad Ghazanfari";s:12:"atom_content";s:728:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1492,7 +1492,7 @@ modules\Your_Account\includes\constants.php on line 34";s:4:"link";s:54:"http://
 برای سازگاری بیشتر با زیرساخت ها</p>
 		";s:7:"summary";s:163:"تغییر تمامی شیوه های &lt;?= ?&gt; در فایل های نرم افزار <br />
 <br />
-برای سازگاری بیشتر با زیرساخت ها";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=161";}i:49;a:8:{s:2:"id";s:16:"bug://report/157";s:5:"title";s:90:"عدم عملکرد جستجوی زنده کاربران  در مدیریت کاربران";s:7:"updated";s:20:"2011-07-07T04:30:27Z";s:6:"author";s:7:"
+برای سازگاری بیشتر با زیرساخت ها";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=161";}i:49;a:8:{s:2:"id";s:16:"bug://report/157";s:5:"title";s:90:"عدم عملکرد جستجوی زنده کاربران  در مدیریت کاربران";s:7:"updated";s:20:"2011-07-07T04:30:27Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:674:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1518,7 +1518,7 @@ modules\Your_Account\includes\constants.php on line 34";s:4:"link";s:54:"http://
 			</table>
 			
 			<p> نام هر کاربری رو که وارد میکنم چیزی پیدا نمیکنه</p>
-		";s:7:"summary";s:86:" نام هر کاربری رو که وارد میکنم چیزی پیدا نمیکنه";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=157";}i:50;a:8:{s:2:"id";s:16:"bug://report/160";s:5:"title";s:102:"مشکل در آدرس های داخل مدیریت رسانه و فایل منیجر ویرایشگر";s:7:"updated";s:20:"2011-07-07T04:16:22Z";s:6:"author";s:7:"
+		";s:7:"summary";s:86:" نام هر کاربری رو که وارد میکنم چیزی پیدا نمیکنه";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=157";}i:50;a:8:{s:2:"id";s:16:"bug://report/160";s:5:"title";s:102:"مشکل در آدرس های داخل مدیریت رسانه و فایل منیجر ویرایشگر";s:7:"updated";s:20:"2011-07-07T04:16:22Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"m3hdi";s:12:"atom_content";s:851:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1548,7 +1548,7 @@ modules\Your_Account\includes\constants.php on line 34";s:4:"link";s:54:"http://
 تصوير مربوط پيوست گرديد</p>
 		";s:7:"summary";s:253:"در مديريت رسانه فرضا يه عكس قرار ميده<br />
 وقتي روي عكس كليك راست ميكنم و گزينه باز كردن رو ميزنم عكس رو لود نميكنه<br />
-تصوير مربوط پيوست گرديد";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=160";}i:51;a:8:{s:2:"id";s:16:"bug://report/120";s:5:"title";s:55:"مشکل ثبت رویداد در ماژول تقویم";s:7:"updated";s:20:"2011-07-06T09:13:11Z";s:6:"author";s:7:"
+تصوير مربوط پيوست گرديد";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=160";}i:51;a:8:{s:2:"id";s:16:"bug://report/120";s:5:"title";s:55:"مشکل ثبت رویداد در ماژول تقویم";s:7:"updated";s:20:"2011-07-06T09:13:11Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:873:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1576,7 +1576,7 @@ modules\Your_Account\includes\constants.php on line 34";s:4:"link";s:54:"http://
 			<p>ماژول تقویم رویدادی رو ثبت نمی کنه<br />
 مثلا من می زنم روز 1 فروردین بعد روز پایان رو هم میزنم 1 اردیبهشت بعد وقتی ثبت می کنم وقتی میری تو ماه فروردین میگه رویدادی در این ماه ثبت نشده</p>
 		";s:7:"summary";s:322:"ماژول تقویم رویدادی رو ثبت نمی کنه<br />
-مثلا من می زنم روز 1 فروردین بعد روز پایان رو هم میزنم 1 اردیبهشت بعد وقتی ثبت می کنم وقتی میری تو ماه فروردین میگه رویدادی در این ماه ثبت نشده";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=120";}i:52;a:8:{s:2:"id";s:16:"bug://report/114";s:5:"title";s:42:"اشکال در جابه جایی بلوک";s:7:"updated";s:20:"2011-07-05T13:02:40Z";s:6:"author";s:7:"
+مثلا من می زنم روز 1 فروردین بعد روز پایان رو هم میزنم 1 اردیبهشت بعد وقتی ثبت می کنم وقتی میری تو ماه فروردین میگه رویدادی در این ماه ثبت نشده";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=120";}i:52;a:8:{s:2:"id";s:16:"bug://report/114";s:5:"title";s:42:"اشکال در جابه جایی بلوک";s:7:"updated";s:20:"2011-07-05T13:02:40Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:855:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1602,7 +1602,7 @@ modules\Your_Account\includes\constants.php on line 34";s:4:"link";s:54:"http://
 			</table>
 			
 			<p>هنگام تغییر مکان بلوک ها در مدیریت جابه جایی بلوک ها به درستی انجام میشه ولی در صفحه اصلی هیچ تغییری ایجاد نمیشه و با رفرش صفحه مدیریت ترتیب قرار گیری به حالت پیش فرض برمیگرده</p>
-		";s:7:"summary";s:315:"هنگام تغییر مکان بلوک ها در مدیریت جابه جایی بلوک ها به درستی انجام میشه ولی در صفحه اصلی هیچ تغییری ایجاد نمیشه و با رفرش صفحه مدیریت ترتیب قرار گیری به حالت پیش فرض برمیگرده";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=114";}i:53;a:8:{s:2:"id";s:16:"bug://report/104";s:5:"title";s:62:"اشکال در شخصی سازی فیلدهای ثبت نام";s:7:"updated";s:20:"2011-07-05T07:02:44Z";s:6:"author";s:7:"
+		";s:7:"summary";s:315:"هنگام تغییر مکان بلوک ها در مدیریت جابه جایی بلوک ها به درستی انجام میشه ولی در صفحه اصلی هیچ تغییری ایجاد نمیشه و با رفرش صفحه مدیریت ترتیب قرار گیری به حالت پیش فرض برمیگرده";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=114";}i:53;a:8:{s:2:"id";s:16:"bug://report/104";s:5:"title";s:62:"اشکال در شخصی سازی فیلدهای ثبت نام";s:7:"updated";s:20:"2011-07-05T07:02:44Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1204:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1656,7 +1656,7 @@ Error 403<br />
 <br />
 localhost<br />
 2011/06/14 06:25:17 Þ.Ù<br />
-Apache/2.2.12 (Win32) DAV/2 mod_ssl/2.2.12 OpenSSL/0.9.8k mod_autoindex_color PHP/5.3.0 mod_perl/2.0.4 Perl/v5.10.0";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=104";}i:54;a:8:{s:2:"id";s:16:"bug://report/100";s:5:"title";s:55:"امکان امتیاز دادن کاربر به خود";s:7:"updated";s:20:"2011-07-05T06:14:30Z";s:6:"author";s:7:"
+Apache/2.2.12 (Win32) DAV/2 mod_ssl/2.2.12 OpenSSL/0.9.8k mod_autoindex_color PHP/5.3.0 mod_perl/2.0.4 Perl/v5.10.0";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=104";}i:54;a:8:{s:2:"id";s:16:"bug://report/100";s:5:"title";s:55:"امکان امتیاز دادن کاربر به خود";s:7:"updated";s:20:"2011-07-05T06:14:30Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1057:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1686,7 +1686,7 @@ Apache/2.2.12 (Win32) DAV/2 mod_ssl/2.2.12 OpenSSL/0.9.8k mod_autoindex_color PH
 در عکسی که گذاشتم با همان حساب کاربری رای دادم و به عنوان مدیر هم وارد نشده بودم</p>
 		";s:7:"summary";s:494:"وقتی کاربر برای اولین بار به صفحه شخصی خودش ارجاع داده میشه می تونه به خودش امتیاز بده و باز هم اگه برای اولین مرتبه باشه به جای کلمه رای مینویسه Vote که با یک بار رفرش صفحه به رای تبدیل میشه<br />
 <br />
-در عکسی که گذاشتم با همان حساب کاربری رای دادم و به عنوان مدیر هم وارد نشده بودم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=100";}i:55;a:8:{s:2:"id";s:16:"bug://report/107";s:5:"title";s:62:"مشکل در ویرایشگر دادن نظر به اخبار";s:7:"updated";s:20:"2011-07-05T05:12:44Z";s:6:"author";s:7:"
+در عکسی که گذاشتم با همان حساب کاربری رای دادم و به عنوان مدیر هم وارد نشده بودم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=100";}i:55;a:8:{s:2:"id";s:16:"bug://report/107";s:5:"title";s:62:"مشکل در ویرایشگر دادن نظر به اخبار";s:7:"updated";s:20:"2011-07-05T05:12:44Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:722:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1712,7 +1712,7 @@ Apache/2.2.12 (Win32) DAV/2 mod_ssl/2.2.12 OpenSSL/0.9.8k mod_autoindex_color PH
 			</table>
 			
 			<p>وقتی موس رو روی کلید های ویرایشگر میبرم به جای توضیح عملکرد دکمه مینویسه &quot;Undefine&quot;</p>
-		";s:7:"summary";s:152:"وقتی موس رو روی کلید های ویرایشگر میبرم به جای توضیح عملکرد دکمه مینویسه &quot;Undefine&quot;";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=107";}i:56;a:8:{s:2:"id";s:16:"bug://report/105";s:5:"title";s:64:"عدم نمایش لوگو بالای سایت در مدیریت";s:7:"updated";s:20:"2011-07-05T05:12:25Z";s:6:"author";s:7:"
+		";s:7:"summary";s:152:"وقتی موس رو روی کلید های ویرایشگر میبرم به جای توضیح عملکرد دکمه مینویسه &quot;Undefine&quot;";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=107";}i:56;a:8:{s:2:"id";s:16:"bug://report/105";s:5:"title";s:64:"عدم نمایش لوگو بالای سایت در مدیریت";s:7:"updated";s:20:"2011-07-05T05:12:25Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:722:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1738,7 +1738,7 @@ Apache/2.2.12 (Win32) DAV/2 mod_ssl/2.2.12 OpenSSL/0.9.8k mod_autoindex_color PH
 			</table>
 			
 			<p>در پنل مدیریت لوگوی بالای سایت لود نمیشه وقتی موس روی اون قرار میدم عبارت sitename$ نشون میده</p>
-		";s:7:"summary";s:160:"در پنل مدیریت لوگوی بالای سایت لود نمیشه وقتی موس روی اون قرار میدم عبارت sitename$ نشون میده";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=105";}i:57;a:8:{s:2:"id";s:15:"bug://report/99";s:5:"title";s:47:"عملکرد ناقص وبلاگ کاربران";s:7:"updated";s:20:"2011-07-05T05:11:15Z";s:6:"author";s:7:"
+		";s:7:"summary";s:160:"در پنل مدیریت لوگوی بالای سایت لود نمیشه وقتی موس روی اون قرار میدم عبارت sitename$ نشون میده";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=105";}i:57;a:8:{s:2:"id";s:15:"bug://report/99";s:5:"title";s:47:"عملکرد ناقص وبلاگ کاربران";s:7:"updated";s:20:"2011-07-05T05:11:15Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1042:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1766,7 +1766,7 @@ Apache/2.2.12 (Win32) DAV/2 mod_ssl/2.2.12 OpenSSL/0.9.8k mod_autoindex_color PH
 			<p> در قسمت وبلاگ کاربران که به صورت آجاکس هست بعد از نوشتن پست تا صفحه رفرش نشه پایین نشون داده نمیشه و چون به نظر میرسه که دکمه ارسال عمل نکرده بازدن دوباره پیغام &quot;متاسفانه پست شما تکراری است و امکان ارسال پست مشابه وجود ندارد .&quot;<br />
 ولی توی سایت شما این مشکل وجود نداشت</p>
 		";s:7:"summary";s:488:" در قسمت وبلاگ کاربران که به صورت آجاکس هست بعد از نوشتن پست تا صفحه رفرش نشه پایین نشون داده نمیشه و چون به نظر میرسه که دکمه ارسال عمل نکرده بازدن دوباره پیغام &quot;متاسفانه پست شما تکراری است و امکان ارسال پست مشابه وجود ندارد .&quot;<br />
-ولی توی سایت شما این مشکل وجود نداشت";s:4:"link";s:53:"http://www.nukelearn.com/bugs/showreport.php?bugid=99";}i:58;a:8:{s:2:"id";s:16:"bug://report/101";s:5:"title";s:75:"خطا پس از انتخاب تصویر کوچک انتخاب اواتار";s:7:"updated";s:20:"2011-07-05T05:03:52Z";s:6:"author";s:7:"
+ولی توی سایت شما این مشکل وجود نداشت";s:4:"link";s:53:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=99";}i:58;a:8:{s:2:"id";s:16:"bug://report/101";s:5:"title";s:75:"خطا پس از انتخاب تصویر کوچک انتخاب اواتار";s:7:"updated";s:20:"2011-07-05T05:03:52Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:2753:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1842,7 +1842,7 @@ Warning: imagecopyresampled() expects parameter 1 to be resource, boolean given 
 <br />
 Warning: imagejpeg() expects parameter 1 to be resource, boolean given in E:\xampp\htdocs\nuke7\modules\Your_Account\public\avatarCroping.php on line 131<br />
 <br />
-Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\nuke7\modules\Your_Account\public\avatarCroping.php on line 138";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=101";}i:59;a:8:{s:2:"id";s:16:"bug://report/113";s:5:"title";s:37:"لود پیوسته در مدیریت";s:7:"updated";s:20:"2011-07-05T05:00:57Z";s:6:"author";s:7:"
+Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\nuke7\modules\Your_Account\public\avatarCroping.php on line 138";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=101";}i:59;a:8:{s:2:"id";s:16:"bug://report/113";s:5:"title";s:37:"لود پیوسته در مدیریت";s:7:"updated";s:20:"2011-07-05T05:00:57Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:730:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1868,7 +1868,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 			</table>
 			
 			<p>در قسمت مدیریت همونطور که در عکس نشون دادم آیکن لود در حال کار کردنه آیا اونجا چیزی دیگه باید لود بشه یا ...</p>
-		";s:7:"summary";s:190:"در قسمت مدیریت همونطور که در عکس نشون دادم آیکن لود در حال کار کردنه آیا اونجا چیزی دیگه باید لود بشه یا ...";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=113";}i:60;a:8:{s:2:"id";s:16:"bug://report/135";s:5:"title";s:37:"مشکلات مربوط به افکت";s:7:"updated";s:20:"2011-07-05T05:00:45Z";s:6:"author";s:7:"
+		";s:7:"summary";s:190:"در قسمت مدیریت همونطور که در عکس نشون دادم آیکن لود در حال کار کردنه آیا اونجا چیزی دیگه باید لود بشه یا ...";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=113";}i:60;a:8:{s:2:"id";s:16:"bug://report/135";s:5:"title";s:37:"مشکلات مربوط به افکت";s:7:"updated";s:20:"2011-07-05T05:00:45Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:579:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1894,7 +1894,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 			</table>
 			
 			<p>در عکس مشخص کردم</p>
-		";s:7:"summary";s:29:"در عکس مشخص کردم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=135";}i:61;a:8:{s:2:"id";s:16:"bug://report/153";s:5:"title";s:30:"یک فیلد با دو نام";s:7:"updated";s:20:"2011-07-04T17:18:21Z";s:6:"author";s:7:"
+		";s:7:"summary";s:29:"در عکس مشخص کردم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=135";}i:61;a:8:{s:2:"id";s:16:"bug://report/153";s:5:"title";s:30:"یک فیلد با دو نام";s:7:"updated";s:20:"2011-07-04T17:18:21Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:570:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1920,7 +1920,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 			</table>
 			
 			<p>توی عکس مشخص کردم </p>
-		";s:7:"summary";s:32:"توی عکس مشخص کردم ";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=153";}i:62;a:8:{s:2:"id";s:16:"bug://report/152";s:5:"title";s:45:"اشکال در ماژول لینک به ما";s:7:"updated";s:20:"2011-07-04T16:57:49Z";s:6:"author";s:7:"
+		";s:7:"summary";s:32:"توی عکس مشخص کردم ";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=153";}i:62;a:8:{s:2:"id";s:16:"bug://report/152";s:5:"title";s:45:"اشکال در ماژول لینک به ما";s:7:"updated";s:20:"2011-07-04T16:57:49Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:722:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1946,7 +1946,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 			</table>
 			
 			<p>وقتی این ماژول رو انتخاب میکنم توضیحات مربوطه میاد ولی هیچ لینک یا آدرسی وجود نداره برای کلیک</p>
-		";s:7:"summary";s:169:"وقتی این ماژول رو انتخاب میکنم توضیحات مربوطه میاد ولی هیچ لینک یا آدرسی وجود نداره برای کلیک";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=152";}i:63;a:8:{s:2:"id";s:16:"bug://report/112";s:5:"title";s:43:"مشکلات ترجمه در نسخه 1.1.4";s:7:"updated";s:20:"2011-07-04T16:48:35Z";s:6:"author";s:7:"
+		";s:7:"summary";s:169:"وقتی این ماژول رو انتخاب میکنم توضیحات مربوطه میاد ولی هیچ لینک یا آدرسی وجود نداره برای کلیک";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=152";}i:63;a:8:{s:2:"id";s:16:"bug://report/112";s:5:"title";s:43:"مشکلات ترجمه در نسخه 1.1.4";s:7:"updated";s:20:"2011-07-04T16:48:35Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:687:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -1976,7 +1976,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 </p>
 		";s:7:"summary";s:134:"در قسمت پیگیری IP همون طور که در عکس نشون دادم ترجمه نشون داده نمیشه<br />
 <br />
-";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=112";}i:64;a:8:{s:2:"id";s:16:"bug://report/151";s:5:"title";s:65:"عدم امنیت فیلد رمز عبور در نصب کننده";s:7:"updated";s:20:"2011-07-04T16:38:38Z";s:6:"author";s:7:"
+";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=112";}i:64;a:8:{s:2:"id";s:16:"bug://report/151";s:5:"title";s:65:"عدم امنیت فیلد رمز عبور در نصب کننده";s:7:"updated";s:20:"2011-07-04T16:38:38Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1035:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2010,7 +2010,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 <br />
 یعنی برای بار دوم اول رمز عبور رو که میزنم بقیش میاد <br />
 <br />
-امیدوارم تونسته باشم منظورمو برسونم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=151";}i:65;a:8:{s:2:"id";s:16:"bug://report/139";s:5:"title";s:72:"مشكل در صفحه شخصي كاربر - بخش وبلاگ  در IE8";s:7:"updated";s:20:"2011-07-04T05:40:01Z";s:6:"author";s:7:"
+امیدوارم تونسته باشم منظورمو برسونم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=151";}i:65;a:8:{s:2:"id";s:16:"bug://report/139";s:5:"title";s:72:"مشكل در صفحه شخصي كاربر - بخش وبلاگ  در IE8";s:7:"updated";s:20:"2011-07-04T05:40:01Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"m3hdi";s:12:"atom_content";s:800:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2040,7 +2040,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 بيرون ميزنه</p>
 		";s:7:"summary";s:215:"در صفحه شخصي كاربر وقتي روي مديريت وبلاك كليك ميشه اندازه محتواي داخل كادر بيشتر از كادره و از كادر <br />
 <br />
-بيرون ميزنه";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=139";}i:66;a:8:{s:2:"id";s:16:"bug://report/137";s:5:"title";s:38:"مشکل شکلک ها در نظرات";s:7:"updated";s:20:"2011-07-03T15:33:36Z";s:6:"author";s:7:"
+بيرون ميزنه";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=139";}i:66;a:8:{s:2:"id";s:16:"bug://report/137";s:5:"title";s:38:"مشکل شکلک ها در نظرات";s:7:"updated";s:20:"2011-07-03T15:33:36Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:866:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2068,7 +2068,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 			<p>همان طور که در عکس مشخص کردم شکلک در قسمت نظرات لود نمی شوند<br />
 مثلا یک متنی رو توی قسمت نظرات یک پست می نویسی و چند تا شکلک می زنی بعد که ثبت می کنی متن میاد ولی شکلک ها نمیاد</p>
 		";s:7:"summary";s:311:"همان طور که در عکس مشخص کردم شکلک در قسمت نظرات لود نمی شوند<br />
-مثلا یک متنی رو توی قسمت نظرات یک پست می نویسی و چند تا شکلک می زنی بعد که ثبت می کنی متن میاد ولی شکلک ها نمیاد";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=137";}i:67;a:8:{s:2:"id";s:16:"bug://report/144";s:5:"title";s:52:"ايراد ظاهري در فرم تماس با ما";s:7:"updated";s:20:"2011-07-03T15:03:41Z";s:6:"author";s:7:"
+مثلا یک متنی رو توی قسمت نظرات یک پست می نویسی و چند تا شکلک می زنی بعد که ثبت می کنی متن میاد ولی شکلک ها نمیاد";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=137";}i:67;a:8:{s:2:"id";s:16:"bug://report/144";s:5:"title";s:52:"ايراد ظاهري در فرم تماس با ما";s:7:"updated";s:20:"2011-07-03T15:03:41Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"m3hdi";s:12:"atom_content";s:663:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2096,7 +2096,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 			<p>فايل تصوير پيوست شد<br />
 در تمام مرور گر ها اين مشكل وجود دارد</p>
 		";s:7:"summary";s:108:"فايل تصوير پيوست شد<br />
-در تمام مرور گر ها اين مشكل وجود دارد";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=144";}i:68;a:8:{s:2:"id";s:16:"bug://report/145";s:5:"title";s:70:"مشكل در نمايش شكلكهاي پيام كوتاه در opera";s:7:"updated";s:20:"2011-07-03T14:58:42Z";s:6:"author";s:7:"
+در تمام مرور گر ها اين مشكل وجود دارد";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=144";}i:68;a:8:{s:2:"id";s:16:"bug://report/145";s:5:"title";s:70:"مشكل در نمايش شكلكهاي پيام كوتاه در opera";s:7:"updated";s:20:"2011-07-03T14:58:42Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"m3hdi";s:12:"atom_content";s:940:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2128,7 +2128,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 		";s:7:"summary";s:358:"شايد زياد مهم نباشه و بگين افراد كمي از opera استفاده مي كنند اما بازم يه مشكله<br />
 عكس پيوست شد<br />
 در ضمن يه نكته<br />
-در IE و Opera گزينه &quot;رسال كن!&quot; هست اما در  Firefox گزينه &quot; ارسال كن&quot; (بدون علامت تعجب)";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=145";}i:69;a:8:{s:2:"id";s:16:"bug://report/146";s:5:"title";s:77:"باز نشدن نظرات در نمایش زنده وبلاگ کاربران";s:7:"updated";s:20:"2011-07-03T14:55:09Z";s:6:"author";s:7:"
+در IE و Opera گزينه &quot;رسال كن!&quot; هست اما در  Firefox گزينه &quot; ارسال كن&quot; (بدون علامت تعجب)";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=145";}i:69;a:8:{s:2:"id";s:16:"bug://report/146";s:5:"title";s:77:"باز نشدن نظرات در نمایش زنده وبلاگ کاربران";s:7:"updated";s:20:"2011-07-03T14:55:09Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:4:"amin";s:12:"atom_content";s:772:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2154,7 +2154,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 			</table>
 			
 			<p>جدیدا توی نمایش زنده وبلاگ کاربران وقتی روی تعداد نظرات کلیک میکنیم تا اونا رو نمایش بده لینگش خرابه</p>
-		";s:7:"summary";s:182:"جدیدا توی نمایش زنده وبلاگ کاربران وقتی روی تعداد نظرات کلیک میکنیم تا اونا رو نمایش بده لینگش خرابه";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=146";}i:70;a:8:{s:2:"id";s:16:"bug://report/148";s:5:"title";s:57:"اشکال در استایل پلاگین فیس باکس";s:7:"updated";s:20:"2011-07-03T14:47:19Z";s:6:"author";s:7:"
+		";s:7:"summary";s:182:"جدیدا توی نمایش زنده وبلاگ کاربران وقتی روی تعداد نظرات کلیک میکنیم تا اونا رو نمایش بده لینگش خرابه";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=146";}i:70;a:8:{s:2:"id";s:16:"bug://report/148";s:5:"title";s:57:"اشکال در استایل پلاگین فیس باکس";s:7:"updated";s:20:"2011-07-03T14:47:19Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1015:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2180,7 +2180,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 			</table>
 			
 			<p>همونطور که در عکس مشخص هست علامت × قسمتی از متن رو گرفته عبارت نوشته شده &quot;تست جستجو&quot; هست که فقط قسمتی از جستجو دیده میشه البته این عکس مربوط به مرورگر کروم هست توی فایر فاکس وضعیت بهتره در مورد IE هم که اینقدر بهم ریخته بود قبلا توی بخش خودش مطرح کردم</p>
-		";s:7:"summary";s:455:"همونطور که در عکس مشخص هست علامت × قسمتی از متن رو گرفته عبارت نوشته شده &quot;تست جستجو&quot; هست که فقط قسمتی از جستجو دیده میشه البته این عکس مربوط به مرورگر کروم هست توی فایر فاکس وضعیت بهتره در مورد IE هم که اینقدر بهم ریخته بود قبلا توی بخش خودش مطرح کردم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=148";}i:71;a:8:{s:2:"id";s:16:"bug://report/149";s:5:"title";s:34:"اشکال در چاپ مقاله ";s:7:"updated";s:20:"2011-07-03T14:40:01Z";s:6:"author";s:7:"
+		";s:7:"summary";s:455:"همونطور که در عکس مشخص هست علامت × قسمتی از متن رو گرفته عبارت نوشته شده &quot;تست جستجو&quot; هست که فقط قسمتی از جستجو دیده میشه البته این عکس مربوط به مرورگر کروم هست توی فایر فاکس وضعیت بهتره در مورد IE هم که اینقدر بهم ریخته بود قبلا توی بخش خودش مطرح کردم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=148";}i:71;a:8:{s:2:"id";s:16:"bug://report/149";s:5:"title";s:34:"اشکال در چاپ مقاله ";s:7:"updated";s:20:"2011-07-03T14:40:01Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:672:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2206,7 +2206,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 			</table>
 			
 			<p>همانطور که در عکس مشخص هست رنگ متون پایین با پس زمینه شبیه هست و دیده نمیشه </p>
-		";s:7:"summary";s:135:"همانطور که در عکس مشخص هست رنگ متون پایین با پس زمینه شبیه هست و دیده نمیشه ";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=149";}i:72;a:8:{s:2:"id";s:16:"bug://report/129";s:5:"title";s:45:"مشکلات پرتال در مرورگر IE7";s:7:"updated";s:20:"2011-06-21T05:21:56Z";s:6:"author";s:7:"
+		";s:7:"summary";s:135:"همانطور که در عکس مشخص هست رنگ متون پایین با پس زمینه شبیه هست و دیده نمیشه ";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=149";}i:72;a:8:{s:2:"id";s:16:"bug://report/129";s:5:"title";s:45:"مشکلات پرتال در مرورگر IE7";s:7:"updated";s:20:"2011-06-21T05:21:56Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:754:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2236,7 +2236,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 عکس Login-IE7 با کلیک بر روی لینک ورود ایجاد شده</p>
 		";s:7:"summary";s:201:"من مشکلاتی رو که در IE میبینم رو به صورت عکس اینجا پیوست میکنم<br />
 <br />
-عکس Login-IE7 با کلیک بر روی لینک ورود ایجاد شده";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=129";}i:73;a:8:{s:2:"id";s:16:"bug://report/127";s:5:"title";s:62:"مشکل در خروجی pdf  بخش وبلاگ کاربران";s:7:"updated";s:20:"2011-06-20T15:19:11Z";s:6:"author";s:7:"
+عکس Login-IE7 با کلیک بر روی لینک ورود ایجاد شده";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=129";}i:73;a:8:{s:2:"id";s:16:"bug://report/127";s:5:"title";s:62:"مشکل در خروجی pdf  بخش وبلاگ کاربران";s:7:"updated";s:20:"2011-06-20T15:19:11Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:4:"amin";s:12:"atom_content";s:702:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2266,7 +2266,7 @@ Warning: chmod() [function.chmod]: No such file or directory in E:\xampp\htdocs\
 TCPDF ERROR: Font file not found: zarbold.ctg.z</p>
 		";s:7:"summary";s:144:"سلام<br />
 به هنگام گرفتن خروجی پی دی اف این هطا میاد<br />
-TCPDF ERROR: Font file not found: zarbold.ctg.z";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=127";}i:74;a:8:{s:2:"id";s:15:"bug://report/79";s:5:"title";s:51:"ایمیل ارسالی در سیستم وبلاگ ";s:7:"updated";s:20:"2011-06-20T15:05:35Z";s:6:"author";s:7:"
+TCPDF ERROR: Font file not found: zarbold.ctg.z";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=127";}i:74;a:8:{s:2:"id";s:15:"bug://report/79";s:5:"title";s:51:"ایمیل ارسالی در سیستم وبلاگ ";s:7:"updated";s:20:"2011-06-20T15:05:35Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:4:"amin";s:12:"atom_content";s:764:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2292,7 +2292,7 @@ TCPDF ERROR: Font file not found: zarbold.ctg.z";s:4:"link";s:54:"http://www.nuk
 			</table>
 			
 			<p>وقتی کسی توی سیتم وبلاگ واسه آدم نظر میده ایمیلش هم برای ما اسال میشه همینطور وقتی ما نظر میدیم که مخالف محرمانگی هست</p>
-		";s:7:"summary";s:211:"وقتی کسی توی سیتم وبلاگ واسه آدم نظر میده ایمیلش هم برای ما اسال میشه همینطور وقتی ما نظر میدیم که مخالف محرمانگی هست";s:4:"link";s:53:"http://www.nukelearn.com/bugs/showreport.php?bugid=79";}i:75;a:8:{s:2:"id";s:16:"bug://report/143";s:5:"title";s:55:"ایمیل بدون مو ضوع و متن از  B.. N..";s:7:"updated";s:20:"2011-06-18T16:44:34Z";s:6:"author";s:7:"
+		";s:7:"summary";s:211:"وقتی کسی توی سیتم وبلاگ واسه آدم نظر میده ایمیلش هم برای ما اسال میشه همینطور وقتی ما نظر میدیم که مخالف محرمانگی هست";s:4:"link";s:53:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=79";}i:75;a:8:{s:2:"id";s:16:"bug://report/143";s:5:"title";s:55:"ایمیل بدون مو ضوع و متن از  B.. N..";s:7:"updated";s:20:"2011-06-18T16:44:34Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:4:"amin";s:12:"atom_content";s:755:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2320,13 +2320,13 @@ TCPDF ERROR: Font file not found: zarbold.ctg.z";s:4:"link";s:54:"http://www.nuk
 			<p>سلام<br />
 مدتی هست این ایمیل  با شرایط بالا رو دریافت میکنم<br />
 	<br />
-Bugdar Notification &lt;info@nukelearn.com<br />
+Bugdar Notification &lt;info@MarlikCMS.com<br />
 برای چی هست</p>
 		";s:7:"summary";s:187:"سلام<br />
 مدتی هست این ایمیل  با شرایط بالا رو دریافت میکنم<br />
 	<br />
-Bugdar Notification &lt;info@nukelearn.com<br />
-برای چی هست";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=143";}i:76;a:8:{s:2:"id";s:16:"bug://report/138";s:5:"title";s:81:"مشکل در بخش انتخاب آواتار و بریدن آنلاین عکس ";s:7:"updated";s:20:"2011-06-18T16:42:36Z";s:6:"author";s:7:"
+Bugdar Notification &lt;info@MarlikCMS.com<br />
+برای چی هست";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=143";}i:76;a:8:{s:2:"id";s:16:"bug://report/138";s:5:"title";s:81:"مشکل در بخش انتخاب آواتار و بریدن آنلاین عکس ";s:7:"updated";s:20:"2011-06-18T16:42:36Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:1634:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2376,7 +2376,7 @@ Warning: imagejpeg() expects parameter 1 to be resource, boolean given in C:\xam
 Warning: chmod() [function.chmod]: No such file or directory in C:\xampp\htdocs\modules\Your_Account\public\avatarCroping.php on line 138<br />
 <br />
 <br />
-که عکس هم گرفتم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=138";}i:77;a:8:{s:2:"id";s:16:"bug://report/103";s:5:"title";s:58:"تغییر مکان بعضی از نوشته ها در IE7";s:7:"updated";s:20:"2011-06-17T09:40:29Z";s:6:"author";s:7:"
+که عکس هم گرفتم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=138";}i:77;a:8:{s:2:"id";s:16:"bug://report/103";s:5:"title";s:58:"تغییر مکان بعضی از نوشته ها در IE7";s:7:"updated";s:20:"2011-06-17T09:40:29Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1023:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2408,7 +2408,7 @@ Warning: chmod() [function.chmod]: No such file or directory in C:\xampp\htdocs\
 		";s:7:"summary";s:448:"گرچه شما معمولا برای ورژن های پایین IE کمتر اهمیت میدید ولی چون اشکالات جزیی بود گفتم که ذکر بشه <br />
 گزینه عضویت در منوی بالا یکم پایین تر نشون داده میشه و کپی رایت وسط به سمت چپ کشیده شده <br />
 <br />
-اگه مشکلات IE هم رفع میشه تا بقیه موارد رو هم بررسی کنم ؟";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=103";}i:78;a:8:{s:2:"id";s:15:"bug://report/97";s:5:"title";s:65:"عدم ورود به مدیریت سایت پس نصب اولیه";s:7:"updated";s:20:"2011-06-17T08:38:35Z";s:6:"author";s:7:"
+اگه مشکلات IE هم رفع میشه تا بقیه موارد رو هم بررسی کنم ؟";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=103";}i:78;a:8:{s:2:"id";s:15:"bug://report/97";s:5:"title";s:65:"عدم ورود به مدیریت سایت پس نصب اولیه";s:7:"updated";s:20:"2011-06-17T08:38:35Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1295:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2462,7 +2462,7 @@ Error 403<br />
 <br />
 localhost<br />
 2011/06/13 10:29:37 È.Ù<br />
-Apache/2.2.12 (Win32) DAV/2 mod_ssl/2.2.12 OpenSSL/0.9.8k mod_autoindex_color PHP/5.3.0 mod_perl/2.0.4 Perl/v5.10.0";s:4:"link";s:53:"http://www.nukelearn.com/bugs/showreport.php?bugid=97";}i:79;a:8:{s:2:"id";s:16:"bug://report/136";s:5:"title";s:15:"صفحه ی 404";s:7:"updated";s:20:"2011-06-17T06:28:40Z";s:6:"author";s:7:"
+Apache/2.2.12 (Win32) DAV/2 mod_ssl/2.2.12 OpenSSL/0.9.8k mod_autoindex_color PHP/5.3.0 mod_perl/2.0.4 Perl/v5.10.0";s:4:"link";s:53:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=97";}i:79;a:8:{s:2:"id";s:16:"bug://report/136";s:5:"title";s:15:"صفحه ی 404";s:7:"updated";s:20:"2011-06-17T06:28:40Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:796:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2488,9 +2488,9 @@ Apache/2.2.12 (Win32) DAV/2 mod_ssl/2.2.12 OpenSSL/0.9.8k mod_autoindex_color PH
 			</table>
 			
 			<p>صفحه ی 404 رو یک بازسازی کنید فکر کنم بهتر باشد چون لینک های نا مربوط دارد<br />
-بعد نام این نسخه مگر tgris نیست پس چرا در بعضی قسمت های پرتال نوشته nukelearn cheetah</p>
+بعد نام این نسخه مگر tgris نیست پس چرا در بعضی قسمت های پرتال نوشته MarlikCMS cheetah</p>
 		";s:7:"summary";s:269:"صفحه ی 404 رو یک بازسازی کنید فکر کنم بهتر باشد چون لینک های نا مربوط دارد<br />
-بعد نام این نسخه مگر tgris نیست پس چرا در بعضی قسمت های پرتال نوشته nukelearn cheetah";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=136";}i:80;a:8:{s:2:"id";s:16:"bug://report/132";s:5:"title";s:46:"خطا و مشکل در ادامه ی مطلب";s:7:"updated";s:20:"2011-06-16T21:07:39Z";s:6:"author";s:7:"
+بعد نام این نسخه مگر tgris نیست پس چرا در بعضی قسمت های پرتال نوشته MarlikCMS cheetah";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=136";}i:80;a:8:{s:2:"id";s:16:"bug://report/132";s:5:"title";s:46:"خطا و مشکل در ادامه ی مطلب";s:7:"updated";s:20:"2011-06-16T21:07:39Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:972:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2526,7 +2526,7 @@ ARTICLE YOU ARE REFERING DOES NOT HAVE ANY WRITER'S INFORMATION </p>
 و ارور:»<br />
 خطا در صفحه »<br />
 <br />
-ARTICLE YOU ARE REFERING DOES NOT HAVE ANY WRITER'S INFORMATION ";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=132";}i:81;a:8:{s:2:"id";s:16:"bug://report/126";s:5:"title";s:63:"ناتوانی در ارسال مطلب توسط کاربران";s:7:"updated";s:20:"2011-06-16T14:38:16Z";s:6:"author";s:7:"
+ARTICLE YOU ARE REFERING DOES NOT HAVE ANY WRITER'S INFORMATION ";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=132";}i:81;a:8:{s:2:"id";s:16:"bug://report/126";s:5:"title";s:63:"ناتوانی در ارسال مطلب توسط کاربران";s:7:"updated";s:20:"2011-06-16T14:38:16Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:777:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2554,7 +2554,7 @@ ARTICLE YOU ARE REFERING DOES NOT HAVE ANY WRITER'S INFORMATION ";s:4:"link";s:5
 			<p>وقتی کاربری میخواهد مطلبی ارسال کند وقتی تمامی فیلد ها رو پر می کند<br />
 دکمه ی ارسال مطلب وجود ندارد حتی بعد از پیش نمایش</p>
 		";s:7:"summary";s:216:"وقتی کاربری میخواهد مطلبی ارسال کند وقتی تمامی فیلد ها رو پر می کند<br />
-دکمه ی ارسال مطلب وجود ندارد حتی بعد از پیش نمایش";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=126";}i:82;a:8:{s:2:"id";s:15:"bug://report/83";s:5:"title";s:61:"در ماژول تماس با ما : فیلد پیام شما";s:7:"updated";s:20:"2011-06-16T07:45:05Z";s:6:"author";s:7:"
+دکمه ی ارسال مطلب وجود ندارد حتی بعد از پیش نمایش";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=126";}i:82;a:8:{s:2:"id";s:15:"bug://report/83";s:5:"title";s:61:"در ماژول تماس با ما : فیلد پیام شما";s:7:"updated";s:20:"2011-06-16T07:45:05Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:6:"Bug-nl";s:12:"atom_content";s:703:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2580,7 +2580,7 @@ ARTICLE YOU ARE REFERING DOES NOT HAVE ANY WRITER'S INFORMATION ";s:4:"link";s:5
 			</table>
 			
 			<p>در ماژول تماس با ما : فیلد پیام شما --&gt; در مروگر IE امکان بزرگ یا کوچک شدن را ندارد.</p>
-		";s:7:"summary";s:145:"در ماژول تماس با ما : فیلد پیام شما --&gt; در مروگر IE امکان بزرگ یا کوچک شدن را ندارد.";s:4:"link";s:53:"http://www.nukelearn.com/bugs/showreport.php?bugid=83";}i:83;a:8:{s:2:"id";s:16:"bug://report/133";s:5:"title";s:62:"مشکل در بلوک آخرین ارسال های انجمن";s:7:"updated";s:20:"2011-06-16T05:35:19Z";s:6:"author";s:7:"
+		";s:7:"summary";s:145:"در ماژول تماس با ما : فیلد پیام شما --&gt; در مروگر IE امکان بزرگ یا کوچک شدن را ندارد.";s:4:"link";s:53:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=83";}i:83;a:8:{s:2:"id";s:16:"bug://report/133";s:5:"title";s:62:"مشکل در بلوک آخرین ارسال های انجمن";s:7:"updated";s:20:"2011-06-16T05:35:19Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:779:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2608,7 +2608,7 @@ ARTICLE YOU ARE REFERING DOES NOT HAVE ANY WRITER'S INFORMATION ";s:4:"link";s:5
 			<p>وقتی بلوک آخرین ارسال های انجمن را فعال می کنی<br />
 بلوک کار نمی کنه و می نویسه در حال حاضر این بلوک با مشکل مواجه شده است</p>
 		";s:7:"summary";s:214:"وقتی بلوک آخرین ارسال های انجمن را فعال می کنی<br />
-بلوک کار نمی کنه و می نویسه در حال حاضر این بلوک با مشکل مواجه شده است";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=133";}i:84;a:8:{s:2:"id";s:16:"bug://report/134";s:5:"title";s:47:"بلوک مطالب قبلی  مشکل دارد";s:7:"updated";s:20:"2011-06-16T05:32:21Z";s:6:"author";s:7:"
+بلوک کار نمی کنه و می نویسه در حال حاضر این بلوک با مشکل مواجه شده است";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=133";}i:84;a:8:{s:2:"id";s:16:"bug://report/134";s:5:"title";s:47:"بلوک مطالب قبلی  مشکل دارد";s:7:"updated";s:20:"2011-06-16T05:32:21Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:633:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2634,7 +2634,7 @@ ARTICLE YOU ARE REFERING DOES NOT HAVE ANY WRITER'S INFORMATION ";s:4:"link";s:5
 			</table>
 			
 			<p>بلوک مطالب قبلی مشکل دارد لطفا برسی کنید</p>
-		";s:7:"summary";s:73:"بلوک مطالب قبلی مشکل دارد لطفا برسی کنید";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=134";}i:85;a:8:{s:2:"id";s:16:"bug://report/131";s:5:"title";s:31:"ارور در رویداد ها";s:7:"updated";s:20:"2011-06-15T20:19:59Z";s:6:"author";s:7:"
+		";s:7:"summary";s:73:"بلوک مطالب قبلی مشکل دارد لطفا برسی کنید";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=134";}i:85;a:8:{s:2:"id";s:16:"bug://report/131";s:5:"title";s:31:"ارور در رویداد ها";s:7:"updated";s:20:"2011-06-15T20:19:59Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:946:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2668,7 +2668,7 @@ ARTICLE YOU ARE REFERING DOES NOT HAVE ANY WRITER'S INFORMATION ";s:4:"link";s:5
 بعد از این که ثبت کردی<br />
 میری به این قسمت modules.php?name=jCalendar&op=show_all_events<br />
 این ارور را میده Fatal error: Class 'Calendar' not found in C:\xampp\htdocs\modules\jCalendar\index.php on line 114<br />
-و میگه که &quot;رویدادی وجود ندارد!&quot;";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=131";}i:86;a:8:{s:2:"id";s:16:"bug://report/124";s:5:"title";s:65:"اشکال در تشخیص نوع مدیریت و تنظیمات ";s:7:"updated";s:20:"2011-06-15T18:28:47Z";s:6:"author";s:7:"
+و میگه که &quot;رویدادی وجود ندارد!&quot;";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=131";}i:86;a:8:{s:2:"id";s:16:"bug://report/124";s:5:"title";s:65:"اشکال در تشخیص نوع مدیریت و تنظیمات ";s:7:"updated";s:20:"2011-06-15T18:28:47Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:1107:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2702,7 +2702,7 @@ ARTICLE YOU ARE REFERING DOES NOT HAVE ANY WRITER'S INFORMATION ";s:4:"link";s:5
 و فقط مدیریت کاربران رو به مدیر می ده<br />
 کلا این قسمت مشکل زیاد داره<br />
 بعد مدیر فرعی نباید بتونه مدیر اصلی و دسترسی خود را ویرایش کنه که الان این کار امکان پذیر هست<br />
-کلا فرشاد جان این قسمت را یه نگاه بنداز admin.php?op=mod_authors";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=124";}i:87;a:8:{s:2:"id";s:16:"bug://report/116";s:5:"title";s:51:"خطا در فراخوانی نگهبان سایت ";s:7:"updated";s:20:"2011-06-15T15:25:26Z";s:6:"author";s:7:"
+کلا فرشاد جان این قسمت را یه نگاه بنداز admin.php?op=mod_authors";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=124";}i:87;a:8:{s:2:"id";s:16:"bug://report/116";s:5:"title";s:51:"خطا در فراخوانی نگهبان سایت ";s:7:"updated";s:20:"2011-06-15T15:25:26Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:847:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2734,7 +2734,7 @@ Fatal error: Call to undefined function abget_configs() in E:\xampp\htdocs\nuke7
 		";s:7:"summary";s:286:"هنگام کلیک روی لینک زیر جهت فراخوانی نگهبان سایت خطای زیر میاد <br />
 modules.php?name=NukeSentinel<br />
 <br />
-Fatal error: Call to undefined function abget_configs() in E:\xampp\htdocs\nuke7\modules\NukeSentinel\index.php on line 16";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=116";}i:88;a:8:{s:2:"id";s:16:"bug://report/128";s:5:"title";s:100:"کار نکردن خبرهای شما در صفحه کاربری در خود سایت نیوکلرن";s:7:"updated";s:20:"2011-06-15T14:38:18Z";s:6:"author";s:7:"
+Fatal error: Call to undefined function abget_configs() in E:\xampp\htdocs\nuke7\modules\NukeSentinel\index.php on line 16";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=116";}i:88;a:8:{s:2:"id";s:16:"bug://report/128";s:5:"title";s:100:"کار نکردن خبرهای شما در صفحه کاربری در خود سایت نیوکلرن";s:7:"updated";s:20:"2011-06-15T14:38:18Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:4:"amin";s:12:"atom_content";s:888:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2764,7 +2764,7 @@ Fatal error: Call to undefined function abget_configs() in E:\xampp\htdocs\nuke7
 به هنگام انتخاب یکی از گزینه های معرفی شده به مکان جالبی هدایت میشیم</p>
 		";s:7:"summary";s:282:"سلام<br />
 خبرهای شما در صفحه کاربری در خود سایت نیوکلرن کار نمیکنه و با مشکل مواجه هست<br />
-به هنگام انتخاب یکی از گزینه های معرفی شده به مکان جالبی هدایت میشیم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=128";}i:89;a:8:{s:2:"id";s:16:"bug://report/123";s:5:"title";s:83:"نمایش وضعیت آفلاین در پنل کاربری کاربر آنلاین";s:7:"updated";s:20:"2011-06-15T08:27:54Z";s:6:"author";s:7:"
+به هنگام انتخاب یکی از گزینه های معرفی شده به مکان جالبی هدایت میشیم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=128";}i:89;a:8:{s:2:"id";s:16:"bug://report/123";s:5:"title";s:83:"نمایش وضعیت آفلاین در پنل کاربری کاربر آنلاین";s:7:"updated";s:20:"2011-06-15T08:27:54Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:615:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2790,7 +2790,7 @@ Fatal error: Call to undefined function abget_configs() in E:\xampp\htdocs\nuke7
 			</table>
 			
 			<p>در عکس مشخص کردم</p>
-		";s:7:"summary";s:29:"در عکس مشخص کردم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=123";}i:90;a:8:{s:2:"id";s:16:"bug://report/119";s:5:"title";s:46:"اشکال در نگارش مقاله جدید";s:7:"updated";s:20:"2011-06-15T06:25:55Z";s:6:"author";s:7:"
+		";s:7:"summary";s:29:"در عکس مشخص کردم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=123";}i:90;a:8:{s:2:"id";s:16:"bug://report/119";s:5:"title";s:46:"اشکال در نگارش مقاله جدید";s:7:"updated";s:20:"2011-06-15T06:25:55Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:965:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2820,7 +2820,7 @@ Fatal error: Call to undefined function abget_configs() in E:\xampp\htdocs\nuke7
 puthome($ihome, $acomm, 0); admin_block($storysection); admin_block($publishnews); //SelectCategory($cat); admin_block($newscategory); admin_block($newslanguage); admin_block($tags); admin_block($reference); admin_block($newsnotes); admin_block($programstory); CloseTable(); </p>
 		";s:7:"summary";s:416:"وقتی روی نگارش مقاله جدید کلیک میکنم متن زیر در سمت چپ نمایش داده میشه <br />
 <br />
-puthome($ihome, $acomm, 0); admin_block($storysection); admin_block($publishnews); //SelectCategory($cat); admin_block($newscategory); admin_block($newslanguage); admin_block($tags); admin_block($reference); admin_block($newsnotes); admin_block($programstory); CloseTable(); ";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=119";}i:91;a:8:{s:2:"id";s:16:"bug://report/121";s:5:"title";s:22:"مشکل ثبت نام";s:7:"updated";s:20:"2011-06-15T05:32:33Z";s:6:"author";s:7:"
+puthome($ihome, $acomm, 0); admin_block($storysection); admin_block($publishnews); //SelectCategory($cat); admin_block($newscategory); admin_block($newslanguage); admin_block($tags); admin_block($reference); admin_block($newsnotes); admin_block($programstory); CloseTable(); ";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=119";}i:91;a:8:{s:2:"id";s:16:"bug://report/121";s:5:"title";s:22:"مشکل ثبت نام";s:7:"updated";s:20:"2011-06-15T05:32:33Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:700:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2848,7 +2848,7 @@ puthome($ihome, $acomm, 0); admin_block($storysection); admin_block($publishnews
 			<p>من توی ثبت نام کاربر جدید هرچی نام کاربری و ایمیل متفاوت می زنم<br />
 می گه شما قبلا در سایت عضو شده اید</p>
 		";s:7:"summary";s:180:"من توی ثبت نام کاربر جدید هرچی نام کاربری و ایمیل متفاوت می زنم<br />
-می گه شما قبلا در سایت عضو شده اید";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=121";}i:92;a:8:{s:2:"id";s:16:"bug://report/117";s:5:"title";s:62:"نمایش عدد 330 در بخش برترین های سایت";s:7:"updated";s:20:"2011-06-15T05:23:12Z";s:6:"author";s:7:"
+می گه شما قبلا در سایت عضو شده اید";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=121";}i:92;a:8:{s:2:"id";s:16:"bug://report/117";s:5:"title";s:62:"نمایش عدد 330 در بخش برترین های سایت";s:7:"updated";s:20:"2011-06-15T05:23:12Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:609:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2874,7 +2874,7 @@ puthome($ihome, $acomm, 0); admin_block($storysection); admin_block($publishnews
 			</table>
 			
 			<p>عکس رو ببنید متوجه میشید</p>
-		";s:7:"summary";s:44:"عکس رو ببنید متوجه میشید";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=117";}i:93;a:8:{s:2:"id";s:16:"bug://report/118";s:5:"title";s:71:"خطا در آخرین مطالب خبری موجود در مدیریت";s:7:"updated";s:20:"2011-06-15T05:19:00Z";s:6:"author";s:7:"
+		";s:7:"summary";s:44:"عکس رو ببنید متوجه میشید";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=117";}i:93;a:8:{s:2:"id";s:16:"bug://report/118";s:5:"title";s:71:"خطا در آخرین مطالب خبری موجود در مدیریت";s:7:"updated";s:20:"2011-06-15T05:19:00Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:850:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2908,7 +2908,7 @@ Parse error: syntax error, unexpected $end in E:\xampp\htdocs\nuke7\modules\News
 <br />
 http://localhost/nuke7/admin.php?op=EditStory&sid=2<br />
 <br />
-Parse error: syntax error, unexpected $end in E:\xampp\htdocs\nuke7\modules\News\admin\includes\editstory.php on line 336";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=118";}i:94;a:8:{s:2:"id";s:16:"bug://report/110";s:5:"title";s:30:"مشکل media در ادمین";s:7:"updated";s:20:"2011-06-15T04:44:11Z";s:6:"author";s:7:"
+Parse error: syntax error, unexpected $end in E:\xampp\htdocs\nuke7\modules\News\admin\includes\editstory.php on line 336";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=118";}i:94;a:8:{s:2:"id";s:16:"bug://report/110";s:5:"title";s:30:"مشکل media در ادمین";s:7:"updated";s:20:"2011-06-15T04:44:11Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:1041:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2942,7 +2942,7 @@ Parse error: syntax error, unexpected $end in E:\xampp\htdocs\nuke7\modules\News
 مثلا عکس را انتخاب می کنی برای نمیایش آن را نمایش نمی دهد<br />
 یا وقتی فایل php را باز می کنی ارور 404 میده<br />
 کلا یک برسی روش انجام بدید<br />
-در ضمن وقتی که اینستال انجام شد یک دکمه داره برای مدیریت اون آدرس رو اشتباه می ده و بعد از آدرس باید یه .php بزاریم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=110";}i:95;a:8:{s:2:"id";s:15:"bug://report/98";s:5:"title";s:68:"به هم ریختن کپی رایت بعد از تعویض زبان";s:7:"updated";s:20:"2011-06-14T18:00:21Z";s:6:"author";s:7:"
+در ضمن وقتی که اینستال انجام شد یک دکمه داره برای مدیریت اون آدرس رو اشتباه می ده و بعد از آدرس باید یه .php بزاریم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=110";}i:95;a:8:{s:2:"id";s:15:"bug://report/98";s:5:"title";s:68:"به هم ریختن کپی رایت بعد از تعویض زبان";s:7:"updated";s:20:"2011-06-14T18:00:21Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:679:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2968,7 +2968,7 @@ Parse error: syntax error, unexpected $end in E:\xampp\htdocs\nuke7\modules\News
 			</table>
 			
 			<p>وقتی زبان انگلیسی انتخاب میشه کپی رایت ها رو هم نمایش داده میشه</p>
-		";s:7:"summary";s:114:"وقتی زبان انگلیسی انتخاب میشه کپی رایت ها رو هم نمایش داده میشه";s:4:"link";s:53:"http://www.nukelearn.com/bugs/showreport.php?bugid=98";}i:96;a:8:{s:2:"id";s:16:"bug://report/108";s:5:"title";s:48:"بیرون زدن کادر صفحات اضافه";s:7:"updated";s:20:"2011-06-14T14:30:33Z";s:6:"author";s:7:"
+		";s:7:"summary";s:114:"وقتی زبان انگلیسی انتخاب میشه کپی رایت ها رو هم نمایش داده میشه";s:4:"link";s:53:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=98";}i:96;a:8:{s:2:"id";s:16:"bug://report/108";s:5:"title";s:48:"بیرون زدن کادر صفحات اضافه";s:7:"updated";s:20:"2011-06-14T14:30:33Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:609:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -2994,7 +2994,7 @@ Parse error: syntax error, unexpected $end in E:\xampp\htdocs\nuke7\modules\News
 			</table>
 			
 			<p>توضیحش سخته توی عکس مشخص کردم</p>
-		";s:7:"summary";s:53:"توضیحش سخته توی عکس مشخص کردم";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=108";}i:97;a:8:{s:2:"id";s:15:"bug://report/93";s:5:"title";s:31:"مشکل در نام ادمین";s:7:"updated";s:20:"2011-06-14T05:12:58Z";s:6:"author";s:7:"
+		";s:7:"summary";s:53:"توضیحش سخته توی عکس مشخص کردم";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=108";}i:97;a:8:{s:2:"id";s:15:"bug://report/93";s:5:"title";s:31:"مشکل در نام ادمین";s:7:"updated";s:20:"2011-06-14T05:12:58Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:12:"aliyousefian";s:12:"atom_content";s:1273:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -3021,16 +3021,16 @@ Parse error: syntax error, unexpected $end in E:\xampp\htdocs\nuke7\modules\News
 			
 			<p>وقتی در مرحله ی انتخاب ادمین مسیر ادمین پیشفرض admin.php را می زاریم<br />
 و تمامی مراحل تست که تمام شد به آدرس زیر مراجعه می کنیم:»<br />
-localhost/nukelearn/admin.php<br />
+localhost/MarlikCMS/admin.php<br />
 خطای 404 Not Found میده<br />
 حالا من یک بار هم برای تست فایل ادمین را ali.php را گذاشتم رفتم به این آدرس http://localhost/nk/ali.php ولی باز هم خطای 404 رو داد و مدیریت بالا نیومد چون اصلا فایلی به نام ali.php و admin.php در روت هاست قرار نداره که بخواهد بیاد<br />
 در ضمن تمامی فایل ها هم دسترسی 404 دارند</p>
 		";s:7:"summary";s:743:"وقتی در مرحله ی انتخاب ادمین مسیر ادمین پیشفرض admin.php را می زاریم<br />
 و تمامی مراحل تست که تمام شد به آدرس زیر مراجعه می کنیم:»<br />
-localhost/nukelearn/admin.php<br />
+localhost/MarlikCMS/admin.php<br />
 خطای 404 Not Found میده<br />
 حالا من یک بار هم برای تست فایل ادمین را ali.php را گذاشتم رفتم به این آدرس http://localhost/nk/ali.php ولی باز هم خطای 404 رو داد و مدیریت بالا نیومد چون اصلا فایلی به نام ali.php و admin.php در روت هاست قرار نداره که بخواهد بیاد<br />
-در ضمن تمامی فایل ها هم دسترسی 404 دارند";s:4:"link";s:53:"http://www.nukelearn.com/bugs/showreport.php?bugid=93";}i:98;a:8:{s:2:"id";s:16:"bug://report/102";s:5:"title";s:85:"اشکال در ورود به سایت با حساب های کاربری متفاوت";s:7:"updated";s:20:"2011-06-14T01:33:47Z";s:6:"author";s:7:"
+در ضمن تمامی فایل ها هم دسترسی 404 دارند";s:4:"link";s:53:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=93";}i:98;a:8:{s:2:"id";s:16:"bug://report/102";s:5:"title";s:85:"اشکال در ورود به سایت با حساب های کاربری متفاوت";s:7:"updated";s:20:"2011-06-14T01:33:47Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:5:"sss13";s:12:"atom_content";s:1206:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -3060,7 +3060,7 @@ localhost/nukelearn/admin.php<br />
 گاهی اوقات هم مجبور به حذف کوکی ها میشم که باز ممکنه به خاطر تست در لوکال باشه</p>
 		";s:7:"summary";s:615:"من برای تست نیاز دارم که با چندتا حساب کاربری وارد بشم از قسمت مدیریت چندتا کاربر ساختم ولی وقتی از یکی خارج میشم و میخوام با یه حساب دیگه وارد بشم صفحه به حالت لود میره ولی هر چقدر صبر میکنم وارد نمیشه که مجبور میشم چندبار رفرش کنم صفحه رو ببندم تا وارد بشه <br />
 <br />
-گاهی اوقات هم مجبور به حذف کوکی ها میشم که باز ممکنه به خاطر تست در لوکال باشه";s:4:"link";s:54:"http://www.nukelearn.com/bugs/showreport.php?bugid=102";}i:99;a:8:{s:2:"id";s:15:"bug://report/91";s:5:"title";s:23:"مشکل خروجی PDF";s:7:"updated";s:20:"2011-05-21T06:07:59Z";s:6:"author";s:7:"
+گاهی اوقات هم مجبور به حذف کوکی ها میشم که باز ممکنه به خاطر تست در لوکال باشه";s:4:"link";s:54:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=102";}i:99;a:8:{s:2:"id";s:15:"bug://report/91";s:5:"title";s:23:"مشکل خروجی PDF";s:7:"updated";s:20:"2011-05-21T06:07:59Z";s:6:"author";s:7:"
 			
 		";s:11:"author_name";s:4:"amin";s:12:"atom_content";s:627:"
 			<table cellspacing="0" cellpadding="3" border="0">
@@ -3088,5 +3088,5 @@ localhost/nukelearn/admin.php<br />
 			<p>سلام<br />
 مشکل خروجی PDFبه دلیل TCPDF ERROR: Font file not found: zarbold.ctg.z</p>
 		";s:7:"summary";s:99:"سلام<br />
-مشکل خروجی PDFبه دلیل TCPDF ERROR: Font file not found: zarbold.ctg.z";s:4:"link";s:53:"http://www.nukelearn.com/bugs/showreport.php?bugid=91";}}s:7:"channel";a:3:{s:5:"title";s:64:"سیستم رهگیری مشکلات پرتال Syndication Feed";s:5:"link_";s:29:"http://www.nukelearn.com/bugs";s:7:"updated";s:20:"2011-05-21T06:07:59Z";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;s:13:"last_modified";s:31:"Fri, 19 Jul 2013 03:13:45 GMT
+مشکل خروجی PDFبه دلیل TCPDF ERROR: Font file not found: zarbold.ctg.z";s:4:"link";s:53:"http://www.MarlikCMS.com/bugs/showreport.php?bugid=91";}}s:7:"channel";a:3:{s:5:"title";s:64:"سیستم رهگیری مشکلات پرتال Syndication Feed";s:5:"link_";s:29:"http://www.MarlikCMS.com/bugs";s:7:"updated";s:20:"2011-05-21T06:07:59Z";}s:9:"textinput";a:0:{}s:5:"image";a:0:{}s:9:"feed_type";s:4:"Atom";s:12:"feed_version";N;s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;s:13:"last_modified";s:31:"Fri, 19 Jul 2013 03:13:45 GMT
 ";}

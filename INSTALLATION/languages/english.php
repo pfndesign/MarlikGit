@@ -14,7 +14,7 @@
 
 define('CHARSET', 'UTF-8');
 
-define("TEXT_INSTALLATION_NOTE","Nukelearn CMS is an advanced and <i>intelligent</i> content management system designed and programmed with very hard work. You can easilly design a new and powerfull website with this system by just joining us at  <a href=\"http://nukelearn.com\">http://nukelearn.com</a> where you can find thousands of modules/addons, themes, blocks, graphics, utilities and much more...");
+define("TEXT_INSTALLATION_NOTE","MarlikCMS CMS is an advanced and <i>intelligent</i> content management system designed and programmed with very hard work. You can easilly design a new and powerfull website with this system by just joining us at  <a href=\"http://MarlikCMS.com\">http://MarlikCMS.com</a> where you can find thousands of modules/addons, themes, blocks, graphics, utilities and much more...");
 define("TEXT_READ_LICENSE","Please, read the following License, and keep in mind for the next step what the license tells in the <b>2(c)</b> item about <i>Copyright Notice</i>:");
 define("TEXT_ACCEPT","I accept the Agreement");
 define("TEXT_LICENSE_STOP","You haven't read the notice about the Disclaimer that will be displayed at the footer of the portal.<br><br>Please, click on the <u>retry</u> button and chek the checkbox with the label '<i>" . TEXT_ACCEPT . "</i>'.");
@@ -97,11 +97,11 @@ define("TEXT_WEBAMSTERMAIL","Administrator/Webmaster Email");
 define("TEXT_PERMISSION","Changing permission of these files are required to prevent future access problems.");
 define("TEXT_PERMISSION_CHANGED","changed.");
 
-define("TEXT_PORTALINFO","You are already using Nukelearn CMS as your website content management system.<br>
+define("TEXT_PORTALINFO","You are already using MarlikCMS CMS as your website content management system.<br>
 If you are looking for a way to uninstall this software please inform us of any problem or reason that caused you leave.
 ");
 define("TEXT_INSTALLATION_OPTIONS","Options");
-define("TEXT_MYBB_INSTALL","Install Mybb Forums with a bridge to Nukelearn CMS.");
+define("TEXT_MYBB_INSTALL","Install Mybb Forums with a bridge to MarlikCMS CMS.");
 define("TEXT_DEFAULT_VALUES","Default values.");
 define("TEXT_ADMIN_FILE_NAME","Admin file name");
 define("TEXT_PORTAL_DELETED_SUCCESSFULLY","Your database is successfully deleted.");

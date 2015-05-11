@@ -3,7 +3,7 @@
 *
 * @package acp                                                        
 * @version $Id: acp_dashboard.php 0999 2009-12-12 15:35:19Z Aneeshtan $                        
-* @copyright (c) Marlik Group  http://www.nukelearn.com                                            
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com                                            
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -13,7 +13,7 @@
 if (!defined('ADMIN_FILE')) {
 	exit;
 }
-function nukelearn_RSS() {
+function MarlikCMS_RSS() {
 	// You must include this PHP block in your template once
 	// The required settings for Magpie
 	define('MAGPIE_CACHE_DIR', 'includes/RSS/cache');
@@ -21,9 +21,9 @@ function nukelearn_RSS() {
 	// include the main file
 	require_once('includes/RSS/rss_fetch.inc');
 	//-- Show Latest Updates ----
-	$latestupdate  = "<div id='SharedRss' style='padding: 8px;line-height:20px;'><h3> " . _LATEST_NUKELEARN_BLOGS . " </h3>";
-	$sharedfeedurl = 'http://www.nukelearn.com/feed';
-	$sharedpageurl = 'http://www.nukelearn.com/';
+	$latestupdate  = "<div id='SharedRss' style='padding: 8px;line-height:20px;'><h3> " . _LATEST_MarlikCMS_BLOGS . " </h3>";
+	$sharedfeedurl = 'http://www.MarlikCMS.com/feed';
+	$sharedpageurl = 'http://www.MarlikCMS.com/';
 	$maxitems      = 10;
 	$rss           = fetch_rss($sharedfeedurl);
 	$countitems    = 1;
@@ -41,9 +41,9 @@ function nukelearn_RSS() {
 	}
 	$latestupdate .= "<br><img src='images/icon/rss.png'> <a href=" . $sharedpageurl . " rel=\"external\"><b>" . _MORENEWS . " </b></a></div>";
 	//-- Show Latest Bugs ----
-	$latestbugs    = "<div id='SharedRss' style='padding: 8px;line-height:20px;'><h3>  " . _LATEST_NUKELEARN_BUGS . "</h3>";
-	$sharedfeedurl = 'http://www.nukelearn.com/bugs/syndicate.php';
-	$sharedpageurl = 'http://www.bugs.nukelearn.com';
+	$latestbugs    = "<div id='SharedRss' style='padding: 8px;line-height:20px;'><h3>  " . _LATEST_MarlikCMS_BUGS . "</h3>";
+	$sharedfeedurl = 'http://www.MarlikCMS.com/bugs/syndicate.php';
+	$sharedpageurl = 'http://www.bugs.MarlikCMS.com';
 	$maxitems      = 10;
 	$rss           = fetch_rss($sharedfeedurl);
 	$countitems    = 1;

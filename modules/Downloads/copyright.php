@@ -9,7 +9,7 @@
 $module_name = basename(dirname(__FILE__));
 $mod_name = "NSN GR Downloads";
 $author_email = "";
-$author_homepage = "http://www.nukelearn.com";
+$author_homepage = "http://www.MarlikCMS.com";
 $license = "Copyright &copy; 2000-2005 NukeScripts Network";
 $download_location = "";
 $module_version = "Revision By Farshad Ghazanfari";

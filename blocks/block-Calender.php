@@ -3,7 +3,7 @@
 *
 * @package Calendar Block														
 * @version 9:26 PM 4/3/2010 James $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com	& Inspired By PHPBB3 Session Class										
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com	& Inspired By PHPBB3 Session Class										
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

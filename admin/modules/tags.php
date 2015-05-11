@@ -3,11 +3,11 @@
 *
 * @package tags														
 * @version $Id: tags.php 0999 2009-12-12 15:35:19Z JAMES $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
-// this administration panel is solely written for use in the first version of Nukelearn USV
+// this administration panel is solely written for use in the first version of MarlikCMS USV
 // and only works with that
 // Written by Hamed Momeni
 // this one still has lots of works ahead

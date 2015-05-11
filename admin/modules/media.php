@@ -3,15 +3,15 @@
 *
 * @package Media center														
 * @version $Id: Media.php 9:15 PM 1/5/2011 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 if (!defined("ADMIN_FILE")) {show_error(HACKING_ATTEMPT);}
 global $prefix,$currentlang,$db, $admin_file;
-if (!defined("USV_VERSION")) {die("This only works on Nukelearn Portal ,
-<br>So why don't You join us<br><a href='http://www.nukelearn.com'>nukelearn.com</a>");
+if (!defined("USV_VERSION")) {die("This only works on MarlikCMS Portal ,
+<br>So why don't You join us<br><a href='http://www.MarlikCMS.com'>MarlikCMS.com</a>");
 }
 $editorlang = ($currentlang == "persian" ? "fa" : "en");
 

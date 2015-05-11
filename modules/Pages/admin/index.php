@@ -3,7 +3,7 @@
 *
 * @package Extra Page														
 * @version $Id: page.php 12:43 PM 3/5/2010 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -16,7 +16,7 @@ $aid = substr("$aid", 0,25);
 if (is_superadmin($admin) OR is_admin_of($module_name,$admin)) {
 	define("BASE_URL",'http://'. $_SERVER['HTTP_HOST'].rtrim((string)dirname($_SERVER['SCRIPT_NAME']), '/\\').'/') ;
 	if (!defined("USV_VERSION")) {
-		die("This only works on Nukelearn Portal , So why don't You join us<br>http://www.nukelearn.com");
+		die("This only works on MarlikCMS Portal , So why don't You join us<br>http://www.MarlikCMS.com");
 	}
 	addCSSToHead("modules/Pages/admin/includes/css/pages.css",'file');
 	addJSToBody('

@@ -4,7 +4,7 @@
  *
  * @package Contact_PLus														
  * @version $Id:	 KralPC $						
- * @copyright (c) Marlik Group  http://www.nukelearn.com											
+ * @copyright (c) Marlik Group  http://www.MarlikCMS.com											
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
  */

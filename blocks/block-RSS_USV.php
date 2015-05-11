@@ -6,7 +6,7 @@
 /*                                                                      */
 /*                                                                      */
 /*                                                                      */
-/*                   www.nukelearn.com                                  */
+/*                   www.MarlikCMS.com                                  */
 /*                                                                      */
 /*                    Farshad Ghazanfari           				        */
 /*                                                                      */
@@ -55,7 +55,7 @@ $content .="<div id='SharedRss'><img src='images/blocks/top.gif' >" . _RSSUSV_LA
  // your Google Reader shared items feed URL
  $sharedfeedurl = 'http://www.google.com/reader/public/atom/user%2F03807200757240051437%2Fstate%2Fcom.google%2Fbroadcast';
  // the (X)HTML page for your Google Reader shared items
- $sharedpageurl = 'http://www.google.com/reader/shared/nukelearn.com';
+ $sharedpageurl = 'http://www.google.com/reader/shared/MarlikCMS.com';
  // maximum number of items displayed
  $maxitems = 10;
  // This part displays the shared items feed

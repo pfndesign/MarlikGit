@@ -3,7 +3,7 @@
 *
 * @package RSS Feed Class														
 * @version $Id: $Kralpc --  6:23 PM 1/8/2010  REVISION Aneeshtan $						
-* @copyright (c) http://codezwiz.com/  	Revised :  http://www.nukelearn.com											
+* @copyright (c) http://codezwiz.com/  	Revised :  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

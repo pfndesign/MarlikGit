@@ -3,7 +3,7 @@
  *
  * @package Template Englin system
  * @version  inc_template.php $Id: 1.1.4 $Aneeshtan	7:08 PM 2/23/2011
- * @copyright (c)Marlik Group  http://www.nukelearn.com
+ * @copyright (c)Marlik Group  http://www.MarlikCMS.com
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
  *
  */

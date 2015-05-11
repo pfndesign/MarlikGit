@@ -3,7 +3,7 @@
 *
 * @package InfoBox Block 												
 * @version $Id:  1:00 PM 5/29/2010 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 *
 */
 
@@ -161,7 +161,7 @@ $content .= $latestusers;
 
 
 
-//That's the power of our team in Nukelearn.com
+//That's the power of our team in MarlikCMS.com
 $content .= '</td></tr>';
 
 

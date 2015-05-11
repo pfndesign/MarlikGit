@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package UNIVERSAL URL SWITCHER FOR NUKELEARN														
+* @package UNIVERSAL URL SWITCHER FOR MarlikCMS														
 * @version $Id: universal.php 11:18 PM 3/19/2011 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

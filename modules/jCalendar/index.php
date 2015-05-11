@@ -1,7 +1,7 @@
 <?php
 /***********************************
  * Jalali Calendar v 1.0.0.0
- * for NukeLearn USV v 1
+ * for MarlikCMS USV v 1
  * written by James [Hamed]
  * developed by S.Amirhosein Nikookar Nooshabadi
  * thanks to Armin Randjbar-Daemi for his fantastic Jalali Calendar Class

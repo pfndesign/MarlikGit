@@ -3,7 +3,7 @@
 *
 * @package SITE MAP														
 * @version $Id: XML 12:43 PM 3/5/2010 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -17,7 +17,7 @@ define('IN_SITEMAP', true);
 include_once("modules/".$module_name."/includes/functions.php");
 $sm_config = sitemap_get_configs();
 
-$out = '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="'.USV_DOMAIN.'/includes/sitemap.xsl"?><!-- generator="nukelearn/1.1.4" -->
+$out = '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="'.USV_DOMAIN.'/includes/sitemap.xsl"?><!-- generator="MarlikCMS/1.1.4" -->
 <!-- sitemap-generator-url="'.USV_DOMAIN.'" sitemap-generator-version="1.1.4" -->
 <!-- generated-on="'.date('Y-m-d').'" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>

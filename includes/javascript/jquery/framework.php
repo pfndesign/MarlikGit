@@ -4,7 +4,7 @@
 *
 * @package jquery framework														
 * @version $Id: framework.php 0999 2009-12-12 15:35:19Z Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

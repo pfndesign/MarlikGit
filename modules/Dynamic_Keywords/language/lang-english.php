@@ -2,11 +2,11 @@
 /**
 	+-----------------------------------------------------------------------------------------------+
 	|																								|
-	|	* @package USV NUKELEARN PORTAL																|
+	|	* @package USV MarlikCMS PORTAL																|
 	|	* @version : 1.0.0.599																		|
 	|																								|
 	|	* @copyright (c) Marlik Group															|
-	|	* http://www.nukelearn.com																	|
+	|	* http://www.MarlikCMS.com																	|
 	|																								|
 	|	* @Portions of this software are based on PHP-Nuke											|
 	|	* http://phpnuke.org - 2002, (c) Francisco Burzi											|

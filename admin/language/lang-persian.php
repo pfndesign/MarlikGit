@@ -2,7 +2,7 @@
 /**
 *
 * @package Language file : Core													* @version $Id: lang-persian.php 11:12 AM 5/10/2011 $Aneeshtan						
-* @copyright (c) Marlik Group  http://www.nukelearn.com									* @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com									* @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
 define("_MEM_USAGE","حافظه درگیر");
@@ -673,7 +673,7 @@ define("_TRACKING","پیگیری آیپی ها");
 define("_TAGS_SYSTEM","مدیریت تگ ها");
 define("_MEDIA_PANEL","مدیریت رسانه ها");
 define("_MAIN_MENU","منوی اصلی");
-define("_LATEST_NUKELEARN_VERSION"," آخرین نسخه پرتال نیوک لرن");
+define("_LATEST_MarlikCMS_VERSION"," آخرین نسخه پرتال نیوک لرن");
 define("_HIDE_SHOW","برای مخفی کردن و یا نمایش  پنجره بالا کلیک کنید");
 define("_WAITING","منتظر");
 define("_KEYWORDS","کلیدواژه");
@@ -684,7 +684,7 @@ define("_SUBMIT_NEW_PAGE","نگارش یک مقاله جدید");
 define("_DRAFT_EXISTS","پیش نویس خالی از قبل موجود است");
 define("_DRAFT_SAVED","پیش نویس ذخیره شد");
 define("_ARTICLE_TITLE_EMPTY","عنوان خبر خالی است");
-define("_ABOUTNUKELEARN","درباره نیوک لرن");
+define("_ABOUTMarlikCMS","درباره نیوک لرن");
 define("_SYSREP","سیستم گزارشات");
 define("_SERVERINFO","اطلاعات سرور");
 
@@ -723,11 +723,11 @@ define("_ADMIN_HELP_NOTE_database","از سایت خود پشتیبان بگیر
 define("_ADMIN_HELP_NOTE_mod_users","مدیریت کاربران سایت");
 define("_SELECT","انتخاب");
 define("_VERSION","نسخه نرم افزار");
-define("_NUKELEARN_LICENSE","برای کسب اطلاعات در مورد لیسانس نرم افزار نیوک لرن");
-define("_NUKELEARN_TEAM","برای مشاهده تیم توسعه دهنده و همکاران پروژه ");
+define("_MarlikCMS_LICENSE","برای کسب اطلاعات در مورد لیسانس نرم افزار نیوک لرن");
+define("_MarlikCMS_TEAM","برای مشاهده تیم توسعه دهنده و همکاران پروژه ");
 
-define("_LATEST_NUKELEARN_BLOGS","آخرین بروز رسانی های پرتال نیوک لرن");
-define("_LATEST_NUKELEARN_BUGS","آخرین مشکلات گزارش شده پرتال نیوک لرن ");
+define("_LATEST_MarlikCMS_BLOGS","آخرین بروز رسانی های پرتال نیوک لرن");
+define("_LATEST_MarlikCMS_BUGS","آخرین مشکلات گزارش شده پرتال نیوک لرن ");
 
 define("_HACKING_ATTEMPT","تلاش برای تجاوز به حریم خصوصی سایت ؟!");
 define("_ROOT_FOLDER","پوشه اصلی");

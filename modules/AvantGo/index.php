@@ -110,7 +110,7 @@ $avantgo_logo = "";
     "._COMESFROM." $sitename<br>
     <a href=\"$nukeurl\">$nukeurl</a><br><br>
     "._THEURL."<br>
-    <a href=\"$nukeurl/modules.php?name=News&amp;file=article&amp;sid=$sid&amp;title=".Slugit($title)."\">$nukeurl/modules.php?name=News&amp;file=article&amp;sid=$sid</a><br><br><a href=\"http://www.nukelearn.com\" target=\"_blank\">Nukelearn USV © 2009-2011 Nukelearn
+    <a href=\"$nukeurl/modules.php?name=News&amp;file=article&amp;sid=$sid&amp;title=".Slugit($title)."\">$nukeurl/modules.php?name=News&amp;file=article&amp;sid=$sid</a><br><br><a href=\"http://www.MarlikCMS.com\" target=\"_blank\">MarlikCMS USV © 2009-2011 MarlikCMS
 
     
     </td></tr></table>

@@ -4,7 +4,7 @@
 *
 * @package Setting														
 * @version $Id: setting.php 0999 2009-12-17 15:35:19Z Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

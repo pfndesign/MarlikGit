@@ -3,7 +3,7 @@
 *
 * @package Tigris 1.1.4														
 * @version $Id: 1:25 PM 3/2/2010 Aneeshtan $ JAMES					
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alikes
 *
 */

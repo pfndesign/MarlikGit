@@ -3,7 +3,7 @@
  *
  * @package acp														
  * @version $Id: acp_dashboard.php 6:45 PM 1/9/2010 Aneeshtan $						
- * @copyright (c) Marlik Group  http://www.nukelearn.com											
+ * @copyright (c) Marlik Group  http://www.MarlikCMS.com											
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
  */
@@ -119,7 +119,7 @@ function ADMIN_NOTIFICATIONS() {
 			$(document).ready(function() {
 		$("div#RSSLoad").html('<img src="images/loading.gif">');
 		$.ajax( {
-			cache:false,url:"<?php echo ADMIN_OP?>nukelearn_RSS",success:function(a) {
+			cache:false,url:"<?php echo ADMIN_OP?>MarlikCMS_RSS",success:function(a) {
 				$("#RSSLoad").html(a)
 			}
 			,error:function() {
@@ -192,7 +192,7 @@ function ADMIN_INFO() {
 			$USV_Version = "Installation NOt Compeleted";
 		}else {
 			/*
-			$file = fopen ("http://www.nukelearn.com/version.html", "r");
+			$file = fopen ("http://www.MarlikCMS.com/version.html", "r");
 			while (!feof ($file)) {
 				$line = fgets ($file, 1024);
 				if (preg_match ("@\<title\>(.*)\</title\>@i", $line, $out)) {
@@ -247,7 +247,7 @@ function ADMIN_INFO() {
 		<td>' . _USV_VERSION .'</td> 
 		<td><strong>' . $USV_Version . '</strong></td> 
 		<td>' . _CHK_VER . '</td> '
-				.'<td><a href="http://www.nukelearn.com/version.html" target="_blank">'.($USV_Version == trim($USV_Version) ? '<img src="images/icon/tick.png">'._LATEST_NUKELEARN_VERSION : '<img src="images/icon/cross.png">'. _NEWVERSION).'</a></td>
+				.'<td><a href="http://www.MarlikCMS.com/version.html" target="_blank">'.($USV_Version == trim($USV_Version) ? '<img src="images/icon/tick.png">'._LATEST_MarlikCMS_VERSION : '<img src="images/icon/cross.png">'. _NEWVERSION).'</a></td>
 		</tr>
 	<tr ' . $mouseover_effect . '>
 	<td><span class="approved">' . intval($totalposts) . '</span><a href="'.ADMIN_OP.'ShowNewsPanel">
@@ -381,7 +381,7 @@ function GraphicModules() {
 	}
 	echo"</tr></table></center>";
 }
-//----ABOUT Nukelearn ------
+//----ABOUT MarlikCMS ------
 function about_us() {
 	global $db;
 	$help_show = "<div  style='background:#fff;width:500px;height:300px;padding:5px;' >".'
@@ -391,17 +391,17 @@ function about_us() {
 '.USV_VERSION.'</b>
 <p>
 <div style="clear:both;float:none"></div>
-Nukelearn Content Management System
-<a href="http://nukelearn.com">http://nukelearn.com</a>
+MarlikCMS Content Management System
+<a href="http://MarlikCMS.com">http://MarlikCMS.com</a>
 </p>
 <p>
-<br>'._NUKELEARN_LICENSE.'
-<a href="http://nukelearn.com/page/license">http://nukelearn.com/page/license</a>
+<br>'._MarlikCMS_LICENSE.'
+<a href="http://MarlikCMS.com/page/license">http://MarlikCMS.com/page/license</a>
 </p>
 <p>
-Copyright @ nukelearn - Farshad Ghazanfari - All Right Reserved <br><br>
-'._NUKELEARN_TEAM.'
-<a href="http://nukelearn.com/page/team">http://nukelearn.com/page/team</a>
+Copyright @ MarlikCMS - Farshad Ghazanfari - All Right Reserved <br><br>
+'._MarlikCMS_TEAM.'
+<a href="http://MarlikCMS.com/page/team">http://MarlikCMS.com/page/team</a>
 </p>
 </div>';
 	echo $help_show;

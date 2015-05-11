@@ -571,7 +571,7 @@ define("_MEDIA_PANEL","Media Panel");
 define("_MAIN_MENU","Main menu");
 define("_EDITUSERS","Users Panel");
 define("_HIDE_SHOW","Hide/show above panel");
-define("_LATEST_NUKELEARN_VERSION","Latest Nukelearn Version");
+define("_LATEST_MarlikCMS_VERSION","Latest MarlikCMS Version");
 define("_WAITING","waiting");
 define("_KEYWORDS","Kewords");
 define("_SECURITY_QUESTION","security question");
@@ -654,7 +654,7 @@ define("_ADMIN_WAIT_DOWNlOADSEND","waiting downloads");
 define("_ADMIN_WAIT_MODERATION","wating comments");
 define("_ADMIN_YOUARENOT","Sorry,you are not an administrator");
 define("_AB_NUKESENTINEL","Site Sentinel");
-define("_ABOUTNUKELEARN","About NukeLearn");
+define("_ABOUTMarlikCMS","About MarlikCMS");
 define("_SYSREP","System reports");
 define("_SERVERINFO","Server Information");
 
@@ -697,11 +697,11 @@ define("_ADMIN_HELP_NOTE_mod_users","manage users and their status.");
 
 define("_SELECT","select");
 define("_VERSION","CMS version");
-define("_NUKELEARN_LICENSE","more about Nukelearn's license.");
-define("_NUKELEARN_TEAM","view Nukelearn's team");
+define("_MarlikCMS_LICENSE","more about MarlikCMS's license.");
+define("_MarlikCMS_TEAM","view MarlikCMS's team");
 
-define("_LATEST_NUKELEARN_BLOGS","Latest Nukelearn Blog Posts");
-define("_LATEST_NUKELEARN_BUGS"," Latest Nukelearn Bugs ");
+define("_LATEST_MarlikCMS_BLOGS","Latest MarlikCMS Blog Posts");
+define("_LATEST_MarlikCMS_BUGS"," Latest MarlikCMS Bugs ");
 define("_HACKING_ATTEMPT","Hacking attempt ?!");
 define("_ROOT_FOLDER","root folder");
 define("_ADD_TAG","Add a tag");

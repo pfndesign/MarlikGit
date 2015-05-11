@@ -4,7 +4,7 @@
 *
 * @package Facebox														
 * @version $Id: 8:26 PM 12/18/2010 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

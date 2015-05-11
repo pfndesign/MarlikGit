@@ -2,11 +2,11 @@
 /*
 	+-----------------------------------------------------------------------------------------------+
 	|																								|
-	|	* @package USV NUKELEARN PORTAL																|
+	|	* @package USV MarlikCMS PORTAL																|
 	|	* @version : 1.0.0.599																		|
 	|																								|
 	|	* @copyright (c) Marlik Group															|
-	|	* http://www.nukelearn.com																	|
+	|	* http://www.MarlikCMS.com																	|
 	|	* http://nukeseo.com																		|
 	|																						
    	|   ======================================== 													|

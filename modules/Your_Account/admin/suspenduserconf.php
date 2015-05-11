@@ -24,7 +24,7 @@
 /*                                                                               */
 /*     Iran Nuke Portal                        (info@irannuke.net)               */
 /*                                                                               */
-/* Refer to i/** @package your_account admin files	12:59 AM 1/12/2010  Nukelearn $ */	
+/* Refer to i/** @package your_account admin files	12:59 AM 1/12/2010  MarlikCMS $ */	
 
 if (!defined('ADMIN_FILE')) {show_error(HACKING_ATTEMPT);}
 

@@ -3,7 +3,7 @@
 *
 * @package News Module	-TAGS													
 * @version $Id:  6:23 PM 1/8/2010  REVISION Aneeshtan - JAMES $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

@@ -1,6 +1,6 @@
 <?php
 
-/** @package your_account admin files	12:59 AM 1/12/2010  Nukelearn $ */
+/** @package your_account admin files	12:59 AM 1/12/2010  MarlikCMS $ */
 
 
 if (!preg_match("/".$admin_file.".php/", "$_SERVER[PHP_SELF]")) { show_error("Access Denied"); }

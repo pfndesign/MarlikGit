@@ -4,7 +4,7 @@
 *
 * @package INSTALLATION STYLE														
 * @version $Id: inc_installation.php 9:22 PM 4/12/2011 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -51,7 +51,7 @@ function install_body($content){
 
 function install_footer(){
 	
-		echo "<div style='height:100%px;padding:40px;text-align:left;font-size:10px;color:gray'>Copyright 2008-2011 <a href='http://www.nukelearn.com'>Marlik Group</a></div>\n";
+		echo "<div style='height:100%px;padding:40px;text-align:left;font-size:10px;color:gray'>Copyright 2008-2011 <a href='http://www.MarlikCMS.com'>Marlik Group</a></div>\n";
 		echo "</body>\n";
 	echo "</html>\n";
 }

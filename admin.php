@@ -3,7 +3,7 @@
 *
 * @package Admin INDEX														
 * @version  admin.php $Id: beta6 $ 2:12 AM 12/25/2009	$Aneeshtan					
-* @copyright (c)Marlik Group  http://www.nukelearn.com											
+* @copyright (c)Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -83,8 +83,8 @@ if ($admintest)
 		  case "about_us" :
 		   about_us();
 		   break;
-		  case "nukelearn_RSS" :
-		   nukelearn_RSS();
+		  case "MarlikCMS_RSS" :
+		   MarlikCMS_RSS();
 		   break;
 		  case "deleteNotice" :
 		   deleteNotice($id);

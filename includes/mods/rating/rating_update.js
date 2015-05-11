@@ -4,7 +4,7 @@
 /************************************************************************/
 /* Coded By		:  www.boedesign.com			 	                    */
 /* Ported By: Exoid - www.nuke-evolution.ir		                        */
-/* Developed By: Exoid - www.nukelearn.com		                        */
+/* Developed By: Exoid - www.MarlikCMS.com		                        */
 /************************************************************************/
 
 if (document.images){

@@ -5,7 +5,7 @@
 *
 * @package log system														
 * @version $Id: cass.logs.php 11:56 AM 12/25/2009 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

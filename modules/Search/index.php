@@ -4,7 +4,7 @@
  *
  * @package SEARCH MODULE - MODIFIED													
  * @version $Id: Aneeshtan $4:43 PM 8/10/2010
- * @copyright (c) Marlik Group  http://www.nukelearn.com											
+ * @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
  *
  */

@@ -4,7 +4,7 @@
 *
 * @package Survey Block 												
 * @version $Id:  11:02 AM 5/23/2010 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 *
 */
 

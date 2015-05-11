@@ -3,13 +3,13 @@
 *
 * @package Extra Page														
 * @version $Id: page.php 12:43 PM 3/5/2010 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
 if (!defined("ADMIN_FILE")) {show_error(HACKING_ATTEMPT);}
-if (!defined("USV_VERSION")) {die("This only works on Nukelearn Portal , So why don't join us<br>http://www.nukelearn.com");}
+if (!defined("USV_VERSION")) {die("This only works on MarlikCMS Portal , So why don't join us<br>http://www.MarlikCMS.com");}
 switch($op) {
 
     case "extpage":

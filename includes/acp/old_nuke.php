@@ -4,7 +4,7 @@
 *
 * @package acp														
 * @version $Id: acp_dashboard.php 0999 2009-12-12 15:35:19Z Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -63,7 +63,7 @@ function login() {
 	echo "</head>\n";
 	echo "<body class='bglogin'>\n";
 	echo "<div id='loginDiv'>\n";
-	echo "<center><a href='http://www.nukelearn.com'><img src='".INCLUDES_ACP."style/images/nkln-logo.png'></a><center>";
+	echo "<center><a href='http://www.MarlikCMS.com'><img src='".INCLUDES_ACP."style/images/nkln-logo.png'></a><center>";
 	echo "<form  class='bgform' name='admin01' method='post' action='' . $admin_file . '.php'>\n";
 	echo "<div class='adminbox'>\n";
 	echo "<label style='text-align:".langstyle(align)."'>"._ADMINID."</labe><input type='text' name='aid' class='intxt'>";

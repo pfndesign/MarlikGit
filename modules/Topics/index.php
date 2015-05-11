@@ -3,7 +3,7 @@
 *
 * @package Topic INDEX														
 * @version $Id: 8:02 PM 3/25/2012 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 *
 * 
 */

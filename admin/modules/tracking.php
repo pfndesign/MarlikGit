@@ -4,7 +4,7 @@
 * @package Tigris 1.1.4														
 * @version $Id: 1:25 PM 3/2/2010 Aneeshtan $						
 * @version  http://www.ierealtor.com - phpnuke id: scottr $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alikes
 *
 */
@@ -125,7 +125,7 @@ function IPTrack() {
 			CloseTable();
 		}
 	} else {
-		die("This Plugin works only for Nukelearn CMS");
+		die("This Plugin works only for MarlikCMS CMS");
 	}
 	include ("footer.php");
 }
@@ -290,7 +290,7 @@ function showIPStats() {
 		$db->sql_freeresult($result);
 		echo "</table>";
 	} else {
-		die("Only works with Nukelearn CMS");
+		die("Only works with MarlikCMS CMS");
 	}
 }
 function PagesViewed() {

@@ -2,27 +2,27 @@
 
 /************************************************************************/
 /*                 INP Links Box (Links Dumps)                          */
-/*         By: Iran Nuke Premium (info@nukelearn.com)                    */
-/*  http://www.nukelearn.com                                             */
+/*         By: Iran Nuke Premium (info@MarlikCMS.com)                    */
+/*  http://www.MarlikCMS.com                                             */
 /* Copyright � 2003-2005 by Iran Nuke Premium                           */
 /************************************************************************/
 /* PHP-Nuke INP: Expect to be impressed                                 */
 /* ===========================                                          */
 /*                               COPYRIGHT                              */
 /*                                                                      */
-/* Copyright (c) 2003 - 2005 by http://www.nukelearn.com                 */
+/* Copyright (c) 2003 - 2005 by http://www.MarlikCMS.com                 */
 /*                                                                      */
-/*     Iran Nuke Premium                         (info@nukelearn.com)    */
+/*     Iran Nuke Premium                         (info@MarlikCMS.com)    */
 /*                                                                      */
-/* Refer to nukelearn.com for detailed information on PHP-Nuke INP       */
+/* Refer to MarlikCMS.com for detailed information on PHP-Nuke INP       */
 /************************************************************************/
 $module_name = basename(dirname(__FILE__));
 $mod_name = "ماژول عضویت ویژه";
 $author_email = "";
-$author_homepage = "http://www.nukelearn.com";
+$author_homepage = "http://www.MarlikCMS.com";
 $author_name = "<a href=\"$author_homepage\" target=\"new\">Farshad Ghazanfari</a>";
-$license = "Copyright &copy; 2003-2011 nukelearn CMS";
-$download_location = "http://www.nukelearn.com/modules.php?name=Downloads";
+$license = "Copyright &copy; 2003-2011 MarlikCMS CMS";
+$download_location = "http://www.MarlikCMS.com/modules.php?name=Downloads";
 $module_version = "2";
 $module_description = "";
 $version_NUM = "1.1.4";

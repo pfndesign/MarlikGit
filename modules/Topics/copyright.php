@@ -29,9 +29,9 @@
 
 $author_name = "Farshad Ghazanfari";
 $author_email = "";
-$author_homepage = "http://nukelearn.com";
+$author_homepage = "http://MarlikCMS.com";
 $license = "GNU/GPL";
-$download_location = "http://nukelearn.com";
+$download_location = "http://MarlikCMS.com";
 $module_version = "";
 $module_description = "This Advanced module can show categories and sub categories of News Module.";
 

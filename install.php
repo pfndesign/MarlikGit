@@ -3,7 +3,7 @@
  *
  * @package INSTALLATION
  * @version $Id: install.php 0999 2009-12-13 Aneeshtan $
- * @copyright (c) Marlik Group  http://www.nukelearn.com
+ * @copyright (c) Marlik Group  http://www.MarlikCMS.com
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
  */
@@ -26,7 +26,7 @@ define('INSTALL_LANGUAGE_PATH', INSTALL_PATH . 'languages/');
 define('DEF_LANGUAGE', (!empty($_COOKIE['ilang']) ? $_COOKIE['ilang'] : 'persian'));
 define('INSTALL_UPLOAD', BASE_PATH . 'update/');
 define('INSTALL_FILE', 'install');
-define('SPONSER_URL', 'nukelearn.com');
+define('SPONSER_URL', 'MarlikCMS.com');
 define('MAINTENANCE_MODE', 'install');
 define("USV_FILENAME", 'Tigris_1_1_6.sql');
 define('USV_VERSION', 'Tigris_1_1_6');
@@ -65,7 +65,7 @@ function install_main()
 {
     $content = "<div style='padding:10px;line-height:20px;'>" . TEXT_INSTALLATION_NOTE;
     $content .= '
-	<center><img src="includes/upload/Nukelearn/NukelearnUSV.png"></center>
+	<center><img src="includes/upload/MarlikCMS/MarlikCMSUSV.png"></center>
 	<form name="install" action="' . INSTALL_FILE . '.php" method="post">
 	<input type="hidden" name="step" value="1">
 	<input type="submit"  value=' . START_INST . ' style="background:#D2E20D;color:#1E3F9E;padding-right:25px;padding-left:25px;font-size:14px;" >
@@ -79,10 +79,10 @@ function install_main()
 function uninstall_main()
 {
     $content = '<div style="padding:10px;line-height:20px;">' . TEXT_PORTALINFO . '
-<br> <b><a href="http://www.nukelearn.com">www.nukelearn.com</a></b>
+<br> <b><a href="http://www.MarlikCMS.com">www.MarlikCMS.com</a></b>
 ';
     $content .= '
-	<center><img src="includes/upload/Nukelearn/NukelearnUSV.png"></center>
+	<center><img src="includes/upload/MarlikCMS/MarlikCMSUSV.png"></center>
 	<form name="install" action="' . INSTALL_FILE . '.php" method="post">
 	<input type="hidden" name="step" value="10">
 	<input type="submit"  value="' . UNINSTALL . '" style="background:#F04509;color:#fff;padding-right:25px;padding-left:25px;font-size:14px;" >
@@ -573,7 +573,7 @@ function install_6()
 *
 * @package config file														
 * @version $Id: RC-7 FINAL $ 2:12 AM 12/25/2009						
-* @copyright (c)Marlik Group  http://www.nukelearn.com											
+* @copyright (c)Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -833,7 +833,7 @@ function install_7()
 		<P align='center'><a href='" .$_POST['admin_file'] . ".php'><input type='button' value='" . ADMINISTRATOR . "' ></a>
 		<a href='index.php'><input type='button' value='" . SHOWMYSITE . "' ></a></p>";
         
-        echo "<br><a href='http://www.nukelearn.com/page/catelog'>
+        echo "<br><a href='http://www.MarlikCMS.com/page/catelog'>
 		<img src='images/icon/help.png' border='0'>" . CHANGE_PERM_GUIDE . "</a>";
         echo '<div style="height:200px;overflow:auto;" ><table id="gradient-style" summary="' . TEXT_PERMISSION . '">
    		<thead>

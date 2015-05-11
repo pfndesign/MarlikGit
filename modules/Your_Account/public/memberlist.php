@@ -3,7 +3,7 @@
 *
 * @package memberlist														
 * @version $Id: 3:52 PM 7/18/2010 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 *
 * 
 */

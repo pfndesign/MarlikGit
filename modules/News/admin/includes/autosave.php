@@ -4,7 +4,7 @@
 *
 * @package News Auto Save  														
 * @version $Id: autosave.php beta0.5   1:09 PM 1/25/2010  Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

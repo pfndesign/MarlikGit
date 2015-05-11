@@ -2,7 +2,7 @@
 /**
 *
 * @package Update
-* @copyright (c) Marlik Group  http://www.nukelearn.com $Aneeshtan
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com $Aneeshtan
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -187,9 +187,9 @@ if (is_superadmin($admin)) {
 ","
         UPDATE `nuke_config` SET `USV_Version` = '1.1.0' LIMIT 1 ;
 ","
-        UPDATE `nuke_config` SET `support` = 'info@nukelearn.com' LIMIT 1 ;
+        UPDATE `nuke_config` SET `support` = 'info@MarlikCMS.com' LIMIT 1 ;
 ","
-        UPDATE `nuke_config` SET `copyright` = 'Nukelearn USV &copy; 2009-2010 <a href=\"http://www.nukelearn.com\" target=\"_blank\">Nukelearn</a>' LIMIT 1 ;
+        UPDATE `nuke_config` SET `copyright` = 'MarlikCMS USV &copy; 2009-2010 <a href=\"http://www.MarlikCMS.com\" target=\"_blank\">MarlikCMS</a>' LIMIT 1 ;
 ","
         INSERT INTO `nuke_modules` (`mid`, `title`, `custom_title`, `active`, `view`, `inmenu`, `mod_group`, `admins`) VALUES
         (NULL , 'phpBB3', 'phpBB3', 1, 0, 1, 0, '');
@@ -345,7 +345,7 @@ CREATE TABLE IF NOT EXISTS `nuke_blogs` (
 "," 
 UPDATE `nuke_config` SET `USV_Version`='1.1.2';
 "," 
-UPDATE `nuke_config` SET `copyright`='Nukelearn USV &copy; 2009-2011 <a href=\"http://www.nukelearn.com\" target=\"_blank\">Nukelearn</a>';
+UPDATE `nuke_config` SET `copyright`='MarlikCMS USV &copy; 2009-2011 <a href=\"http://www.MarlikCMS.com\" target=\"_blank\">MarlikCMS</a>';
 ");
 		echo "<hr />\n";
 		for ($i=0; $i < count($sql_queue); $i++) {
@@ -455,11 +455,11 @@ UPDATE `nuke_config` SET `USV_Version`='1.1.3';
 "," 
 ALTER IGNORE TABLE `nuke_session` ADD UNIQUE KEY(`session_ip`) 
 "," 
-UPDATE `nuke_config` SET `copyright`='Nukelearn USV &copy; 2009-2011 <a href=\"http://www.nukelearn.com\" target=\"_blank\">Nukelearn</a>';
+UPDATE `nuke_config` SET `copyright`='MarlikCMS USV &copy; 2009-2011 <a href=\"http://www.MarlikCMS.com\" target=\"_blank\">MarlikCMS</a>';
 "," 
 ALTER IGNORE TABLE `nuke_users` ADD UNIQUE KEY(`username`)
 "," 
-UPDATE `nuke_config` SET `copyright`='Nukelearn USV &copy; 2009-2011 <a href=\"http://www.nukelearn.com\" target=\"_blank\">Nukelearn</a>';
+UPDATE `nuke_config` SET `copyright`='MarlikCMS USV &copy; 2009-2011 <a href=\"http://www.MarlikCMS.com\" target=\"_blank\">MarlikCMS</a>';
 	");
 		echo "<hr />\n";
 		for ($i=0; $i < count($sql_queue); $i++) {
@@ -487,7 +487,7 @@ UPDATE `nuke_config` SET `USV_Version`='1.1.4';
 "," 
 ALTER IGNORE TABLE `nuke_session` ADD UNIQUE KEY(`session_ip`) 
 "," 
-UPDATE `nuke_config` SET `copyright`='Nukelearn USV &copy; 2009-2011 <a href=\"http://www.nukelearn.com\" target=\"_blank\">Nukelearn</a>';
+UPDATE `nuke_config` SET `copyright`='MarlikCMS USV &copy; 2009-2011 <a href=\"http://www.MarlikCMS.com\" target=\"_blank\">MarlikCMS</a>';
 "," 
 ALTER IGNORE TABLE `nuke_users` ADD UNIQUE KEY(`username`)
 "," 
@@ -548,7 +548,7 @@ ALTER TABLE `nuke_tree_elements` ADD `lang` VARCHAR( 256 ) CHARACTER SET utf8 CO
 "," 
 ALTER TABLE `nuke_tree_elements` CHANGE `eng_name` `lang` VARCHAR( 256 ) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL 
 "," 
-UPDATE `nuke_config` SET `copyright`='Nukelearn USV &copy; 2009-2011 <a href=\"http://www.nukelearn.com\" target=\"_blank\">Nukelearn</a>';
+UPDATE `nuke_config` SET `copyright`='MarlikCMS USV &copy; 2009-2011 <a href=\"http://www.MarlikCMS.com\" target=\"_blank\">MarlikCMS</a>';
 "," 
 ALTER TABLE `nuke_nsnst_config` CHANGE `config_value` `config_value` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL 
 "," 
@@ -568,7 +568,7 @@ INSERT INTO `nuke_nsnst_config` (`config_name`, `config_value`) VALUES
 ","
 DROP TABLE IF EXISTS `nuke_headlines`;
 "," 
-INSERT INTO `nuke_cnbya_config` (`config_name`,`config_value`)VALUES('headlines', 'http://www.tabnak.ir/fa/rss/allnews\r\nhttp://www.itna.ir/index.xml\r\nhttp://www.cmsnews.ir/feed/rss/\r\nhttp://www.nukelearn.com/feed/News\r\n');
+INSERT INTO `nuke_cnbya_config` (`config_name`,`config_value`)VALUES('headlines', 'http://www.tabnak.ir/fa/rss/allnews\r\nhttp://www.itna.ir/index.xml\r\nhttp://www.cmsnews.ir/feed/rss/\r\nhttp://www.MarlikCMS.com/feed/News\r\n');
 ","
 DROP TABLE IF EXISTS `nuke_groups_ranges`;
 ","","
@@ -659,7 +659,7 @@ ADD COLUMN `linkstr` varchar(255) DEFAULT NULL,
 "," 
 UPDATE `nuke_config` SET `USV_Version`='1.1.5';
 "," 
-UPDATE `nuke_config` SET `copyright`='Nukelearn USV &copy; 2009-2011 <a href=\"http://www.nukelearn.com\" target=\"_blank\">Nukelearn</a>';
+UPDATE `nuke_config` SET `copyright`='MarlikCMS USV &copy; 2009-2011 <a href=\"http://www.MarlikCMS.com\" target=\"_blank\">MarlikCMS</a>';
 ");
 		echo "<hr />\n";
 		for ($i=0; $i < count($sql_queue); $i++) {
@@ -688,4 +688,4 @@ UPDATE `nuke_config` SET `copyright`='Nukelearn USV &copy; 2009-2011 <a href=\"h
 	</b>\n";
 }
 ?>
-<p class="footmsg_l"><a href='http://www.nukelearn.com'>Powered By Nukelearn</a><br></p></div>
+<p class="footmsg_l"><a href='http://www.MarlikCMS.com'>Powered By MarlikCMS</a><br></p></div>

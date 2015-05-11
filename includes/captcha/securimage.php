@@ -31,7 +31,7 @@
  * @version 1.0.3.1 (March 24, 2008)
  * @package Securimage
  *
- * This class is modified for using in Nukelearn USV by James[Hamed]
+ * This class is modified for using in MarlikCMS USV by James[Hamed]
  */
 
 /**

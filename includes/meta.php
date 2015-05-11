@@ -4,7 +4,7 @@
 *
 * @package Meta Datas														
 * @version $Id: meta.php 0999 2009-12-12 15:35:19Z Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
@@ -43,11 +43,11 @@ $metastring .= "<META NAME=\"RATING\" CONTENT=\"GENERAL\">\n";
 //===========================================
 //COPYRIGHT
 //===========================================
-// IF YOU REALLY NEED TO REMOVE IT AND HAVE MY WRITTEN AUTHORIZATION CHECK: http://nukelearn.com
+// IF YOU REALLY NEED TO REMOVE IT AND HAVE MY WRITTEN AUTHORIZATION CHECK: http://MarlikCMS.com
 // PLAY FAIR AND SUPPORT THE DEVELOPMENT, PLEASE!
 global $commercial_license;
 if ($commercial_license != 1) {
-$metastring .= "<META NAME=\"GENERATOR\" CONTENT=\"Nukelearn Portal Copyright (c) 2009 by nukelearn.com.\">\n";
+$metastring .= "<META NAME=\"GENERATOR\" CONTENT=\"MarlikCMS Portal Copyright (c) 2009 by MarlikCMS.com.\">\n";
 }
 echo $metastring;
 ?>

@@ -4,7 +4,7 @@
 *
 * @package News Panel														
 * @version $Id: newspanel.php beta0.5   12/24/2009  5:51 PM  Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */

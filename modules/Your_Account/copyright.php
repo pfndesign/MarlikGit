@@ -31,9 +31,9 @@
 require_once("../../modules/Your_Account/includes/constants.php");
 if (!defined('CNBYA')) { echo "CNBYA protection"; exit; }
 $module_name		= basename(dirname(__FILE__));
-$mod_name		= "Account Module Revised Version For Nukelearn Portal";
+$mod_name		= "Account Module Revised Version For MarlikCMS Portal";
 $author_email	= "";
-$author_homepage	= "http://www.nukelearn.com";
+$author_homepage	= "http://www.MarlikCMS.com";
 $author_name		= "<a href=\"$author_homepage\">Marlik Group</a>";
 $download_location	= "";
 $module_version	= "1.1.4";

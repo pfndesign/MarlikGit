@@ -3,7 +3,7 @@
 *
 * @package session CLASS														
 * @version $Id: inc_session.php  2:38 AM 12/18/2010  Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com	& Inspired By PHPBB3 Session Class										
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com	& Inspired By PHPBB3 Session Class										
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -20,11 +20,11 @@ define('EXPIRE_TIME',''.(time()-7200).'');
 
 
 /**
-* Base Nukelearn Session class
+* Base MarlikCMS Session class
 *
 * This is the overarching class which contains Session handling functions
 *
-* @package Nukelearn
+* @package MarlikCMS
 */
 
 class mr_session

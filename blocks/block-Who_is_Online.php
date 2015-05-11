@@ -4,7 +4,7 @@
 *
 * @package Who is Online and where												
 * @version $Id:  1:00 PM 5/29/2010 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 *
 */
 

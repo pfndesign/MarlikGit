@@ -3,7 +3,7 @@
 *
 * @package constants														
 * @version $Id: constants.php RC-7 11:49 AM 1/2/2010 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -52,7 +52,7 @@ define("THANKS_TABLE",				"".$prefix."_bb3thanks");
 
 
 //===========================================
-//NUKELEARN TABLES :
+//MarlikCMS TABLES :
 //===========================================
 //--Nuke Tables ---
 define("STORY_TABLE",				"".$prefix."_stories");
@@ -264,13 +264,13 @@ if($site_switch == 1 AND !stristr($_SERVER['PHP_SELF'], "".$admin_file.".php") A
 
 	$content_2_close ='<!-- 
 
-@Nukelearn Portal 
+@MarlikCMS Portal 
 
 @version : 1.1.5 BE
 
 Copyright (C) 2009-2011 by Marlik Group
 
-http://www.nukelearn.com
+http://www.MarlikCMS.com
 
 -->
 

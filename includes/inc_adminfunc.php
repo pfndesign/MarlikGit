@@ -3,7 +3,7 @@
 *
 * @package inc_adminfunc														
 * @version $Id: inc_adminfunc 1.1.6 						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

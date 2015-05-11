@@ -2,9 +2,9 @@
 
 /**
 *
-* @package language system for Nukelearn CMS														
+* @package language system for MarlikCMS CMS														
 * @version $Id: languages.php 11:32 AM 9/19/2011  Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */
@@ -155,8 +155,8 @@ function editlanguageprocess() {
 /**
 *
 * @package Language file : '.$_POST['id'].'												
-* @version $Id: lang-'.$_POST['lang'].'.php 11:12 AM 5/10/2011 $ Nukelearn			
-* @copyright (c) Marlik Group  http://www.nukelearn.com							
+* @version $Id: lang-'.$_POST['lang'].'.php 11:12 AM 5/10/2011 $ MarlikCMS			
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com							
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */'."\r\n\r\n";

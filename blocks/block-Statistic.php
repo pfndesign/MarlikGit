@@ -4,7 +4,7 @@
 *
 * @package comprehensive statistics											
 * @version $Id:  12:36 PM 4/8/2011 Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

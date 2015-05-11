@@ -3,11 +3,11 @@
 /**
 	+-----------------------------------------------------------------------------------------------+
 	|																								|
-	|	* @package USV NUKELEARN PORTAL																|
+	|	* @package USV MarlikCMS PORTAL																|
 	|	* @version : 1.0.0.219																		|
 	|																								|
 	|	* @copyright (c) Marlik Group															|
-	|	* http://www.nukelearn.com																	|
+	|	* http://www.MarlikCMS.com																	|
 	|																								|
 	|	* @Portions of this software are based on PHP-Nuke											|
 	|	* http://phpnuke.org - 2002, (c) Francisco Burzi											|
@@ -53,7 +53,7 @@ switch($op) {
 
 	case "moderation_reject":
 
-/*|	----patch 3 www.nukelearn.com----Aneeshtan---|*/
+/*|	----patch 3 www.MarlikCMS.com----Aneeshtan---|*/
 	case "moderation_mc_view":
 
     @include("admin/modules/moderation.php");

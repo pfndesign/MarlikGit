@@ -3,7 +3,7 @@
  *
  * @package Shamsi Date Functions											
  * @version  inc_JalaliDate.php $Id: beta6  2:12 AM 12/25/2009						
- * @copyright (c)Marlik Group  http://www.nukelearn.com											
+ * @copyright (c)Marlik Group  http://www.MarlikCMS.com											
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
  *
  */

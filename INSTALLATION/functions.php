@@ -49,7 +49,7 @@ if (!function_exists('create_first')) {
 ");
 			}else {
 			$con->sql_query("UPDATE `".$DB_USER_PREFIX."_modules` SET `active`='0' WHERE `title`='phpBB3' ");
-			$con->sql_query("UPDATE `".$DB_USER_PREFIX."_blocks` SET `active`='0' WHERE `blockfile`='block-phpBB3_Forum_Center_NukeLearn.php' ");
+			$con->sql_query("UPDATE `".$DB_USER_PREFIX."_blocks` SET `active`='0' WHERE `blockfile`='block-phpBB3_Forum_Center_MarlikCMS.php' ");
 			$con->sql_query("DELETE FROM `".$DB_USER_PREFIX."_tree_elements` WHERE `Id`='2' OR `Id`='11' OR `Id`='14' OR `Id`='15' OR `Id`='16' ");
 			}	
 		}

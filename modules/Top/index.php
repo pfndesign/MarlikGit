@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* @package  TOP MODULE FOR NUKELEARN														
-* @version $Id:  Nukelearn  $			
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @package  TOP MODULE FOR MarlikCMS														
+* @version $Id:  MarlikCMS  $			
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
 *
 */

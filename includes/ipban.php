@@ -3,7 +3,7 @@
  *
  * @package BAN IPS														
  * @version  ipban.php $Id: Aneeshtan  7:55 PM 5/9/2011					
- * @copyright (c)Marlik Group  http://www.nukelearn.com											
+ * @copyright (c)Marlik Group  http://www.MarlikCMS.com											
 * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
  *
  */

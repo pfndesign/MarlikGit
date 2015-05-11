@@ -4,7 +4,7 @@
 *
 * @package Admin_Story general functions												
 * @version $Id: functions.php RC-7  2:03 AM 1/4/2010  Aneeshtan $						
-* @copyright (c) Marlik Group  http://www.nukelearn.com											
+* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
