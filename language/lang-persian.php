@@ -815,6 +815,6 @@ define('_PHPF_PROTECTION_SPAM_IP', 'محافظت در برابر آیپی های
 define('_PHPF_PROTECTION_UNION', 'عملیات شما به عنوان حمله مجتمع داده های بانک اطلاعاتی شناخته شد. از سایت خارج شوید.');
 define('_PHPF_PROTECTION_URL', 'محافظت از آدرس های سایت فعال است. در داخل آدرس استفاده از کارکترهای حرفی مجاز نمی باشد. ');
 define('_PHPF_PROTECTION_XSS', 'حمله XSS شناسایی شد . لطفا از سایت خارج شوید.');
-define('_PHPF_PROTECTION_FLOOD', 'لطفا در بازدید از سایت صبور باشد. پس از '.PHP_FIREWALL_ANTI_FLOOD_TIME.' ثانیه صفحه کنونی را رفرش کنید.');
+define('_PHPF_PROTECTION_FLOOD', 'لطفا در بازدید از سایت صبور باشد. پس از چند ثانیه صفحه کنونی را رفرش کنید.');
 
 ?>

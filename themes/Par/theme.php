@@ -12,14 +12,14 @@ define("THEME_FILES_PREFIX","html");
 // just uncomment bellow texts to learn how we can define a contansts . 
 // bellow constants is a simple welcome note that you can use anywhere in your html files  just by using [welcome_note]
 // just consider that this is a simple usage of defining a constanst in TE and you can creat more advanced var and link to the database by using $db->
-if (!function_exists(OpenTable)) {
+if (!function_exists('OpenTable')) {
 function OpenTable() {
 ?>
 <div class="site-body-sidebar-center">
 <?php 
 }
 }
-if (!function_exists(CloseTable)) {
+if (!function_exists('CloseTable')) {
 function CloseTable() {
 ?>
 </div>

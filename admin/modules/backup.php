@@ -37,7 +37,7 @@ function czd_get_lang($module) {
 			include_once("language/CZDatabase/lang-persian.php");
 		}
 }
-czd_get_lang(admin);
+czd_get_lang('admin');
 
 // Dont mess with my work please
 function Showdbcc() {

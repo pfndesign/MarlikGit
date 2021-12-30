@@ -66,8 +66,8 @@ function login() {
 	echo "<center><a href='http://www.MarlikCMS.com'><img src='".INCLUDES_ACP."style/images/nkln-logo.png'></a><center>";
 	echo "<form  class='bgform' name='admin01' method='post' action='' . $admin_file . '.php'>\n";
 	echo "<div class='adminbox'>\n";
-	echo "<label style='text-align:".langstyle(align)."'>"._ADMINID."</labe><input type='text' name='aid' class='intxt'>";
-	echo "<label style='text-align:".langstyle(align)."'>"._PASSWORD."</labe><input type='password'  name=\"pwd\" class='intxt'>";
+	echo "<label style='text-align:".langstyle('align')."'>"._ADMINID."</labe><input type='text' name='aid' class='intxt'>";
+	echo "<label style='text-align:".langstyle('align')."'>"._PASSWORD."</labe><input type='password'  name=\"pwd\" class='intxt'>";
 	if (extension_loaded("gd") AND ($gfx_chk == 1 OR $gfx_chk == 5 OR $gfx_chk == 6 OR $gfx_chk == 7)) {
 	echo show_captcha();
 	}

@@ -179,14 +179,14 @@ $get_memory =  (function_exists('memory_get_usage')) ? memory_get_usage() : 0 ;
 $start_time = $mtime;
 $pagetitle = ""; 
 
-if(isset($_COOKIE['admin']))$admin = mysql_real_escape_string($_COOKIE['admin']);
-if(isset($_COOKIE['admin']))$user = mysql_real_escape_string($_COOKIE['user']);
+if(isset($_COOKIE['admin']))$admin = mysqli_real_escape_string($db->db_connection,$_COOKIE['admin']);
+if(isset($_COOKIE['admin']))$user = mysqli_real_escape_string($db->db_connection,$_COOKIE['user']);
 
 
 //===========================================
 // Language 
 //===========================================
-	global $multilingual,$language;
+	global $multilingual,$language,$db;
 	// if an user ask us for a language to be his own default lang: 
 	if (($multilingual == 1) AND isset($newlang) AND !stristr($newlang,".")) {
 		$newlang = strip_tags(mysql_real_escape_string($newlang));
@@ -208,7 +208,7 @@ if(isset($_COOKIE['admin']))$user = mysql_real_escape_string($_COOKIE['user']);
 		setcookie("lang",$language,time()+31536000,''.USV_DOMAIN.'');
 		$currentlang = $language;
 	}else{
-		$currentlang = mysql_real_escape_string($_COOKIE['lang']);
+		$currentlang = mysqli_real_escape_string($db->db_connection,$_COOKIE['lang']);
 	}
 	
 	// Include main language file
@@ -291,8 +291,3 @@ http://www.MarlikCMS.com
 ';
 die($content_2_close);
 }
-
-
-
-
-?>

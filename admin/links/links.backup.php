@@ -10,7 +10,7 @@
 /********************************************************/
 function czd_get_lang($module) {
     global $currentlang, $language,$admin;
-    if ($module == admin) {
+    if ($module == 'admin') {
 		if (file_exists("language/CZDatabase/lang-$currentlang.php")) {
 			include_once("language/CZDatabase/lang-$currentlang.php");
 		} else {
@@ -18,7 +18,7 @@ function czd_get_lang($module) {
 		}
     }
 }
-czd_get_lang(admin);
+czd_get_lang('admin');
 
 if (is_superadmin($admin)) {
     adminmenu("".ADMIN_OP."database", ""._ADDON."", "backup.png");

@@ -11,14 +11,10 @@
   
 $treeManager = NULL;
 define("INSIDE_MOD",true);
-require_once(''.MODS_PATH.'treemenu/includes/classes/Mysql.php');
 require_once('config.php');
 require_once(''.MODS_PATH.'treemenu/includes/config.php');
 require_once(''.MODS_PATH.'treemenu/includes/functions.php');
 require_once(''.MODS_PATH.'treemenu/includes/classes/DBTreeManager.php');
-//-----------------------------------LETS CONNECT TO DATABASE ONCE AGAIN ----------------------------------------------------
-global $treeManager,$dbhost,$dbuname,$dbpass,$dbname;
-$mdb = new MySQL("$dbhost","$dbuname","$dbpass","$dbname");
-$treeManager = new DBTreeManager($mdb);
+$treeManager = new DBTreeManager();
 
 ?>

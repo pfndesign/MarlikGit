@@ -13,7 +13,7 @@ define("hide_lside",true);
 // just uncomment bellow texts to learn how we can define a contansts .
 // bellow constants is a simple welcome note that you can use anywhere in your html files  just by using [welcome_note]
 // just consider that this is a simple usage of defining a constanst in TE and you can creat more advanced var and link to the database by using $db->
-if (!function_exists(OpenTable)) {
+if (!function_exists('OpenTable')) {
 function OpenTable() {
 ?>
 <section class="centerbox">
@@ -21,7 +21,7 @@ function OpenTable() {
 <?php 
 }
 }
-if (!function_exists(CloseTable)) {
+if (!function_exists('CloseTable')) {
 function CloseTable() {
 ?>
 </p>

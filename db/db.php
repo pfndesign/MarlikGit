@@ -67,7 +67,7 @@ switch($dbtype) {
 
 
 $db = new sql_db($dbhost, $dbuname, $dbpass, $dbname, false);
-if(!$db->db_connect_id || !file_exists(CORE_INCLUSION."config.php")) {
+if(!$db->db_connection || !file_exists(CORE_INCLUSION."config.php")) {
 if (!defined('INSTALLATION_FILE')) {
 ?><style type="text/css">p.error {font-size: 90%;font-weight: bold;}#bd .error, #bd .warning, #bd .info, #bd .message {border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; font-weight: normal; padding: 10px !important; margin: 10px 0 !important; clear: both;}#bd .error {background:#FDD; border:1px solid #FBB;}</style><?php
 	if (file_exists(CORE_INCLUSION."install.php")) {

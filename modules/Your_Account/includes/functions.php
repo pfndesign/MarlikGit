@@ -114,7 +114,7 @@ function ya_fixtext($ya_fixtext) {
 	$ya_fixtext = str_replace ( "\'", "&acute;", $ya_fixtext );
 	$ya_fixtext = str_replace ( "\"", "&quot;", $ya_fixtext );
 	$ya_fixtext = strip_tags ( $ya_fixtext );
-	if (! get_magic_quotes_gpc ()) {
+	if (true) {
 		$ya_fixtext = addslashes ( $ya_fixtext );
 	}
 	;
@@ -125,7 +125,7 @@ function ya_fixtext($ya_fixtext) {
 // function improved by Peter
 function ya_save_config($config_name, $config_value, $config_param = "") {
 	global $prefix, $db;
-	if (! get_magic_quotes_gpc ()) {
+	if (true) {
 		$config_value = addslashes ( $config_value );
 	}
 	if ($config_param == 'html') {
@@ -148,7 +148,7 @@ function ya_get_configs() {
 	global $prefix, $db, $gfx_chk;
 	$configresult = $db->sql_query ( "SELECT config_name, config_value FROM " . $prefix . "_cnbya_config" );
 	while ( list ( $config_name, $config_value ) = $db->sql_fetchrow ( $configresult ) ) {
-		if (! get_magic_quotes_gpc ()) {
+		if (true) {
 			$config_value = stripslashes ( $config_value );
 		}
 		$config [$config_name] = $config_value;

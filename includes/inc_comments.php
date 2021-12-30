@@ -16,16 +16,16 @@ class comments_class {
 	function comment_showroom(){
 		global $db,$sid,$pid,$userinfo,$pagenum,$commentlimit;
 		
-		if ($userinfo[uorder]==1){
+		if ($userinfo['uorder']==1){
 			$commentOrder = " tid DESC";
-		}elseif ($userinfo[uorder]==2){
+		}elseif ($userinfo['uorder']==2){
 			$commentOrder = " score DESC";
 		}else {
 			$commentOrder = " tid ASC";
 		}
 
 		
-		$ppage = ($userinfo[thold]==0 ? $commentlimit : $userinfo[thold] );
+		$ppage = ($userinfo['thold']==0 ? $commentlimit : $userinfo['thold'] );
 		$cpage = (empty($pagenum)) ? 1 : $pagenum;
 		$offset  = ($cpage * $ppage) - $ppage;
 

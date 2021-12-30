@@ -91,6 +91,7 @@ class nk_posts
 		global $db,$prefix;
 		$tags_t = ($this->data['tags'] == ' ') ? '' : explode(",",$this->data['mytags']);
 		$tags_s = ($this->data['tags'] == ' ') ? '' : explode(",",$this->data['tagslug']);
+		if(is_array($tags_t) && is_array($tags_s)){
 			for ($i=0; $i<sizeof($tags_t) AND $i<sizeof($tags_s); $i++)
 			{
 				if (!empty($tags_t[$i])) {
@@ -98,6 +99,7 @@ class nk_posts
 				}
 			}		
 		}
+	}
 	public function _categories() {
 	global $db,$prefix;
 		
@@ -139,5 +141,3 @@ class nk_posts
 		);
 	}
 }
-
-?>

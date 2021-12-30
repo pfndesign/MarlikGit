@@ -19,7 +19,7 @@ else
 define("IN_PHP", true);
 
 require_once("common.php");
-
+global $db;
 $out = NULL;
 switch($action)
 {
@@ -125,8 +125,7 @@ switch($action)
 	global $prefix;
 	$eid = (int) $_REQUEST['elementId'];
 	$sql = 'SELECT `name`,`lang`,`link`,`module`,`icon` FROM `'.$prefix.'_tree_elements` WHERE `Id` = "'.$eid.'" LIMIT 1';
-	list($tname,$lang,$link,$module,$icon) = mysql_fetch_array($mdb->query($sql));
-	echo mysql_error();
+	list($tname,$lang,$link,$module,$icon) = $db->sql_fetchrow($db->sql_query($sql));
 	$out = $tname.'$sep$'.$lang.'$sep$'.$link.'$sep$'.$module.'$sep$'.$icon;
 	break;
     default:

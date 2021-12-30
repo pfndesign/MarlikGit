@@ -193,7 +193,7 @@ while ($row8 = $db->sql_fetchrow($result8)) {
 }$topicid,$topicname,$topicimage,$topictext,$associated
 */
 
-$boxstuff = "<div style='width:100%;text-align:".langStyle(align).";'>&nbsp;<a href=\"modules.php?name=Search&amp;topic=".$topicidarr[0]."\">"._MOREABOUT." ".$topicname."</a><br>\n";
+$boxstuff = "<div style='width:100%;text-align:".langStyle('align').";'>&nbsp;<a href=\"modules.php?name=Search&amp;topic=".$topicidarr[0]."\">"._MOREABOUT." ".$topicname."</a><br>\n";
 $boxstuff .= "<strong><big>&middot;</big></strong>&nbsp;<a href=\"modules.php?name=Search&amp;author=$aaid\">"._NEWSBY." $aaid</a>\n";
 $boxstuff .= "</font><br><hr noshade width=\"95%\" size=\"1\"><b>"._MOSTREAD." $topictext:".$topicidarr[0]."</b><br>\n";
 

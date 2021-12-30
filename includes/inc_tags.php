@@ -149,7 +149,7 @@ class Tags{
 
 		
 $t .="
-<div class=\"form_friends\" style='float:".langStyle(align).";text-align:".langStyle(align)."'>
+<div class=\"form_friends\" style='float:".langStyle('align').";text-align:".langStyle('align')."'>
 <img src='images/icon/help.png' title='"._TAGS_MOVE."'>
 <input type=\"text\"  name='$name' id='$name' value=\"\" />"._TAGS_PRESS_ENTER."
 </div>

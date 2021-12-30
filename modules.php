@@ -12,7 +12,8 @@
 
 define('MODULE_FILE', true);
 require_once("mainfile.php");
-$name = mysql_real_escape_string($_REQUEST['name']);
+global $db;
+$name = mysqli_real_escape_string($db->db_connection,$_REQUEST['name']);
 
 //===========================================
 //Extra Mods

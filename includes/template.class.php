@@ -61,13 +61,15 @@ class USV_Template {
 		for ($i = 0; $i < $langtot; $i++) {
 		$template = str_replace($lang->item($i)->nodeValue,langit($lang->item($i)->nodeValue),$template);
 		}
-		
-			
-		$template = preg_replace("/\[_(.*)\]/e", langit("_$1"), $template);
-
-
-		
-		
+		$template = preg_replace_callback(
+			"/\[_(.*)\]/",
+			function($matches){
+				foreach($matches as $match){
+					return langit($match);
+				}
+			}, 
+			$template
+		);
 		print $template;
 	}
 
@@ -99,8 +101,15 @@ class USV_Template {
 		foreach ($vararray as $varname) {
 			$template = str_replace("[$varname]",$this->$varname,$template);
 		}
-		$template = preg_replace("/\[_(.*)\]/e", langit("_$1"), $template);
-
+		$template = preg_replace_callback(
+			"/\[_(.*)\]/",
+			function($matches){
+				foreach($matches as $match){
+					return langit($match);
+				}
+			}, 
+			$template
+		);
 
 		//lets check if we have lang tag in our template files.
 		//1.1.5
@@ -249,5 +258,3 @@ class USV_Template {
 
 	
 }
-
-?>

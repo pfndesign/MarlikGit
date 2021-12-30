@@ -143,22 +143,22 @@ $db->sql_freeresult($result);
 			(date_time, ip_address, hostname,referer, page , page_title) 
 			values ('".sql_quote($dt)."', '".sql_quote($ipaddr)."', '".sql_quote($hostnm)."','$referer', '".sql_quote($pg)."', '".sql_quote($pagetitle)."')");
 		} else {
-			sql_query("insert into ".$prefix."_iptracking (username, date_time, ip_address, hostname,referer, page, page_title) 
-			values ('".sql_quote($username)."', '".sql_quote($dt)."', '".sql_quote($ipaddr)."','".sql_quote($hostnm)."','$referer','".sql_quote($pg)."','".sql_quote($pagetitle)."')", $dbi);
+			$db->sql_query("insert into ".$prefix."_iptracking (username, date_time, ip_address, hostname,referer, page, page_title) 
+			values ('".sql_quote($username)."', '".sql_quote($dt)."', '".sql_quote($ipaddr)."','".sql_quote($hostnm)."','$referer','".sql_quote($pg)."','".sql_quote($pagetitle)."')");
 		}
 		# Delete from the iptracking table based on parameters set in tracking/config.php
 		if ($ipmax > 0 and $ipdel > 0 and $ipmax >= $ipdel) {
 			# replaced for speed v3.1.2
 			#$tresult = sql_query("select * from ".$prefix."_iptracking", $dbi);
 			#$numrows = sql_num_rows($tresult, $dbi);
-			$tresult = sql_query("select count(*) from ".$prefix."_iptracking", $dbi);
-			list($numrows) = sql_fetch_row($tresult, $dbi);
+			$tresult = $db->sql_query("select count(*) from ".$prefix."_iptracking");
+			list($numrows) = $db->sql_fetchrow($tresult);
 			if($numrows>=$ipmax) {
 				# 'delete ... limit' not ready until mysql 4.0
 				# sql_query("delete from ".$prefix."_iptracking order by date_time limit ".$ipdel, $dbi);
-				$tresult = sql_query("select date_time from ".$prefix."_iptracking order by date_time limit " .$ipdel.",1", $dbi);
-				list($date_time) = sql_fetch_row($tresult, $dbi);
-				sql_query("delete from ".$prefix."_iptracking where date_time <= '".sql_quote($date_time)."'", $dbi);
+				$tresult = $db->sql_query("select date_time from ".$prefix."_iptracking order by date_time limit " .$ipdel.",1");
+				list($date_time) = $db->sql_fetchrow($tresult);
+				$db->sql_query("delete from ".$prefix."_iptracking where date_time <= '".sql_quote($date_time)."'");
 			}   
 		}   
 	}

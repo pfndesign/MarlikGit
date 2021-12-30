@@ -129,7 +129,7 @@ class statistics {
 
 	public function _strord($string){
 		for($i = 0;$i < strlen($string);$i++)
-		$result[$i] = ord($string{$i});
+		$result[$i] = ord($string[$i]);
 		return $result;
 	}
 
@@ -198,6 +198,8 @@ class statistics {
 			include_once("includes/geoip.inc");
 			$gi = geoip_open("includes/GeoIP.dat",GEOIP_STANDARD);
 			define("ACTIVATE_GEOIP",1);
+		}else{
+			define("ACTIVATE_GEOIP",0);
 		}
 
 		$show_guest_list = true;
@@ -223,7 +225,7 @@ class statistics {
 			if (ACTIVATE_GEOIP==1) {
 
 				$country_code = geoip_country_code_by_addr($gi, $row['session_ip']);
-				$country_code = (empty($country_code) ? "00" : (!file_exists("images/Guardian/countries/".strtolower($country_code).".png")) ? "00" : $country_code);
+				$country_code = (empty($country_code) ? "00" : (!file_exists("images/Guardian/countries/".strtolower($country_code).".png") ? "00" : $country_code));
 				$country_name = geoip_country_name_by_addr($gi, $_SERVER['REMOTE_ADDR']);
 
 			}else {
@@ -310,4 +312,3 @@ class statistics {
 	}
 
 }
-?>

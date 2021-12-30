@@ -17,8 +17,8 @@ if (stristr(htmlentities($_SERVER["PHP_SELF"]), "config.php")) {Header("Location
 
 $dbhost = "localhost"; 
 $dbuname = "root";  // Database username
-$dbpass = "root";	// Database password
-$dbname = "usv61";	// Database NAME
+$dbpass = "";	// Database password
+$dbname = "vision";	// Database NAME
 
 //-----------------------------------------------------------------------
 $dbtype = "MySQL";
@@ -33,8 +33,8 @@ define("BENCHMARK",false);//benchmark SYSTEM
 $tipath = "images/topics/";
 $admin_file = "admin";
 $ThemeDef = "Par";
-$sitekey = "85b636867d8baf543fc8ba9bce3ce49f-Tigris_1_1_6-usv61";
-define("USV_DOMAIN", "http://localhost/usv61");
+$sitekey = "e23a8069abf4548657eb1fc7e0bcf071-Tigris_1_1_6-vision";
+define("USV_DOMAIN", "http://localhost/MarlikGit");
 //-----------------------------------------------------------------------
 
 ?>

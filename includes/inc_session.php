@@ -302,7 +302,7 @@ class mr_session
 		"INSERT INTO `".NK_SESSION_TABLE."`		(`session_id`,`session_user_id`,`session_last_visit`,`session_start`,`session_time`,`session_ip`,`session_browser`,`session_page`,`session_admin`)
 		VALUES
 		('".$this->session_id."', '".$this->user_id."', '".$this->ctime."', '".$this->ctime."', '".$this->ctime."', '".$this->ip."', '".$this->browser."',
-		 '".$this->page['page']."', '".$this->session_admin."')") or die("Create New Session Error: ".mysql_error());		
+		 '".$this->page['page']."', '".$this->session_admin."')") or die("Create New Session Error: ".mysqli_error($db->db_connection));		
 
 		$db->sql_freeresult($result);
 

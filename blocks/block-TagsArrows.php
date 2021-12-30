@@ -1,17 +1,18 @@
 <?php
-/**
-*
-* @package TAG Cloud Block														
-* @version $Id: 2009-12-12 15:35:19Z JAMES $						
-* @copyright (c) Marlik Group  http://www.MarlikCMS.com											
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
-*
-*/
 
-if(stripos($_SERVER['SCRIPT_NAME'],'block-Tag_Cloud.php')){
+/**
+ *
+ * @package TAG Cloud Block														
+ * @version $Id: 2009-12-12 15:35:19Z JAMES $						
+ * @copyright (c) Marlik Group  http://www.MarlikCMS.com											
+ * @license http://opensource.org/licenses/gpl-license.php GNU Public License
+ *
+ */
+
+if (stripos($_SERVER['SCRIPT_NAME'], 'block-Tag_Cloud.php')) {
 	die("Illegal Access!");
 }
-global $db,$prefix;
+global $db, $prefix;
 
 $content .= '
 <style type="text/css">
@@ -23,17 +24,16 @@ $content .= '
 </style>
 ';
 
-$result = $db->sql_query("SELECT t.*,s.* FROM `".TAGS_TABLE."` AS t
-LEFT JOIN `".STORY_TABLE."` AS s ON FIND_IN_SET(t.tid, REPLACE(s.tags, ' ', ','))
+$result = $db->sql_query("SELECT t.*,s.* FROM `" . TAGS_TABLE . "` AS t
+LEFT JOIN `" . STORY_TABLE . "` AS s ON FIND_IN_SET(t.tid, REPLACE(s.tags, ' ', ','))
 GROUP BY t.tag
 ORDER BY t.count DESC 
 LIMIT 12");
 
 $content .= '<div class="taglist">';
-while($row = $db->sql_fetchrow($result)){
-	$content .= '<a href="modules.php?name=News&amp;file=tags&amp;tag='.$row[slug].'" title="'.$row[tag].'"> '.$row[tag].' </a>';
+while ($row = $db->sql_fetchrow($result)) {
+	$content .= '<a href="modules.php?name=News&amp;file=tags&amp;tag=' . $row['slug'] . '" title="' . $row['tag'] . '"> ' . $row['tag'] . ' </a>';
 }
 $content .= '</div><div style="clear:both"" ></div>';
 
 $db->sql_freeresult($result);
-?>

@@ -12,7 +12,7 @@ class CalendarEvents {
 
 var $JSoutput;
 
-function CalendarEvents($EventsMatrix) {
+function __construct($EventsMatrix) {
 	
 	if ($EventsMatrix==NULL) return 0;
 	
@@ -32,4 +32,3 @@ function NewLine($i) {
 }
 
 }//Class End
-?>

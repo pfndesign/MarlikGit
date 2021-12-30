@@ -21,7 +21,7 @@ $content .= '<script type="text/javascript">
 $(document).ready(function(){
 	$(".caltitle").colorTip({color:\'yellow\'});
 });</script>';
-$content .= '<center><div class="jcal" style="text-align:'.langStyle(align).';margin:0px auto;width:99%">'."\n";
+$content .= '<center><div class="jcal" style="text-align:'.langStyle('align').';margin:0px auto;width:99%">'."\n";
 
 global $db,$currentlang,$prefix;
 if ($currentlang == "persian") {
@@ -179,5 +179,3 @@ $d = getdate ( time () );
 }
  
 $content .= '</div></center>';
-
-?>
