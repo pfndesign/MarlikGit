@@ -8,3 +8,7 @@ New MarlikCMS is on clouds
 =========
 1.1.6 Previous MarlikCMS CMS changed name to Marlik.
 =========&!
+
+### roadmap
+
+- [ ] install
