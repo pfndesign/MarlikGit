@@ -11,4 +11,5 @@ New MarlikCMS is on clouds
 
 ### roadmap
 
-- [ ] install
+- [X] install
+- [ ] fix errors
