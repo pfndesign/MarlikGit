@@ -30,7 +30,7 @@ $blogPage = sql_quote($_GET['blogPage']);
 $userrow = $db->sql_fetchrow( $db->sql_query("SELECT user_id,username,user_blog_password,user_blog_colors FROM ".__USER_TABLE." WHERE  username='".$Rusername."' limit 1 "));
 $md5stringpass = md5($userrow['user_blog_password']);
 
-if ($userinfo[username] == $Rusername OR is_admin($admin) OR empty($userrow['user_blog_password']) OR $_COOKIE["BlogUSER-$Rusername"]=="$md5stringpass") {
+if ($userinfo['username'] == $Rusername OR is_admin($admin) OR empty($userrow['user_blog_password']) OR $_COOKIE["BlogUSER-$Rusername"]=="$md5stringpass") {
 
 if ((strtolower($usrinfo['username']) == strtolower($cookie[1])) AND ($usrinfo['user_password'] == $cookie[2])) {
 
@@ -57,10 +57,10 @@ if ((strtolower($usrinfo['username']) == strtolower($cookie[1])) AND ($usrinfo['
 
 	echo "<div id='blog_page'>
 	<div class='blog_pagenum' id='$blogPage'></div>
-	<div class='blog_username' id='".$userrow[username]."'></div>
-	<div class='blog_userid' id='".$userrow[user_id]."'></div>
+	<div class='blog_username' id='".$userrow['username']."'></div>
+	<div class='blog_userid' id='".$userrow['user_id']."'></div>
 	";
-	show_latest_blog($userrow[user_id],$userrow[username],$userrow[user_blog_password],$userrow[user_blog_colors],$offset,5,$blogPage);
+	show_latest_blog($userrow['user_id'],$userrow['username'],$userrow['user_blog_password'],$userrow['user_blog_colors'],$offset,5,$blogPage);
 	echo "</div>";
 
 }else{

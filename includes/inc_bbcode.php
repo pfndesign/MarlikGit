@@ -26,7 +26,7 @@ function replace_pcre_array($text,$array){
 class bbcode{
 	var $tags;
 	var $settings;
-	function bbcode(){
+	function __construct(){
 		$this->tags = array();
 		$this->settings = array('enced'=>true);
 	}

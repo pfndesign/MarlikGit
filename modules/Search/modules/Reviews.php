@@ -1,6 +1,6 @@
 <?php
 class mSReviews extends searchmodule {
-	function mSReviews (){
+	function __construct (){
 		global $prefix;
 		$this->name                  = 'Reviews';
 		$this->sql_col_time          = 'date';
@@ -11,7 +11,7 @@ class mSReviews extends searchmodule {
 		$this->sql_table_with_prefix = $prefix.'_reviews';
 		$this->sql_where_cols        = array('title',
 							'text');}
-	function buildlink($id){
+	function buildlink($id,$title){
 		return '?name=Reviews&amp;rop=showcontent&amp;id='.$id;}
 	function doquery(){
 		global $prefix, $tblname, $db;

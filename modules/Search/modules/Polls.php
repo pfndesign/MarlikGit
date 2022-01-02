@@ -1,6 +1,6 @@
 <?php
 class mSPolls extends searchmodule {
-	function mSPolls (){
+	function __construct (){
 		global $prefix;
 		$this->name                  = 'Polls';
 		$this->sql_table_with_prefix = $prefix.'_poll_desc';}

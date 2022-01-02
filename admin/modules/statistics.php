@@ -339,14 +339,14 @@ echo '<div style="text-align:left">
 <?php
 
     echo "<table cellspacing=\"0\" cellpadding=\"2\" border=\"0\"><tr><td colspan=\"2\">\n";
-    echo "<tr><td><img src=\"images/icon/user.png\" border=\"0\" alt=\"\">&nbsp;"._USERS." </td><td><b>".$GeneralStat[TotalUsers]."</b></td></tr>\n";
-    echo "<tr><td><img src=\"images/icon/user_gray.png\" border=\"0\" alt=\"\">&nbsp;"._AUTHOR."</td><td><b>".$GeneralStat[TotalAuthors]."</b></td></tr>\n";
-    echo "<tr><td><img src=\"images/icon/note.png\" border=\"0\" alt=\"\">&nbsp;"._ARTICLES."</td><td><b>".$GeneralStat[TotalStories]."</b></td></tr>\n";
+    echo "<tr><td><img src=\"images/icon/user.png\" border=\"0\" alt=\"\">&nbsp;"._USERS." </td><td><b>".$GeneralStat['TotalUsers']."</b></td></tr>\n";
+    echo "<tr><td><img src=\"images/icon/user_gray.png\" border=\"0\" alt=\"\">&nbsp;"._AUTHOR."</td><td><b>".$GeneralStat['TotalAuthors']."</b></td></tr>\n";
+    echo "<tr><td><img src=\"images/icon/note.png\" border=\"0\" alt=\"\">&nbsp;"._ARTICLES."</td><td><b>".$GeneralStat['TotalStories']."</b></td></tr>\n";
     if (is_active("Topics")) {
-	echo "<tr><td><img src=\"images/icon/note.png\" border=\"0\" alt=\"\">&nbsp;"._TOPICS."</td><td><b>".$GeneralStat[TotalTopics]."</b></td></tr>\n";
+	echo "<tr><td><img src=\"images/icon/note.png\" border=\"0\" alt=\"\">&nbsp;"._TOPICS."</td><td><b>".$GeneralStat['TotalTopics']."</b></td></tr>\n";
     }
     
-    echo "<tr><td><img src=\"images/icon/tag_green.png\" border=\"0\" alt=\"\">&nbsp;"._KEYWORDS."</td><td><b>".$GeneralStat[TotalTags]."</b></td></tr>\n";
+    echo "<tr><td><img src=\"images/icon/tag_green.png\" border=\"0\" alt=\"\">&nbsp;"._KEYWORDS."</td><td><b>".$GeneralStat['TotalTags']."</b></td></tr>\n";
    echo "<tr><td>  <a href='".ADMIN_OP."hreferer' class='colorbox'><img src='images/icon/arrow_out.png'> ". _STAT_REFERAL_LIST." </a></td></tr>\n";
     echo "</table>\n";
 ?>

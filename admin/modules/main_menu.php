@@ -148,8 +148,8 @@ echo $newslanguage;
 	<option value=""></option>
 	<?php
 	$sql = 'SELECT `mid`,`title`,`custom_title` FROM `'.$prefix.'_modules`';
-	$result = $mdb->query($sql);
-	while($r = mysql_fetch_array($result))
+	$result = $db->sql_query($sql);
+	while($r = mysqli_fetch_array($result))
 		echo '<option value="'.$r['title'].'">'.langit($r['custom_title']).'</option>';
 	?>
 	</select>
@@ -161,6 +161,7 @@ echo $newslanguage;
 	<?php
 	if($handle = opendir('images/icon')){
 		while (false !== ($file = readdir($handle))) {
+			if(is_array($file))
 			sort($file);
 			if(strstr($file,".png") OR strstr($file,".jpg") OR strstr($file,".gif") ){
 			if(is_file('images/icon/'.$file)){
@@ -193,19 +194,19 @@ function save_menu_pop(){
 global $db,$prefix;
 
 	$eid = (int) $_POST['eid'];
-	$title = mysql_real_escape_string($_POST['titlein']);
-	$lang = mysql_real_escape_string($_POST['lang']);
-	$modulename = mysql_real_escape_string($_POST['modulename']);
-	$link = mysql_real_escape_string($_POST['link']);
-	$ltarget = mysql_real_escape_string($_POST['ltarget']);
-	$icon = mysql_real_escape_string($_POST['icon']);
+	$title = mysqli_real_escape_string($db->db_connection,$_POST['titlein']);
+	$lang = mysqli_real_escape_string($db->db_connection,$_POST['lang']);
+	$modulename = mysqli_real_escape_string($db->db_connection,$_POST['modulename']);
+	$link = mysqli_real_escape_string($db->db_connection,$_POST['link']);
+	$ltarget = mysqli_real_escape_string($db->db_connection,$_POST['ltarget']);
+	$icon = mysqli_real_escape_string($db->db_connection,$_POST['icon']);
 	$ilink = $link.'|'.$ltarget;
 	$msql = 'UPDATE `'.$prefix.'_tree_elements` SET `name` = "'.$title.'",`lang` = "'.$lang.'", `link` = "'.$ilink.'", `module` = "'.$modulename.'", `icon` = "'.$icon.'" WHERE `Id` = "'.$eid.'" LIMIT 1';
 	$result = $db->sql_query($msql);
 	if($result)
 		echo '<div class="success">',_SUCCESSFUL,'</div>';
 	else{
-		echo '<div class="error">',_FAILED,'<br />',mysql_error(),'</div>';
+		echo '<div class="error">',_FAILED,'<br />',mysqli_error($db->db_connection),'</div>';
 	}
 }
 

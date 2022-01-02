@@ -240,7 +240,7 @@ class statistics {
 				{
 					$members .= '
       <img src="images/Guardian/countries/'.strtolower($country_code).'.png" alt="'.$country_name.'">
-      <a style="color:'.$row[color].'" href="modules.php?app=mod&name=navigation&amp;op=Account&value='.$row['session_user_id'].'" class="colorbox" title="'._IB_VIEW_PROFILE.': '.$row['username'].'"><b>'.$row['username'].'</b></a><br>
+      <a style="color:'.$row['color'].'" href="modules.php?app=mod&name=navigation&amp;op=Account&value='.$row['session_user_id'].'" class="colorbox" title="'._IB_VIEW_PROFILE.': '.$row['username'].'"><b>'.$row['username'].'</b></a><br>
       ';
 				}
 			}

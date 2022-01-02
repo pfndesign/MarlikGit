@@ -126,7 +126,7 @@ if ($db->sql_numrows($result8)>0) {
 	$result9 = $db->sql_query("SELECT pollID, pollTitle, timeStamp, voters FROM ".$prefix."_poll_desc $queryplang order by voters DESC limit 0,$top"); 
     $counter = 0; 
     while($row9 = $db->sql_fetchrow($result9)) { 
-   $resultArray[$counter] = array($row9[pollID], $row9[pollTitle], $row9[timeStamp], $row9[voters]);
+   $resultArray[$counter] = array($row9['pollID'], $row9['pollTitle'], $row9['timeStamp'], $row9['voters']);
 		$counter++;
 	}
 	for ($count = 0; $count < count($resultArray); $count++) {

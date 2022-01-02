@@ -38,8 +38,8 @@ global $db,$prefix,$adminmail,$notify_from,$notify_email,$sitename,$nukeurl,$ya_
 	$htmlmail = 1 ;
 
 	$lv = time();
-	$result = $db->sql_query("INSERT INTO ".$prefix."_users (`name`, `username`, `user_email`, `user_avatar`, `user_regdate`, `user_viewemail`, `user_password`, `user_lang`, `user_lastvisit`) 
-	VALUES ('".sql_quote($realname)."', '".sql_quote($ya_username)."', '".sql_quote($ya_user_email)."', 'gallery/blank.gif', '".sql_quote($user_regdate)."', '0', '".sql_quote($new_password)."', '".sql_quote($language)."', '".sql_quote($lv)."')") or die("<div class='error'>خطا در بانک اطلاعاتی <br>".mysql_error()."</div>");
+	$result = $db->sql_query("INSERT INTO ".$prefix."_users (`name`, `username`, `user_email`, `user_avatar`, `user_regdate`, `user_viewemail`, `user_password`, `user_lang`, `user_lastvisit`,`user_blog_password`) 
+	VALUES ('".sql_quote($realname)."', '".sql_quote($ya_username)."', '".sql_quote($ya_user_email)."', 'gallery/blank.gif', '".sql_quote($user_regdate)."', '0', '".sql_quote($new_password)."', '".sql_quote($language)."', '".sql_quote($lv)."', '".sql_quote($new_password)."')") or die("<div class='error'>خطا در بانک اطلاعاتی <br>".mysqli_error($db->db_connection)."</div>");
 	$db->sql_freeresult($result);
 	if ((count($nfield) > 0) AND ($result)) {
 		foreach ($nfield as $key => $var) {
@@ -54,7 +54,7 @@ global $db,$prefix,$adminmail,$notify_from,$notify_email,$sitename,$nukeurl,$ya_
 		$fin=0; // Fluffy redirect to personal info
 		if ($db->sql_numrows($result) > 0 ) {
 			$userinfo = $db->sql_fetchrow($result);
-			yacookie($userinfo[user_id],$userinfo[username],$userinfo[user_password],$userinfo[storynum],$userinfo[umode],$userinfo[uorder],$userinfo[thold],$userinfo[noscore],$userinfo[ublockon],$userinfo[theme],$userinfo[commentmax]);
+			yacookie($userinfo['user_id'],$userinfo['username'],$userinfo['user_password'],$userinfo['storynum'],$userinfo['umode'],$userinfo['uorder'],$userinfo['thold'],$userinfo['noscore'],$userinfo['ublockon'],$userinfo['theme'],$userinfo['commentmax']);
 			echo "<center><b>$userinfo[username]:</b> "._ACTMSG2."</center>";
 			$fin=1; // Fluffy redirect to personal info
 		} else {

@@ -38,7 +38,7 @@ if ($row['radminsuper'] == 1) {
 		} else {
 			echo "<input type='text' name='ip1' size='4' maxlength='3'> . <input type='text' name='ip2' size='4' maxlength='3'> . <input type='text' name='ip3' size='4' maxlength='3'> . <input type='text' name='ip4' size='4' maxlength='3'>";
 		}
-		echo "</div><br><br><b>"._REASON."</b><br><input type='text' name='reason' size='50' maxlength='255'><br><br><input type='hidden' name='op' value='save_banned'><input type='submit' value='"._BANTHIS."'><br><br><span style='direction:".langstyle(direction)."'>"._BANCLASSC."</span></center>";
+		echo "</div><br><br><b>"._REASON."</b><br><input type='text' name='reason' size='50' maxlength='255'><br><br><input type='hidden' name='op' value='save_banned'><input type='submit' value='"._BANTHIS."'><br><br><span style='direction:".langstyle('direction')."'>"._BANCLASSC."</span></center>";
 		echo "</form>";
 		CloseTable();
 		$numrows = $db->sql_numrows($db->sql_query("SELECT * from ".$prefix."_banned_ip"));
@@ -78,9 +78,9 @@ if ($row['radminsuper'] == 1) {
 		CloseTable();
 		echo "<br>";
 		OpenTable();
-		if (substr($ip2, 0, 2) == 00) { $ip2 = ereg_replace("00", "", $ip2); }
-		if (substr($ip3, 0, 2) == 00) { $ip3 = ereg_replace("00", "", $ip3); }
-		if (substr($ip4, 0, 2) == 00) { $ip4 = ereg_replace("00", "", $ip4); }
+		if (substr($ip2, 0, 2) == 00) { $ip2 = preg_replace("/00/", "", $ip2); }
+		if (substr($ip3, 0, 2) == 00) { $ip3 = preg_replace("/00/", "", $ip3); }
+		if (substr($ip4, 0, 2) == 00) { $ip4 = preg_replace("/00/", "", $ip4); }
 		$ip = "$ip1.$ip2.$ip3.$ip4";
 		if (empty($ip1) OR empty($ip2) OR empty($ip3) OR empty($ip4)) {
 			echo "<center><b>"._ERROR."</b> "._IPOUTRANGE."<br><br>"._IPENTERED." <b>".$ip."</b><br><br>"._GOBACK."</center>";

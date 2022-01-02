@@ -48,7 +48,7 @@ function PrintPage($sid) {
         </head>\n
 	    <body>
 	    <center>
-	    <div style='color:black;background:white;border:1px solid black;width:60%;text-align:right;margin:0px auto;padding:30px;direction:".langstyle(direction)."'>
+	    <div style='color:black;background:white;border:1px solid black;width:60%;text-align:right;margin:0px auto;padding:30px;direction:".langstyle('direction')."'>
 	    <img src=\"images/$site_logo\" border=\"0\" alt=\"\"><br><br>
 	    <font class=\"content\">
 	    <b>$title</b>

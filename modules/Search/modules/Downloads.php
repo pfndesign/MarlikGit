@@ -1,6 +1,6 @@
 <?php
 class mSDownloads extends searchmodule {
-	function mSDownloads(){
+	function __construct(){
 		global $prefix;
 		$this->name                  = 'Downloads';
 		$this->sql_table_with_prefix = $prefix.'_downloads_downloads';}

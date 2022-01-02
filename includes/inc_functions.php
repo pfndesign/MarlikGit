@@ -1504,6 +1504,8 @@ function addJSToBody($content, $type = 'file')
 {
 	global $bodyJS;
 	// Duplicate external file?
+	if (!is_array($bodyJS))
+	$bodyJS = [$bodyJS];
 	if (($type == 'file') and (count($bodyJS) > 0) and (in_array(array($type, $content), $bodyJS))) return;
 	$bodyJS[] = array($type, $content);
 	return;

@@ -1,6 +1,6 @@
 <?php
 class mSPages extends searchmodule {
-	function mSPages (){
+	function __construct (){
 		global $prefix;
 		$this->name                  = 'Pages';
 		$this->sql_col_time          = 'post_time';

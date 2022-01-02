@@ -6,7 +6,7 @@ function getusernamefromid($id){
 	return $res['username'];}
 
 class mSForums extends searchmodule {
-	function mSForums(){
+	function __construct(){
 		global $prefix;
 		$this->name                  = 'phpBB3';
 		$this->sql_table_with_prefix = $prefix.'_bb3posts';}

@@ -232,7 +232,7 @@ if ($sm_config['show_forum_topics'] == 1 AND is_active("phpBB3")) {
 // Web Links
 //
 if ($sm_config['show_weblinks'] == 1) {
-	if ($db->sql_numrows($result) > 0) {
+
       $result = $db->sql_query("SELECT lid, title, description FROM ".$prefix."_links_links ORDER BY lid DESC LIMIT ".$sm_config['limit_weblinks']."");
             echo "<br /> <b>&raquo; "._SM_LATEST . $sm_config['limit_weblinks'] ._SM_WL.":</b>";
             while($row = $db->sql_fetchrow($result)) {
@@ -241,7 +241,7 @@ if ($sm_config['show_weblinks'] == 1) {
             $description = $row['description'];
             echo "<li><a href=\"modules.php?name=Web_Links&amp;l_op=viewlinkdetails&amp;lid=".$lid."&amp;ttitle=".$title."\"><img src='images/icon/bullet_go.png'>".$title."</a>: ".$description."</li><br />";
       }
-      }
+
       $db->sql_freeresult($result);
 }
 
@@ -390,5 +390,3 @@ if ($sm_config['match_theme'] == 1) {
 /*****[END]********************************************
  [ Site Map:  footer                                  ]
  ******************************************************/
-
-?>

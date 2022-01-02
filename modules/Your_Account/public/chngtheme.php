@@ -19,7 +19,7 @@ cookiedecode($user);
 getusrinfo($user);
 define("_THEME_PREVIEW",true); // If you dont want to have a preview of themes just set the value to FALSE
 
-if ((is_user($user)) AND (strtolower($userinfo[username]) == strtolower($cookie[1])) AND ($userinfo[user_password] == $cookie[2])) {
+if ((is_user($user)) AND (strtolower($userinfo['username']) == strtolower($cookie[1])) AND ($userinfo['user_password'] == $cookie[2])) {
 	include ("header.php");
 	title(_THEMESELECTION);
 	OpenTable();
@@ -67,7 +67,7 @@ if ((is_user($user)) AND (strtolower($userinfo[username]) == strtolower($cookie[
 		
 			//----START--------- display a highlight border arround the current theme
 
-			if((($userinfo['theme']=="") && ($themelist[$i]=="$Default_Theme")) || ($userinfo[theme]==$themelist[$i])){
+			if((($userinfo['theme']=="") && ($themelist[$i]=="$Default_Theme")) || ($userinfo['theme']==$themelist[$i])){
 				$styletm = "border:4px solid #FFE100;";
 				$titletm = "قالب کنونی";
 			}else {
@@ -98,11 +98,11 @@ if ((is_user($user)) AND (strtolower($userinfo[username]) == strtolower($cookie[
 	for ($i=0; $i < sizeof($themelist); $i++) {
 		if($themelist[$i]!="") {
 			echo "<option value=\"$themelist[$i]\" ";
-			if((($userinfo[theme]=="") && ($themelist[$i]=="$Default_Theme")) || ($userinfo[theme]==$themelist[$i])) echo "selected";
+			if((($userinfo['theme']=="") && ($themelist[$i]=="$Default_Theme")) || ($userinfo['theme']==$themelist[$i])) echo "selected";
 			echo ">$themelist[$i]\n";
 		}
 	}
-	if($userinfo[theme]=="") $userinfo[theme] = "$Default_Theme";
+	if($userinfo['theme']=="") $userinfo['theme'] = "$Default_Theme";
 	echo "</select><br>";
 	echo ""._THEMETEXT1."<br>";
 	echo ""._THEMETEXT2."<br>";

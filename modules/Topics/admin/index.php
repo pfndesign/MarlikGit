@@ -293,7 +293,7 @@ if (is_superadmin($admin) OR is_admin_of($module_name,$admin)) {
 		$handle = opendir($tipath);
 		while ($file = readdir($handle))
 		{
-			if ((ereg("^([_0-9a-zA-Z]+)([.]{1})([_0-9a-zA-Z]{3})$", $file)) and $file !=
+			if ((preg_match("/^([_0-9a-zA-Z]+)([.]{1})([_0-9a-zA-Z]{3})$/", $file)) and $file !=
 			"AllTopics.gif")
 			{
 				$tlist .= "$file ";

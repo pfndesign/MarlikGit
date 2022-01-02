@@ -744,8 +744,8 @@ ORDER BY bid DESC LIMIT $offsetz,$eachPage" );
 	echo "<div class='ucp_block_header'  title='$blog_username' id='BlogUsername' ><b>" . _LATESTBLOGPOSTS . " $blog_username</b>   
 	<a href='modules.php?name=Your_Account&op=userinfo&username=demo&blogPage=1' onclick=\"javascript:refresh_blog(" . $blog_userid . "); return false;\" ><img src='images/icon/arrow_refresh.png' alt='refresh' title='" . _YA_BLOG_REFRESH . "'></a>
 	";
-	if ($userinfo [username] == $blog_username) {
-		echo '<h4 style="float:'.langStyle(align).';text-align:'.langStyle(align).';margin-left:10px"><img src="images/icon/bricks.png"><a href="modules.php?name=Your_Account&op=edituser" class="setting_button" onclick=\'javascript:setting_blog(' . $blog_userid . '); return false;\'>' . _YA_BLOG_SETTING . '</a></h4>';
+	if ($userinfo ['username'] == $blog_username) {
+		echo '<h4 style="float:'.langStyle('align').';text-align:'.langStyle('align').';margin-left:10px"><img src="images/icon/bricks.png"><a href="modules.php?name=Your_Account&op=edituser" class="setting_button" onclick=\'javascript:setting_blog(' . $blog_userid . '); return false;\'>' . _YA_BLOG_SETTING . '</a></h4>';
 	}
 	echo "</div>\n\n";
 	
@@ -755,7 +755,7 @@ ORDER BY bid DESC LIMIT $offsetz,$eachPage" );
 		</ol><!-- CLOSE UPDATE PAGE-->
 	</div><!-- CLOSE BLOG CONTAINER-->
 	';
-	if ($userinfo [username] == $blog_username) {
+	if ($userinfo ['username'] == $blog_username) {
 		echo '<div id="setting" title="' . $blog_username . '" class="BlogSetting"></div>';
 	}
 	

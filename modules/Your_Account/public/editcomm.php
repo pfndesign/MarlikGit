@@ -27,7 +27,7 @@ if (!defined('CNBYA')) { echo "CNBYA protection"; exit; }
 
 	cookiedecode($user); 
 	getusrinfo($user); 
-	if ((is_user($user)) AND (strtolower($userinfo[username]) == strtolower($cookie[1])) AND ($userinfo[user_password] == $cookie[2])) {
+	if ((is_user($user)) AND (strtolower($userinfo['username']) == strtolower($cookie[1])) AND ($userinfo['user_password'] == $cookie[2])) {
         include ("header.php");
         title(_COMMENTSCONFIG);
         OpenTable();
@@ -44,19 +44,19 @@ if (!defined('CNBYA')) { echo "CNBYA protection"; exit; }
         */
         ?><b><?php echo _SORTORDER ?></b>
         <select name="uorder">
-        <option value="0" <?php if (!$userinfo[uorder]) { echo "selected"; } ?>><?php echo _OLDEST ?>   
-        <option value="1" <?php if ($userinfo[uorder]==1) { echo "selected"; } ?>><?php echo _NEWEST ?> 
-        <option value="2" <?php if ($userinfo[uorder]==2) { echo "selected"; } ?>><?php echo _HIGHEST ?>
+        <option value="0" <?php if (!$userinfo['uorder']) { echo "selected"; } ?>><?php echo _OLDEST ?>   
+        <option value="1" <?php if ($userinfo['uorder']==1) { echo "selected"; } ?>><?php echo _NEWEST ?> 
+        <option value="2" <?php if ($userinfo['uorder']==2) { echo "selected"; } ?>><?php echo _HIGHEST ?>
         </select>
         <br><br>
        <b> <?php echo _COMMENTS_NUM ?></b>
-        <input type="text" name="thold" value="<?php echo intval($userinfo[thold])?>" size="3">
+        <input type="text" name="thold" value="<?php echo intval($userinfo['thold'])?>" size="3">
         <br>
         <b><?php echo _NEGSCORE ?></b>
-        <INPUT type="checkbox" name="noscore" <?php if ($userinfo[noscore]==1) { echo "checked"; } ?>>
+        <INPUT type="checkbox" name="noscore" <?php if ($userinfo['noscore']==1) { echo "checked"; } ?>>
         <br><br>
         <b><?php echo _MAXCOMMENT ?></b> <?php echo _TRUNCATES ?><br>
-        <input type="text" name="commentmax" value="<?php echo $userinfo[commentmax] ?>" size=11 maxlength=11> <?php echo _CHARS ?>        <br><br>
+        <input type="text" name="commentmax" value="<?php echo $userinfo['commentmax'] ?>" size=11 maxlength=11> <?php echo _CHARS ?>        <br><br>
         <input type="hidden" name="username" value="<?php echo"$userinfo[username]"; ?>">
         <input type="hidden" name="user_id" value="<?php echo"$userinfo[user_id]"; ?>">
         <input type="hidden" name="op" value="savecomm">

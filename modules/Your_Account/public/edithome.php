@@ -27,14 +27,14 @@ if (!defined('CNBYA')) { echo "CNBYA protection"; exit; }
 
 	cookiedecode($user); 
 	getusrinfo($user); 
-	if ((is_user($user)) AND (strtolower($userinfo[username]) == strtolower($cookie[1])) AND ($userinfo[user_password] == $cookie[2])) {
+	if ((is_user($user)) AND (strtolower($userinfo['username']) == strtolower($cookie[1])) AND ($userinfo['user_password'] == $cookie[2])) {
         include ("header.php");
         title(_HOMECONFIG);
         OpenTable();
         nav();
         CloseTable();
         echo "<br>";
-        if($userinfo[theme]=="") { $userinfo[theme] = "$Default_Theme"; }
+        if($userinfo['theme']=="") { $userinfo['theme'] = "$Default_Theme"; }
         OpenTable();
         echo "<form action=\"modules.php?name=$module_name&op=userinfo\" method=\"post\">";
         if ($user_news == 1) {
@@ -44,12 +44,12 @@ if (!defined('CNBYA')) { echo "CNBYA protection"; exit; }
         } else {
             echo "<input type=\"hidden\" name=\"storynum\" value=\"$storyhome\">";
         }
-        if ($userinfo[ublockon]==1) { $sel = "checked"; }
+        if ($userinfo['ublockon']==1) { $sel = "checked"; }
         if ($broadcast_msg == 1) {
-            if ($userinfo[broadcast] == 1) {
+            if ($userinfo['broadcast'] == 1) {
                 $sel1 = "checked";
                 $sel2 = "";
-            } elseif ($userinfo[broadcast] == 0) {
+            } elseif ($userinfo['broadcast'] == 0) {
                 $sel1 = "";
                 $sel2 = "checked";
             }

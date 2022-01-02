@@ -52,7 +52,7 @@ while($row = $db->sql_fetchrow($result)){
 		}
 	}
 	
-	$content .= '<a href="modules.php?name=Your_Account&op=userinfo&username='.$row[username].'" title="'.$row[username].' : '.$row[points].' '._POINTS.'"> 
+	$content .= '<a href="modules.php?name=Your_Account&op=userinfo&username='.$row['username'].'" title="'.$row['username'].' : '.$row['points'].' '._POINTS.'"> 
 	<img class="topuserStyle"  src="'.$avatar_show.'"> </a>';
 }
 $content .= '</div></center>';

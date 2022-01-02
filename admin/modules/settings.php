@@ -191,7 +191,7 @@ include("footer.php");
 		<select name='xDefault_Theme'>";
 		$handle=opendir('themes');
 		while ($file = readdir($handle)) {
-			if ( (!ereg("[.]",$file)) ) {
+			if ( (!preg_match("/[.]/",$file)) ) {
 				$themelist .= "$file ";
 			}
 		}
@@ -462,7 +462,7 @@ include("footer.php");
 		$handle=opendir('language');
 		$languageslist = "";
 		while ($file = readdir($handle)) {
-			if (ereg("^lang\-(.+)\.php", $file, $matches)) {
+			if (preg_match("/^lang\-(.+)\.php/", $file, $matches)) {
 				$langFound = $matches[1];
 				$languageslist .= "$langFound ";
 			}

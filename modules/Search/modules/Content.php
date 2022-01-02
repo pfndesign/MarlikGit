@@ -1,6 +1,6 @@
 <?php
 class mSContent extends searchmodule {
-	function mSContent (){
+	function __construct (){
 		global $prefix;
 		$this->name                  = 'Content';
 		$this->sql_col_time          = 'date';
@@ -13,7 +13,7 @@ class mSContent extends searchmodule {
 							'page_footer',
 							'signature',
 							'text');}
-	function buildlink($id){
+	function buildlink($id,$title){
 		return '?name=Content&amp;pa=showpage&amp;pid='.$id;}
 	function doquery(){
 		global $prefix, $tblname, $db;

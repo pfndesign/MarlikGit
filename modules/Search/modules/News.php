@@ -1,6 +1,6 @@
 <?php
 class mSNews extends searchmodule {
-	function mSNews (){
+	function __construct (){
 		global $prefix;
 		$this->name                  = 'News';
 		$this->sql_col_time          = 'time';

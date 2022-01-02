@@ -16,7 +16,7 @@ if (!defined('CNBYA')) { echo "CNBYA protection"; exit; }
 
 	cookiedecode($user); 
 	getusrinfo($user); 
-	if ((is_user($user)) AND (strtolower($userinfo[username]) == strtolower($cookie[1])) AND ($userinfo[user_password] == $cookie[2])) {
+	if ((is_user($user)) AND (strtolower($userinfo['username']) == strtolower($cookie[1])) AND ($userinfo['user_password'] == $cookie[2])) {
 		$pagetitle= _YA_EDIT;
 		include("header.php");
         title(_PERSONALINFO);
@@ -28,7 +28,7 @@ if (!defined('CNBYA')) { echo "CNBYA protection"; exit; }
 	$result = $db->sql_query("SELECT * FROM ".$user_prefix."_cnbya_field");
 	while ($sqlvalue = $db->sql_fetchrow($result)) {
 	  list($value) = $db->sql_fetchrow( $db->sql_query("SELECT value FROM ".$user_prefix."_cnbya_value WHERE fid ='$sqlvalue[fid]' AND uid = '$userinfo[user_id]'"));
-      $userinfo[$sqlvalue[name]] = $value;
+      $userinfo[$sqlvalue['name']] = $value;
       }
 //--------------------------------------------
 
@@ -44,52 +44,52 @@ if (!defined('CNBYA')) { echo "CNBYA protection"; exit; }
         $spfieldsresult = $db->sql_query("SELECT * FROM ".$user_prefix."_cnbya_field WHERE need <> '0' ORDER BY pos");
         $numspfields = $db->sql_numrows($spfieldsresult);
         while ($sqlvalue = $db->sql_fetchrow($spfieldsresult)) {
-        	$t = $sqlvalue[fid];
-        	$value2 = explode("::", $sqlvalue[value]);
-        	if (substr($sqlvalue[name],0,1)=='_') eval( "\$name_exit = $sqlvalue[name];"); else $name_exit = $sqlvalue[name];
+        	$t = $sqlvalue['fid'];
+        	$value2 = explode("::", $sqlvalue['value']);
+        	if (substr($sqlvalue['name'],0,1)=='_') eval( "\$name_exit = $sqlvalue[name];"); else $name_exit = $sqlvalue['name'];
         	$spfields .= "<li>$name_exit<li>";
         	if (count($value2) == 1) {
-        		$spfields .= "<li><input type='text' name='nfield[$t]' value='".$userinfo[$sqlvalue[name]]."' size='20' maxlength='$sqlvalue[size]'></li>\n";
+        		$spfields .= "<li><input type='text' name='nfield[$t]' value='".$userinfo[$sqlvalue['name']]."' size='20' maxlength='$sqlvalue[size]'></li>\n";
         		$sqlvalueMax = $sqlvalueMax - 1;
         	} else {
         		$spfields .= "<li><select name='nfield[$t]'>\n";
         		for ($i = 0; $i<count($value2); $i++) {
-        			if (trim($userinfo[$sqlvalue[name]]) == trim($value2[$i])) $sel = "selected"; else $sel = "";
+        			if (trim($userinfo[$sqlvalue['name']]) == trim($value2[$i])) $sel = "selected"; else $sel = "";
         			$spfields .= "<option value=\"".trim($value2[$i])."\" $sel>$value2[$i]</option>\n";
         		}
         		$spfields .= "</select></li>\n";
         	}
         }
         
-        if ($userinfo[newsletter] == 1) { $newsletter_ck1 = " selected"; $newsletter_ck2 = ""; } else { $newsletter_ck1 = ""; $newsletter_ck2 = " selected"; }
+        if ($userinfo['newsletter'] == 1) { $newsletter_ck1 = " selected"; $newsletter_ck2 = ""; } else { $newsletter_ck1 = ""; $newsletter_ck2 = " selected"; }
 		$newsletter = "<select name='newsletter'><option value='1'$newsletter_ck1>"._YES."</option><option value='0'$newsletter_ck2>"._NO."</option></select>";
 
-        if ($userinfo[user_viewemail] == 1) { $viewemail_ck1 = " selected"; $viewemail_ck2 = ""; } else { $viewemail_ck1 = ""; $viewemail_ck2 = " selected"; }
+        if ($userinfo['user_viewemail'] == 1) { $viewemail_ck1 = " selected"; $viewemail_ck2 = ""; } else { $viewemail_ck1 = ""; $viewemail_ck2 = " selected"; }
 		$viewemail = "<select name='user_viewemail'><option value='1'$viewemail_ck1>"._YES."</option><option value='0'$viewemail_ck2>"._NO."</option></select>";
 
-        if ($userinfo[user_allow_viewonline] == 0) { $viewonline_ck1 = " selected"; $viewonline_ck2 = ""; } else { $viewonline_ck1 = ""; $viewonline_ck2 = " selected"; }
+        if ($userinfo['user_allow_viewonline'] == 0) { $viewonline_ck1 = " selected"; $viewonline_ck2 = ""; } else { $viewonline_ck1 = ""; $viewonline_ck2 = " selected"; }
 		$viewonline = "<select name='user_allow_viewonline'><option value='0'$viewonline_ck1>"._YES."</option><option value='1'$viewonline_ck2>"._NO."</option></select>";
 
-        if ($userinfo[user_notify] == 1) { $notify_ck1 = " selected"; $notify_ck2 = ""; } else { $notify_ck1 = ""; $notify_ck2 = " selected"; }
+        if ($userinfo['user_notify'] == 1) { $notify_ck1 = " selected"; $notify_ck2 = ""; } else { $notify_ck1 = ""; $notify_ck2 = " selected"; }
 		$notify_ = "<select name='user_notify'><option value='1'$notify_ck1>"._YES."</option><option value='0'$notify_ck2>"._NO."</option></select>";
 
-        if ($userinfo[user_notify_pm] == 1) { $notify_pm_ck1 = " selected"; $notify_pm_ck2 = ""; } else { $notify_pm_ck1 = ""; $notify_pm_ck2 = " selected"; }
+        if ($userinfo['user_notify_pm'] == 1) { $notify_pm_ck1 = " selected"; $notify_pm_ck2 = ""; } else { $notify_pm_ck1 = ""; $notify_pm_ck2 = " selected"; }
 		$notify_pm_ = "<select name='user_notify_pm'><option value='1'$notify_pm_ck1>"._YES."</option><option value='0'$notify_pm_ck2>"._NO."</option></select>";
 		
-        if ($userinfo[user_popup_pm] == 1) { $popup_pm_ck1 = " selected"; $popup_pm_ck2 = ""; } else { $popup_pm_ck1 = ""; $popup_pm_ck2 = " selected"; }
+        if ($userinfo['user_popup_pm'] == 1) { $popup_pm_ck1 = " selected"; $popup_pm_ck2 = ""; } else { $popup_pm_ck1 = ""; $popup_pm_ck2 = " selected"; }
 		$popup_pm_ = "<select name='user_popup_pm'><option value='1'$popup_pm_ck1>"._YES."</option><option value='0'$popup_pm_ck2>"._NO."</option></select>";
 
-        if ($userinfo[user_attachsig] == 1) { $attachsig_ck1 = " selected"; $attachsig_ck2 = ""; } else { $attachsig_ck1 = ""; $attachsig_ck2 = " selected"; }
+        if ($userinfo['user_attachsig'] == 1) { $attachsig_ck1 = " selected"; $attachsig_ck2 = ""; } else { $attachsig_ck1 = ""; $attachsig_ck2 = " selected"; }
 		$attachsig_ = "<select name='user_attachsig'><option value='1'$attachsig_ck1>"._YES."</option><option value='0'$attachsig_ck2>"._NO."</option></select>";
 
-        if ($userinfo[user_allowbbcode] == 1) { $allowbbcode_ck1 = " selected"; $allowbbcode_ck2 = ""; } else { $allowbbcode_ck1 = ""; $allowbbcode_ck2 = " selected"; }
+        if ($userinfo['user_allowbbcode'] == 1) { $allowbbcode_ck1 = " selected"; $allowbbcode_ck2 = ""; } else { $allowbbcode_ck1 = ""; $allowbbcode_ck2 = " selected"; }
 		$allowbbcode_ = "<select name='user_allowbbcode'><option value='1'$allowbbcode_ck1>"._YES."</option><option value='0'$allowbbcode_ck1>"._NO."</option></select>";
 		
-        if ($userinfo[user_allowhtml] == 1) { $allowhtml_ck1 = " selected"; $allowhtml_ck2 = ""; } else { $allowhtml_ck1 = ""; $allowhtml_ck2 = " selected"; }
+        if ($userinfo['user_allowhtml'] == 1) { $allowhtml_ck1 = " selected"; $allowhtml_ck2 = ""; } else { $allowhtml_ck1 = ""; $allowhtml_ck2 = " selected"; }
 		$allowhtml_ = "<select name='user_allowhtml'><option value='1'$allowhtml_ck1>"._YES."</option><option value='0'$allowhtml_ck2>"._NO."</option></select>";
 		
 
-        if ($userinfo[user_allowsmile] == 1) { $allowsmile_ck1 = " selected"; $allowsmile_ck2 = ""; } else { $allowsmile_ck1 = ""; $allowsmile_ck2 = " selected"; }
+        if ($userinfo['user_allowsmile'] == 1) { $allowsmile_ck1 = " selected"; $allowsmile_ck2 = ""; } else { $allowsmile_ck1 = ""; $allowsmile_ck2 = " selected"; }
 		$allowsmile_ = "<select name='user_allowsmile'><option value='1'$allowsmile_ck1>"._YES."</option><option value='0'$allowsmile_ck2>"._NO."</option></select>";
 		
         $FORUMSTIME_ = "<select name='user_timezone'>";
@@ -101,7 +101,7 @@ if (!defined('CNBYA')) { echo "CNBYA protection"; exit; }
                 if (!preg_match("/-/", $i)) { $i = "+$i"; }
                 $dummy = "GMT $i "._HOURS."";
             }
-            if ($userinfo[user_timezone] == $i) {
+            if ($userinfo['user_timezone'] == $i) {
                 $FORUMSTIME_ .= "<option name='user_timezone' value=\"$i\" selected>$dummy</option>";
             } else {
                 $FORUMSTIME_ .= "<option name='user_timezone' value=\"$i\">$dummy</option>";
@@ -114,11 +114,11 @@ if (!defined('CNBYA')) { echo "CNBYA protection"; exit; }
 <script src="modules/Your_Account/includes/style/EditAvatar.js" type="text/javascript"></script>
 <style type="text/css">
 ul.tabs li {
-	text-align:<?php echo langStyle(align)?>;float:<?php echo langStyle(align)?>
+	text-align:<?php echo langStyle('align')?>;float:<?php echo langStyle('align')?>
 }
 </style>
 <div class="container">
-	<h1 style="text-align:<?php echo langStyle(align)?>;font-size:15px;margin:10px;"><?php echo _YA_EDIT." ". $userinfo[username]; ?></h1>
+	<h1 style="text-align:<?php echo langStyle('align')?>;font-size:15px;margin:10px;"><?php echo _YA_EDIT." ". $userinfo['username']; ?></h1>
     <ul class="tabs">
 			<li><a href="#generalSetting"><?PHP echo _YA_EDIT_GENERAL;?></a></li>
 			<li><a href="#userinfoSetting"><?PHP echo _YA_EDIT_ACCOUNT;?></a></li>
@@ -130,7 +130,7 @@ ul.tabs li {
     <div class="tab_container">
 		<form name='Register' action='modules.php?name=<?php echo $module_name;?>&op=edituser' method='post'>
 			<div id="generalSetting" class="tab_content">
-					<li><?php echo _UREALNAME ;?><li></li><input type='text' name='realname' value="<?php echo $userinfo[name];?>" size='50' maxlength='60'></li>
+					<li><?php echo _UREALNAME ;?><li></li><input type='text' name='realname' value="<?php echo $userinfo['name'];?>" size='50' maxlength='60'></li>
 					<li><?php echo _YOCCUPATION ."<li></li><input type='text' name='user_occ' value=\"$userinfo[user_occ]\" size='30' maxlength='100'>";?></li>
 					<li><?php echo _YINTERESTS ."<li></li><input type='text' name='user_interests' value=\"$userinfo[user_interests]\" size='30' maxlength='100'>" ;?></li>
 					<li><?php echo _YA_CURRAV ?><div id='loadAvatarSeting'><img src="images/loading.gif"> <?php echo _LOADING?></div></li>				

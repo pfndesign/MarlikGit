@@ -37,8 +37,8 @@ function admin_head()
 		.tab_container,
 		.notify,
 		.error {
-			text-align: <?php echo langstyle(align) ?>;
-			direction: <?php echo langstyle(direction) ?>
+			text-align: <?php echo langstyle('align') ?>;
+			direction: <?php echo langstyle('direction') ?>
 		}
 	</style><?php
 			if (defined("addCSSToHead")) {

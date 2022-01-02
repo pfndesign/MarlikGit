@@ -106,7 +106,7 @@ switch ($op) {
 
       if (($czml['modalphaml'] == "1") && ($ext != ".swf")) {
       $alpha = "onmouseover=high(this) style=\"FILTER: alpha(opacity=30); moz-opacity: 0.3\" onmouseout=low(this)";
-      } elseif ($czml[modalphaml] == "0") {
+      } elseif ($czml['modalphaml'] == "0") {
       $alpha = "";
       } 
 

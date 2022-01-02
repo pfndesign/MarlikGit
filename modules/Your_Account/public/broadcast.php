@@ -45,7 +45,7 @@ function blog_post()
 
 	$blogconfig = GET_USER_BLOG_CONFIG($userinfo['username']);
 	$user_blog_colors = array();
-	$user_blog_colors = explode("#",$blogconfig[user_blog_colors]);
+	$user_blog_colors = explode("#",$blogconfig['user_blog_colors']);
 	$blogPage = sql_quote($_GET['blogPage']);
 	if (is_user($user)) {
 	if($_POST['content'])
@@ -57,7 +57,7 @@ function blog_post()
 		$numrows = $db->sql_numrows($db->sql_query("SELECT * FROM " . $prefix .
 		"_public_messages WHERE who='" .$userinfo['username']. "' "));
 
-		$pm = $_POST[pm];
+		$pm = $_POST['pm'];
 		if ($pm==1)
 		{
 			//-------- START OF PUBLIC MESSAGING----------//
@@ -97,7 +97,7 @@ function blog_post()
 			$db->sql_query("INSERT INTO " . BLOG_TABLE . " VALUES (NULL,'0', '" .sql_quote($the_message) ."', now(),
 		 '" . sql_quote($sender_id) ."', '" . sql_quote($sender_name) ."',
 		  '" . sql_quote($sender_id) ."','" . sql_quote($sender_name) . "'
-			 ,'0','0')") or die(mysql_error());
+			 ,'0','0')") or die(mysqli_error($db->db_connection));
 				update_points(1);
 				?>	<script type="text/javascript">	show_my_blog(<?php echo intval($sender_id)?>,<?php echo intval($blogPage)?>);	</script>		<?php
 
@@ -495,8 +495,8 @@ function YAB_Setting(){
 	global $userinfo,$user,$module_name,$username,$db;
 	if (is_user($user)) {
 	$user_blog_colors = array();
-	$user_blog_colors = explode("#",$userinfo[user_blog_colors]);
-	$blog_password = $userinfo[user_blog_password];
+	$user_blog_colors = explode("#",$userinfo['user_blog_colors']);
+	$blog_password = $userinfo['user_blog_password'];
 
 	if($userinfo['user_allowemails']==1){$YNotify = 'checked="checked"';}else {$NNotify = 'checked="checked"';}
 

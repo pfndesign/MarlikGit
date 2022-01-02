@@ -9,16 +9,16 @@ if (!defined('CNBYA')) { echo "CNBYA protection"; exit; }
 global $currentlang,$prefix;
     // Last 10 Comments
     if ($articlecomm == 1) {
-        $result6 = $db->sql_query("SELECT c.*,s.title FROM ".$prefix."_comments_moderated AS c LEFT JOIN nuke_stories AS s ON c.sid= s.sid WHERE c.name ='".$usrinfo[username]."' AND c.active='1' ORDER BY c.tid DESC LIMIT 0,10");
+        $result6 = $db->sql_query("SELECT c.*,s.title FROM ".$prefix."_comments_moderated AS c LEFT JOIN nuke_stories AS s ON c.sid= s.sid WHERE c.name ='".$usrinfo['username']."' AND c.active='1' ORDER BY c.tid DESC LIMIT 0,10");
         if (($db->sql_numrows($result6) > 0)) {
 
         	OpenTable();
             echo "<b>$usrinfo[username]'s "._LAST10COMMENT.":</b><br><ul>";
             while($row6 = $db->sql_fetchrow($result6)) {
-                $tid = $row6[tid];
-                $sid = $row6[sid];
-                $subject = $row6[title];
-                $comment = $row6[comment];
+                $tid = $row6['tid'];
+                $sid = $row6['sid'];
+                $subject = $row6['title'];
+                $comment = $row6['comment'];
 	if (strlen($comment) > 100){ $comment = substr($comment, 0, 100) . ' ...';}
                 echo "<li>
                 <a href=\"modules.php?name=News&amp;file=article&amp;sid=$sid&amp;title=".Slugit($subject)."\">

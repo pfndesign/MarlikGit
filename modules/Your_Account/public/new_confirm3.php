@@ -67,7 +67,7 @@ for ($i=0; $i < count($BadNickList); $i++) {
 if (preg_match("/$BadNickList[$i]/", $ya_username)){ ErrorDIV("<p style=\"color: red\"><b>".NO_ACCESS_USER."</b></p>"); }};
 
 $query2 = "select username FROM ".__USER_TABLE." where username = '".sql_quote($ya_username)."'";
-$numresults2=mysql_query($query2);$numrows2=mysql_num_rows($numresults2); if (!$numrows2 == 0) { ErrorDIV("<p style=\"color: red\"> ". USERNAME_REGISTERED."<b>$trimmed</b></p>");}
+$numresults2=$db->sql_query($query2);$numrows2=$db->sql_numrows($numresults2); if (!$numrows2 == 0) { ErrorDIV("<p style=\"color: red\"> ". USERNAME_REGISTERED."<b>$trimmed</b></p>");}
 
 //===========================================
 // REAL NAME VALIDITY CHECKS
@@ -88,7 +88,7 @@ if (empty($ya_email)) { ErrorDIV("<p style=\"color: red\">".NO_ENTRY_EMAIL." </p
 if (!validate_mail($ya_email)) {ErrorDIV( "<p >  <p style=\"color: red\"> ".NO_VALID_EMAIL." :$ya_email</p>"); }
 
 $query3 = "select user_email FROM ".__USER_TABLE." where user_email = '".sql_quote($ya_email)."' ";
-$numresults3=mysql_query($query3);$numrows3=mysql_num_rows($numresults3); if (!$numrows3 == 0) { ErrorDIV("<p style=\"color: red\">". EMAIL_REGISTERED." : &quot;" . $trimmed3 . "&quot</p>"); }
+$numresults3=$db->sql_query($query3);$numrows3=$db->sql_numrows($numresults3); if (!$numrows3 == 0) { ErrorDIV("<p style=\"color: red\">". EMAIL_REGISTERED." : &quot;" . $trimmed3 . "&quot</p>"); }
 
 if ($ya_config['doublecheckemail']==1) {if ($ya_email!=$ya_user_email2) {ErrorDIV("<p style=\"color: red\">". EMAIL_NOT_SAME." "); }} ;
 
@@ -140,10 +140,10 @@ if (extension_loaded("gd") AND ($gfx_chk == 3 OR $gfx_chk == 4 OR $gfx_chk == 6 
 		
 		$result = $db->sql_query("SELECT * FROM ".$user_prefix."_cnbya_field WHERE need = '3' ORDER BY pos");
 	    while ($sqlvalue = $db->sql_fetchrow($result)) {
-	      $t = $sqlvalue[fid];
+	      $t = $sqlvalue['fid'];
           if ($nfield[$t] == "") {
 		    OpenTable();
-			if (substr($sqlvalue[name],0,1)=='_') eval( "\$name_exit = $sqlvalue[name];"); else $name_exit = $sqlvalue[name];
+			if (substr($sqlvalue['name'],0,1)=='_') eval( "\$name_exit = $sqlvalue[name];"); else $name_exit = $sqlvalue[name];
             echo "<center><font class='title'><b>"._ERRORREG."</b></font><br><br>";
             echo "<font class='content'>"._YA_FILEDNEED1."$name_exit"._YA_FILEDNEED2."<br><br>"._GOBACK."</font></center>";
             CloseTable();
@@ -161,7 +161,7 @@ if (extension_loaded("gd") AND ($gfx_chk == 3 OR $gfx_chk == 4 OR $gfx_chk == 6 
         echo "</table><br><br>";
         echo "<center><form action='modules.php?name=".sql_quote($module_name)."' method='post' onSubmit=\"javascript:submit.disabled=true;\"> ";
 
-		if (count($nfield) > 0) foreach ($nfield as $key => $var) echo "<input type='hidden' name='nfield[$key]' value='$nfield[$key]'>";
+		if (is_array($nfield) &&  count($nfield) > 0) foreach ($nfield as $key => $var) echo "<input type='hidden' name='nfield[$key]' value='$nfield[$key]'>";
 
         echo "<input type='hidden' name='ya_username' value=\"$ya_username\">";
         echo "<input type='hidden' name='ya_realname' value=\"$ya_realname\">";

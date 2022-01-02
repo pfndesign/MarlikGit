@@ -50,9 +50,9 @@ if ($db->sql_numrows($result) > 0) {
           $t_image = "";
         }
         $t_image = $t_image.$tipath.$topicimage;
-        $output = "<h3><a href='modules.php?name=News&amp;file=categories&amp;category=".Slugit($row[slug])."'>$topicname </a></h3><table border=\"0\" width=\"100%\" align=\"center\" cellpadding=\"2\">\n";
+        $output = "<h3><a href='modules.php?name=News&amp;file=categories&amp;category=".Slugit($row['slug'])."'>$topicname </a></h3><table border=\"0\" width=\"100%\" align=\"center\" cellpadding=\"2\">\n";
         $output .= "<tr><td valign=\"top\" width=\"25%\">";
-        $output .= "<a href='modules.php?name=News&amp;file=categories&amp;category=".Slugit($row[slug])."'>
+        $output .= "<a href='modules.php?name=News&amp;file=categories&amp;category=".Slugit($row['slug'])."'>
         <img src=\"$t_image\" border=\"0\" alt=\"$topictext\" title=\"$topictext\" hspace='5' vspace='5'></a><br><br>\n";
         $output .= "</td><td valign=\"top\">";
 

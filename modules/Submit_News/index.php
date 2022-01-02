@@ -104,7 +104,7 @@ $newscategory  .= $menu->get_menu_html(0);
 	//."<textarea name=\"storyext\" cols=\"60\" rows=\"20\" style=\"width:100%\"></textarea>
 	wysiwyg_textarea('storyext', '', 'PHPNuke', '50', '12');
 		
-	echo "<input type=\"hidden\" name=\"authorname\" value=\"".$userinfo[username]."\">";
+	echo "<input type=\"hidden\" name=\"authorname\" value=\"".$userinfo['username']."\">";
 	echo "<br><br><br>"
 	."<font class=\"content\">("._AREYOUSURE.")<br><br>"
 	."<br><br><input type=\"submit\" name=\"op\" value=\""._PREVIEW."\"><br>("._SUBPREVIEW.")</font></form>";
@@ -222,7 +222,7 @@ $newscategory  .= $menu->get_menu_html(0);
 	if (extension_loaded("gd") AND ($gfx_chk == 7)) {
 	echo show_captcha();
 	}
-	echo "<input type=\"hidden\" name=\"authorname\" value=\"".$userinfo[username]."\">";
+	echo "<input type=\"hidden\" name=\"authorname\" value=\"".$userinfo['username']."\">";
 	
 	echo "<br><br><br><font class=\"content\">("._AREYOUSURE.")</font><br><br>"
 	.""._HTMLNOTALLOWED.""

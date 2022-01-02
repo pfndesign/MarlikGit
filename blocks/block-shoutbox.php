@@ -46,7 +46,7 @@ if (!is_user($user)) {
 }else {
 	$content .= '
     <form method="post">  
-     <input class="text user" id="nick" readonly type="hidden" value="'.$userinfo[username].'" />
+     <input class="text user" id="nick" readonly type="hidden" value="'.$userinfo['username'].'" />
       '._NL_SHOUTBOX_MESSAGE.'<input class="text" id="message" type="text" MAXLENGTH="255" />
       		<br><br>
              <input id="send" type="submit" value="'._NL_SHOUTBOX_SEND.'" />
