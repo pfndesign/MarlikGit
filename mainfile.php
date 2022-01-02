@@ -26,95 +26,45 @@ $phpver = phpversion();
 //===========================================
 
 
-// convert superglobals if php is lower then 4.1.0
-if ($phpver < '4.1.0') {
-	$_GET = $HTTP_GET_VARS;
-	$_POST = $HTTP_POST_VARS;
-	$_SERVER = $HTTP_SERVER_VARS;
-	$_FILES = $HTTP_POST_FILES;
-	$_ENV = $HTTP_ENV_VARS;
-	if ($_SERVER['REQUEST_METHOD'] == "POST") {
-		$_REQUEST = $_POST;
-	} elseif ($_SERVER['REQUEST_METHOD'] == "GET") {
-		$_REQUEST = $_GET;
-	}
-	if (isset($HTTP_COOKIE_VARS)) {
-		$_COOKIE = $HTTP_COOKIE_VARS;
-	}
-	if (isset($HTTP_SESSION_VARS)) {
-		$_SESSION = $HTTP_SESSION_VARS;
-	}
-
-	if (!ini_get('register_globals')) {
-		@import_request_variables("GPC", "");
-	}
+$HTTP_GET_VARS = $_GET;
+$HTTP_POST_VARS = $_POST;
+$HTTP_SERVER_VARS = $_SERVER;
+$HTTP_POST_FILES = $_FILES;
+$HTTP_ENV_VARS = $_ENV;
+$PHP_SELF = $_SERVER['PHP_SELF'];
+if (isset($_SESSION)) {
+	$HTTP_SESSION_VARS = $_SESSION;
 }
-// override old superglobals if php is higher then 4.1.0
-if ($phpver >= '4.1.0') {
-	$HTTP_GET_VARS = $_GET;
-	$HTTP_POST_VARS = $_POST;
-	$HTTP_SERVER_VARS = $_SERVER;
-	$HTTP_POST_FILES = $_FILES;
-	$HTTP_ENV_VARS = $_ENV;
-	$PHP_SELF = $_SERVER['PHP_SELF'];
-	if (isset($_SESSION)) {
-		$HTTP_SESSION_VARS = $_SESSION;
-	}
-	if (isset($_COOKIE)) {
-		$HTTP_COOKIE_VARS = $_COOKIE;
-	}
-	//Import Request Variables: 
-	extract($_REQUEST, EXTR_PREFIX_SAME | EXTR_REFS, 'nkln_');
-
-	if (!ini_get('register_globals')) {
-		//@import_request_variables("GPC", ""); There is no need of this in new version of PHP 5.2+ 
-	}
+if (isset($_COOKIE)) {
+	$HTTP_COOKIE_VARS = $_COOKIE;
 }
+//Import Request Variables: 
+extract($_REQUEST, EXTR_PREFIX_SAME | EXTR_REFS, 'nkln_');
 
 // After doing those superglobals we can now use one
 // and check if this file isnt being accessed directly
 if (stristr(htmlentities($_SERVER['PHP_SELF']), "mainfile.php")) {
 	die("Access Denied<br><b>" . $_SERVER['PHP_SELF'] . "</b>");
 }
-if (!function_exists("floatval")) {
-	function floatval($inputval)
-	{
-		return (float)$inputval;
+
+
+
+function stripos_clone($haystack, $needle, $offset = 0)
+{
+	$return = stripos($haystack, $needle, $offset = 0);
+	if ($return === false) {
+		return false;
+	} else {
+		return true;
 	}
 }
 
-
-if (!function_exists('stripos')) {
-	function stripos_clone($haystack, $needle, $offset = 0)
-	{
-		$return = strpos(strtoupper($haystack), strtoupper($needle), $offset);
-		if ($return === false) {
-			return false;
-		} else {
-			return true;
-		}
-	}
-} else {
-	// But when this is PHP5, we use the original function
-	function stripos_clone($haystack, $needle, $offset = 0)
-	{
-		$return = stripos($haystack, $needle, $offset = 0);
-		if ($return === false) {
-			return false;
-		} else {
-			return true;
-		}
-	}
-}
 
 //===========================================
 //Compression Functions
 //===========================================
 define("ENABLE_GZIP", 1); // change this into 0 to turn the GZIP off.
-function playWithHtml($OutputHtml)
-{
-	return preg_replace("/\s+/", " ", $OutputHtml);
-}
+
 // Include this function on your pages
 function print_gzipped_page()
 {
