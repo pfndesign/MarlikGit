@@ -8,6 +8,45 @@
  * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
  *
  */
+//===========================================
+// composer
+//===========================================
+
+require __DIR__ . '/vendor/autoload.php';
+//===========================================
+// config
+//===========================================
+try {
+	$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+	$dotenv->load();
+} catch (Dotenv\Exception\InvalidPathException $e) {
+	// show error page
+	echo $e->getMessage();
+	exit;
+}
+// required env variables
+try {
+	$dotenv->required('dbpass');
+	$dotenv->required(['dbhost', 'dbuname', 'dbname', 'dbtype', 'prefix', 'user_prefix', 'nuke_prefix', 'admin_file', 'ThemeDef', 'sitekey', 'domain'])->notEmpty();
+} catch (RuntimeException $e) {
+	// show error page
+	echo $e->getMessage();
+	exit;
+}
+// subject to change
+$dbhost = $_ENV['dbhost'];
+$dbuname = $_ENV['dbuname'];
+$dbpass = $_ENV['dbpass'];
+$dbname = $_ENV['dbname'];
+$dbtype = $_ENV['dbtype'];
+$prefix = $_ENV['prefix'];
+$user_prefix = $_ENV['user_prefix'];
+$nuke_prefix = $_ENV['nuke_prefix'];
+$tipath = $_ENV['tipath'];
+$admin_file = $_ENV['admin_file'];
+$ThemeDef = $_ENV['ThemeDef'];
+$sitekey = $_ENV['sitekey'];
+$display_errors = $_ENV['display_errors'] == "true" ? true : false;
 
 //===========================================
 // PHP  Transaction
@@ -137,14 +176,15 @@ if (defined('FORUM_ADMIN')) {
 } else {
 	define('INCLUDE_PATH', './');
 }
+//subject to change
+define('BENCHMARK', $_ENV['benchmark'] == "true" ? true : false);
 
+define('USV_DOMAIN', $_ENV['domain'] ? $_ENV['domain'] : false);
 //===========================================
 //Includes
 //===========================================
 
-require_once(BASE_PATH . "config.php");
 require_once(DB_PATH . "db.php");
-
 
 //===========================================
 //CUSTOM FUNCTIONS
@@ -387,6 +427,7 @@ require_once(INCLUDES_PATH . "inc_session.php");
 $NK_session = new mr_session();
 $NK_session->mr_session_begin();
 $send = benchGetTime();
+echo BENCHMARK;
 if (BENCHMARK == true) {
 	echo benchmark_overall($sstart, $send, 'SESSION');
 }

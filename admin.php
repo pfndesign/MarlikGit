@@ -30,14 +30,14 @@ header('HTTP/1.0 401 Unauthorized<br><br>OH WOW , Hacking Attempt or What ?!');
 //===========================================
 //Check if the site is installed
 //===========================================
-if (!file_exists("config.php")) {
+if (file_exists("install/install.php")) {
+	show_error("<table style='padding: 2px; border: 1px solid #999; background-color: #EEE; font-family: Verdana; font-size: 10px;' align='center'><tr><td><b>Attention:</b> Delete the installation folder and files!</td></tr></table>");
+	}else{
 if (file_exists("install.php")) {
-header("Location: install.php");
+//header("Location: install.php");
 } else {
 show_error("<div id='bd'  class=\"error\"><p class=\"error\"><img src='images/icon/exclamation.png' title='Attention' alt='Attention'><b>Attention:</b> The configuration file is missing and a new installation cannot be started because the install file cannot be located</p><div>");
 }
-} else if (file_exists("install/install.php")) {
-show_error("<table style='padding: 2px; border: 1px solid #999; background-color: #EEE; font-family: Verdana; font-size: 10px;' align='center'><tr><td><b>Attention:</b> Delete the installation folder and files!</td></tr></table>");
 }
 
 //===========================================
@@ -158,4 +158,3 @@ if ($admintest)
 		   break;
 		 }
 		}
-?>

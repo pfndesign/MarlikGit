@@ -1,3 +1,16 @@
+# -------------------------------------------
+# new
+# -------------------------------------------
+#Disable index view
+options -Indexes
+#hide .env file
+<FilesMatch "\.(env|env.sample|env.default)$">
+order allow,deny
+Deny from all
+</FilesMatch>
+# -------------------------------------------
+# old
+# -------------------------------------------
 DirectoryIndex index.php index.htm index.html
 
 # deny most common except .php
