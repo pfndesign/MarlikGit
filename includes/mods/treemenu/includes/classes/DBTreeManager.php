@@ -80,16 +80,17 @@ class DBTreeManager implements ITreeManager
                 //$str = "<li></li>";
             }
             */
-			while ($row = mysqli_fetch_object($result)) {
+			$result = $result->fetchAll();
+			foreach ($result as $row) {
 				$supp = NULL;
-				if ($row->slave == 0) {
+				if ($row['slave'] == 0) {
 					$supp = "<ul class='ajax'>"
-						. "<li id='" . $row->Id . "'>{url:" . $pageName . "&action=getElementList&ownerEl=" . $row->Id . "}</li>"
+						. "<li id='" . $row['Id'] . "'>{url:" . $pageName . "&action=getElementList&ownerEl=" . $row['Id'] . "}</li>"
 						. "</ul>";
 				}
 
-				$str .= "<li class='text' id='" . $row->Id . "'>"
-					. "<span>" . langit($row->name) . "</span>"
+				$str .= "<li class='text' id='" . $row['Id'] . "'>"
+					. "<span>" . langit($row['name']) . "</span>"
 					. $supp
 					. "</li>";
 			}
@@ -133,13 +134,13 @@ class DBTreeManager implements ITreeManager
 		);
 		$row = NULL;
 		$index++;
-		if ($result = $this->db->sql_query($sql)) {
-			while ($row = mysqli_fetch_object($result)) {
+		if ($result = $this->db->sql_query($sql)->fetchAll()) {
+			foreach ($result as $row) {
 				// if element type is not slave,
 				// there can be childs belonging to that master
-				if ($row->slave == "0") {
+				if ($row['slave'] == "0") {
 					// recursive operation, to reach the deepest element
-					$this->deleteElement($row->Id, $index);
+					$this->deleteElement($row['Id'], $index);
 				}
 			}
 		}
@@ -158,22 +159,20 @@ class DBTreeManager implements ITreeManager
 			);
 
 
-			if ($result = $this->db->sql_query($sql)) {
-				if ($row = mysqli_fetch_object($result)) {
-					$sql = sprintf(
-						'UPDATE '
-							. TREE_TABLE_PREFIX . '_elements
+			if ($result = $this->db->sql_query($sql)->fetch()) {
+				$sql = sprintf(
+					'UPDATE '
+						. TREE_TABLE_PREFIX . '_elements
      								SET 
      									position = position - 1
      								WHERE 
      									ownerEl = %d
      									AND
      									position > %d',
-						$row->ownerEl,
-						$row->position
-					);
-					$this->db->sql_query($sql);
-				}
+					$row['ownerEl'],
+					$row['position']
+				);
+				$this->db->sql_query($sql);
 			}
 		}
 
@@ -205,50 +204,48 @@ class DBTreeManager implements ITreeManager
 			$elementId
 		);
 		$out = FAILED;
-		if ($result = $this->db->sql_query($sql)) {
-			if ($element = mysqli_fetch_object($result)) {
-				$sql1 = sprintf(
-					'UPDATE '
-						. TREE_TABLE_PREFIX . '_elements 
+		if ($result = $this->db->sql_query($sql)->fetch()) {
+			$sql1 = sprintf(
+				'UPDATE '
+					. TREE_TABLE_PREFIX . '_elements 
 									 SET 
 									 	position = position - 1
 									 WHERE  
 									 	position > %d
 									    AND
 									    ownerEl = %d ',
-					$element->position,
-					$element->ownerEl
-				);
+				$result['position'],
+				$result['ownerEl']
+			);
 
-				$sql2 = sprintf(
-					'UPDATE '
-						. TREE_TABLE_PREFIX . '_elements 
+			$sql2 = sprintf(
+				'UPDATE '
+					. TREE_TABLE_PREFIX . '_elements 
 									 SET 
 									 	position = position + 1
 									 WHERE
 							 			 position >= %d 
 									   	 AND
 									   	 ownerEl = %d ',
-					$destPosition,
-					$destOwnerEl
-				);
+				$destPosition,
+				$destOwnerEl
+			);
 
-				$sql3 = sprintf(
-					'UPDATE '
-						. TREE_TABLE_PREFIX . '_elements 
+			$sql3 = sprintf(
+				'UPDATE '
+					. TREE_TABLE_PREFIX . '_elements 
 									 SET 
 									 	position = %d , ownerEl = %d
 									 WHERE 
 									 	Id = %d ',
-					$destPosition,
-					$destOwnerEl,
-					$elementId
-				);
+				$destPosition,
+				$destOwnerEl,
+				$elementId
+			);
 
 
-				if ($this->db->sql_query($sql1) && $this->db->sql_query($sql2) && $this->db->sql_query($sql3)) {
-					$out = '({"oldElementId":"' . $elementId . '", "elementId":"' . $elementId . '"})';
-				}
+			if ($this->db->sql_query($sql1) && $this->db->sql_query($sql2) && $this->db->sql_query($sql3)) {
+				$out = '({"oldElementId":"' . $elementId . '", "elementId":"' . $elementId . '"})';
 			}
 		}
 		return $out;

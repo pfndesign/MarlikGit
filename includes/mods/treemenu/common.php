@@ -11,7 +11,6 @@
   
 $treeManager = NULL;
 define("INSIDE_MOD",true);
-require_once('config.php');
 require_once(''.MODS_PATH.'treemenu/includes/config.php');
 require_once(''.MODS_PATH.'treemenu/includes/functions.php');
 require_once(''.MODS_PATH.'treemenu/includes/classes/DBTreeManager.php');

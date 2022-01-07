@@ -1771,10 +1771,6 @@ function sql_quote($value)
 	if (false) { //wtf
 		$value = stripslashes($value);
 	}
-	//check if this function exists
-	if (function_exists("mysqli_real_escape_string")) {
-		$value = mysqli_real_escape_string($db->db_connection, $value);
-	}
 	//for PHP version < 4.3.0 use addslashes
 	else {
 		$value = addslashes($value);

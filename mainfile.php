@@ -26,19 +26,30 @@ try {
 }
 // required env variables
 try {
-	$dotenv->required('dbpass');
-	$dotenv->required(['dbhost', 'dbuname', 'dbname', 'dbtype', 'prefix', 'user_prefix', 'nuke_prefix', 'admin_file', 'ThemeDef', 'sitekey', 'domain'])->notEmpty();
+	$dotenv->required('db_type')->allowedValues(['mysql', 'mssql', 'sqlite', 'pgsql', 'sybase', 'oracle']);
+	$dotenv->required(['db_host', 'db_name', 'db_username'])->notEmpty();
+	$dotenv->required('db_password');
+	$dotenv->ifPresent(['db_charset', 'db_collation', 'db_socket'])->notEmpty();
+	$dotenv->ifPresent(['db_port', 'db_dsn_port', 'db_mssql_connection_pooling', 'db_mssql_connection_pooling', 'db_mssql_login_timeout', 'db_mssql_multiple_active_result_sets', 'db_mssql_trace_on', 'db_mssql_trust_server_certificate'])->isInteger();
+	$dotenv->ifPresent(['db_logging', 'db_testmode', 'db_mssql_column_encryption', 'db_mssql_multi_subnet_failover', 'db_mssql_transparent_network_ip_resolution'])->isBoolean();
+	$dotenv->ifPresent('db_error')->allowedValues(['silent', 'warning', 'exception']);
+	$dotenv->ifPresent(['db_dsn_driver', 'db_dsn_server'])->notEmpty();
+	$dotenv->ifPresent(['db_mssql_appname', 'db_mssql_application_intent', 'db_mssql_attach_db_file_name', 'db_mssql_failover_partner', 'db_mssql_failover_partner', 'db_mssql_key_store_authentication', 'db_mssql_key_store_principal_id', 'db_mssql_key_store_secret', 'db_mssql_scrollable', 'db_mssql_trace_file', 'db_mssql_wsid'])->notEmpty();
+	$dotenv->ifPresent('db_mssql_transaction_isolation')->allowedValues(['uncommitted', 'committed', 'repeatable', 'snapshot', 'serializable']);
+	$dotenv->required(['prefix', 'user_prefix', 'nuke_prefix', 'admin_file', 'ThemeDef', 'sitekey', 'domain'])->notEmpty();
+	$dotenv->ifPresent('display_errors')->isBoolean();
+	$dotenv->ifPresent('benchmark')->isBoolean();
 } catch (RuntimeException $e) {
 	// show error page
 	echo $e->getMessage();
 	exit;
 }
 // subject to change
-$dbhost = $_ENV['dbhost'];
-$dbuname = $_ENV['dbuname'];
-$dbpass = $_ENV['dbpass'];
-$dbname = $_ENV['dbname'];
-$dbtype = $_ENV['dbtype'];
+$dbhost = $_ENV['db_host'];
+$dbuname = $_ENV['db_username'];
+$dbpass = $_ENV['db_password'];
+$dbname = $_ENV['db_name'];
+$dbtype = $_ENV['db_type'];
 $prefix = $_ENV['prefix'];
 $user_prefix = $_ENV['user_prefix'];
 $nuke_prefix = $_ENV['nuke_prefix'];
@@ -169,16 +180,8 @@ define('ADMIN_LANGUAGE_PATH',	BASE_PATH . 'admin/language/');
 define('IMAGES_ICON',	IMAGES_PATH . 'icon/');
 define("LOG_INC", false);
 define("MAIL_CLASS", 0);
-if (defined('FORUM_ADMIN')) {
-	define('INCLUDE_PATH', '../../../');
-} elseif (defined('INSIDE_MOD')) {
-	define('INCLUDE_PATH', '../../');
-} else {
-	define('INCLUDE_PATH', './');
-}
 //subject to change
 define('BENCHMARK', $_ENV['benchmark'] == "true" ? true : false);
-
 define('USV_DOMAIN', $_ENV['domain'] ? $_ENV['domain'] : false);
 //===========================================
 //Includes

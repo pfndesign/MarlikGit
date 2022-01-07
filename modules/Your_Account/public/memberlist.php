@@ -72,10 +72,10 @@ while ($row=$db->sql_fetchrow($result)) {
 	
 		echo "<tr ".TableRow($cnt++,"tr_odd","tr_even")." style='text-align:center;vertical-align:center'>";
 		echo "<td><img src='$avatar_show' style='border:2px solid white;width:48px;height:48px;'></td>";
-		echo "<td><font color='$row[color]'><b>$row[username]</b></font><br>".langit($row[rname])."</td>";
+		echo "<td><font color='$row[color]'><b>$row[username]</b></font><br>".langit($row['rname'])."</td>";
 		echo "<td>$regdateu</td>";
-		echo "<td><font color='$row[color]'>".langit($row[name])."</font></td>";
-		echo "<td><b>".number_format($row[points])."</b></td>";
+		echo "<td><font color='$row[color]'>".langit($row['name'])."</font></td>";
+		echo "<td><b>".number_format($row['points'])."</b></td>";
 		echo "<td>".(!empty($row['user_lastvisit']) ? hejridate(date("Y-m-d H:i:s",$row['user_lastvisit']), 4, 7) : "---")."</td></tr>";
 	
 } 

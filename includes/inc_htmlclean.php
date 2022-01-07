@@ -46,8 +46,6 @@ function check_words($Message)
 
 	global $CensorMode, $CensorReplace, $EditedMessage, $CensorList;
 
-	include("config.php");
-
 	$EditedMessage = $Message;
 
 	if ($CensorMode != 0) {
@@ -192,7 +190,7 @@ function check_html($str, $strip = "")
 		if (false) { // wtf ?
 			$str = stripslashes($str);
 		}
-		return mysqli_real_escape_string($db->db_connection, $str);
+		return $str;
 	}
 }
 

@@ -179,8 +179,8 @@ $get_memory =  (function_exists('memory_get_usage')) ? memory_get_usage() : 0 ;
 $start_time = $mtime;
 $pagetitle = ""; 
 
-if(isset($_COOKIE['admin']))$admin = mysqli_real_escape_string($db->db_connection,$_COOKIE['admin']);
-if(isset($_COOKIE['admin']))$user = mysqli_real_escape_string($db->db_connection,$_COOKIE['user']);
+if(isset($_COOKIE['admin']))$admin = $_COOKIE['admin'];
+if(isset($_COOKIE['admin']))$user = $_COOKIE['user'];
 
 
 //===========================================
@@ -189,7 +189,7 @@ if(isset($_COOKIE['admin']))$user = mysqli_real_escape_string($db->db_connection
 	global $multilingual,$language,$db;
 	// if an user ask us for a language to be his own default lang: 
 	if (($multilingual == 1) AND isset($newlang) AND !stristr($newlang,".")) {
-		$newlang = strip_tags(mysql_real_escape_string($newlang));
+		$newlang = strip_tags($newlang);
 		if (file_exists(CORE_INCLUSION."language/lang-".$newlang.".php")) {
 			setcookie("lang",'',time()-31536000,''.USV_DOMAIN.'');
 			setcookie("lang",$newlang,time()+31536000,''.USV_DOMAIN.'');
@@ -208,7 +208,7 @@ if(isset($_COOKIE['admin']))$user = mysqli_real_escape_string($db->db_connection
 		setcookie("lang",$language,time()+31536000,''.USV_DOMAIN.'');
 		$currentlang = $language;
 	}else{
-		$currentlang = mysqli_real_escape_string($db->db_connection,$_COOKIE['lang']);
+		$currentlang = $_COOKIE['lang'];
 	}
 	
 	// Include main language file

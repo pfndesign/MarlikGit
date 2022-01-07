@@ -60,7 +60,7 @@ if (empty($_GET['id']) and empty($_POST['id'])) {
 			$val = stripslashes($val);
 		}
 
-		return mysqli_real_escape_string($db->db_connection, $val);
+		return $val;
 	}
 
 	// IF JAVASCRIPT IS ENABLED

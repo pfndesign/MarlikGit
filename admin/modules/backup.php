@@ -89,7 +89,7 @@ switch ($op) {
         {
             $result = $db->sql_query("SELECT * FROM $table") or mysql_die();
             $i = 0;
-            while ($row = mysqli_fetch_row($result)) {
+            while ($row = $result->fetchAll()) {
                 $table_list = "(";
 
                 for ($j = 0; $j < mysqli_num_fields($result); $j++)
@@ -264,14 +264,11 @@ switch ($op) {
         echo "<form method=\"post\" name=\"backup\" action=\"" . ADMIN_PHP . "\">";
         echo "<table><tr>";
         echo "<td><SELECT NAME=\"tablelist[]\" size=\"20\" multiple>";
-        $tablelist = $db->sql_query("SHOW TABLES FROM $dbname") or mysql_die();
-        for ($i = 0; $i < $db->sql_numrows($tables); $i++) {
-            mysqli_data_seek($tablelist, $i);
-            $f = mysqli_fetch_array($tablelist);
-            $table = $f[0];
-            echo "<OPTION VALUE=\"$table\">$table</OPTION>";
+        $tablelist = $db->sql_query("SHOW TABLES FROM $dbname")->fetchAll();
+        foreach($tablelist as $table) {
+            $tablename = $table[0];
+            echo "<OPTION VALUE=\"$tablename\">$tablename</OPTION>";
         }
-        mysqli_free_result($result);
         echo "</SELECT><br /><br /><center>";
         echo "<a href=\"javascript:void(0);\" onclick=\"setSelectOptions('backup', 'tablelist[]', true); return false;\">";
         echo "<b>" . _CHECKALL . "</b></a>&nbsp;|&nbsp;";

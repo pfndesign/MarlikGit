@@ -194,12 +194,12 @@ function save_menu_pop(){
 global $db,$prefix;
 
 	$eid = (int) $_POST['eid'];
-	$title = mysqli_real_escape_string($db->db_connection,$_POST['titlein']);
-	$lang = mysqli_real_escape_string($db->db_connection,$_POST['lang']);
-	$modulename = mysqli_real_escape_string($db->db_connection,$_POST['modulename']);
-	$link = mysqli_real_escape_string($db->db_connection,$_POST['link']);
-	$ltarget = mysqli_real_escape_string($db->db_connection,$_POST['ltarget']);
-	$icon = mysqli_real_escape_string($db->db_connection,$_POST['icon']);
+	$title = $_POST['titlein'];
+	$lang = $_POST['lang'];
+	$modulename = $_POST['modulename'];
+	$link = $_POST['link'];
+	$ltarget = $_POST['ltarget'];
+	$icon = $_POST['icon'];
 	$ilink = $link.'|'.$ltarget;
 	$msql = 'UPDATE `'.$prefix.'_tree_elements` SET `name` = "'.$title.'",`lang` = "'.$lang.'", `link` = "'.$ilink.'", `module` = "'.$modulename.'", `icon` = "'.$icon.'" WHERE `Id` = "'.$eid.'" LIMIT 1';
 	$result = $db->sql_query($msql);
