@@ -40,7 +40,7 @@ if (isset($_ENV['db_collation']))
 if (isset($_ENV['db_port']))
 	$dbargs['port'] = $_ENV['db_port'];
 if (isset($_ENV['db_prefix']))
-	$dbargs['prefix'] = $_ENV['db_prefix'];
+	$dbargs['prefix'] = $_ENV['db_prefix']."_";
 if (isset($_ENV['db_logging']))
 	$dbargs['logging'] = $_ENV['db_logging'] == "true" ? true : false;
 if (isset($_ENV['db_error'])) {

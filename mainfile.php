@@ -11,7 +11,6 @@
 //===========================================
 // composer
 //===========================================
-
 require __DIR__ . '/vendor/autoload.php';
 //===========================================
 // config
@@ -36,7 +35,7 @@ try {
 	$dotenv->ifPresent(['db_dsn_driver', 'db_dsn_server'])->notEmpty();
 	$dotenv->ifPresent(['db_mssql_appname', 'db_mssql_application_intent', 'db_mssql_attach_db_file_name', 'db_mssql_failover_partner', 'db_mssql_failover_partner', 'db_mssql_key_store_authentication', 'db_mssql_key_store_principal_id', 'db_mssql_key_store_secret', 'db_mssql_scrollable', 'db_mssql_trace_file', 'db_mssql_wsid'])->notEmpty();
 	$dotenv->ifPresent('db_mssql_transaction_isolation')->allowedValues(['uncommitted', 'committed', 'repeatable', 'snapshot', 'serializable']);
-	$dotenv->required(['prefix', 'user_prefix', 'nuke_prefix', 'admin_file', 'ThemeDef', 'sitekey', 'domain'])->notEmpty();
+	$dotenv->required(['admin_file', 'domain', 'timezone'])->notEmpty();
 	$dotenv->ifPresent('display_errors')->isBoolean();
 	$dotenv->ifPresent('benchmark')->isBoolean();
 } catch (RuntimeException $e) {
@@ -45,49 +44,14 @@ try {
 	exit;
 }
 // subject to change
-$dbhost = $_ENV['db_host'];
-$dbuname = $_ENV['db_username'];
-$dbpass = $_ENV['db_password'];
-$dbname = $_ENV['db_name'];
-$dbtype = $_ENV['db_type'];
-$prefix = $_ENV['prefix'];
-$user_prefix = $_ENV['user_prefix'];
-$nuke_prefix = $_ENV['nuke_prefix'];
-$tipath = $_ENV['tipath'];
+$prefix = $_ENV['db_perfix'];
 $admin_file = $_ENV['admin_file'];
-$ThemeDef = $_ENV['ThemeDef'];
-$sitekey = $_ENV['sitekey'];
 $display_errors = $_ENV['display_errors'] == "true" ? true : false;
-
-//===========================================
-// PHP  Transaction
-//===========================================
-
-if (!defined('END_TRANSACTION')) {
-	define('END_TRANSACTION', 2);
-}
-
-// Get php version
-$phpver = phpversion();
-
 
 //===========================================
 //global stripos checks
 //===========================================
 
-
-$HTTP_GET_VARS = $_GET;
-$HTTP_POST_VARS = $_POST;
-$HTTP_SERVER_VARS = $_SERVER;
-$HTTP_POST_FILES = $_FILES;
-$HTTP_ENV_VARS = $_ENV;
-$PHP_SELF = $_SERVER['PHP_SELF'];
-if (isset($_SESSION)) {
-	$HTTP_SESSION_VARS = $_SESSION;
-}
-if (isset($_COOKIE)) {
-	$HTTP_COOKIE_VARS = $_COOKIE;
-}
 //Import Request Variables: 
 extract($_REQUEST, EXTR_PREFIX_SAME | EXTR_REFS, 'nkln_');
 
@@ -96,8 +60,6 @@ extract($_REQUEST, EXTR_PREFIX_SAME | EXTR_REFS, 'nkln_');
 if (stristr(htmlentities($_SERVER['PHP_SELF']), "mainfile.php")) {
 	die("Access Denied<br><b>" . $_SERVER['PHP_SELF'] . "</b>");
 }
-
-
 
 function stripos_clone($haystack, $needle, $offset = 0)
 {
@@ -190,12 +152,6 @@ define('USV_DOMAIN', $_ENV['domain'] ? $_ENV['domain'] : false);
 require_once(DB_PATH . "db.php");
 
 //===========================================
-//CUSTOM FUNCTIONS
-//===========================================
-if (file_exists(INCLUDES_PATH . "custom_files/custom_mainfile.php")) {
-	include_once(INCLUDES_PATH . "custom_files/custom_mainfile.php");
-}
-//===========================================
 //Error reporting
 //===========================================
 // to be set in config.php
@@ -213,15 +169,8 @@ error_reporting(E_ALL ^ E_NOTICE);
 //===========================================
 //SETTING TIME
 //===========================================
-// Set default timezone in PHP 5.
-if ($phpver >= '5.0.0') {
-	if (function_exists('date_default_timezone_set')) {
-		date_default_timezone_set('Asia/Tehran');
-	}
-} else {
-	if (!ini_get('safe_mode')) {
-		putenv('TZ=Asia/Tehran');
-	}
+if (function_exists('date_default_timezone_set')) {
+	date_default_timezone_set($_ENV['timezone']); //dynamic
 }
 //===========================================
 // text filters
@@ -232,12 +181,6 @@ require_once(INCLUDES_PATH . "inc_htmlclean.php");
 //CONSTANTS 
 //===========================================
 require_once(INCLUDES_PATH . 'constants.php');
-
-//===========================================
-//Guardian SYSTEM DEV : 0 querries :  ?  kb memory load
-//===========================================
-define('PHP_FIREWALL_ACTIVATION', true);
-//require_once(INCLUDES_PATH."inc_guardian.php");
 
 //===========================================
 //  ADMIN && USER MAIN INTRODUCTION
@@ -296,7 +239,7 @@ function get_author($aid)
 }
 function cookiedecode($user)
 {
-	global $cookie, $db, $user_prefix;
+	global $cookie, $db, $prefix;
 	static $pass;
 	if (!is_array($user)) {
 		$user = base64_decode($user);
@@ -306,7 +249,7 @@ function cookiedecode($user)
 		$cookie = $user;
 	}
 	if (!isset($pass) and isset($cookie[1])) {
-		$sql = "SELECT user_password FROM " . $user_prefix . "_users WHERE username='$cookie[1]'";
+		$sql = "SELECT user_password FROM " . $prefix . "_users WHERE username='$cookie[1]'";
 		$result = $db->sql_query($sql);
 		list($pass) = $db->sql_fetchrow($result);
 		$db->sql_freeresult($result);
@@ -317,7 +260,7 @@ function cookiedecode($user)
 }
 function getusrinfo($user)
 {
-	global $user_prefix, $db, $userinfo, $cookie;
+	global $prefix, $db, $userinfo, $cookie;
 	if (!$user or empty($user)) {
 		return NULL;
 	}
@@ -328,7 +271,7 @@ function getusrinfo($user)
 			return $userrow;
 		}
 	}
-	$sql = "SELECT * FROM " . $user_prefix . "_users WHERE username='$user[1]' AND user_password='$user[2]'";
+	$sql = "SELECT * FROM " . $prefix . "_users WHERE username='$user[1]' AND user_password='$user[2]'";
 	$result = $db->sql_query($sql);
 	if ($db->sql_numrows($result) == 1) {
 		static $userrow;

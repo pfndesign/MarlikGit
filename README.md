@@ -16,4 +16,6 @@ do not use this project in production . Marlikcms is based on nukelearn and hasn
 ### roadmap
 
 - [X] install
-- [ ] fix errors
+- [X] fix errors
+- [X] new db engine
+- [ ] remove old and unnecessary files/codes
