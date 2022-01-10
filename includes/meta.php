@@ -50,4 +50,3 @@ if ($commercial_license != 1) {
 $metastring .= "<META NAME=\"GENERATOR\" CONTENT=\"MarlikCMS Portal Copyright (c) 2009 by MarlikCMS.com.\">\n";
 }
 echo $metastring;
-?>

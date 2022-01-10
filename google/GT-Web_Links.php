@@ -43,5 +43,3 @@ $urlout = array(
 "links-search-\\1.html",
 "links.html"
 );
-
-?>

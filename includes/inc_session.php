@@ -328,7 +328,7 @@ class mr_session
 		`session_browser`='".$this->browser."', 
 		`session_page`='".$this->page['page']."',
 		`session_admin`='".$this->session_admin."' 
-		 WHERE session_id='".$sid."'  OR `session_user_id`='".$this->user_id."' ") or die("Update error:".mysql_error());
+		 WHERE session_id='".$sid."'  OR `session_user_id`='".$this->user_id."' ") or die("Update error:");
 		$db->sql_freeresult($result);
 		
 		
@@ -357,7 +357,7 @@ class mr_session
 		global $db;
 		$uid = sql_quote($uid);
 		$sql = "DELETE FROM  `".NK_SESSION_TABLE."` WHERE `session_user_id`='".$uid."'";
-		$result = $db->sql_query($sql)or die(mysql_error());
+		$result = $db->sql_query($sql)or die();
 		$db->sql_freeresult($result);
 		//$db->sql_query("OPTIMIZE TABLE ".$prefix."_session");
 	}
@@ -408,4 +408,3 @@ class mr_session
 	}
 
 }
-?>

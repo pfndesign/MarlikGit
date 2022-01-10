@@ -50,7 +50,7 @@ function footmsg() {
 function foot() {
 
 	$fstart = benchGetTime();
-	global $prefix, $user_prefix, $db, $index, $user, $cookie, $storynum, $user, $cookie, $Default_Theme, $foot1, $foot2, $foot3, $foot4, $home, $name, $admin, $commercial_license, $loading;
+	global $user, $cookie, $user, $cookie, $name, $admin, $commercial_license, $loading;
 	if(defined('HOME_FILE')) {
 		blocks("Down");
 	}
@@ -113,6 +113,3 @@ foot();
 
 // Call this function to output everything as gzipped content.
 print_gzipped_page();
-
-
-?>

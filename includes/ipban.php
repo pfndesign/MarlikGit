@@ -22,4 +22,3 @@ if (!empty($ip_address)) {
 	"._DATE." : <b>$date</b><br>");
 }
 $db->sql_freeresult($result);
-?>

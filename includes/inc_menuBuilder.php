@@ -122,7 +122,7 @@ class MenuBuilder
 						<img src="images/icon/' . $icon_cat . '">' . urldecode($option['value']['topicname']) . '</a>';
 					}
 				} else {
-					$this->_LINK = '<img src="images/icon/' . $icon_cat . '">' . "$link";
+					$this->_LINK = '<img src="images/icon/' . $icon_cat . '">';
 				}
 
 				$data['html'] = str_repeat("\t", count($tree_stack) + 1) . '<li><span class="file">' . $this->_LINK . '</span></li>';

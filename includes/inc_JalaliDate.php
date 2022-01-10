@@ -526,8 +526,4 @@ else {
 }
 $date=gmdate($layout, time() + $zone);
 return $date;
-} 
-
-	
-
-?>
+}

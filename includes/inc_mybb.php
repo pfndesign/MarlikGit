@@ -79,7 +79,7 @@ $NLB_regdate = date("M d, Y",$NLB_regdate);
 
 if(empty($userinfo['username'])){
 if (!empty($NLB_user_id) AND !empty($NLB_user_pwd)) {
-	$result = $db->sql_query("SELECT `user_id`,`username`,`user_email`,`user_password` FROM `".$nkln_prefix."_users` WHERE `username`='$NLB_user_nname' LIMIT 1") or die(mysql_error());
+	$result = $db->sql_query("SELECT `user_id`,`username`,`user_email`,`user_password` FROM `".$nkln_prefix."_users` WHERE `username`='$NLB_user_nname' LIMIT 1") or die();
 $nklnSwitch = $db->sql_fetchrow($result);
 $user_exists=(!empty($nklnSwitch[0]) ? true : false); 
 $db->sql_freeresult($result);
@@ -115,10 +115,10 @@ if(!empty($nklnSwitch[0]) AND !empty($nklnSwitch[1]) AND !empty($nklnSwitch[2]))
 // now we have a user in mybb but not in MarlikCMS , then no wait ! lets create it =->
 	$lv = time();
 	$result = $db->sql_query("INSERT INTO ".$prefix."_users (`name`, `username`, `user_email`, `user_avatar`, `user_regdate`, `user_viewemail`, `user_password`, `user_lang`, `user_lastvisit`) 
-	VALUES ('".sql_quote($NLB_user_nname)."', '".sql_quote($NLB_user_nname)."', '".sql_quote($NLB_user_email)."', 'gallery/blank.gif', '".sql_quote($NLB_regdate)."', '0', '".sql_quote($NLB_user_pwd)."', '".sql_quote($NLB_language)."', '".sql_quote($lv)."')") or die("<div class='error'>اشکالی در پل ارتباطی نیوک لرن - مای بی بی وجود دارد<br>".mysql_error()."</div>");
+	VALUES ('".sql_quote($NLB_user_nname)."', '".sql_quote($NLB_user_nname)."', '".sql_quote($NLB_user_email)."', 'gallery/blank.gif', '".sql_quote($NLB_regdate)."', '0', '".sql_quote($NLB_user_pwd)."', '".sql_quote($NLB_language)."', '".sql_quote($lv)."')") or die("<div class='error'>اشکالی در پل ارتباطی نیوک لرن - مای بی بی وجود دارد<br></div>");
 	$db->sql_freeresult($result);
 	
-	$infouser = base64_encode ( "".mysql_insert_id().":$NLB_user_nname:$NLB_user_pwd:$setstorynum:$setumode:$setuorder:$setthold:$setnoscore:$setublockon:$settheme:$setcommentmax" );
+	$infouser = base64_encode ( "".$db->sql_nextid().":$NLB_user_nname:$NLB_user_pwd:$setstorynum:$setumode:$setuorder:$setthold:$setnoscore:$setublockon:$settheme:$setcommentmax" );
 	setcookie ( 'user', $infouser, time () + 36000 * 24 );
 	
 	Header("Location: index.php");	
@@ -131,4 +131,3 @@ if(!empty($nklnSwitch[0]) AND !empty($nklnSwitch[1]) AND !empty($nklnSwitch[2]))
 }
 
 //End OF THIS STORY ... THIS IS NOTHING COMPARE TO OUR CODING POWER , BUT LETS FACE IT, CHANGE YOUR CHILDISH BEHAVIOUR.
-?>

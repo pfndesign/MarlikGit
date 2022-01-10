@@ -140,7 +140,7 @@ if (!empty($varnamelist)) {
 if (!function_exists('themeheader')) {
 	function themeheader()
 	{
-		global $admin, $user, $banners, $sitename, $slogan, $db, $userinfo, $prefix, $site_logo, $anonymous, $name, $te_page, $currentlang;
+		global $user, $name, $te_page;
 		cookiedecode($user);
 
 		$te_page->templatefile = THEME_PATH . "header" . T_PREFIX . "";
@@ -176,7 +176,7 @@ if (!function_exists('themeheader')) {
 										if (!function_exists('themesidebox')) {
 											function themesidebox($title, $content, $side, $bid, $blockfile)
 											{
-												global $db, $prefix, $te_page;
+												global $te_page;
 
 												// CUSTOMIZE BLOCKS IF THERE IS A HTML VERSION
 												$icb = empty($bid) ? $blockfile : $bid;
@@ -215,7 +215,7 @@ if (!function_exists('themeheader')) {
 										if (!function_exists('themecenterbox')) {
 											function themecenterbox($title, $content, $bid = '', $blockfile = '')
 											{
-												global $db, $prefix, $te_page;
+												global $te_page;
 
 												$filter = preg_replace("/block-/", "", $blockfile);
 												$filter = preg_replace("/.php/", "", $filter);
@@ -253,14 +253,14 @@ if (!function_exists('themeheader')) {
 										if (!function_exists('themeindex')) {
 											function themeindex($sid, $aid, $catid, $informant, $time, $title, $counter, $hometext, $bodytext, $notes, $morelink, $cattitle, $topicname, $topicimage, $topictext, $tagsshow, $rating, $comment_num)
 											{
-												global $tipath, $db, $prefix, $currentlang, $te_page, $nextg;
+												global $tipath, $currentlang, $te_page;
 
 
 												$informant = strip_tags($informant);
 												$title = strip_tags($title);
 												//------Fetch Author's name -------
 												$author = (empty($informant)) ? $aid : $informant;
-												$author = (!empty($author)) ? $author : $anonymous;
+												$author = (!empty($author)) ? $author : '';
 												//------More Link Image -------
 												if (!empty($bodytext)) {
 													$moreIMG = "<a href='modules.php?name=News&amp;file=article&amp;sid=$sid&amp;title=" . Slugit($title) . "' class='button' target='_blank'>" . _READMORE . "</a>";
@@ -290,7 +290,7 @@ if (!function_exists('themeheader')) {
 												$month = $t_break[1];
 												$day = $t_break[0];
 												//------Show Things up -------
-												$posted .= "<img src=\"images/articles/category.gif\" title=\"" . _CATEGORY . "\" width=\"17\" height=\"10\"  />$topicname ";
+												$posted = "<img src=\"images/articles/category.gif\" title=\"" . _CATEGORY . "\" width=\"17\" height=\"10\"  />$topicname ";
 												$posted .= " <img src=\"images/articles/date.gif\" title=\"$times\" width=\"17\" height=\"10\"  />$times ";
 												$posted .= " <img src=\"images/articles/clicks.gif\" title=\"" . _HITS . ": $counter\" width=\"17\" height=\"10\"  />$counter";
 												//------TEXT ATTRS : TITLE SLUG LINK -------
@@ -325,7 +325,7 @@ if (!function_exists('themeheader')) {
 												$te_page->varnamelist = "" . TEMPLATE_ENGINE_CONSTANTS_CORE . "title,content,post_info,time,writer,rating,tags,morelink,category,tid,more,counter,comments,PDF,year,month,day,topic_img,sid,title_text,title_link,title_slug,notes" . TEMPLATE_ENGINE_CONSTANTS_EX . "";
 
 												$te_page->Dir = THEME_PATH;
-												$te_page->name = $name;
+												$te_page->name = '';
 												$te_page->content = $content;
 												$te_page->post_info = $posted;
 												$te_page->title = $title;
@@ -356,7 +356,7 @@ if (!function_exists('themeheader')) {
 										if (!function_exists('themearticle')) {
 											function themearticle($aid, $informant, $time, $title, $thetext, $topic, $topicname, $topicimage, $topictext)
 											{
-												global $admin, $currentlang, $storyinfo, $te_page, $tipath, $db, $nextg;
+												global  $currentlang, $storyinfo, $te_page, $tipath, $db;
 
 
 
@@ -370,7 +370,7 @@ if (!function_exists('themeheader')) {
 													$t_image = "$tipath$topicimage";
 												}
 												$sid = $storyinfo['sid'];
-												$posted = "" . _POSTEDON . " $datetime " . _BY . " ";
+												$posted = "" . _POSTEDON . " " . _BY . " ";
 												$posted .= get_author($aid);
 												//--FOOTNOTE OF THE TEXT --
 												if (!empty($notes)) {
@@ -381,12 +381,6 @@ if (!function_exists('themeheader')) {
 
 												// DATE OF THE TEXT -=================
 												$datetime = hejridate($time);
-												if ($currentlang == "persian") {
-													$times = "$datetime";
-												} else {
-													$times = "$time";
-												}
-
 												//TAGS ===============================
 												$tags_id = "" . $storyinfo['tags'] . "";
 												$tags = explode(" ", $tags_id);
@@ -425,11 +419,6 @@ if (!function_exists('themeheader')) {
 												//------Date Conversion-------
 												$datetime = hejridate($time);
 												if ($currentlang == "persian") {
-													$times = "$datetime";
-												} else {
-													$times = "$time";
-												}
-												if ($currentlang == "persian") {
 													$d_break = hejridate($time, 4, 4);
 												} else {
 													$d_break = date("d m Y", strtotime($time));
@@ -443,7 +432,7 @@ if (!function_exists('themeheader')) {
 												$te_page->templatefile = THEME_PATH . "story_page" . T_PREFIX . "";
 												$te_page->varnamelist = "" . TEMPLATE_ENGINE_CONSTANTS_CORE . "title,content,writer,year,month,day,time,category,rating,tags,counter,PDF,rating,topic_img,comments,sid,title_text,title_link,title_slug,source,source_link,notes" . TEMPLATE_ENGINE_CONSTANTS_EX . "";
 												$te_page->Dir = THEME_PATH;
-												$te_page->name = $name;
+												$te_page->name = '';
 												$te_page->content = $content;
 												$te_page->title = $title;
 												$te_page->writer = $informant;
@@ -485,7 +474,7 @@ if (!function_exists('themeheader')) {
 													$thefile = addslashes($thefile);
 													$thefile = "\$r_file=\"" . $thefile . "\";";
 													eval($thefile);
-													print $r_file;
+													print $thefile;
 													if ($name != 'phpBB3' and !defined("blocks_show")  and !defined("hide_lside")) {
 														blocks('right');
 													}

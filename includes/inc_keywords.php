@@ -67,4 +67,3 @@ global $db, $prefix, $name, $slogan;
 	}
 	
 }
-?>

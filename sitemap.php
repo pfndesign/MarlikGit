@@ -312,7 +312,7 @@ if(WRITE_IN_XML == true){
 ******************************************************/
 header("Content-type: application/xml");
 if ($nextg==1) {
-	GT_Universal_links($out);
+	//GT_Universal_links($out); not exists
 }else {
 	echo $out;
 }

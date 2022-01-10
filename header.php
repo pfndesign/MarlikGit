@@ -29,27 +29,10 @@ if (!defined("ADMIN_FILE")) {
 
 function head()
 {
-	global $db,
-		$ab_config,
-		$slogan,
+	global $ab_config,
 		$sitename,
-		$banners,
-		$nukeurl,
-		$Version_Num,
-		$artpage, $topic,
-		$hlpfile,
-		$user,
-		$userinfo,
-		$hr,
-		$theme,
-		$cookie,
-		$adminpage,
-		$userpage,
 		$pagetitle,
-		$loading,
-		$nukeNAV,
-		$currentlang,
-		$name;
+		$currentlang;
 
 	if (!defined("ADMIN_FILE") and !defined('FORUM_ADMIN')) {
 		// load main theme file theme.php

@@ -264,7 +264,7 @@ if (!function_exists('url2link')) {
 	function url2link($str)
 	{
 		$pattern = "/[\"']?([^\"']?.*(png|jpg|gif))[\"']?/i";
-		if (!preg_match($pattern, $st)) {
+		if (!preg_match($pattern, $str)) {
 			$str = preg_replace('/\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|](?![^<>]*(?:>|<\/a>))/i', "<a href=\"\\0\" onclick=\"open_url('\\0')\";return false;><&nbsp;" . substr('\\0', 0, 50) . "</a>", $str);
 		}
 		return $str;

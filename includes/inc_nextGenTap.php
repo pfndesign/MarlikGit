@@ -45,8 +45,8 @@ if($nextGenOb == 1) {
 			include_once(CORE_INCLUSION."google/Universal.php");		
 			
 			//include module
-			if(file_exists(nextGenMainPath)){
-				include_once(nextGenMainPath);
+			if(file_exists($nextGenMainPath)){
+				include_once($nextGenMainPath);
 			}
 			
 			global $urlin,$urlout;

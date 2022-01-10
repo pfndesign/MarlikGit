@@ -221,7 +221,7 @@ switch (FEED_SECTION) {
 			$post_text2 = nl2br($post_text2);
 
 			$mydate = ($row2['post_time']) + (3.5 * 3600);
-			$monthnum = array ( Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep , Oct, Nov, Dec);
+			$monthnum = array ( 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep' , 'Oct', 'Nov', 'Dec');
 
 			$date = gmdate("Y-m-d-D-H-i-s", $mydate);
 			list($year, $month, $day, $day2, $hour, $min, $sec) = preg_split ('/-/' , $date);
@@ -275,4 +275,3 @@ ORDER BY b.bid DESC
 catch(FeedGeneratorException $e){
 	echo 'Error: '.$e->getMessage();
 }
-?>

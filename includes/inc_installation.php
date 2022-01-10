@@ -26,6 +26,7 @@ echo '<link rel="StyleSheet" href="'.USV_DOMAIN.'/'.INCLUDES_ACP.'style/css/inst
 }
 
 function install_head(){
+	global $sitename,$nukeurl;
 	echo "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>\n";
 	echo "<html xmlns='http://www.w3.org/1999/xhtml'>\n";
 	echo "<head>\n";
@@ -41,8 +42,6 @@ function install_head(){
 	<div class="head_2" style="margin-bottom: 20px;"><a
 		href="<?php echo $nukeurl ?>"><img src="<?php echo USV_DOMAIN?>/images/icon/house.png"><?php echo $sitename ?></a></div>
 	<?php	
-		echo "<h3 style='text-align:right'>$s</h3>";
-		echo $r ;
 }
 
 function install_body($content){

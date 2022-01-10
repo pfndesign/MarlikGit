@@ -83,7 +83,6 @@ function loginbox($gfx_check = false)
 	$random_num = mt_rand(0, $maxran);
 	$datekey = date('F j');
 	$rcode = hexdec(md5($_SERVER['HTTP_USER_AGENT'] . $sitekey . $random_num . $datekey));
-	$code = substr($rcode, 2, 6);
 	if (!is_user($user)) {
 		$title = _LOGIN;
 		$boxstuff = '<form action="modules.php?name=Your_Account" method="post">';
@@ -95,7 +94,7 @@ function loginbox($gfx_check = false)
 		$boxstuff .= '<input type="hidden" name="op" value="login" />';
 		$boxstuff .= '<input type="submit" value="' . _LOGIN . '" /></font></center></form>';
 		$boxstuff .= '<center><font class="content">' . _ASREGISTERED . '</font></center>';
-		themesidebox($title, $boxstuff);
+		//themesidebox($title, $boxstuff);
 	}
 }
 
@@ -310,6 +309,7 @@ function selectlanguage()
 		$title = _SELECTLANGUAGE;
 		$content = "<center><font class=\"content\">" . _SELECTGUILANG . "<br><br>";
 		$langdir = dir("language");
+		$menulist = "";
 		while ($func = $langdir->read()) {
 			if (substr($func, 0, 5) == "lang-") {
 				$menulist .= "$func ";
@@ -327,7 +327,7 @@ function selectlanguage()
 			}
 		}
 		$content .= "</font></center>";
-		themesidebox($title, $content);
+		//themesidebox($title, $content);
 	} else {
 		$title = _SELECTLANGUAGE;
 		$content = "<center><font class=\"content\">" . _SELECTGUILANG . "<br><br></font>";
@@ -351,7 +351,7 @@ function selectlanguage()
 			}
 		}
 		$content .= "</select></form></center>";
-		themesidebox($title, $content);
+		//themesidebox($title, $content);
 	}
 }
 //CONSTANT DEFINITION
@@ -391,14 +391,14 @@ function userblock()
 			$row = $db->sql_fetchrow($result);
 			$ublock = stripslashes(check_words(check_html($row['ublock'], "")));
 			$title = _MENUFOR . " " . $cookie[1];
-			themesidebox($title, $ublock);
+			//themesidebox($title, $ublock);
 		}
 	}
 }
 function adminblock()
 {
 	global $admin, $prefix, $db, $admin_file;
-	themesidebox($title, $content);
+	//themesidebox($title, $content);
 }
 function render_blocks($side, $blockfile, $title, $content, $bid, $url)
 {
@@ -699,7 +699,7 @@ function message_box()
 			echo "<center><font class=\"option\" color=\"$textcolor2\"><b>$title</b></font></center><br>\n"
 				. "<font class=\"content\">$content</font>";
 			if (is_admin($admin)) {
-				echo "<br><br><center><font class=\"content\">[ " . _MVIEWALL . " - $remain - <a href=\"" . $admin_file . ".php?op=EditStory&sid=$sid\">" . _EDIT . "</a> ]</font></center>";
+				echo "<br><br><center><font class=\"content\">[ " . _MVIEWALL . " -  - <a href=\"" . $admin_file . ".php?op=EditStory&sid=$sid\">" . _EDIT . "</a> ]</font></center>";
 			}
 			CloseTable();
 
@@ -852,7 +852,7 @@ function headlines($bid, $cenbox = 0)
 			$db->sql_query("UPDATE " . $prefix . "_blocks SET content='$content', time='$btime' WHERE bid='$bid'");
 			$cont = 0;
 			if ($cenbox == 0) {
-				themesidebox($title, $content);
+				//themesidebox($title, $content);
 			} else {
 				themecenterbox($title, $content);
 			}
@@ -884,7 +884,7 @@ function headlines($bid, $cenbox = 0)
 					$db->sql_query("UPDATE " . $prefix . "_blocks SET content='$content', time='$btime' WHERE bid='$bid'");
 					$cont = 0;
 					if ($cenbox == 0) {
-						themesidebox($title, $content);
+						//themesidebox($title, $content);
 					} else {
 						themecenterbox($title, $content);
 					}
@@ -907,7 +907,7 @@ function headlines($bid, $cenbox = 0)
 		$content = "<font class=\"content\">" . _RSSPROBLEM . "</font>";
 	}
 	if ($cenbox == 0) {
-		themesidebox($title, $content, $side, $bid, $blockfile);
+		//themesidebox($title, $content, $side, $bid, $blockfile);
 	} else {
 		themecenterbox($title, $content);
 	}
@@ -938,7 +938,7 @@ function automated_news()
 	while ($row = $db->sql_fetchrow($result)) {
 		$anid = intval($row['anid']);
 		$time = $row['time'];
-		ereg("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2}) ([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})", $time, $date);
+		preg_match("/([0-9]{4})-([0-9]{1,2})-([0-9]{1,2}) ([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})/", $time, $date);
 		if (($date[1] <= $year) and ($date[2] <= $month) and ($date[3] <= $day)) {
 			if (($date[4] < $hour) and ($date[5] >= $min) or ($date[4] <= $hour) and ($date[5] <= $min)) {
 				$result2 = $db->sql_query("SELECT * FROM " . $prefix . "_autonews WHERE anid='$anid'");
@@ -1064,9 +1064,6 @@ function make_pagination($pmode, $totalnum, $ppage = '5', $cpage = '1', $eachsid
 	$pagination_content = "";
 
 	$totalp = ceil($totalnum / $ppage);
-	$getpage  = (strpos($link, "?") === false) ? "?pagenum" : "&amp;pagenum";
-	$lpage = $cpage - $eachsidenum;
-	$upper = $cpage + $eachsidenum;
 
 	if ($totalp > 1) {
 
@@ -1080,7 +1077,7 @@ function make_pagination($pmode, $totalnum, $ppage = '5', $cpage = '1', $eachsid
 			} elseif ($pmode == 7) {
 				$link = "modules.php?name=News&file=article&sid=$econd&pagenum";
 			} else {
-				$link = "modules.php?name=News&new_topic=$new_topic&pagenum";
+				$link = "modules.php?name=News&new_topic=&pagenum";
 			}
 		}
 
@@ -1099,7 +1096,8 @@ function make_pagination($pmode, $totalnum, $ppage = '5', $cpage = '1', $eachsid
 				$pagination_content .= "<img src=\"$leftarrow\" align=\"absmiddle\" border=\"0\" hspace=\"10\"></a>";
 			}
 		}
-
+		$i = 0;
+		$min = 0;
 		if ($pmode == 1 or $pmode == 3) {
 			$pagination_content .= "<select name='$i' onChange='top.location.href=this.options[this.selectedIndex].value'> ";
 			for ($i = 1; $i < $totalp + 1; $i++) {
@@ -1128,7 +1126,7 @@ function make_pagination($pmode, $totalnum, $ppage = '5', $cpage = '1', $eachsid
 				}
 			}
 		}
-
+		$lpm1 = "";
 		if ($pmode == 4 or $pmode == 5  or $pmode == 6 or $pmode == 7 or $pmode == 10) {
 			$prevpage = $cpage - 1;
 			$nextpage = $cpage + 1;
@@ -1413,8 +1411,8 @@ function avatar_image($avatarlink)
 	} else {
 		if (file_exists("" . SITE_AVATAR_DIR . "$avatarlink")) {
 			$avatar_show = "" . SITE_AVATAR_DIR . "$avatarlink";
-		} elseif (file_exists(FORUMS_AVATAR_DIR . avatarlink)) {
-			$avatar_show = FORUMS_AVATAR_DIR . avatarlink;
+		} elseif (file_exists(FORUMS_AVATAR_DIR . $avatarlink)) {
+			$avatar_show = FORUMS_AVATAR_DIR . $avatarlink;
 		} else {
 			$avatar_show = "" . INCLUDES_UCP . "style/images/blank.gif";
 		}
@@ -1428,7 +1426,7 @@ function user_block($content)
 	$thefile = addslashes($thefile);
 	$thefile = "\$r_file=\"" . $thefile . "\";";
 	eval($thefile);
-	print $r_file;
+	print $thefile;
 }
 function update_points($section, $action = '+')
 {
@@ -1505,7 +1503,7 @@ function addJSToBody($content, $type = 'file')
 	global $bodyJS;
 	// Duplicate external file?
 	if (!is_array($bodyJS))
-	$bodyJS = [$bodyJS];
+		$bodyJS = [$bodyJS];
 	if (($type == 'file') and (count($bodyJS) > 0) and (in_array(array($type, $content), $bodyJS))) return;
 	$bodyJS[] = array($type, $content);
 	return;
@@ -1865,7 +1863,7 @@ function benchmark_listprocesses()
 		}
 		$timepassed .= '</table>';
 		$db->sql_freeresult($result);
-
+		/*
 		$result = mysql_list_processes($db->db_connect_id);
 		while ($row = $db->sql_fetchrow($result)) {
 			return  printf(
@@ -1876,7 +1874,7 @@ function benchmark_listprocesses()
 				$row["Command"],
 				$row["Time"]
 			) . "<br>" . $timepassed;
-		}
+		}*/
 		$db->sql_freeresult($result);
 	}
 	return false;

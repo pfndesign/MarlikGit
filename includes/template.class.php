@@ -1,18 +1,20 @@
 <?php
+
 /**
  *
  * @package Template Englin Class												
  * @version  template.class.php $Aneeshtan 12:11 PM 1/22/2010						
  * @copyright (c)Marlik Group  http://www.MarlikCMS.com											
-* @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
+ * @license http://creativecommons.org/licenses/by-nc-sa/3.0 Attribution-Noncommercial-Share Alike
  *
  */
-if (stristr ( htmlentities ( $_SERVER ['PHP_SELF'] ), "template.class.php" )) {
-	show_error ( HACKING_ATTEMPT );
+if (stristr(htmlentities($_SERVER['PHP_SELF']), "template.class.php")) {
+	show_error(HACKING_ATTEMPT);
 }
 //define("templatefilename","main.html");
 
-class USV_Template {
+class USV_Template
+{
 
 	var $templatefil;
 	var $varnamelist;
@@ -21,11 +23,11 @@ class USV_Template {
 	var $tpe_function;
 	var $_variables = array();
 	/**
- * The directory where the cache files will be saved.
- *
- * @access private
- * @var string
- */
+	 * The directory where the cache files will be saved.
+	 *
+	 * @access private
+	 * @var string
+	 */
 	private $cache_dir = 'cache';
 
 
@@ -35,17 +37,18 @@ class USV_Template {
 		$variables[$name] = $value;
 	}
 
-	public function displayContent() {
-		
-	
-		$vararray = explode(",",trim($this->varnamelist));
-		$templatearray = file($this->templatefile);
-		$template = join("",$templatearray);
-			
+	public function displayContent()
+	{
 
-		
+
+		$vararray = explode(",", trim($this->varnamelist));
+		$templatearray = file($this->templatefile);
+		$template = join("", $templatearray);
+
+
+
 		foreach ($vararray as $varname) {
-			$template = str_replace("[$varname]",$this->$varname,$template);
+			$template = str_replace("[$varname]", $this->$varname, $template);
 		}
 
 		//lets check if we have lang tag in our template files.
@@ -53,21 +56,21 @@ class USV_Template {
 		$dom = new DOMDocument();
 		$dom->prevservWhiteSpace = false;
 		if (!@$dom->loadHTMLFile($this->templatefile)) {
-			_e("$this->templatefile <br>"._FILE_NOT_EXISTS."");
+			_e("$this->templatefile <br>" . _FILE_NOT_EXISTS . "");
 			return;
 		}
 		$lang = $dom->getElementsByTagName('lang');
 		$langtot  = $lang->length;
 		for ($i = 0; $i < $langtot; $i++) {
-		$template = str_replace($lang->item($i)->nodeValue,langit($lang->item($i)->nodeValue),$template);
+			$template = str_replace($lang->item($i)->nodeValue, langit($lang->item($i)->nodeValue), $template);
 		}
 		$template = preg_replace_callback(
 			"/\[_(.*)\]/",
-			function($matches){
-				foreach($matches as $match){
+			function ($matches) {
+				foreach ($matches as $match) {
 					return langit($match);
 				}
-			}, 
+			},
 			$template
 		);
 		print $template;
@@ -95,19 +98,19 @@ class USV_Template {
 
 	public function _getOutput($file)
 	{
-		$vararray = explode(",",trim($this->varnamelist));
+		$vararray = explode(",", trim($this->varnamelist));
 		$templatearray = file($this->templatefile);
-		$template = join("",$templatearray);
+		$template = join("", $templatearray);
 		foreach ($vararray as $varname) {
-			$template = str_replace("[$varname]",$this->$varname,$template);
+			$template = str_replace("[$varname]", $this->$varname, $template);
 		}
 		$template = preg_replace_callback(
 			"/\[_(.*)\]/",
-			function($matches){
-				foreach($matches as $match){
+			function ($matches) {
+				foreach ($matches as $match) {
 					return langit($match);
 				}
-			}, 
+			},
 			$template
 		);
 
@@ -116,15 +119,15 @@ class USV_Template {
 		$dom = new DOMDocument();
 		$dom->prevservWhiteSpace = false;
 		if (!@$dom->loadHTMLFile($this->templatefile)) {
-			_e("$this->templatefile <br>"._FILE_NOT_EXISTS."");
+			_e("$this->templatefile <br>" . _FILE_NOT_EXISTS . "");
 			return;
 		}
 		$lang = $dom->getElementsByTagName('lang');
 		$langtot  = $lang->length;
 		for ($i = 0; $i < $langtot; $i++) {
-		$template = str_replace($lang->item($i)->nodeValue,langit($lang->item($i)->nodeValue),$template);
+			$template = str_replace($lang->item($i)->nodeValue, langit($lang->item($i)->nodeValue), $template);
 		}
-		
+
 		extract($this->_variables);
 		$file = realpath($file);
 
@@ -132,7 +135,7 @@ class USV_Template {
 			ob_start();
 			include($file);
 			$output = $template;
-  			ob_end_clean();
+			ob_end_clean();
 		} else {
 			trigger_error("Failed opening the template file '$file'. The file doesn't exist.", E_USER_ERROR);
 		}
@@ -185,7 +188,7 @@ class USV_Template {
 
 	private function _addCache($content, $file, $id = false)
 	{
-		$id = $id ? $id.'-'. basename($file).md5($id) : md5(basename($file));
+		$id = $id ? $id . '-' . basename($file) . md5($id) : md5(basename($file));
 		$filename = $this->_cacheDir . '/' . $id . '/' . basename($file);
 		$directory = $this->_cacheDir . '/' . $id;
 
@@ -210,44 +213,34 @@ class USV_Template {
 		return isset($content) ? $content : false;
 	}
 
-	public function clearCache(){
+	public function clearCache()
+	{
 		$cacheDir = realpath($this->cache_dir);
 		$this->delDir($cacheDir);
 	}
-	
 
-	private function delDir($dir) {
+
+	private function delDir($dir)
+	{
 
 		/*** perhaps a recursiveDirectoryIteratory here ***/
 		$deleteDir = realpath($dir);
 
-		if ($handle = opendir($deleteDir))
-		{
-			while (false !== ($file = readdir($handle)))
-			{
-				if ($file != '.' && $file != '..')
-				{
-					if (is_dir($deleteDir . '/' . $file))
-					{
+		if ($handle = opendir($deleteDir)) {
+			while (false !== ($file = readdir($handle))) {
+				if ($file != '.' && $file != '..') {
+					if (is_dir($deleteDir . '/' . $file)) {
 						$this->delDir($deleteDir . '/' . $file);
-						if(is_writable($deleteDir . '/' . $file))
-						{
+						if (is_writable($deleteDir . '/' . $file)) {
 							rmdir($deleteDir . '/' . $file);
-						}
-						else
-						{
+						} else {
 							throw new Exception("Unable to remove Directory");
 						}
-					}
-					elseif(is_file($deleteDir . '/' . $file))
-					{
-						if(is_writable($deleteDir . '/' . $file))
-						{
+					} elseif (is_file($deleteDir . '/' . $file)) {
+						if (is_writable($deleteDir . '/' . $file)) {
 							unlink($deleteDir . '/' . $file);
-						}
-						else
-						{
-							throw new Exception("Unable to unlink $deleteDir".'/'."$file");
+						} else {
+							throw new Exception("Unable to unlink $deleteDir" . '/' . "$file");
 						}
 					}
 				}
@@ -255,6 +248,4 @@ class USV_Template {
 			closedir($handle);
 		}
 	}
-
-	
 }

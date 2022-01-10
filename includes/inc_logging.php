@@ -30,14 +30,11 @@ class Logging{
 			// if file pointer doesn't exist, then open log file
 			if (!$this->fp) $this->lopen($log_file);
 			// define script name
-			// for PHP 5.2.0+  
-			if ($phpver < '5.2.0') {
-			$script_name = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
-			}else {
+
 			// for PHP before version 5.2.0
 			$script_name = basename($_SERVER['PHP_SELF']);
 			$script_name = substr($script_name, 0, -4); // php extension and dot are not needed
-			}
+	
 	
 			$time = date("d M Y - H:i:s");		// define current time
 			$ip = GetHostByName(getRealIpAddr());		// define IP address
@@ -71,5 +68,3 @@ class Logging{
 	}
 
 }
-
-?>

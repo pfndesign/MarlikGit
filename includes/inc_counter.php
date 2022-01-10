@@ -30,6 +30,3 @@ global $user;
 if (is_user($user)) {
 update_points(13);//update points for page visits
 }
-
-
-?>
