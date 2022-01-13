@@ -7,10 +7,9 @@
 *
 */
 require_once("mainfile.php");
-global $admin,$prefix;
+global $admin,$prefix,$USV_Version;
 if (is_superadmin($admin)) {
-	list($nlVersion) = $db->sql_fetchrow($db->sql_query("SELECT USV_Version FROM  ".$prefix."_config LIMIT 1"));
-	define("NL_VERSION",$nlVersion);
+	define("NL_VERSION",$USV_Version);
 	define("_GOBACK2","<a href='install.php?convert=1'>بازگشت به صفحه تبدیل پرتال</a>")
 	?>
 	<center>
@@ -198,8 +197,7 @@ if (is_superadmin($admin)) {
 	</form>";
 	echo "</table>\n";
 	
-	list($nlVersion) = $db->sql_fetchrow($db->sql_query("SELECT USV_Version FROM  ".$prefix."_config LIMIT 1"));
-	if(!empty($nlVersion)){
+	if(!empty($USV_Version)){
 	echo "<br><div style='background:green;color:white;weight:600;padding:20px;'>
 	اکنون پرتال شما نیوک لرن نسخه  $nlVersion است.
 	

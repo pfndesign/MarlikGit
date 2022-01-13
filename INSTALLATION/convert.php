@@ -7,10 +7,9 @@
 *
 */
 require_once("mainfile.php");
-global $admin,$prefix;
+global $admin,$prefix,$USV_Version;
 if (is_superadmin($admin)) {
-	list($nlVersion) = $db->sql_fetchrow($db->sql_query("SELECT USV_Version FROM  ".$prefix."_config LIMIT 1"));
-	define("NL_VERSION",$nlVersion);
+	define("NL_VERSION",$USV_Version);
 	?>
 	<center>
 	<div class="sidebox" style="background:#BCE1F6" >

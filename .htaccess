@@ -4,7 +4,7 @@
 #Disable index view
 options -Indexes
 #hide .env file
-<FilesMatch "\.(env|env.sample|env.default)$">
+<FilesMatch "\.(env|env.sample|env.default|.setting)$">
 order allow,deny
 Deny from all
 </FilesMatch>

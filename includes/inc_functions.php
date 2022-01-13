@@ -1675,8 +1675,7 @@ function is_admin_of($section = false, $admin)
 //-- Security Captcha -----
 function show_captcha()
 { // function to display the cpatcha code
-	global $db, $prefix, $gfx_chk;
-	list($use_question, $codesize) = $db->sql_fetchrow($db->sql_query('SELECT `use_question`,`codesize` FROM `' . $prefix . '_config` LIMIT 1'));
+	global $db, $prefix, $gfx_chk, $codesize, $use_question;
 	if ($gfx_chk != 0 and extension_loaded('gd') and $use_question == 0) {
 		$capt = '<a href="javascript:void(0)">
 		<img style="cursor:hand" src="includes/captcha/securimage_show.php?sid=' . md5(uniqid(time())) . '&codesize=' . $codesize . '" title="' . _RELOAD_CAPTCHA . '" onclick="this.src = \'includes/captcha/securimage_show.php?sid=\' + Math.random()+\'&codesize=' . $codesize . '\'; return false" alt="' . _SECURITY_CODE . '" title="' . _SECURITY_CODE . '" id="captcha" />
@@ -1693,8 +1692,7 @@ function show_captcha()
 }
 function check_captcha()
 { // this one checks whether the entered code is right or not
-	global $db, $prefix, $gfx_chk;
-	list($use_question) = $db->sql_fetchrow($db->sql_query('SELECT `use_question` FROM `' . $prefix . '_config` LIMIT 1'));
+	global $db, $prefix, $gfx_chk, $use_question;
 	if (!empty($_POST['captcha_code']) or !empty($_POST['qid'])) {
 		if ($gfx_chk != 0 and extension_loaded('gd') and $use_question == 0) {
 			session_start();

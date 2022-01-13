@@ -1,0 +1,49 @@
+setting_name="value,STORE:DB::ID,encripted"
+setting_name_option="{
+    type=>"input,textarea,selectbox,checkbox,creatabale::sortable,image,media,picker,menu:creatabale::sortable,info/data,slide,button,redirect",
+    id=>"",
+    class=>"",
+    title,
+    info,
+    image,
+    style,
+    defaultvalue=>"value,ajax::route?param=&param=optionnamevalue",
+    popilate=>'value,ajax::route?param=&param=optionnamevalue',
+    template=>"{
+        'name' => {
+            'id','class','name','type','defaultvalue'
+        }
+    }",
+    onchange=>'post::route?param',
+    ...
+    saveparse=>'functionname',
+    showparse=>'functionname',
+    useparse=>'functionname',
+    validate=>'validateoption',
+    'tab/section' => "{
+        'name','id','class','title','info','value','onclose:jsfunction','onopen:jsfunction'
+    }",
+    groupwith=>{
+        'listofids' => 'asid',cangetgroupedagain
+    }
+    disable/enable
+    an all sort of shit
+
+}" // json encode
+site_option_parsed="parseoutputforcache"
+site_setting_max_refresh="1onceprehour"
+site_setting_max_refresh_attemt_before_switch_to_db="10"
+site_setting_last_refresh="12345675" timestamp
+site_setting_refresh_attamted_in_reng="5"
+site_setting_refreshed_for_settings="{}"//array list
+// if refresh to much send them to db and change the value to STORE:DB
+{
+    settings
+    id:int,
+    name:string,
+    option:longtext,
+    usedfor:"site,module,block",
+    usedforname:"modulename,",
+    updated:"",
+    created:"",
+}

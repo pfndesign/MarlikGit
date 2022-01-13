@@ -23,67 +23,10 @@ global $admin,$prefix,$db;
 if (is_superadmin($admin)) {
 
 	function Configure() {
-		global $prefix, $db, $admin_file;
-
-		$row = $db->sql_fetchrow($db->sql_query("SELECT * from ".$prefix."_config"));
-		$sitename = check_words(check_html($row['sitename'], "nohtml"));
-		$nukeurl = check_html($row['nukeurl'], "nohtml");
-		$site_logo = check_html($row['site_logo'], "nohtml");
-		$slogan = check_words(check_html($row['slogan'], "nohtml"));
-		$startdate = check_words(check_html($row['startdate'], "nohtml"));
-		$adminmail = check_html($row['adminmail'], "nohtml");
-		$anonpost = intval($row['anonpost']);
-		$Default_Theme = check_html($row['Default_Theme'], "nohtml");
-		$foot1 = check_html($row['foot1'], "");
-		$foot2 = check_html($row['foot2'], "");
-		$foot3 = check_html($row['foot3'], "");
-		$commentlimit = intval($row['commentlimit']);
-		$anonymous = check_words(check_html($row['anonymous'], "nohtml"));
-		$minpass = intval($row['minpass']);
-		$pollcomm = intval($row['pollcomm']);
-		$articlecomm = intval($row['articlecomm']);
-		$broadcast_msg = intval($row['broadcast_msg']);
-		$my_headlines = intval($row['my_headlines']);
-		$top = intval($row['top']);
-		$storyhome = intval($row['storyhome']);
-		$user_news = intval($row['user_news']);
-		$oldnum = intval($row['oldnum']);
-		$ultramode = intval($row['ultramode']);
-		$loading = intval($row['loading']);
-		$nextg = intval($row['nextg']);
-		$banners = intval($row['banners']);
-		$backend_title = check_words(check_html($row['backend_title'], "nohtml"));
-		$backend_language = check_html($row['backend_language'], "nohtml");
-		$language = check_html($row['language'], "nohtml");
-		$locale = check_html($row['locale'], "nohtml");
-		$multilingual = intval($row['multilingual']);
-		$useflags = intval($row['useflags']);
-		$notify = intval($row['notify']);
-		$notify_email = check_html($row['notify_email'], "nohtml");
-		$notify_subject = check_words(check_html($row['notify_subject'], "nohtml"));
-		$notify_message = check_words(check_html($row['notify_message'], "nohtml"));
-		$notify_from = check_html($row['notify_from'], "nohtml");
-		$moderate = intval($row['moderate']);
-		$admingraphic = intval($row['admingraphic']);
-		$httpref = intval($row['httpref']);
-		$httprefmax = intval($row['httprefmax']);
-		$CensorMode = intval($row['CensorMode']);
-		$CensorReplace = check_html($row['CensorReplace'], "nohtml");
-		$gfx_chk = (int) $row['gfx_chk'];
-		$use_question = $row['use_question'];
-		$codesize = (int) $row['codesize'];
-		$cache_system = (int) $row['cache_system'];
-		$clifetime = (int) $row['cache_lifetime'];
-		$nuke_editor = (int) $row['nuke_editor'];
-		$sec_pass = $row['sec_pass'];
-
-
+		global $admin_file;
 		include ('header.php');
 		GraphicAdmin();
-
-
 		///OpenTable();
-
 
 ?>
 <link rel="stylesheet" type="text/css" href="<?php echo INCLUDES_ACP ?>style/css/setting-style.css"/>
@@ -901,8 +844,8 @@ include("footer.php");
 			$xlifetime = (int) $xlifetime;
 			$xnuke_editor = (int) $xnuke_editor;
 			$xsec_pass = addslashes(check_words(check_html($xsec_pass, "nohtml")));
-
-			$db->sql_query("UPDATE ".$prefix."_config SET sitename='$xsitename', nukeurl='$xnukeurl', site_logo='$xsite_logo', slogan='$xslogan', startdate='$xstartdate', adminmail='$xadminmail', anonpost='$xanonpost', Default_Theme='$xDefault_Theme', foot1='$xfoot1', foot2='$xfoot2', foot3='$xfoot3', commentlimit='$xcommentlimit', anonymous='$xanonymous', minpass='$xminpass', pollcomm='$xpollcomm', articlecomm='$xarticlecomm', broadcast_msg='$xbroadcast_msg', my_headlines='$xmy_headlines', top='$xtop', storyhome='$xstoryhome', user_news='$xuser_news', oldnum='$xoldnum', ultramode='$xultramode', loading='$xloading', nextg='$xnextg', banners='$xbanners', backend_title='$xbackend_title', backend_language='$xbackend_language', language='$xlanguage', locale='$xlocale', multilingual='$xmultilingual', useflags='$xuseflags', notify='$xnotify', notify_email='$xnotify_email', notify_subject='$xnotify_subject', notify_message='$xnotify_message', notify_from='$xnotify_from', moderate='$xmoderate', admingraphic='$xadmingraphic', httpref='$xhttpref', httprefmax='$xhttprefmax', CensorMode='$xCensorMode', CensorReplace='$xCensorReplace', gfx_chk ='$xgfx', use_question='$question', codesize='$xcodesize', cache_system='$xcachesys', cache_lifetime='$xlifetime', nuke_editor='$xnuke_editor', sec_pass='$xsec_pass' ");
+			$configstring = "sitename='$xsitename'\nnukeurl='$xnukeurl'\nsite_logo='$xsite_logo'\nslogan='$xslogan'\nstartdate='$xstartdate'\nadminmail='$xadminmail'\nanonpost='$xanonpost'\nDefault_Theme='$xDefault_Theme'\nfoot1='$xfoot1'\nfoot2='$xfoot2'\nfoot3='$xfoot3'\ncommentlimit='$xcommentlimit'\nanonymous='$xanonymous'\nminpass='$xminpass'\npollcomm='$xpollcomm'\narticlecomm='$xarticlecomm'\nbroadcast_msg='$xbroadcast_msg'\nmy_headlines='$xmy_headlines'\ntop='$xtop'\nstoryhome='$xstoryhome'\nuser_news='$xuser_news'\noldnum='$xoldnum'\nultramode='$xultramode'\nloading='$xloading'\nnextg='$xnextg'\nbanners='$xbanners'\nbackend_title='$xbackend_title'\nbackend_language='$xbackend_language'\nlanguage='$xlanguage'\nlocale='$xlocale'\nmultilingual='$xmultilingual'\nuseflags='$xuseflags'\nnotify='$xnotify'\nnotify_email='$xnotify_email'\nnotify_subject='$xnotify_subject'\nnotify_message='$xnotify_message'\nnotify_from='$xnotify_from'\nmoderate='$xmoderate'\nadmingraphic='$xadmingraphic'\nhttpref='$xhttpref'\nhttprefmax='$xhttprefmax'\nCensorMode='$xCensorMode'\nCensorReplace='$xCensorReplace'\ncopyright='Nukelearn Tigris &copy; 2009-2010 <a href=\"http://www.nukelearn.com\" target=\"_blank\">Nukelearn</a>'\nUSV_Version='Tigris 1.1.6'\nsupport='info@MarlikCMS.com'\ngfx_chk ='$xgfx'\nuse_question='$question'\ncodesize='$xcodesize'\ncache_system='$xcachesys'\ncache_lifetime='$xlifetime'\nnuke_editor='$xnuke_editor'\ntracking='1'\nsec_pass='$xsec_pass'";
+			file_put_contents(BASE_PATH.".setting",$configstring);
 			if($question){
 				//global $db,$prefix;
 				$qs = $questions;
