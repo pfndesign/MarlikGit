@@ -44,7 +44,7 @@ try {
 	exit;
 }
 // subject to change
-$prefix = $_ENV['db_perfix'];
+$prefix = $_ENV['db_prefix'];
 $admin_file = $_ENV['admin_file'];
 $display_errors = $_ENV['display_errors'] == "true" ? true : false;
 

@@ -1,6 +1,7 @@
 {
     "require": {
         "vlucas/phpdotenv": "^5.4",
-        "catfan/medoo": "^2.1"
+        "catfan/medoo": "^2.1",
+        "voku/anti-xss": "^4.1"
     }
 }

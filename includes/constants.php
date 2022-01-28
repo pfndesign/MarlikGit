@@ -99,71 +99,9 @@ define("USER_IMG_DIR", "modules/Your_Account/images/");
 // CONFIG TABLE COLUMNS
 //===========================================
 define('NUKE_FILE', true);
-
-$sitesettings = Dotenv\Dotenv::createArrayBacked(__DIR__ . "/../", '.setting')->load();
-$sitename = stripslashes(check_html($sitesettings['sitename'], "nohtml"));
-$nukeurl = check_html($sitesettings['nukeurl'], "nohtml");
-$site_logo = check_html($sitesettings['site_logo'], "nohtml");
-$slogan = stripslashes(check_html($sitesettings['slogan'], "nohtml"));
-$startdate = check_html($sitesettings['startdate'], "nohtml");
-$adminmail = check_html($sitesettings['adminmail'], "nohtml");
-$anonpost = intval($sitesettings['anonpost']);
-$Default_Theme = check_html($sitesettings['Default_Theme'], "nohtml");
-$foot1 = stripslashes(check_html($sitesettings['foot1'], ""));
-$foot2 = stripslashes(check_html($sitesettings['foot2'], ""));
-$foot3 = stripslashes(check_html($sitesettings['foot3'], ""));
-$commentlimit = intval($sitesettings['commentlimit']);
-$anonymous = check_html($sitesettings['anonymous'], "nohtml");
-$minpass = intval($sitesettings['minpass']);
-$pollcomm = intval($sitesettings['pollcomm']);
-$articlecomm = intval($sitesettings['articlecomm']);
-$broadcast_msg = intval($sitesettings['broadcast_msg']);
-$my_headlines = intval($sitesettings['my_headlines']);
-$top = intval($sitesettings['top']);
-$storyhome = intval($sitesettings['storyhome']);
-$user_news = intval($sitesettings['user_news']);
-$oldnum = intval($sitesettings['oldnum']);
-$ultramode = intval($sitesettings['ultramode']);
-$loading = intval($sitesettings['loading']);
-$nextg = intval($sitesettings['nextg']);
-$banners = intval($sitesettings['banners']);
-$backend_title = stripslashes(check_html($sitesettings['backend_title'], "nohtml"));
-$backend_language = check_html($sitesettings['backend_language'], "nohtml");
-$language = check_html($sitesettings['language'], "nohtml");
-$locale = check_html($sitesettings['locale'], "nohtml");
-$multilingual = intval($sitesettings['multilingual']);
-$useflags = intval($sitesettings['useflags']);
-$notify = intval($sitesettings['notify']);
-$notify_email = check_html($sitesettings['notify_email'], "nohtml");
-$notify_subject = stripslashes(check_html($sitesettings['notify_subject'], "nohtml"));
-$notify_message = stripslashes(check_html($sitesettings['notify_message'], "nohtml"));
-$notify_from = check_html($sitesettings['notify_from'], "nohtml");
-$moderate = intval($sitesettings['moderate']);
-$admingraphic = intval($sitesettings['admingraphic']);
-$httpref = intval($sitesettings['httpref']);
-$httprefmax = intval($sitesettings['httprefmax']);
-$CensorMode = intval($sitesettings['CensorMode']);
-$CensorReplace = check_html($sitesettings['CensorReplace'], "nohtml");
-$copyright = check_html($sitesettings['copyright'], "");
-$Version_Num = floatval($sitesettings['USV_Version']);
-$USV_Version = $sitesettings['USV_Version'];
-$support = stripslashes(check_html($sitesettings['support'], ""));
-$domain = str_replace("http://", "", $nukeurl);
-$nuke_editor = intval($sitesettings['nuke_editor']);
-$CacheSystem = intval($sitesettings['cache_system']);
-$lifetime = intval($sitesettings['cache_lifetime']);
-$gfx_chk = (int) $sitesettings['gfx_chk'];
-$use_question = $sitesettings['use_question'];
-$codesize = (int) $sitesettings['codesize'];
-$cache_system = (int) $sitesettings['cache_system'];
-$clifetime = (int) $sitesettings['cache_lifetime'];
-$nuke_editor = (int) $sitesettings['nuke_editor'];
-$sec_pass = check_html($sitesettings['sec_pass'], "nohtml");
-$trackip = $sitesettings['tracking'];
-$site_switch = (int)$sitesettings['disable_switch'];
-$disable_reason = check_html($sitesettings['disable_reason'], "nohtml");
-$disable_to_date = $sitesettings['disable_to_date'];
-$disable_from_date  = $sitesettings['disable_from_date'];
+require_once(INCLUDES_PATH . "setting.inc.php");
+//need to change to a single global var
+extract($settinginstance->get_all());
 //===========================================
 // OTHER CONSTANTS
 //===========================================
