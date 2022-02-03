@@ -102,7 +102,7 @@ class Setting
         //load settings
         try {
             $this->data = Dotenv\Dotenv::createArrayBacked($path, $filename)->load();
-            $this->rawdata = file_get_contents($path, $filename);
+            $this->rawdata = file_get_contents($path . $filename);
         } catch (Dotenv\Exception\InvalidPathException $e) {
             //show error 
             //setting not found
@@ -122,30 +122,31 @@ class Setting
      * @param  string $key setting key
      * @param  string $default default value
      * @param  bool $returnparse retrun parse value or raw value
-     * @param  string $decryption decrypt function name ( only works when returnparse is true)
+     * @param  string|null $modifier modifier function name ( only works when returnparse is true and if setting is modified)
      * @return array|string|int|float|bool setting value
      */
-    public function get($key, $default, $returnparse = true, $decryption = false)
+    public function get($key, $default, $returnparse = true, $modifier = null)
     {
         // return spesific set of keys
         if (is_array($key)) {
+            $modifierexists = !is_null($modifier) && ((is_string($modifier) && function_exists($modifier)) || (is_array($modifier) && isset($modifier[0], $modifier[1]) && method_exists($modifier[0], $modifier[1])));
             $filteredsetting = array_filter($returnparse ? $this->parsedata : $this->data, function ($settingkey) use ($key) {
                 return in_array($settingkey, $key);
             }, ARRAY_FILTER_USE_KEY);
-            //decryption
-            if ($returnparse && count($filteredsetting) && $decryption !== false && function_exists($decryption)) {
+            //modifier
+            if ($returnparse && count($filteredsetting) && $modifierexists) {
                 //xss
                 if (isset($this->data['xss_clean_setting']) && $this->data['xss_clean_setting'] == "1")
                     $antiXss = new AntiXSS();
                 foreach ($filteredsetting as $settingkey => $settingvalue) {
-                    // if key encrypted
-                    if (substr($settingvalue, 0, 8) == "encrypt:") {
-                        $decryptionvalue = call_user_func($decryption, str_replace("encrypt:", "", $settingvalue));
+                    // if key modified
+                    if ($this->is_modified($settingvalue)) {
+                        $modifiedvalue = call_user_func($modifier, str_replace("modified:", "", $settingvalue));
                         //xss clean
                         if (isset($this->data['xss_clean_setting']) && $this->data['xss_clean_setting'] == "1")
-                            $cleanvalue = $antiXss->xss_clean($decryptionvalue);
+                            $cleanvalue = $antiXss->xss_clean($modifiedvalue);
                         else
-                            $cleanvalue = $decryptionvalue;
+                            $cleanvalue = $modifiedvalue;
                         $filteredsetting[$settingkey] = $cleanvalue;
                     }
                 }
@@ -156,19 +157,30 @@ class Setting
         }
         //return single key
         if ($returnparse) {
-            //decryption
-            if ($decryption !== false && function_exists($decryption)) {
+            //modifier
+            if (!is_null($modifier) && ((is_string($modifier) && function_exists($modifier)) || (is_array($modifier) && isset($modifier[0], $modifier[1]) && method_exists($modifier[0], $modifier[1])))) {
                 if (isset($this->data['xss_clean_setting']) && $this->data['xss_clean_setting'] == "1")
                     $antiXss = new AntiXSS();
-                // if key exist and encrypted
-                if (isset($this->data[$key]) && substr($this->data[$key], 0, 8) == "encrypt:") {
-                    $decryptionvalue = call_user_func($decryption, str_replace("encrypt:", "", $this->data[$key]));
+                // if key exist and modified
+                if (isset($this->data[$key]) && $this->is_modified($this->data[$key])) {
+                    $modifiedvalue = call_user_func($modifier, str_replace("modified:", "", $this->data[$key]));
                     //xss clean
                     if (isset($this->data['xss_clean_setting']) && $this->data['xss_clean_setting'] == "1")
-                        $cleanvalue = $antiXss->xss_clean($decryptionvalue);
+                        $cleanvalue = $antiXss->xss_clean($modifiedvalue);
                     else
-                        $cleanvalue = $decryptionvalue;
+                        $cleanvalue = $modifiedvalue;
                     return $cleanvalue;
+                } elseif (isset($this->parsedata[$key]) && $this->is_modified($this->parsedata[$key])) {
+                    //value is in database
+                    $modifiedvalue = call_user_func($modifier, str_replace("modified:", "", $this->parsedata[$key]));
+                    //xss clean
+                    if (isset($this->data['xss_clean_setting']) && $this->data['xss_clean_setting'] == "1")
+                        $cleanvalue = $antiXss->xss_clean($modifiedvalue);
+                    else
+                        $cleanvalue = $modifiedvalue;
+                    return $cleanvalue;
+                } elseif (isset($this->data[$key])) {
+                    return isset($this->parsedata[$key]) ? $this->parsedata[$key] : $default;
                 }
                 return $default;
             } else {
@@ -182,9 +194,10 @@ class Setting
      * add
      * add new setting option (multiple add supported)
      * *note : always use "database" location for storing values that are updating rapidly
+     * *note : for using bluk mode $value array keys must be same as $keyname both length and name otherwise $value will be cansidered as single array value and will be applied to all keys
      * @param  string|array $key setting key
      * @param  mixed|array $value setting value | STORE:MOVE for moving save location
-     * @param  string $encryption encrypt function name
+     * @param  string|null $modifier modifier function name
      * @param  string|array $location store location | "local" or "database" 
      * @param  bool $serialize serialize array or object values or use json_encode
      * @param  array $hitconfig hitable setting config
@@ -195,8 +208,9 @@ class Setting
      * ***only for location database
      * @return bool return the true on success
      */
-    public function add($key, $value, $encryption = false, $location = "local", $serialize = false, $hitconfig = ['test'])
+    public function add($key, $value, $modifier = null, $location = "local", $serialize = false, $hitconfig = [])
     {
+
         // check for xss
         if (isset($this->data['xss_clean_setting']) && $this->data['xss_clean_setting'] == "1")
             $antiXss = new AntiXSS();
@@ -210,58 +224,99 @@ class Setting
         // if key and value is array
         if (!is_array($value)) {
             if (is_array($key))
-                $value = array_fill(0, count($key), $value); // allow applying one value for multiple keys
+                $value = array_fill_keys(array_values($key), $value); // allow applying one value for multiple keys
             else
-                $value = [$value];
+                $value = [$key => $value];
+        } elseif (is_array($value) && ((!is_array($key) && !isset($value[$key])) ||  (is_array($key) && array_values($key) != array_keys($value)))) {
+            // key is string and value type is array
+            $value = is_array($key) ? array_fill_keys(array_values($key), $value) : [$key => $value];
         }
         if (!is_array($key))
             $key = [$key];
-
+        // check if modifier function exists
+        $modifierexists = !is_null($modifier) && $this->is_function_valid($modifier);
         foreach ($key as $keyindex => $keyname) {
-            if (!isset($value[$keyindex]))
+            if (!isset($value[$keyname]))
                 continue;
-            if ($encryption !== false && function_exists($encryption)) {
-                $cleanvalue = "encrypt:" . call_user_func($encryption, $value);
+            $cleanvalue = $castvalue = $value[$keyname];
+            if ($modifierexists) {
+                $cleanvalue  = $castvalue = "modified:" . call_user_func($modifier, $this->is_modified($value[$keyname]) ? str_replace("modified:", "", $value[$keyname]) : $value[$keyname], $this->is_modified($value[$keyname]), $serialize);
             } else {
                 // check for xss
                 if (isset($this->data['xss_clean_setting']) && $this->data['xss_clean_setting'] == "1")
-                    $cleanvalue = $antiXss->xss_clean($value[$keyindex]);
+                    $cleanvalue = $antiXss->xss_clean($value[$keyname]);
                 else
-                    $cleanvalue = $value[$keyindex];
+                    $cleanvalue = $value[$keyname];
                 //flated value
-                $castvalue = $this->castTypeToString($cleanvalue, $serialize);
+                try {
+                    $castvalue = $this->castTypeToString($cleanvalue, $serialize);
+                } catch (Exception $e) {
+                    //invalid value
+                    throw new Exception('value type is not valid');
+                    continue;
+                }
             }
-            // added value or updated
-            if (!isset($this->data[$keyname])) {
+            // new key
+            if (!isset($this->data[$keyname]) && (!is_string($value[$keyname]) || is_string($value[$keyname]) && $value[$keyname] != "STORE:MOVE")) {
                 $this->added = true;
                 //cast values
                 $this->data[$keyname] = isset($location[$keyindex]) && $location[$keyindex] ==  "local" ? $castvalue : "STORE:DB";
                 $this->parsedata[$keyname] = $cleanvalue;
-            } else if ($value[$keyindex] == "STORE:MOVE") {
+            } elseif (isset($this->data[$keyname]) && (!is_string($value[$keyname]) || is_string($value[$keyname]) && $value[$keyname] != "STORE:MOVE")) {
+                //key exists
+                $rawdata = isset($location[$keyindex]) && $location[$keyindex] ==  "local" ? $castvalue : "STORE:DB";
+                // if values is changed update
+                if ($cleanvalue !== $this->parsedata[$keyname] || $this->data[$keyname] !== $rawdata) {
+                    $this->data[$keyname] = $rawdata;
+                    $this->parsedata[$keyname] = $cleanvalue;
+                    $this->updated = true;
+                }
+            } else if ($value[$keyname] == "STORE:MOVE") {
                 // move setting from db to local or other way around
                 if ($this->data[$keyname] == "STORE:DB" && isset($location[$keyindex]) && $location[$keyindex] ==  "local") {
                     $this->removedFromDb[] = $keyname;
                     //save the last parse value to the data
-                    $this->data[$keyname] = $this->castTypeToString($this->parsedata[$keyname], $serialize);
+                    // apply modifier when moving data 
+                    $newdata =  $modifierexists ? "modified:" . call_user_func($modifier, $this->is_modified($this->parsedata[$keyname]) ? str_replace("modified:", "", $this->parsedata[$keyname]) : $this->parsedata[$keyname], $this->is_modified($this->parsedata[$keyname]), $serialize) : $this->parsedata[$keyname];
+
+                    try {
+                        if ($modifierexists)
+                            $this->parsedata[$keyname]  = $this->data[$keyname] = $newdata;
+                        else
+                            $this->data[$keyname] = $this->castTypeToString($this->parsedata[$keyname], $serialize);
+                    } catch (Exception $e) {
+                        //invalid value
+                        continue;
+                    }
+                    unset($this->dbHitData[$keyname]);
                     $this->updated = true;
                 } elseif ($this->data[$keyname] != "STORE:DB" && isset($location[$keyindex]) && $location[$keyindex] ==  "database") {
-                    $this->movedToDb[] = ["name" => $keyname, "data" => $this->data[$keyname]];
+                    // apply modifier when moving data 
+                    $newdata = $modifierexists ? "modified:" . call_user_func($modifier, $this->is_modified($this->data[$keyname]) ? str_replace("modified:", "", $this->data[$keyname]) : $this->data[$keyname], $this->is_modified($this->data[$keyname]), $serialize) : $this->data[$keyname];
+                    $this->movedToDb[] = [
+                        "name" => $keyname,
+                        "data" => $newdata
+                    ];
                     //change the store location
                     $this->data[$keyname] = "STORE:DB";
-                    $this->updated = true;
-                }
-            } elseif (isset($this->data[$keyname])) {
-                $rawdata = isset($location[$keyindex]) && $location[$keyindex] ==  "local" ? $castvalue : "STORE:DB";
-                // if values is changed update
-                if ($cleanvalue != $this->parsedata[$keyname] && $this->data[$keyname] != $rawdata) {
-                    $this->data[$keyname] = $rawdata;
-                    $this->parsedata[$keyname] = $cleanvalue;
+                    // change parse data when data is modified
+                    if ($modifierexists)
+                        $this->parsedata[$keyname] = $newdata;
                     $this->updated = true;
                 }
             }
             //set hit config if location is database
             if (count($hitconfig) && isset($location[$keyindex]) && $location[$keyindex] == "database") {
                 $settinghitconfig = isset($hitconfig[$keyname]) ? $hitconfig[$keyname] : $hitconfig;
+                $settinghitconfigdefault = [
+                    "minupdaterate" => "1minute",
+                    "collectfunction" => false,
+                    "deletehitsaftercollect" => true,
+                ];
+                $settinghitconfig = array_merge($settinghitconfigdefault, $settinghitconfig);
+                // change class instance to classname
+                if ($this->is_function_valid($settinghitconfig['collectfunction']) && is_array($settinghitconfig['collectfunction']) && is_object($settinghitconfig['collectfunction'][0]))
+                    $settinghitconfig['collectfunction'][0] = get_class($settinghitconfig['collectfunction'][0]);
                 // exist and hitable
                 //set next update time
                 $settinghitconfig['nextupdate'] = strtotime("+" . $settinghitconfig['minupdaterate']);
@@ -275,6 +330,13 @@ class Setting
                     $this->dbHitData[$keyname] = ['hitable' => true, 'hitconfig' => $settinghitconfig];
                     $this->updatedHitConfigs[] = $keyname;
                 }
+            } elseif (count($hitconfig)  && isset($location[$keyindex]) && $location[$keyindex] != "database") {
+                throw new Exception("hitable setting location must be in database");
+                return false;
+            } elseif (!count($hitconfig) && isset($this->dbHitData[$keyname])) {
+                //convert hitable setting to normal
+                $this->dbHitData[$keyname] = ['hitable' => false, 'hitconfig' => null, "deleteconfig" => true];
+                $this->updatedHitConfigs[] = $keyname;
             }
         }
         //update
@@ -287,9 +349,10 @@ class Setting
      * update
      * update setting option (multiple update supported)
      * *note : always use "database" location for storing values that are updating rapidly
+     * *note : for using bluk mode $value array keys must be same as $keyname both length and name otherwise $value will be cansidered as single array value and will be applied to all keys
      * @param  string|array $key setting key
      * @param  mixed|array $value setting value | STORE:MOVE for moving save location
-     * @param  string $encryption encrypt function name
+     * @param  string|null $modifier modifier function name
      * @param  string|array $location store location | "local" or "database" 
      * @param  bool $serialize serialize array or object values or use json_encode
      * @param  array $hitconfig hitable setting config
@@ -300,9 +363,9 @@ class Setting
      * ***only for location database
      * @return bool return the true on success
      */
-    public function update($key, $value, $encryption = false, $location = "local", $serialize = false, $hitconfig = [])
+    public function update($key, $value, $modifier = null, $location = "local", $serialize = false, $hitconfig = [])
     {
-        return $this->add($key, $value, $encryption, $location, $serialize, $hitconfig);
+        return $this->add($key, $value, $modifier, $location, $serialize, $hitconfig);
     }
     /**
      * remove
@@ -317,14 +380,14 @@ class Setting
         // $key could be both string or array or keys
         if (!is_array($key))
             $key = [$key];
-
+        
         foreach ($key as $bulkkey) {
             // key is not stored in database
             if ($this->data[$bulkkey] == "STORE:DB") {
                 //key stored in db
                 $this->removedFromDb[] = $bulkkey;
             }
-            unset($this->data[$bulkkey], $this->parsedata[$bulkkey]);
+            unset($this->data[$bulkkey], $this->parsedata[$bulkkey], $this->dbHitData[$bulkkey]);
         }
         $this->updated = true;
         if ($this->autosave)
@@ -333,6 +396,7 @@ class Setting
     /**
      * hit
      * add hits for hitable setting in setting hits table and collect it based on hitconfig in settings table to update setting based on update rate
+     * will throw exception when setting key is not hitable or value type is not valid
      * @param  string $key hitable setting key
      * @return bool true on success | false when setting key not exists or is not hitable
      */
@@ -340,9 +404,14 @@ class Setting
     {
         global $db;
         // first of all check if setting key exists and hitable
-        if (isset($this->dbHitData[$key]) && $this->dbHitData[$key]['hitable']) {
+        if ($this->is_hitable($key)) {
+            //insert hit
+            $db->insert($this->hitstablename, [
+                "setting_id" => $this->dbHitData[$key]['id'],
+                "date" => date('Y-m-d H:i:s.') . preg_replace("/^.*\./i", "", microtime(true))
+            ]);
             // is it time to collect ?
-            if (isset($this->dbHitData[$key]['hitconfig']['nextupdate']) && $this->dbHitData[$key]['hitconfig']['nextupdate'] <= time()) {
+            if ($this->is_hitable_need_update($key)) {
                 //time is up
                 if (isset($this->dbHitData[$key]['hitconfig']['deletehitsaftercollect']) && $this->dbHitData[$key]['hitconfig']['deletehitsaftercollect']) {
                     // delete hits 
@@ -354,17 +423,18 @@ class Setting
                     ]);
                 } else {
                     //keep hits
+                    $mktime = preg_replace("/^.*\./i", "", microtime(true));
                     $count = $db->count($this->hitstablename, [
                         //collect hits from the start of the timer to now
-                        "date[<>]" => [date('Y-m-d H:i:s', strtotime("-" . $this->dbHitData[$key]['hitconfig']['minupdaterate'] . " " . date('Y-m-d H:i:s', $this->dbHitData[$key]['hitconfig']['nextupdate']))), date('Y-m-d H:i:s')],
+                        "date[>=]" => date('Y-m-d H:i:s.u', strtotime("-" . $this->dbHitData[$key]['hitconfig']['minupdaterate'] . " " . date('Y-m-d H:i:s.u', $this->dbHitData[$key]['hitconfig']['nextupdate']))),
+                        "date[<=]" => date('Y-m-d H:i:s.') . sprintf("%04s", $mktime),
                         "setting_id" => $this->dbHitData[$key]['id']
                     ]);
                 }
-                $count++;
-                //function call
-                if (isset($this->dbHitData[$key]['hitconfig']['collectfunction']) && function_exists($this->dbHitData[$key]['hitconfig']['collectfunction'])) {
+                //collect function call
+                if (isset($this->dbHitData[$key]['hitconfig']['collectfunction']) && $this->is_function_valid($this->dbHitData[$key]['hitconfig']['collectfunction'])) {
                     //call collect function
-                    $hitdata = call_user_func($this->dbHitData[$key]['hitconfig']['collectfunction'], $key, $count, $this->data, $this->parsedata, $this);
+                    $hitdata = call_user_func($this->dbHitData[$key]['hitconfig']['collectfunction'], $key, $count, $this->parsedata[$key], $this);
                 } else {
                     // just sample counter
                     $hitdata = is_numeric($this->parsedata[$key]) ? $this->parsedata[$key] + $count : $count;
@@ -372,7 +442,12 @@ class Setting
                 // update hit rate
                 $this->dbHitData[$key]['hitconfig']['nextupdate'] = strtotime("+" . $this->dbHitData[$key]['hitconfig']['minupdaterate']);
                 // set new data
-                $this->data[$key] = $this->data[$key] != "STORE:DB" ? $this->castTypeToString($hitdata) : $this->data[$key];
+                try {
+                    $this->data[$key] = $this->data[$key] != "STORE:DB" ? $this->castTypeToString($hitdata) : $this->data[$key];
+                } catch (Exception $e) {
+                    //invalid value
+                    return false;
+                }
                 // check for xss
                 if (isset($this->data['xss_clean_setting']) && $this->data['xss_clean_setting'] == "1") {
                     $antiXss = new AntiXSS();
@@ -381,7 +456,12 @@ class Setting
                     $cleanvalue = $hitdata;
                 }
                 //flated value
-                $castvalue = $this->castTypeToString($cleanvalue);
+                try {
+                    $castvalue = $this->castTypeToString($cleanvalue);
+                } catch (Exception $e) {
+                    //invalid value
+                    return false;
+                }
                 $this->parsedata[$key] = $castvalue;
                 // hit config updated
                 $this->updatedHitConfigs[] = $key;
@@ -391,16 +471,34 @@ class Setting
                     $this->save();
 
                 return true;
-            } else {
-                // not the time to collect just insert new record
-                $db->insert($this->hitstablename, [
-                    "setting_id" => $this->dbHitData[$key]['id'],
-                    "date" => date('Y-m-d H:i:s')
-                ]);
-                return true;
             }
+            return true;
         } else {
-            //exeption maybe
+            throw new Exception('setting key is not hitable');
+            return false;
+        }
+    }
+    /**
+     * hitable_database_count
+     * return setting key hit count from database
+     * @param  string $key setting key
+     * @param  string $datafrom date string
+     * @param  string $dateto date string
+     * @return int|bool
+     */
+    public function hitable_database_count($key, $datafrom = null, $dateto = null)
+    {
+        global $db;
+        if ($this->is_hitable($key)) {
+            $args = [
+                "setting_id" => $this->dbHitData[$key]['id']
+            ];
+            if (!is_null($datafrom) && strtotime($datafrom))
+                $args['date[>=]'] = $datafrom;
+            if (!is_null($dateto) && strtotime($dateto))
+                $args['date[<=]'] = $dateto;
+            return $db->count($this->hitstablename, $args);
+        } else {
             return false;
         }
     }
@@ -408,20 +506,20 @@ class Setting
      * get_all
      * get all settings
      * @param  bool $returnparse
-     * @param  string $decryption decrypt function name ( only works when returnparse is true)
+     * @param  string|null $modifier modifier function name ( only works when returnparse is true and if setting is modified)
      * @return array settings
      */
-    public function get_all($returnparse = true, $decryption = false)
+    public function get_all($returnparse = true, $modifier = null)
     {
-        if ($returnparse && $decryption !== false && function_exists($decryption)) {
+        if ($returnparse && !is_null($modifier) && $this->is_function_valid($modifier)) {
             //xss
             if (isset($this->data['xss_clean_setting']) && $this->data['xss_clean_setting'] == "1")
                 $antiXss = new AntiXSS();
             //decryption
             foreach ($this->parsedata as $settingkey => $settingvalue) {
                 // if key encrypted
-                if (substr($this->data[$settingkey], 0, 8) == "encrypt:") {
-                    $decryptionvalue = call_user_func($decryption, str_replace("encrypt:", "", $this->data[$settingkey]));
+                if ($this->is_modified($this->data[$settingkey])) {
+                    $decryptionvalue = call_user_func($modifier, str_replace("modified:", "", $this->data[$settingkey]));
                     //xss clean
                     if (isset($this->data['xss_clean_setting']) && $this->data['xss_clean_setting'] == "1")
                         $cleanvalue = $antiXss->xss_clean($decryptionvalue);
@@ -486,7 +584,7 @@ class Setting
                     "INT",
                 ],
                 "date" => [
-                    "TIMESTAMP",
+                    "TIMESTAMP(4)",
                 ],
                 "FOREIGN KEY (<setting_id>) REFERENCES " . $prefix . "_setting(id) ON DELETE CASCADE",
             ], ["ENGINE" => "InnoDB"]);
@@ -511,7 +609,7 @@ class Setting
         $dbsettings = [];
         foreach ($this->data as $settingkey => $settingvalue) {
             //setting is in database
-            if ($settingvalue == "STORE:DB") {
+            if ($settingvalue == "STORE:DB" && isset($this->parsedata[$settingkey])) {
                 if (!$valueInDb)
                     $valueInDb = true;
                 $dbsettings[$settingkey] = $this->parsedata[$settingkey];
@@ -530,32 +628,47 @@ class Setting
         // delete settings that moved to local
         if (count($this->removedFromDb)) {
             $db->delete($this->settingtablename, ['name' => $this->removedFromDb]);
-            //need to remove hits too
         }
         if ($valueInDb) {
             //update the db values
             foreach ($dbsettings as $settingkey => $settingvalue) {
+                try {
+                    $stringvalue = $this->castTypeToString($settingvalue);
+                } catch (Exception $e) {
+                    //value is invalid
+                    continue;
+                }
                 $exists = $db->has($this->settingtablename, [
                     "name" => $settingkey
                 ]);
                 if ($exists)
                     $db->update($this->settingtablename, [
-                        "data" => $this->castTypeToString($settingvalue),
+                        "data" => $stringvalue,
                     ], [
                         "name" => $settingkey
                     ]);
                 else
-                    $db->insert($this->settingtablename, ["name" => $settingkey, "data" => $this->castTypeToString($settingvalue)]);
+                    $db->insert($this->settingtablename, ["name" => $settingkey, "data" => $stringvalue]);
             }
         }
         if (count($this->updatedHitConfigs)) {
             foreach ($this->updatedHitConfigs as $settingkey) {
                 $db->update($this->settingtablename, [
                     "hitable" => $this->dbHitData[$settingkey]['hitable'],
-                    "hitconfig" => json_encode($this->dbHitData[$settingkey]['hitconfig']),
+                    "hitconfig" => !is_null($this->dbHitData[$settingkey]['hitconfig']) ? json_encode($this->dbHitData[$settingkey]['hitconfig']) : null,
                 ], [
                     "name" => $settingkey
                 ]);
+                //hitable is converted to normal setting so delete the hit data
+                if (isset($this->dbHitData[$settingkey]['deleteconfig']) && $this->dbHitData[$settingkey]['deleteconfig'] === true)
+                    unset($this->dbHitData[$settingkey]);
+                //hitable is added on runtime and doesn't have id
+                if (isset($this->dbHitData[$settingkey]) && !isset($this->dbHitData[$settingkey]['id'])) {
+                    $id = $db->get($this->settingtablename, "id", [
+                        "name" => $settingkey
+                    ]);
+                    $this->dbHitData[$settingkey]['id'] = $id;
+                }
             }
         }
         $this->movedToDb = $this->removedFromDb = $this->updatedHitConfigs = [];
@@ -581,6 +694,7 @@ class Setting
      */
     private function cleanformat()
     {
+        global $db;
         if (isset($this->data['xss_clean_setting']) && $this->data['xss_clean_setting'] == "1") {
             $antiXss = new AntiXSS();
             $foundxss = false;
@@ -607,7 +721,7 @@ class Setting
             $this->parsedata[$settingkey] =  $this->castToType($value);
         }
         if ($valueInDb) {
-            global $db;
+            $valueInDbFound = [];
             // there is some settings in database
             $dbdata = $db->select($this->settingtablename, "*", ["name" => $valueInDbList]);
             foreach ($dbdata as $settingdata) {
@@ -623,7 +737,12 @@ class Setting
                 $this->parsedata[$settingdata['name']] =  $this->castToType($value);
                 //save hit data
                 $this->dbHitData[$settingdata['name']] = ['id' => $settingdata['id'], 'hitable' => (bool) $settingdata['hitable'], 'hitconfig' => is_null($settingdata['hitconfig']) ? false : json_decode($settingdata['hitconfig'], true)];
+                $valueInDbFound[] = $settingdata['name'];
             }
+            //value is not exists in database
+            $valueNotFoundInDb = array_diff($valueInDbList, $valueInDbFound);
+            foreach ($valueNotFoundInDb as $notfoundkey)
+                unset($this->parsedata[$notfoundkey], $this->data[$notfoundkey]);
         }
         // there is no xss no need to check again for performance
         if (isset($this->data['xss_clean_setting']) && $this->data['xss_clean_setting'] == "1" && !$foundxss) {
@@ -633,14 +752,58 @@ class Setting
         }
     }
     /**
+     * is_hitable
+     * check if setting key is hitable
+     * @param  string $key
+     * @return bool
+     */
+    public function is_hitable($key)
+    {
+        return isset($this->dbHitData[$key]) && $this->dbHitData[$key]['hitable'] === true;
+    }
+    /**
+     * is_hitable_need_update
+     * check if hitable setting need update
+     * @param  string $key
+     * @return bool|null true or false based if need update , null if setting key is not hitable
+     */
+    public function is_hitable_need_update($key)
+    {
+        if ($this->is_hitable($key))
+            return isset($this->dbHitData[$key]['hitconfig']['nextupdate']) && $this->dbHitData[$key]['hitconfig']['nextupdate'] <= time();
+        return null;
+    }
+    /**
+     * get_hitable_config
+     * get setting key hitable config
+     * @param  string $key
+     * @return array|bool
+     */
+    public function get_hitable_config($key)
+    {
+        if ($this->is_hitable($key))
+            return isset($this->dbHitData[$key]['hitconfig']) && is_array($this->dbHitData[$key]['hitconfig']) ? $this->dbHitData[$key]['hitconfig'] : false;
+        return false;
+    }
+    /**
+     * is_function_valid
+     * check if function or class method exists and valid
+     * @param  string|array $function function name string or array of classname and method
+     * @return bool
+     */
+    public static function is_function_valid($function)
+    {
+        return ((is_string($function) && function_exists($function)) || (is_array($function) && isset($function[0], $function[1]) && is_string($function[1]) && method_exists($function[0], $function[1])));
+    }
+    /**
      * castToType
-     * cast string to type
+     * cast string to type if needed
      * @param  mixed $value
      * @return array|string|int|float|bool
      */
-    private function castToType($value)
+    public static function castToType($value)
     {
-        if (is_float($value) || is_int($value) || !is_string($value)) {
+        if (!is_string($value)) {
             return $value;
         }
         // integer
@@ -649,7 +812,7 @@ class Setting
         }
         // float
         if (preg_match('/^-?\d+\.\d+$/', $value)) {
-            return floatval($value);
+            return round(floatval($value), 3);
         }
         $dataserialized = @unserialize($value);
         //serialized value
@@ -663,34 +826,49 @@ class Setting
         //boolean value
         if ($value == "true" || $value == "false")
             return $value == "true" ? true : false;
+
         return $value;
     }
     /**
      * castTypeToString
      * convert array or boolean values to string
+     * throw Exception when $value type is not valid (object , class , etc)
      * @param  mixed $value
      * @param  bool $serialize serialize array or object or use json encode
-     * @return string
+     * @return string|bool string value on success or false on fail
      */
-    private function castTypeToString($value, $serialize = false)
+    public static function castTypeToString($value, $serialize = false)
     {
         if (is_bool($value))
             return $value ? "true" : "false";
-        if (is_array($value) || is_object($value))
+        if (is_array($value))
             return $serialize ? serialize($value) : json_encode($value);
-        return (string) $value;
+        if (is_string($value) || is_numeric($value))
+            return  is_double($value) || is_float($value) ? (string) round($value, 3) : (string) $value;
+        else
+            throw new Exception("value type is not valid");
+        return false;
+    }
+    /**
+     * is_modified
+     * check if value is modified
+     * @param  mixed $value
+     * @return bool true if value is modified
+     */
+    public static function is_modified($value)
+    {
+        return is_string($value) && substr($value, 0, 9) == "modified:";
     }
 }
-/* Setting instance */
-$settinginstance = new Setting();
 /* decelare some functions for easier use */
 /**
  * addSetting
  * add new setting option (multiple add supported)
  * *note : always use "database" location for storing values that are updating rapidly
+ * *note : for using bluk mode $value array keys must be same as $keyname both length and name otherwise $value will be cansidered as single array value and will be applied to all keys
  * @param  string $key setting key
  * @param  mixed $value setting value | STORE:MOVE for moving save location
- * @param  string $encryption encrypt function name
+ * @param  string|null $modifier modifier function name
  * @param  string|array $location store location | "local" or "database" 
  * @param  bool $serialize serialize array or object values or use json_encode
  * @param  array $hitconfig hitable setting config
@@ -701,18 +879,19 @@ $settinginstance = new Setting();
  * ***only for location database
  * @return bool return the true on success
  */
-function addSetting($key, $value, $encryption = false, $location = "local", $serialize = false, $hitconfig = [])
+function addSetting($key, $value, $modifier = null, $location = "local", $serialize = false, $hitconfig = [])
 {
     global $settinginstance;
-    return $settinginstance->add($key, $value, $encryption, $location, $serialize, $hitconfig);
+    return $settinginstance->add($key, $value, $modifier, $location, $serialize, $hitconfig);
 }
 /**
  * updateSetting
  * update setting option (multiple update supported)
  * *note : always use "database" location for storing values that are updating rapidly
+ * *note : for using bluk mode $value array keys must be same as $keyname both length and name otherwise $value will be cansidered as single array value and will be applied to all keys
  * @param  string|array $key setting key
  * @param  mixed|array $value setting value | STORE:MOVE for moving save location
- * @param  string $encryption encrypt function name
+ * @param  string|null $modifier modifier function name
  * @param  string|array $location store location | "local" or "database" 
  * @param  bool $serialize serialize array or object values or use json_encode
  * @param  array $hitconfig hitable setting config
@@ -723,10 +902,10 @@ function addSetting($key, $value, $encryption = false, $location = "local", $ser
  * ***only for location database
  * @return bool return the true on success
  */
-function updateSetting($key, $value, $encryption = false, $location = "local", $serialize = false, $hitconfig = [])
+function updateSetting($key, $value, $modifier = null, $location = "local", $serialize = false, $hitconfig = [])
 {
     global $settinginstance;
-    return $settinginstance->update($key, $value, $encryption, $location, $serialize, $hitconfig);
+    return $settinginstance->update($key, $value, $modifier, $location, $serialize, $hitconfig);
 }
 /**
  * removeSetting
@@ -744,14 +923,14 @@ function removeSetting($key)
  * get setting value by specific key (multiple keys supported)
  * @param  string $key setting key
  * @param  string $default default value
- * @param  string $decryption decrypt function name ( only works when returnparse is true)
+ * @param  string|null $modifier modifier function name ( only works when returnparse is true and if setting is modified)
  * @param  bool $returnparse retrun parse value or raw value
  * @return array|string|int|float|bool setting value
  */
-function getSetting($key, $default, $returnparse = true, $decryption = false)
+function getSetting($key, $default, $returnparse = true, $modifier = null)
 {
     global $settinginstance;
-    return $settinginstance->get($key, $default, $returnparse, $decryption);
+    return $settinginstance->get($key, $default, $returnparse, $modifier);
 }
 /**
  * hitSetting
@@ -768,36 +947,11 @@ function hitSetting($key)
  * getAllSettings
  * get all settings
  * @param  bool $returnparse
- * @param  string $decryption decrypt function name ( only works when returnparse is true)
+ * @param  string|null $modifier modifier function name ( only works when returnparse is true and if setting is modified)
  * @return array settings
  */
-function getAllSettings($returnparse = true, $decryption = false)
+function getAllSettings($returnparse = true, $modifier = null)
 {
     global $settinginstance;
-    return $settinginstance->get_all($returnparse, $decryption);
+    return $settinginstance->get_all($returnparse, $modifier);
 }
-
-//test
-// most moved to and changed to phpunit
-/*
-removeSetting("testdb");
-addSetting('testdb', "STORE:MOVE");
-addSetting('testdb', "STORE:MOVE", false, "database");
-updateSetting('testdb', "updatetest", false, "database");
-removeSetting('testdb');
-addSetting('hitablesetting', "10", false, "database", false, [
-    'minupdaterate' => "1minute",
-    'collectfunction' => "testfunction",
-    'deletehitsaftercollect' => true
-]);
-addSetting('hitablesetting2', "10", false, "database", false, [
-    'minupdaterate' => "1minute",
-    'collectfunction' => "testfunction",
-    'deletehitsaftercollect' => false
-]);
-function testfunction($key, $count, $data, $parsedata, $settinginstance)
-{
-    return (($parsedata[$key] + $count) / 100) . "K";
-}
-var_dump(hitSetting('hitablesetting2'));
-*/

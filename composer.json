@@ -3,5 +3,8 @@
         "vlucas/phpdotenv": "^5.4",
         "catfan/medoo": "^2.1",
         "voku/anti-xss": "^4.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
     }
 }

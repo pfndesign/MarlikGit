@@ -139,6 +139,7 @@ if ($_ENV['db_type'] == 'mssql' && isset($_ENV['db_mssql_driver'])) {
 }
 try {
 	$db = new legacydb($dbargs);
+	$GLOBALS['db'] = $db;
 } catch (PDOException $e) {
 	echo $e->getMessage();
 	exit;

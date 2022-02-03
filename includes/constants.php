@@ -9,14 +9,39 @@
  *
  */
 
-if (!defined('IN_USV')) {
+if (!defined('BASE_PATH')) {
 	exit;
 }
 
 if (stristr(htmlentities($_SERVER['PHP_SELF']), "constants.php")) {
 	die("Access Denied<br><b>" . $_SERVER['PHP_SELF'] . "</b>");
 }
-
+//===========================================
+//Define CONSTANTS
+//===========================================
+//Absolute PHP-Nuke directory
+define('PHOENIX_BASE_DIR', BASE_PATH);
+// Absolute Phoenix Directory And Includes
+define('PHOENIX_INCLUDE_DIR', PHOENIX_BASE_DIR . 'includes/');
+define("IN_USV", true);
+define('INCLUDES_PATH', 'includes/');
+define("INCLUDES_UCP", "modules/Your_Account/includes/");
+define('INCLUDES_ACP',	INCLUDES_PATH . 'acp/');
+define('IMAGES_PATH',   BASE_PATH . 'images/');
+define('THEMES_PATH',   BASE_PATH . 'themes/');
+define('MODULES_PATH', 	'modules/');
+define('ADMIN_PATH',	BASE_PATH . 'admin/');
+define('DB_PATH',	 	BASE_PATH . 'db/');
+define('JAVASCRIPT_PATH',	 	INCLUDES_PATH . 'javascript/');
+define('SCRIPT_PATH',	 	 JAVASCRIPT_PATH . 'jquery/dist/');
+define('SCRIPT_PLUGINS_PATH', JAVASCRIPT_PATH . 'jquery/plugins/');
+define('SCRIPT_SRC_PATH', JAVASCRIPT_PATH . 'jquery/src/');
+define('MODS_PATH', INCLUDES_PATH . 'mods/');
+define('LANGUAGE_PATH',			BASE_PATH . 'language/');
+define('ADMIN_LANGUAGE_PATH',	BASE_PATH . 'admin/language/');
+define('IMAGES_ICON',	IMAGES_PATH . 'icon/');
+define("LOG_INC", false);
+define("MAIL_CLASS", 0);
 //===========================================
 //Defined Constants
 //===========================================
@@ -100,6 +125,9 @@ define("USER_IMG_DIR", "modules/Your_Account/images/");
 //===========================================
 define('NUKE_FILE', true);
 require_once(INCLUDES_PATH . "setting.inc.php");
+/* Setting instance */
+$settinginstance = new Setting();
+$GLOBALS['settinginstance'] = $settinginstance;
 //need to change to a single global var
 extract($settinginstance->get_all());
 //===========================================
@@ -158,7 +186,7 @@ if (file_exists(CORE_INCLUSION . "includes/custom_files/lang-" . $currentlang . 
 //===========================================
 
 // Site Switch Check
-if ($site_switch == 1 and !stristr($_SERVER['PHP_SELF'], "" . $admin_file . ".php") and !is_admin($_COOKIE['admin']) and time() < strtotime($disable_to_date)) {
+if (isset($site_switch) && $site_switch == 1 and !stristr($_SERVER['PHP_SELF'], "" . $admin_file . ".php") and !is_admin($_COOKIE['admin']) and time() < strtotime($disable_to_date)) {
 
 	$disable_from_dateDB = strtotime($disable_from_date);
 	$disable_from_date =  array(
