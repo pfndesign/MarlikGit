@@ -3,15 +3,24 @@
 use voku\helper\AntiXSS;
 
 /**
+ * setting managment class
  *
- * @package setting class	
- * vision setting class											
- * @version 1.0.0		
- * @author pfndesigen@gmail.com		
+ * setting management class for adding the setting to a database or local and creating low-cost updatable setting using hit function
+ * This class also provides the create_tables function for creating the setting table
+ * what is a hittable setting? 
+ * hittable settings are stored in the database and values are not edited using add or update function but to update a hittable setting one must call the hit function
+ * each time hit function is called a record will be added to the hits table, when it's time to collect hits user function will be called and the setting value will be updated
+ * ? why anti xss?
+ * the way that values are stored in .setting file makes it vulnerable to XSS attack Intentionally or unIntentionally
+ * .setting file is basically a .env file if a value gets corrupted phpenv can't read the data because of these we need antixss 
+ * you can however disable this by "xss_clean_setting" setting
+ * @package setting	
+ * @version 1.0.1
+ * @author peyman farahmand pfndesigen@gmail.com	
  */
-
 class Setting
 {
+    // {{{ properties
     /**
      * autosave
      * auto save after each operation
@@ -84,6 +93,7 @@ class Setting
      * @var array
      */
     private $updatedHitConfigs = [];
+    // }}}
     /**
      * __construct
      *
@@ -118,12 +128,14 @@ class Setting
     }
     /**
      * get
-     * get setting value by specific key (multiple keys supported)
+     * - get setting value by specific key (multiple keys supported)
+     * - for setting keys that are located in database none parse data will always return "STORE:DB"
      * @param  string $key setting key
      * @param  string $default default value
      * @param  bool $returnparse retrun parse value or raw value
      * @param  string|null $modifier modifier function name ( only works when returnparse is true and if setting is modified)
      * @return array|string|int|float|bool setting value
+     * @access public
      */
     public function get($key, $default, $returnparse = true, $modifier = null)
     {
@@ -193,20 +205,39 @@ class Setting
     /**
      * add
      * add new setting option (multiple add supported)
-     * *note : always use "database" location for storing values that are updating rapidly
-     * *note : for using bluk mode $value array keys must be same as $keyname both length and name otherwise $value will be cansidered as single array value and will be applied to all keys
+     * * recommended to always use "database" location for storing values that are updating rapidly
+     * * for using bluk mode $value array keys must be same as $key both length and name otherwise $value will be considered as single array value and will be applied to all keys
+     * @throws Exception If setting value type is incorrect or hitable setting location is in local
      * @param  string|array $key setting key
-     * @param  mixed|array $value setting value | STORE:MOVE for moving save location
+     * @param  mixed|array $value setting value | STORE:MOVE for moving save location between database <> local
      * @param  string|null $modifier modifier function name
      * @param  string|array $location store location | "local" or "database" 
      * @param  bool $serialize serialize array or object values or use json_encode
      * @param  array $hitconfig hitable setting config
-     * minupdaterate="readable time", // example : 1second , 1minute , 1hour support datetime formats
-     * collectfunction="functioname to call", function that run when hits are collected and sat into the setting table , accepts 5 args [$settingkey, $hitcount, $this->data, $this->parsedata, $this)]
-     * deletehitsaftercollect=(bool), delete hits after collecting the result for update
-     * ** also accept key matching with $key when $key is array for multiple config on bulk add
-     * ***only for location database
+     * example :
+     * <code>
+     * $settinghitconfig = [
+     *  "minupdaterate" => "1minute",
+     *  "collectfunction" => false,
+     *  "deletehitsaftercollect" => true,
+     * ];
+     * </code>
+     * config info:
+     *   + minupdaterate :  minimum update rate after that hit data will be collected from database and setting key will update  (datetime)
+     *      - - examples : 1second,1minute,1hour 
+     *      - - default : 1minute
+     *   + collectfunction : function that run when hits are collected and sat into the setting table  (callable)
+     *      - - examples : [$this, "functionname"],["classname", "functionname"],"functioname"
+     *      + args : accepts 5 args
+     *          - - $settingkey : hitable setting key
+     *          - - $hitcount : number of hits after last update
+     *          - - $settingvalue : setting value
+     *          - - $classrefrence : refrence to setting class
+     *   + deletehitsaftercollect : keep the hit records in database or delete hits after update is done and collectfunction is called  (bool)
+     * * hitable config is only available when setting key location is database
+     * * in bluk add mode hitconfig will be refrenced with setting key
      * @return bool return the true on success
+     * @access public
      */
     public function add($key, $value, $modifier = null, $location = "local", $serialize = false, $hitconfig = [])
     {
@@ -348,20 +379,38 @@ class Setting
     /**
      * update
      * update setting option (multiple update supported)
-     * *note : always use "database" location for storing values that are updating rapidly
-     * *note : for using bluk mode $value array keys must be same as $keyname both length and name otherwise $value will be cansidered as single array value and will be applied to all keys
+     * * recommended to always use "database" location for storing values that are updating rapidly
+     * * for using bluk mode $value array keys must be same as $key both length and name otherwise $value will be considered as single array value and will be applied to all keys
      * @param  string|array $key setting key
      * @param  mixed|array $value setting value | STORE:MOVE for moving save location
      * @param  string|null $modifier modifier function name
      * @param  string|array $location store location | "local" or "database" 
      * @param  bool $serialize serialize array or object values or use json_encode
      * @param  array $hitconfig hitable setting config
-     * minupdaterate="readable time", // example : 1second , 1minute , 1hour support datetime formats
-     * collectfunction="functioname to call", function that run when hits are collected and sat into the setting table , accepts 5 args [$settingkey, $hitcount, $this->data, $this->parsedata, $this)]
-     * deletehitsaftercollect=(bool), delete hits after collecting the result for update
-     * ** also accept key matching with $key when $key is array for multiple config on bulk add
-     * ***only for location database
+     * example :
+     * <code>
+     * $settinghitconfig = [
+     *  "minupdaterate" => "1minute",
+     *  "collectfunction" => false,
+     *  "deletehitsaftercollect" => true,
+     * ];
+     * </code>
+     * config info:
+     *   + minupdaterate :  minimum update rate after that hit data will be collected from database and setting key will update  (datetime)
+     *      - - examples : 1second,1minute,1hour 
+     *      - - default : 1minute
+     *   + collectfunction : function that run when hits are collected and sat into the setting table  (callable)
+     *      - - examples : [$this, "functionname"],["classname", "functionname"],"functioname"
+     *      + args : accepts 5 args
+     *          - - $settingkey : hitable setting key
+     *          - - $hitcount : number of hits after last update
+     *          - - $settingvalue : setting value
+     *          - - $classrefrence : refrence to setting class
+     *   + deletehitsaftercollect : keep the hit records in database or delete hits after update is done and collectfunction is called  (bool)
+     * * hitable config is only available when setting key location is database
+     * * in bluk add mode hitconfig will be refrenced with setting key
      * @return bool return the true on success
+     * @access public
      */
     public function update($key, $value, $modifier = null, $location = "local", $serialize = false, $hitconfig = [])
     {
@@ -372,6 +421,7 @@ class Setting
      * remove setting by key or keys (multiple remove supported)
      * @param  string|array $key setting key
      * @return void
+     * @access public
      */
     public function remove($key)
     {
@@ -380,7 +430,7 @@ class Setting
         // $key could be both string or array or keys
         if (!is_array($key))
             $key = [$key];
-        
+
         foreach ($key as $bulkkey) {
             // key is not stored in database
             if ($this->data[$bulkkey] == "STORE:DB") {
@@ -396,9 +446,10 @@ class Setting
     /**
      * hit
      * add hits for hitable setting in setting hits table and collect it based on hitconfig in settings table to update setting based on update rate
-     * will throw exception when setting key is not hitable or value type is not valid
+     * @throws Exception If setting key is not hitable or value type is not valid
      * @param  string $key hitable setting key
      * @return bool true on success | false when setting key not exists or is not hitable
+     * @access public
      */
     public function hit($key)
     {
@@ -485,6 +536,7 @@ class Setting
      * @param  string $datafrom date string
      * @param  string $dateto date string
      * @return int|bool
+     * @access public
      */
     public function hitable_database_count($key, $datafrom = null, $dateto = null)
     {
@@ -508,6 +560,7 @@ class Setting
      * @param  bool $returnparse
      * @param  string|null $modifier modifier function name ( only works when returnparse is true and if setting is modified)
      * @return array settings
+     * @access public
      */
     public function get_all($returnparse = true, $modifier = null)
     {
@@ -535,12 +588,11 @@ class Setting
      * create_tables
      * create tables for settings
      * @return bool true on success
+     * @access public
      */
     public function create_tables()
     {
         global $db, $prefix;
-        // delete config table
-        $db->drop('config'); //bug ? perfix bug
         //create setting table
         try {
             $db->create($this->settingtablename, [
@@ -596,9 +648,11 @@ class Setting
     /**
      * save
      * save .setting file
+     * all changes will be saved automaticly but user can call this function if autosave is false
      * @return bool
+     * @access public
      */
-    private function save()
+    public function save()
     {
         // don't update when nothing updated or added
         if (!$this->updated && !$this->added && !count($this->updatedHitConfigs))
@@ -679,6 +733,7 @@ class Setting
      * abortActions
      * abort update or added setting save
      * @return void
+     * @access public
      */
     public function abortActions()
     {
@@ -689,8 +744,9 @@ class Setting
     /**
      * cleanformat
      * clean setting format and apply anit xss if needed
-     * *note : aniti xss will be applied "one" time if there is no xss found in the settings
+     * * aniti xss will be applied "one" time if there is no xss found in the settings
      * @return void
+     * @access private
      */
     private function cleanformat()
     {
@@ -756,6 +812,7 @@ class Setting
      * check if setting key is hitable
      * @param  string $key
      * @return bool
+     * @access public
      */
     public function is_hitable($key)
     {
@@ -766,6 +823,7 @@ class Setting
      * check if hitable setting need update
      * @param  string $key
      * @return bool|null true or false based if need update , null if setting key is not hitable
+     * @access public
      */
     public function is_hitable_need_update($key)
     {
@@ -778,6 +836,7 @@ class Setting
      * get setting key hitable config
      * @param  string $key
      * @return array|bool
+     * @access public
      */
     public function get_hitable_config($key)
     {
@@ -790,6 +849,8 @@ class Setting
      * check if function or class method exists and valid
      * @param  string|array $function function name string or array of classname and method
      * @return bool
+     * @access public
+     * @static
      */
     public static function is_function_valid($function)
     {
@@ -800,6 +861,8 @@ class Setting
      * cast string to type if needed
      * @param  mixed $value
      * @return array|string|int|float|bool
+     * @access public
+     * @static
      */
     public static function castToType($value)
     {
@@ -832,10 +895,12 @@ class Setting
     /**
      * castTypeToString
      * convert array or boolean values to string
-     * throw Exception when $value type is not valid (object , class , etc)
+     * @throws Exception if $value type is not valid (object , class , etc)
      * @param  mixed $value
      * @param  bool $serialize serialize array or object or use json encode
      * @return string|bool string value on success or false on fail
+     * @access public
+     * @static
      */
     public static function castTypeToString($value, $serialize = false)
     {
@@ -854,6 +919,8 @@ class Setting
      * check if value is modified
      * @param  mixed $value
      * @return bool true if value is modified
+     * @access public
+     * @static
      */
     public static function is_modified($value)
     {
@@ -864,19 +931,36 @@ class Setting
 /**
  * addSetting
  * add new setting option (multiple add supported)
- * *note : always use "database" location for storing values that are updating rapidly
- * *note : for using bluk mode $value array keys must be same as $keyname both length and name otherwise $value will be cansidered as single array value and will be applied to all keys
+ * * recommended to always use "database" location for storing values that are updating rapidly
+ * * for using bluk mode $value array keys must be same as $key both length and name otherwise $value will be considered as single array value and will be applied to all keys
  * @param  string $key setting key
  * @param  mixed $value setting value | STORE:MOVE for moving save location
  * @param  string|null $modifier modifier function name
  * @param  string|array $location store location | "local" or "database" 
  * @param  bool $serialize serialize array or object values or use json_encode
  * @param  array $hitconfig hitable setting config
- * minupdaterate="readable time", // example : 1second , 1minute , 1hour support datetime formats
- * collectfunction="functioname to call", function that run when hits are collected and sat into the setting table , accepts 5 args [$settingkey, $hitcount, $this->data, $this->parsedata, $this)]
- * deletehitsaftercollect=(bool), delete hits after collecting the result for update
- * ** also accept key matching with $key when $key is array for multiple config on bulk add
- * ***only for location database
+ * example :
+ * <code>
+ * $settinghitconfig = [
+ *  "minupdaterate" => "1minute",
+ *  "collectfunction" => false,
+ *  "deletehitsaftercollect" => true,
+ * ];
+ * </code>
+ * config info:
+ *   + minupdaterate :  minimum update rate after that hit data will be collected from database and setting key will update  (datetime)
+ *      - - examples : 1second,1minute,1hour 
+ *      - - default : 1minute
+ *   + collectfunction : function that run when hits are collected and sat into the setting table  (callable)
+ *      - - examples : [$this, "functionname"],["classname", "functionname"],"functioname"
+ *      + args : accepts 5 args
+ *          - - $settingkey : hitable setting key
+ *          - - $hitcount : number of hits after last update
+ *          - - $settingvalue : setting value
+ *          - - $classrefrence : refrence to setting class
+ *   + deletehitsaftercollect : keep the hit records in database or delete hits after update is done and collectfunction is called  (bool)
+ * * hitable config is only available when setting key location is database
+ * * in bluk add mode hitconfig will be refrenced with setting key
  * @return bool return the true on success
  */
 function addSetting($key, $value, $modifier = null, $location = "local", $serialize = false, $hitconfig = [])
@@ -887,19 +971,36 @@ function addSetting($key, $value, $modifier = null, $location = "local", $serial
 /**
  * updateSetting
  * update setting option (multiple update supported)
- * *note : always use "database" location for storing values that are updating rapidly
- * *note : for using bluk mode $value array keys must be same as $keyname both length and name otherwise $value will be cansidered as single array value and will be applied to all keys
+ * * recommended to always use "database" location for storing values that are updating rapidly
+ * * for using bluk mode $value array keys must be same as $key both length and name otherwise $value will be considered as single array value and will be applied to all keys
  * @param  string|array $key setting key
  * @param  mixed|array $value setting value | STORE:MOVE for moving save location
  * @param  string|null $modifier modifier function name
  * @param  string|array $location store location | "local" or "database" 
  * @param  bool $serialize serialize array or object values or use json_encode
  * @param  array $hitconfig hitable setting config
- * minupdaterate="readable time", // example : 1second , 1minute , 1hour support datetime formats
- * collectfunction="functioname to call", function that run when hits are collected and sat into the setting table , accepts 5 args [$settingkey, $hitcount, $this->data, $this->parsedata, $this)]
- * deletehitsaftercollect=(bool), delete hits after collecting the result for update
- * ** also accept key matching with $key when $key is array for multiple config on bulk add
- * ***only for location database
+ * example :
+ * <code>
+ * $settinghitconfig = [
+ *  "minupdaterate" => "1minute",
+ *  "collectfunction" => false,
+ *  "deletehitsaftercollect" => true,
+ * ];
+ * </code>
+ * config info:
+ *   + minupdaterate :  minimum update rate after that hit data will be collected from database and setting key will update  (datetime)
+ *      - - examples : 1second,1minute,1hour 
+ *      - - default : 1minute
+ *   + collectfunction : function that run when hits are collected and sat into the setting table  (callable)
+ *      - - examples : [$this, "functionname"],["classname", "functionname"],"functioname"
+ *      + args : accepts 5 args
+ *          - - $settingkey : hitable setting key
+ *          - - $hitcount : number of hits after last update
+ *          - - $settingvalue : setting value
+ *          - - $classrefrence : refrence to setting class
+ *   + deletehitsaftercollect : keep the hit records in database or delete hits after update is done and collectfunction is called  (bool)
+ * * hitable config is only available when setting key location is database
+ * * in bluk add mode hitconfig will be refrenced with setting key
  * @return bool return the true on success
  */
 function updateSetting($key, $value, $modifier = null, $location = "local", $serialize = false, $hitconfig = [])
@@ -920,7 +1021,8 @@ function removeSetting($key)
 }
 /**
  * getSetting
- * get setting value by specific key (multiple keys supported)
+ * - get setting value by specific key (multiple keys supported)
+ * - for setting keys that are located in database none parse data will always return "STORE:DB"
  * @param  string $key setting key
  * @param  string $default default value
  * @param  string|null $modifier modifier function name ( only works when returnparse is true and if setting is modified)
